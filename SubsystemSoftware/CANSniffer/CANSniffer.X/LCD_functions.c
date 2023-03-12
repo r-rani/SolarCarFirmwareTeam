@@ -47,13 +47,26 @@ void LCD_print_string(const char *str, uint8_t pos, uint8_t line){
     }
 }
 
+
+void LCD_print_int(const int val, uint8_t pos, uint8_t line){
+    char str[10];
+    sprintf(str,"%d",val);
+    LCD_print_string(str, pos, line);
+}
+
+void LCD_print_float(const float val, uint8_t pos, uint8_t line){
+    char str[10];
+    sprintf(str,"%f",val);
+    LCD_print_string(str, pos, line);
+}
+
 void LCD_init(void){
     __delay_ms(15);
     LCD_RS = 0;
     LCD_RW = 0;
     LCD_DATA = 0;
 
-    LCD_command(0x38);  //uses 2 line and initializes 5*8 matrix on LCD
+    LCD_command(0x38);  //use0x38s 2 line and initializes 5*8 matrix on LCD
     LCD_command(0x01);  //clears display of screen
     LCD_command(0x0C);  //display on, cursor off
     LCD_command(0x06);  //increment cursor (right shift)
