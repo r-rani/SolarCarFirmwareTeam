@@ -39,6 +39,8 @@
       <itemPath>button_functionality.c</itemPath>
       <itemPath>process_functions.h</itemPath>
       <itemPath>process_functions.c</itemPath>
+      <itemPath>can_interface.c</itemPath>
+      <itemPath>can_interface.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
