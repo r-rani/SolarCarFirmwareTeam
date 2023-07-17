@@ -17,9 +17,9 @@
 //#define DDISP_OUT //pin ? 
 //#define MOTOR_ON // pin ?
 
-static int THRESVOLT = 10.2; //10.2V
-static int startup_success = false; //boolean for startup process success
-static int shutdown_trigger = false; //something should trigger shutdown sequence (?)
+static float THRESVOLT = 10.2; //10.2V - actual should be 12V, but 10.2V due to ADC module
+static int STARTUP_SUCCESS = false; //boolean for startup process success
+static int iterator = 0; //motor while loop iterator 
 
 int highOrlow(int voltage){
     int output;
@@ -32,7 +32,7 @@ int highOrlow(int voltage){
     return output;
 }
 
-uCAN_MSG tx1, tx2, tx3, tx4, tx5, tx6, tx7; //initializations for transmit and receive messages
+uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8; //initializations for transmit and receive messages
 
 //create a function for each DDISP message
 //MPPT Error DDISP
@@ -91,34 +91,42 @@ void canbus_shutdown_success(int number){
     tx7.frame.data0 = number;  //power mode
 }
 
-//CAN receive for motor - 4 functions
-void canbus_motor_rearL(uCAN_MSG rx1){
-    rx1.frame.idType = 1;
-    rx1.frame.id = 0x08950225; //ID value
-    rx1.frame.dlc = 0x01; //1 byte
-    rx1.frame.data0 = 0x00000001;  //power mode
+//CANBUS request frame transmission - for motor, transmitting a frame
+void canbus_motor_rearL_tx(int number){
+    tx8.frame.idType = 1;
+    tx8.frame.id = 0x08F89540; //frame ID for rearLeft wheel
+    tx8.frame.dlc = 0x01; //1 byte
+    tx8.frame.data0 = number; //data that gets sent - error codes don't require data 
 }
 
-void canbus_motor_rearR(uCAN_MSG rx2){
-    rx2.frame.idType = 1;
-    rx2.frame.id = 0x08950245; //ID value
-    rx2.frame.dlc = 0x01; //1 byte
-    rx2.frame.data0 = 0x00000001;  //power mode
-}
-
-void canbus_motor_frontL(uCAN_MSG rx3){
-    rx3.frame.idType = 1;
-    rx3.frame.id = 0x08950265; //ID value
-    rx3.frame.dlc = 0x01; //1 byte
-    rx3.frame.data0 = 0x00000001;  //power mode
-}
-
-void canbus_motor_frontR(uCAN_MSG rx4){
-    rx4.frame.idType = 1;
-    rx4.frame.id = 0x08950285; //ID value
-    rx4.frame.dlc = 0x01; //1 byte
-    rx4.frame.data0 = 0x00000001;  //power mode
-}
+////CAN receive for motor - 4 functions
+//void canbus_motor_rearL(uCAN_MSG rx1){
+//    rx1.frame.idType = 1;
+//    rx1.frame.id = 0x08950225; //ID value
+//    rx1.frame.dlc = 0x01; //1 byte
+//    rx1.frame.data0 = 0x00000001;  //power mode
+//}
+//
+//void canbus_motor_rearR(uCAN_MSG rx2){
+//    rx2.frame.idType = 1;
+//    rx2.frame.id = 0x08950245; //ID value
+//    rx2.frame.dlc = 0x01; //1 byte
+//    rx2.frame.data0 = 0x00000001;  //power mode
+//}
+//
+//void canbus_motor_frontL(uCAN_MSG rx3){
+//    rx3.frame.idType = 1;
+//    rx3.frame.id = 0x08950265; //ID value
+//    rx3.frame.dlc = 0x01; //1 byte
+//    rx3.frame.data0 = 0x00000001;  //power mode
+//}
+//
+//void canbus_motor_frontR(uCAN_MSG rx4){
+//    rx4.frame.idType = 1;
+//    rx4.frame.id = 0x08950285; //ID value
+//    rx4.frame.dlc = 0x01; //1 byte
+//    rx4.frame.data0 = 0x00000001;  //power mode
+//}
 
 void undo_seq(void){
     if (IO_RA1_GetValue() == 1){     //read mppt
@@ -164,10 +172,7 @@ void undo_seq(void){
 
 void start_up_seq(void){
     //Read pin 7
-    if (highOrlow(IO_RA5_GetValue()) == 0){    //pin 7 - read aux
-        break; 
-    }
-    else if (highOrlow(IO_RA5_GetValue()) == 1){
+    if (highOrlow(IO_RA5_GetValue()) == 1){
         IO_RA0_SetHigh(); //pin 2 - hv on
         IO_RE1_SetHigh(); //read dcdc - pin 9
         
@@ -183,34 +188,56 @@ void start_up_seq(void){
             IO_RC5_SetHigh(); //precharge 2
             __delay_ms(5);
             
+            
+            //request command - transmission ---> here we are calling frame 1 (for wheels), hence the binary is 10
+            //frame 0 = 01, frame 1 = 10
+            canbus_motor_rearL_tx(0b00000010);
+            
+            //while loop that checks for previous frame request command if received 
+            while (1){
+                if (CAN_receive(&rx) && rx.frame.id == 0x08950225){
+                        break;
+                }else{
+                    iterator += 1;
+                }
+                if (iterator > 1000){ //iterated 1000+ times without receiving rx message 
+                    break;
+                }
+            } //while loop end
+            
+            if (iterator > 1000){
+                //send motor error to DDISP
+                canbus_msg_motor(1); 
+            }
             //Motor Controller Check
-            if (canbus_motor_rearL(rx1)){
-                if (rx1.frame.idType == 1 && rx1.frame.id == 0x08950225 && 
-                    rx1.frame.dlc = 0x01 && rx1.frame.data0 = 0x00000001){
-                if (canbus_motor_rearR(&rx2)){
-                    if (rx2.frame.idType == 1 && rx2.frame.id == 0x08950245 &&
-                        rx2.frame.dlc = 0x01 && rx2.frame.data0 = 0x00000001){
-                if (canbus_motor_frontL(&rx3)){
-                    if (rx3.frame.idType == 1 && rx3.frame.id == 0x08950265 &&
-                        rx3.frame.dlc = 0x01 && rx3.frame.data0 = 0x00000001){
-                if (canbus_motor_frontR(&rx4)){
-                    if (rx4.frame.idType == 1 && rx4.frame.id == 0x08950285 &&
-                        rx4.frame.dlc = 0x01 && rx4.frame.data0 = 0x00000001){
-                            IO_RC0_SetHigh(); //pos connector 1
-                            IO_RC3_SetHigh(); //pos connector 2
-                            __delay_ms(10); //motor controller requires longer times in between steps to charge precharge
+            else if (rx.frame.idType == 1 && rx.frame.id == 0x08950225 && rx.frame.dlc == 0x01){
+                    //unlikely that the other bits in data0 are also 0, so we bitwise AND it with 1 to check if 
+                    //the bit we are concerned about (power) is equal to 1 (on)
+                    if (rx.frame.data0 && 0b00000001 == 1){
+                        
+//                if (rx.frame.idType == 1 && rx.frame.id == 0x08950245 &&
+//                    rx.frame.dlc = 0x01 && rx.frame.data0 = 0x00000001){
+//                if (rx.frame.idType == 1 && rx.frame.id == 0x08950265 &&
+//                    rx.frame.dlc = 0x01 && rx.frame.data0 = 0x00000001){
+//                if (rx.frame.idType == 1 && rx.frame.id == 0x08950285 &&
+//                    rx.frame.dlc = 0x01 && rx.frame.data0 = 0x00000001){
+//                    
+                        IO_RC0_SetHigh(); //pos connector 1
+                        IO_RC3_SetHigh(); //pos connector 2
+                        __delay_ms(500); //motor controller requires longer times in between steps to charge precharge
 
-                                //why was the precharge turned on twice in the flowchart?
-                //                IO_RC2_SetHigh(); //precharge 1
-                //                IO_RC5_SetHigh(); //precharge 2
-                                //__delay_ms(10);
+                        //precharge is turned OFF now
+                        IO_RC2_SetLow(); //precharge 1
+                        IO_RC5_SetLow(); //precharge 2
+                        __delay_ms(10);
 
-                                //Verify MPPT here - not sure how we wanted to verify
-                                //But if MPPT is working and on:
+                        //Wait to receive a MPPT message from CAN
+                        //If MPPT is working and ON, we set pin 1 to high
                                 //Read pin 3 (the MPPT Contactor)
-                                if (IO_RA1_GetValue() == 1){ //read mppt
+                        IO_RA1_SetHigh();
+                                if (IO_RA1_GetValue() == 1){ //Placeholder for when we verify MPPT again through CAN
                                     //success -- not sure if we want to do anything more here
-                                    startup_success = 1; //startup sequence was successful 
+                                    STARTUP_SUCCESS = 1; //startup sequence was successful 
 
                                 }else{
                                     undo_seq();
@@ -218,16 +245,10 @@ void start_up_seq(void){
                                     canbus_msg_MPPT(1);
                                 }
                             }
-                            }
-                        }
-                        }
-                    }
-                    }
-                }
-                }else{
-                undo_seq();
-                //Send Motor Error message to DDISP
-                canbus_msg_motor(1);
+                } else{
+                    undo_seq();
+                    //Send Motor Error message to DDISP
+                    canbus_msg_motor(1);
             }
         }else{
             undo_seq();
@@ -239,9 +260,7 @@ void start_up_seq(void){
 
 void shutdown_seq(void){
     //Read pin 7 - MCU READ AUX
-    if (highOrlow(IO_RA5_GetValue()) == 1){
-        break;
-    }else{
+    if (highOrlow(IO_RA5_GetValue()) == 0){ 
         //system turns off electronically?
         //Stores successful system shut-down somewhere
         canbus_shutdown_success(1); //transmits CANBUS with unique id ----> shutdown
@@ -250,15 +269,15 @@ void shutdown_seq(void){
 
 void e_stop_seq(void){
     //Read pin 9 - read dcdc
-    if (startup_success == 1){ //e-stop can only run when startup is on
-        if (highOrlow(IO_RE1_GetValue()) == 0){
+//    if (STARTUP_SUCCESS == 1){ //e-stop can only run when startup is on
+//        if (highOrlow(IO_RE1_GetValue()) == 0){
         IO_RA3_SetLow();  //ati aux
         IO_RA2_SetLow(); //ati dcdc
         
         // send display message to DDISP as "BPS Fault"
         canbus_msg_bps(1);
-        }  
-    }
+        //}  
+    //}
 }
 
 //Boundary Cases
@@ -270,9 +289,6 @@ void aux_battery_failure(void){
             //Supplemental battery failure 
             //Display AUX Battery Failure on DDISP
             canbus_msg_auxfail(1);
-        }else{
-            break;
-            //Means car is off
         }
     }
 }
@@ -284,6 +300,7 @@ void aux_battery_LV(void){
         canbus_msg_auxlow(1);
     }
 }
+
 void main(void)
 {
     // Initialize the device
@@ -292,20 +309,26 @@ void main(void)
     while (1){
         //call the functions 
         //if the boolean for startup is false (startup has not run yet), then run startup. Else, don't.
-        if (startup_success == 0){
-            start_up_seq();
-        }
-        if (shutdown_trigger == 1 && startup_success == 1){ //what should be triggering the shutdown? 
-            shutdown_seq(); 
+        
+        //pins 7 and 9 should constantly be monitored
+        if (STARTUP_SUCCESS == 0){
+            if (highOrlow(IO_RA5_GetValue()) == 1){ //AUX high
+                start_up_seq();
+            }
         }
         
-        e_stop_seq(); //may need a boundary case for this
-        //other boundary cases always being checked
+        if (STARTUP_SUCCESS == 1){
+            if (highOrlow(IO_RA5_GetValue()) == 0){   //AUX low
+                shutdown_seq();
+            }else if (highOrlow(IO_RE1_GetValue()) == 0){ //DCDC low
+                e_stop_seq();
+            }
+        }
+        
         aux_battery_failure();
         aux_battery_LV();
         
-        
-    }
+        }
 }
 /**
  End of File
