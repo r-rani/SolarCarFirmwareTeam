@@ -1495,8 +1495,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 69:     TRISE = 0x07;
 [e = _TRISE -> -> 7 `i `uc ]
 "70
-[; ;mcc_generated_files/pin_manager.c: 70:     TRISA = 0xE2;
-[e = _TRISA -> -> 226 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 70:     TRISA = 0xE0;
+[e = _TRISA -> -> 224 `i `uc ]
 "71
 [; ;mcc_generated_files/pin_manager.c: 71:     TRISB = 0xFB;
 [e = _TRISB -> -> 251 `i `uc ]
@@ -1507,8 +1507,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 73:     TRISD = 0xFF;
 [e = _TRISD -> -> 255 `i `uc ]
 "78
-[; ;mcc_generated_files/pin_manager.c: 78:     ANCON0 = 0xAD;
-[e = _ANCON0 -> -> 173 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 78:     ANCON0 = 0xAF;
+[e = _ANCON0 -> -> 175 `i `uc ]
 "79
 [; ;mcc_generated_files/pin_manager.c: 79:     ANCON1 = 0x7F;
 [e = _ANCON1 -> -> 127 `i `uc ]

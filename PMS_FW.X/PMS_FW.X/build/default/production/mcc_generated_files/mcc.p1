@@ -8,8 +8,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "85 mcc_generated_files/mcc.h
 [; ;mcc_generated_files/mcc.h: 85: void OSCILLATOR_Initialize(void);
 [v _OSCILLATOR_Initialize `(v ~T0 @X0 0 ef ]
-"127 mcc_generated_files/adc.h
-[; ;mcc_generated_files/adc.h: 127: void ADC_Initialize(void);
+"133 mcc_generated_files/adc.h
+[; ;mcc_generated_files/adc.h: 133: void ADC_Initialize(void);
 [v _ADC_Initialize `(v ~T0 @X0 0 ef ]
 "115 mcc_generated_files/ecan.h
 [; ;mcc_generated_files/ecan.h: 115: void ECAN_Initialize(void);

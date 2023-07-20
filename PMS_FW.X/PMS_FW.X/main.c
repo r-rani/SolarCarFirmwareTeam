@@ -38,33 +38,37 @@ uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8; //initializations for trans
 //MPPT Error DDISP
 void canbus_msg_MPPT(int number){
     tx1.frame.idType = 1;
-    tx1.frame.id = 0x9; //Arbitration ID
+    tx1.frame.id = 0x1; //Arbitration ID
     tx1.frame.dlc = 0x01; //1 byte
     tx1.frame.data0 = number; //data that gets sent - error codes don't require data 
+    CAN_transmit(&tx1);
 }
 
 //Motor Error DDISP
 void canbus_msg_motor(int number){
     tx2.frame.idType = 1;
-    tx2.frame.id = 0x9; //Arbitration ID
+    tx2.frame.id = 0x2; //Arbitration ID
     tx2.frame.dlc = 0x01; //1 byte
     tx2.frame.data0 = number;
+    CAN_transmit(&tx2);
 }
 
 //START UP FAIL DDISP
 void canbus_msg_startupfail(int number){
     tx3.frame.idType = 1;
-    tx3.frame.id = 0x9; //Arbitration ID
+    tx3.frame.id = 0x3; //Arbitration ID
     tx3.frame.dlc = 0x01; //1 byte
     tx3.frame.data0 = number;
+    CAN_transmit(&tx3);
 }
 
 //BPS Fault DDISP
 void canbus_msg_bps(int number){
     tx4.frame.idType = 1;
-    tx4.frame.id = 0x9; //Arbitration ID
+    tx4.frame.id = 0x4; //Arbitration ID
     tx4.frame.dlc = 0x01; //1 byte
     tx4.frame.data0 = number;
+    CAN_transmit(&tx4);
 }
 
 //AUX battery failure DDISP
@@ -73,14 +77,16 @@ void canbus_msg_auxfail(int number){
     tx5.frame.id = 0x9; //Arbitration ID
     tx5.frame.dlc = 0x01; //1 byte
     tx5.frame.data0 = number;
+    CAN_transmit(&tx5);
 }
 
 //AUX line low voltage DDISP
 void canbus_msg_auxlow(int number){
     tx6.frame.idType = 1;
-    tx6.frame.id = 0x9; //Arbitration ID
+    tx6.frame.id = 0x5; //Arbitration ID
     tx6.frame.dlc = 0x01; //1 byte
     tx6.frame.data0 = number;
+    CAN_transmit(&tx6);
 }
 
 //CANBUS shutdown sequence success message
@@ -89,6 +95,7 @@ void canbus_shutdown_success(int number){
     tx7.frame.id = 0x18; //Arbitration ID
     tx7.frame.dlc = 0x01; //1 byte
     tx7.frame.data0 = number;  //power mode
+    CAN_transmit(&tx7);
 }
 
 //CANBUS request frame transmission - for motor, transmitting a frame
@@ -96,7 +103,8 @@ void canbus_motor_rearL_tx(int number){
     tx8.frame.idType = 1;
     tx8.frame.id = 0x08F89540; //frame ID for rearLeft wheel
     tx8.frame.dlc = 0x01; //1 byte
-    tx8.frame.data0 = number; //data that gets sent - error codes don't require data 
+    tx8.frame.data0 = number; //data that gets sent - error codes don't require data
+    CAN_transmit(&tx8);
 }
 
 ////CAN receive for motor - 4 functions
@@ -159,10 +167,16 @@ void undo_seq(void){
     if (IO_RA2_GetValue() == 1){      //ATI DCDC
         IO_RA2_SetLow();
     }
-    if (highOrlow(IO_RE1_GetValue()) == 1){     //read DCDC
+   /* if (highOrlow(IO_RE1_GetValue()) == 1){     //read DCDC
+        IO_RE1_SetLow();
+    }*/
+    if ((IO_RE1_GetValue()) == 1){     //read DCDC
         IO_RE1_SetLow();
     }
-    if (IO_RA0_GetValue() == 1){ //hv on
+    /*if (IO_RA0_GetValue() == 1){ //hv on
+        IO_RA0_SetLow();
+    }*/
+    if ((IO_RA0_GetValue()) == 1){     //hv on
         IO_RA0_SetLow();
     }
     if (highOrlow(IO_RA5_GetValue()) == 1){    //read AUX
@@ -172,12 +186,14 @@ void undo_seq(void){
 
 void start_up_seq(void){
     //Read pin 7
-    if (highOrlow(IO_RA5_GetValue()) == 1){
+    //if (highOrlow(IO_RA5_GetValue()) == 1){
+    if ((IO_RA5_GetValue()) == 1){
         IO_RA0_SetHigh(); //pin 2 - hv on
         IO_RE1_SetHigh(); //read dcdc - pin 9
         
         //Read pin 9 now -- checking HV line
-        if (highOrlow(IO_RE1_GetValue()) == 1){
+        //if (highOrlow(IO_RE1_GetValue()) == 1){
+        if ((IO_RE1_GetValue()) == 1){
             IO_RA2_SetHigh(); //ati dcdc
             IO_RA3_SetHigh(); //ati aux
             IO_RC1_SetHigh(); //neg connector 1
@@ -199,6 +215,7 @@ void start_up_seq(void){
                         break;
                 }else{
                     iterator += 1;
+                    break;//NEW
                 }
                 if (iterator > 1000){ //iterated 1000+ times without receiving rx message 
                     break;
@@ -207,13 +224,16 @@ void start_up_seq(void){
             
             if (iterator > 1000){
                 //send motor error to DDISP
+                undo_seq();
                 canbus_msg_motor(1); 
             }
             //Motor Controller Check
-            else if (rx.frame.idType == 1 && rx.frame.id == 0x08950225 && rx.frame.dlc == 0x01){
+            //else if (rx.frame.idType == 1 && rx.frame.id == 0x08950225 && rx.frame.dlc == 0x01){
+            else{
                     //unlikely that the other bits in data0 are also 0, so we bitwise AND it with 1 to check if 
                     //the bit we are concerned about (power) is equal to 1 (on)
-                    if (rx.frame.data0 && 0b00000001 == 1){
+                    //if (rx.frame.data0 && 0b00000001 == 1){
+                if(1){//NEW
                         
 //                if (rx.frame.idType == 1 && rx.frame.id == 0x08950245 &&
 //                    rx.frame.dlc = 0x01 && rx.frame.data0 = 0x00000001){
@@ -233,23 +253,15 @@ void start_up_seq(void){
 
                         //Wait to receive a MPPT message from CAN
                         //If MPPT is working and ON, we set pin 1 to high
-                                //Read pin 3 (the MPPT Contactor)
                         IO_RA1_SetHigh();
-                                if (IO_RA1_GetValue() == 1){ //Placeholder for when we verify MPPT again through CAN
-                                    //success -- not sure if we want to do anything more here
-                                    STARTUP_SUCCESS = 1; //startup sequence was successful 
-
-                                }else{
-                                    undo_seq();
-                                    //Send MPPT Error message to DDISP
-                                    canbus_msg_MPPT(1);
-                                }
+                        //check MPPT is on AGAIN - if on, startup success. otherwise fail (canbus_msg_MPPT(1))
+                        STARTUP_SUCCESS = 1;
                             }
-                } else{
+                }/* else{
                     undo_seq();
                     //Send Motor Error message to DDISP
                     canbus_msg_motor(1);
-            }
+            }*/
         }else{
             undo_seq();
             //Send "START UP FAIL" to DDISP
@@ -260,11 +272,13 @@ void start_up_seq(void){
 
 void shutdown_seq(void){
     //Read pin 7 - MCU READ AUX
-    if (highOrlow(IO_RA5_GetValue()) == 0){ 
+    //if (highOrlow(IO_RA5_GetValue()) == 0){ 
+    if ((IO_RA5_GetValue()) == 0){ 
         //system turns off electronically?
         //Stores successful system shut-down somewhere
         canbus_shutdown_success(1); //transmits CANBUS with unique id ----> shutdown
     }
+    canbus_shutdown_success(1);
 }
 
 void e_stop_seq(void){
@@ -283,9 +297,11 @@ void e_stop_seq(void){
 //Boundary Cases
 void aux_battery_failure(void){
     //Read pin 7
-    if (highOrlow(IO_RA5_GetValue()) == 0){ //pin 7 and pin 9 are analog inputs   -----> need to set as analog? 
+   // if (highOrlow(IO_RA5_GetValue()) == 0){ //pin 7 and pin 9 are analog inputs   -----> need to set as analog? 
+    if ((IO_RA5_GetValue()) == 0){
         //Read pin 9
-        if (highOrlow(IO_RE1_GetValue()) == 1){
+        //if (highOrlow(IO_RE1_GetValue()) == 1){
+        if ((IO_RE1_GetValue()) == 1){
             //Supplemental battery failure 
             //Display AUX Battery Failure on DDISP
             canbus_msg_auxfail(1);
@@ -295,7 +311,9 @@ void aux_battery_failure(void){
 
 void aux_battery_LV(void){
     //Read pin 7
-    if (IO_RA5_GetValue() < THRESVOLT){
+    //if (IO_RA5_GetValue() < THRESVOLT){
+    if (IO_RA5_GetValue() != 1){
+
         //send msg to DDISP -- LOW AUX VOLTAGE
         canbus_msg_auxlow(1);
     }
@@ -312,15 +330,19 @@ void main(void)
         
         //pins 7 and 9 should constantly be monitored
         if (STARTUP_SUCCESS == 0){
-            if (highOrlow(IO_RA5_GetValue()) == 1){ //AUX high
+            //if (highOrlow(IO_RA5_GetValue()) == 1){ //AUX high
+            if ((IO_RA5_GetValue()) == 1){ //AUX high
                 start_up_seq();
             }
         }
         
         if (STARTUP_SUCCESS == 1){
-            if (highOrlow(IO_RA5_GetValue()) == 0){   //AUX low
+            //if (highOrlow(IO_RA5_GetValue()) == 0){   //AUX low
+            if ((IO_RA5_GetValue()) == 0){   //AUX low
                 shutdown_seq();
-            }else if (highOrlow(IO_RE1_GetValue()) == 0){ //DCDC low
+           // }else if (highOrlow(IO_RE1_GetValue()) == 0){ //DCDC low
+            }else if ((IO_RE1_GetValue()) == 0){ //DCDC low
+
                 e_stop_seq();
             }
         }
