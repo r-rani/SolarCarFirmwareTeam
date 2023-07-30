@@ -10,6 +10,7 @@ void canHazardSignal(int number);
 void canFrontSignal(int number);
 void canBackSignal(int number);
 void requestSpeed(int number);
+void func99();
 
 #endif
 

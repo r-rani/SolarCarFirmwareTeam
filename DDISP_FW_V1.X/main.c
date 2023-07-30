@@ -20,10 +20,12 @@ uCAN_MSG rx;
 int b1FuncActive=0;
 int lastb1 = 0;
 int blinkb1 = 0;
+int latchb1 = 0;
 //Button2--Hazard Signal
 int b2FuncActive=0;
 int lastb2 = 0;
 int blinkb2 = 0;
+int latchb2 = 0;
 //Button3
 int b3FuncActive=0;
 //Button4
@@ -42,21 +44,22 @@ int b9FuncActive=0;
 int b10FuncActive=0;
 int lastb10 = 0;
 int blinkb10 = 0;
+int latchb10 = 0;
 
 
 void main(void){
     SYSTEM_Initialize();
     RC6_SetHigh();//Init Transmission on HMI Bus
-    __delay_ms(100);
+    __delay_ms(1000);
     init();//clear display through UART
-    
+    __delay_ms(500);
     char tog = 1;
     int counter = 0;
     int speed = 0; //placeholder
     
     while (1){
         counter++;
-        __delay_ms(10);
+        __delay_ms(50);
         
         /////////////////////////
         //BUTTON IMPLEMENTATION//
@@ -80,13 +83,15 @@ void main(void){
             blinkb2 = 1;
             blinkb1 = 0;
             blinkb10 = 0;
-            canLeftSignal(1);
+            
+            //deactivate turn signals
+            canLeftSignal(0);
             __delay_ms(1);
-            canRightSignal(1);
+            canRightSignal(0);
             __delay_ms(1);
-            leftTurnIndicator(1);
+            leftTurnIndicator(0);
             __delay_ms(1);
-            rightTurnIndicator(1);
+            rightTurnIndicator(0);
              __delay_ms(1);
              
             canHazardSignal(1);
@@ -98,33 +103,33 @@ void main(void){
         //if buttons are newly deactivated
         if (!b10FuncActive && lastb10){
             blinkb10 = 0;
-            canRightSignal(1);
+            canRightSignal(0);
             __delay_ms(1);
             rightTurnIndicator(0);
              __delay_ms(1);
         }
         if (!b1FuncActive && lastb1){
             blinkb1 = 0;
-            canLeftSignal(1);
+            canLeftSignal(0);
             __delay_ms(1);
             leftTurnIndicator(0);
             __delay_ms(1);
         }
         if (!b2FuncActive && lastb2){
             blinkb2 = 0;
-            canHazardSignal(1);
+            canHazardSignal(0);
             __delay_ms(1);
             hazardSignal(0);
             __delay_ms(1);
         }
-        if (tog == 1){
+       /* if (tog == 1){
             tog = 0;
         }
         else{
             tog = 1;
         }
         leftTurnIndicator(tog);
-        __delay_ms(500);
+        __delay_ms(500);*/
 
         
         //update last values for each button (prevents double transmission)
@@ -132,8 +137,11 @@ void main(void){
         lastb2 = b2FuncActive;
         lastb10 = b10FuncActive;
         
+        leftTurnButton(&b1FuncActive, &latchb1);
+        rightTurnButton(&b10FuncActive, &latchb10);
+        hazardButton(&b2FuncActive, &latchb2);
         //update speed value on display
-        if (counter >= 50 && speed != NULL){//500ms
+        if (counter >= 10 && speed != -1){//500ms
             counter = 0;
             motorSpeed(speed);
             speed++;

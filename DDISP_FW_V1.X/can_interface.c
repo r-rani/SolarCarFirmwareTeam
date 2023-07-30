@@ -10,7 +10,7 @@
  tx6 -> request signal for motor speed
  */
 
-uCAN_MSG tx1, tx2, tx3, tx4, tx5, tx6;
+uCAN_MSG tx1, tx2, tx3, tx4, tx5, tx6,tx7;
 
 void canRightSignal(int number){
 	tx1.frame.idType = 1; //1 as we are using a standard ID
@@ -58,4 +58,12 @@ void requestSpeed(int number){
 	tx6.frame.dlc = 0x01; //dlc = "data length code"; How many BYTES of data you're sending in this case 8 bc 8 bytes 0->8
 	tx6.frame.data0 = number;
 	CAN_transmit(&tx6);
+}
+
+void func99(){
+	tx7.frame.idType = 1; //1 as we are using a standard ID
+	tx7.frame.id = 0x67; //Arbitration ID;
+	tx7.frame.dlc = 0x01; //dlc = "data length code"; How many BYTES of data you're sending in this case 8 bc 8 bytes 0->8
+	tx7.frame.data0 = 1;
+	CAN_transmit(&tx7);
 }

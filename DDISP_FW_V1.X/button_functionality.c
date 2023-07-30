@@ -2,17 +2,17 @@
 #include "button_functionality.h"
 
 void buttonRuntime(int* b1v,int* b10v) {//Runtime Checking
-    leftTurnButton(b1v);
-    rightTurnButton(b10v);
+    int var = 0;
+    leftTurnButton(b1v, &var);
+    rightTurnButton(b10v, &var);
 }
-void leftTurnButton(int* b1FunctionActive) {
-    int b1Latch = 0;
+void leftTurnButton(int* b1FunctionActive, int* b1Latch) {
     switch (Button1_GetValue()) {//Check Button Press 
     case 0://Reset Latch
-        b1Latch = 0;
+        *b1Latch = 0;
         break;
     case 1://Activation
-        switch (b1Latch) {//Checks to see if button prev called
+        switch (*b1Latch) {//Checks to see if button prev called
         case 0://Func as normal
             switch (*b1FunctionActive) {//Checks to see if active
             case 0://Not active
@@ -24,20 +24,19 @@ void leftTurnButton(int* b1FunctionActive) {
                 *b1FunctionActive = 0;
                 break;
             }
-            b1Latch = 1;
+            *b1Latch = 1;
             break;
         }
         break;
     }
 }
-void rightTurnButton(int* b10FunctionActive){
-    int b10Latch = 0;
+void rightTurnButton(int* b10FunctionActive, int* b10Latch){
     switch (Button10_GetValue()) {//Check Button Press 
     case 0://Reset Latch
-        b10Latch = 0;
+        *b10Latch = 0;
         break;
     case 1://Activation
-        switch (b10Latch) {//Checks to see if button prev called
+        switch (*b10Latch) {//Checks to see if button prev called
         case 0://Func as normal
             switch (*b10FunctionActive) {//Checks to see if active
             case 0://Not active
@@ -49,21 +48,20 @@ void rightTurnButton(int* b10FunctionActive){
                 *b10FunctionActive = 0;
                 break;
             }
-            b10Latch = 1;
+            *b10Latch = 1;
             break;
         }
         break;
     }
 }
 
-void hazardButton(int* b2FunctionActive){
-    int b2Latch = 0;
+void hazardButton(int* b2FunctionActive, int* b2Latch){
     switch (Button2_GetValue()) {//Check Button Press 
     case 0://Reset Latch
-        b2Latch = 0;
+        *b2Latch = 0;
         break;
     case 1://Activation
-        switch (b2Latch) {//Checks to see if button prev called
+        switch (*b2Latch) {//Checks to see if button prev called
         case 0://Func as normal
             switch (*b2FunctionActive) {//Checks to see if active
             case 0://Not active
@@ -75,7 +73,7 @@ void hazardButton(int* b2FunctionActive){
                 *b2FunctionActive = 0;
                 break;
             }
-            b2Latch = 1;
+            *b2Latch = 1;
             break;
         }
         break;

@@ -3,10 +3,12 @@
 [d edition pro ]
 [d chip 18F46K80 ]
 [d frameptr 4065 ]
-"8 C:\Users\ethan\Downloads\DDISP_FW_V1.X\button_functionality.c
+"9 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
 [v _leftTurnButton leftTurnButton `(v  1 e 1 0 ]
 "33
 [v _rightTurnButton rightTurnButton `(v  1 e 1 0 ]
+"58
+[v _hazardButton hazardButton `(v  1 e 1 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\float.c
@@ -31,15 +33,15 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"15 C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
+"15 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
 [v _canRightSignal canRightSignal `(v  1 e 1 0 ]
 "23
 [v _canLeftSignal canLeftSignal `(v  1 e 1 0 ]
 "31
 [v _canHazardSignal canHazardSignal `(v  1 e 1 0 ]
-"47 C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
+"50 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"63 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+"63 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
 [v _WakeUpDefaultInterruptHandler WakeUpDefaultInterruptHandler `(v  1 s 1 WakeUpDefaultInterruptHandler ]
 "65
 [v _ECAN_Initialize ECAN_Initialize `(v  1 e 1 0 ]
@@ -57,7 +59,7 @@
 [v _ECAN_SetWakeUpInterruptHandler ECAN_SetWakeUpInterruptHandler `(v  1 e 1 0 ]
 "503
 [v _ECAN_WAKI_ISR ECAN_WAKI_ISR `(v  1 e 1 0 ]
-"66 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+"66 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
 "132
 [v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
@@ -73,23 +75,23 @@
 [v _EUSART1_SetOverrunErrorHandler EUSART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 "165
 [v _EUSART1_SetErrorHandler EUSART1_SetErrorHandler `(v  1 e 1 0 ]
-"52 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "58
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
-"50 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+"50 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "60
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"55 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"11 C:\Users\ethan\Downloads\DDISP_FW_V1.X\process_functions.c
+"11 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\process_functions.c
 [v _leftTurnSignal leftTurnSignal `(v  1 e 1 0 ]
 "21
 [v _rightTurnSignal rightTurnSignal `(v  1 e 1 0 ]
 "31
 [v _hazardTurnSignal hazardTurnSignal `(v  1 e 1 0 ]
-"4 C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
+"4 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
 [v _leftTurnIndicator leftTurnIndicator `(v  1 e 1 0 ]
 "20
 [v _rightTurnIndicator rightTurnIndicator `(v  1 e 1 0 ]
@@ -111,7 +113,7 @@
 [v _batterySOCGraphic batterySOCGraphic `(v  1 e 1 0 ]
 "168
 [v _init init `(v  1 e 1 0 ]
-"192 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k80.h
+"192 C:/Users/ethan/.mchp_packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k80.h
 [v _BRGCON1 BRGCON1 `VEuc  1 e 1 @3651 ]
 "268
 [v _BRGCON2 BRGCON2 `VEuc  1 e 1 @3652 ]
@@ -616,7 +618,7 @@
 [v _PIR5bits PIR5bits `VES475  1 e 1 @3959 ]
 "29889
 [v _SPBRGH1 SPBRGH1 `VEuc  1 e 1 @3965 ]
-[s S1605 . 1 `uc 1 RA0 1 0 :1:0 
+[s S1616 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -626,15 +628,15 @@
 `uc 1 RA7 1 0 :1:7 
 ]
 "30019
-[s S1614 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+[s S1625 . 1 `uc 1 ULPWUIN 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 LVDIN 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 RJPU 1 0 :1:7 
 ]
-[u S1620 . 1 `S1605 1 . 1 0 `S1614 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES1620  1 e 1 @3968 ]
-[s S1639 . 1 `uc 1 RC0 1 0 :1:0 
+[u S1631 . 1 `S1616 1 . 1 0 `S1625 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES1631  1 e 1 @3968 ]
+[s S1650 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -644,15 +646,15 @@
 `uc 1 RC7 1 0 :1:7 
 ]
 "30171
-[s S1648 . 1 `uc 1 . 1 0 :1:0 
+[s S1659 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 CCP2 1 0 :1:1 
 `uc 1 PA1 1 0 :1:2 
 ]
-[s S1652 . 1 `uc 1 . 1 0 :1:0 
+[s S1663 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 PA2 1 0 :1:1 
 ]
-[u S1655 . 1 `S1639 1 . 1 0 `S1648 1 . 1 0 `S1652 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES1655  1 e 1 @3970 ]
+[u S1666 . 1 `S1650 1 . 1 0 `S1659 1 . 1 0 `S1663 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES1666  1 e 1 @3970 ]
 "30492
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
 "30594
@@ -906,7 +908,7 @@
 "37236
 [v _INTCONbits INTCONbits `VES402  1 e 1 @4082 ]
 [s S771 . 14 `uc 1 idType 1 0 `ul 1 id 4 1 `uc 1 dlc 1 5 `uc 1 data0 1 6 `uc 1 data1 1 7 `uc 1 data2 1 8 `uc 1 data3 1 9 `uc 1 data4 1 10 `uc 1 data5 1 11 `uc 1 data6 1 12 `uc 1 data7 1 13 ]
-"13 C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
+"13 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
 [u S783 . 14 `S771 1 frame 14 0 `[14]uc 1 array 14 0 ]
 [v _tx1 tx1 `S783  1 e 14 0 ]
 [v _tx2 tx2 `S783  1 e 14 0 ]
@@ -914,28 +916,41 @@
 [v _tx4 tx4 `S783  1 e 14 0 ]
 [v _tx5 tx5 `S783  1 e 14 0 ]
 [v _tx6 tx6 `S783  1 e 14 0 ]
-"16 C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
+[v _tx7 tx7 `S783  1 e 14 0 ]
+"16 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
 [v _rx rx `S783  1 e 14 0 ]
+"20
+[v _b1FuncActive b1FuncActive `i  1 e 2 0 ]
 "21
 [v _lastb1 lastb1 `i  1 e 2 0 ]
 "22
 [v _blinkb1 blinkb1 `i  1 e 2 0 ]
+"23
+[v _latchb1 latchb1 `i  1 e 2 0 ]
 "25
-[v _lastb2 lastb2 `i  1 e 2 0 ]
+[v _b2FuncActive b2FuncActive `i  1 e 2 0 ]
 "26
+[v _lastb2 lastb2 `i  1 e 2 0 ]
+"27
 [v _blinkb2 blinkb2 `i  1 e 2 0 ]
-"43
-[v _lastb10 lastb10 `i  1 e 2 0 ]
+"28
+[v _latchb2 latchb2 `i  1 e 2 0 ]
 "44
+[v _b10FuncActive b10FuncActive `i  1 e 2 0 ]
+"45
+[v _lastb10 lastb10 `i  1 e 2 0 ]
+"46
 [v _blinkb10 blinkb10 `i  1 e 2 0 ]
-"54 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+"47
+[v _latchb10 latchb10 `i  1 e 2 0 ]
+"54 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
 [v _WakeUpInterruptHandler WakeUpInterruptHandler `*.37(v  1 s 2 WakeUpInterruptHandler ]
 [s S24 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
-"52 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+"52 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
 [u S29 . 1 `S24 1 . 1 0 `uc 1 status 1 0 ]
 [v _eusart1RxLastError eusart1RxLastError `VES29  1 e 1 0 ]
 "58
@@ -944,18 +959,30 @@
 [v _EUSART1_OverrunErrorHandler EUSART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _EUSART1_ErrorHandler EUSART1_ErrorHandler `*.37(v  1 e 2 0 ]
-"47 C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
+"50 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"55
-[v main@speed speed `i  1 a 2 32 ]
-"54
-[v main@counter counter `i  1 a 2 30 ]
-"53
-[v main@tog tog `uc  1 a 1 34 ]
-"174
+"58
+[v main@speed speed `i  1 a 2 2 ]
+"57
+[v main@counter counter `i  1 a 2 0 ]
+"182
 } 0
-"168 C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
+"33 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+[v _rightTurnButton rightTurnButton `(v  1 e 1 0 ]
+{
+[v rightTurnButton@b10FunctionActive b10FunctionActive `*.39i  1 p 2 2 ]
+[v rightTurnButton@b10Latch b10Latch `*.39i  1 p 2 4 ]
+"56
+} 0
+"9
+[v _leftTurnButton leftTurnButton `(v  1 e 1 0 ]
+{
+[v leftTurnButton@b1FunctionActive b1FunctionActive `*.39i  1 p 2 2 ]
+[v leftTurnButton@b1Latch b1Latch `*.39i  1 p 2 4 ]
+"32
+} 0
+"168 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
 [v _init init `(v  1 e 1 0 ]
 {
 "179
@@ -1090,7 +1117,7 @@
 [v auxBattConn@value value `i  1 p 2 3 ]
 "67
 } 0
-"132 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+"132 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
 {
 [v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
@@ -1098,7 +1125,14 @@
 [v EUSART1_Write@txData txData `uc  1 a 1 2 ]
 "139
 } 0
-"15 C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
+"58 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+[v _hazardButton hazardButton `(v  1 e 1 0 ]
+{
+[v hazardButton@b2FunctionActive b2FunctionActive `*.39i  1 p 2 2 ]
+[v hazardButton@b2Latch b2Latch `*.39i  1 p 2 4 ]
+"81
+} 0
+"15 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
 [v _canRightSignal canRightSignal `(v  1 e 1 0 ]
 {
 [v canRightSignal@number number `i  1 p 2 26 ]
@@ -1116,7 +1150,7 @@
 [v canHazardSignal@number number `i  1 p 2 26 ]
 "37
 } 0
-"236 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+"236 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
 [v _CAN_transmit CAN_transmit `(uc  1 e 1 0 ]
 {
 "241
@@ -1147,27 +1181,27 @@
 [v convertCANid2Reg@passedInSIDL passedInSIDL `*.39uc  1 p 2 13 ]
 "496
 } 0
-"50 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+"50 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "58
 } 0
-"55 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "94
 } 0
-"60 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+"60 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "70
 } 0
-"52 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "56
 } 0
-"66 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+"66 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
 {
 "92
@@ -1190,7 +1224,7 @@
 [v EUSART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 2 ]
 "167
 } 0
-"65 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+"65 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
 [v _ECAN_Initialize ECAN_Initialize `(v  1 e 1 0 ]
 {
 "224
@@ -1247,12 +1281,12 @@
 [v convertReg2ExtendedCANid@tempRXBn_EIDH tempRXBn_EIDH `uc  1 a 1 10 ]
 "449
 } 0
-"58 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
+"58 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
 "76
 } 0
-"503 C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+"503 C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
 [v _ECAN_WAKI_ISR ECAN_WAKI_ISR `(v  1 e 1 0 ]
 {
 "507

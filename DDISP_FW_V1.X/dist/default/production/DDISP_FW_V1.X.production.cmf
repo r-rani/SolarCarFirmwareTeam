@@ -11,53 +11,58 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
+$C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
 idloc IDLOC 5 200000 200000 8 1 1
 init CODE 0 4C 4C 4 1 2
 reset_vec CODE 0 0 0 4 1 2
 config CONFIG 4 300000 300000 E 1 1
 $dist/default/production\DDISP_FW_V1.X.production.o
-cinit CODE 0 1538 1538 26 1 2
+cinit CODE 0 1A58 1A58 26 1 2
 idloc IDLOC 5 200000 200000 8 1 1
-text0 CODE 0 50 50 34C 1 2
-text1 CODE 0 134C 134C 7A 1 2
-text2 CODE 0 D5C D5C 98 1 2
-text3 CODE 0 DF4 DF4 98 1 2
-text4 CODE 0 E8C E8C 98 1 2
-text5 CODE 0 F24 F24 98 1 2
-text6 CODE 0 FBC FBC 98 1 2
-text7 CODE 0 1054 1054 98 1 2
-text8 CODE 0 10EC 10EC 98 1 2
-text9 CODE 0 1184 1184 98 1 2
-nvCOMRAM COMRAM 1 55 55 6 1 1
-text10 CODE 0 121C 121C 98 1 2
-text11 CODE 0 12B4 12B4 98 1 2
-text12 CODE 0 157C 157C 16 1 2
-text13 CODE 0 14B4 14B4 2C 1 2
-text14 CODE 0 14E0 14E0 2C 1 2
-text15 CODE 0 150C 150C 2C 1 2
-text16 CODE 0 39C 39C 31A 1 2
-text17 CODE 0 AAE AAE 174 1 2
-text18 CODE 0 1592 1592 16 1 2
-text19 CODE 0 147C 147C 38 1 2
-text20 CODE 0 15A8 15A8 12 1 2
-text21 CODE 0 15E2 15E2 4 1 2
-text22 CODE 0 143E 143E 3E 1 2
-text23 CODE 0 15BA 15BA A 1 2
-text24 CODE 0 15C4 15C4 A 1 2
-text25 CODE 0 15CE 15CE A 1 2
-text26 CODE 0 90A 90A 1A4 1 2
-text27 CODE 0 15D8 15D8 A 1 2
-text28 CODE 0 6B6 6B6 254 1 2
-text29 CODE 0 13C6 13C6 78 1 2
-text30 CODE 0 C22 C22 13A 1 2
-text32 CODE 0 155E 155E 1E 1 2
-text33 CODE 0 15E6 15E6 2 1 2
-cstackCOMRAM COMRAM 1 32 32 23 1 1
-temp COMRAM 1 5B 5B 1 1 1
-bssBANK0 BANK0 1 60 60 54 1 1
+text0 CODE 0 50 50 59C 1 2
+text1 CODE 0 FAC FAC F0 1 2
+text2 CODE 0 109C 109C F0 1 2
+text3 CODE 0 186C 186C 7A 1 2
+text4 CODE 0 127C 127C 98 1 2
+text5 CODE 0 1314 1314 98 1 2
+text6 CODE 0 13AC 13AC 98 1 2
+text7 CODE 0 1444 1444 98 1 2
+text8 CODE 0 14DC 14DC 98 1 2
+text9 CODE 0 1574 1574 98 1 2
+nvCOMRAM COMRAM 1 56 56 4 1 1
+text10 CODE 0 160C 160C 98 1 2
+text11 CODE 0 16A4 16A4 98 1 2
+text12 CODE 0 173C 173C 98 1 2
+text13 CODE 0 17D4 17D4 98 1 2
+text14 CODE 0 1A9C 1A9C 16 1 2
+text15 CODE 0 118C 118C F0 1 2
+text16 CODE 0 19D4 19D4 2C 1 2
+text17 CODE 0 1A00 1A00 2C 1 2
+text18 CODE 0 1A2C 1A2C 2C 1 2
+text19 CODE 0 5EC 5EC 31A 1 2
+text20 CODE 0 CFE CFE 174 1 2
+text21 CODE 0 1AB2 1AB2 16 1 2
+text22 CODE 0 199C 199C 38 1 2
+text23 CODE 0 1AC8 1AC8 12 1 2
+text24 CODE 0 1B02 1B02 4 1 2
+text25 CODE 0 195E 195E 3E 1 2
+text26 CODE 0 1ADA 1ADA A 1 2
+text27 CODE 0 1AE4 1AE4 A 1 2
+text28 CODE 0 1AEE 1AEE A 1 2
+text29 CODE 0 B5A B5A 1A4 1 2
+text30 CODE 0 1AF8 1AF8 A 1 2
+text31 CODE 0 906 906 254 1 2
+text32 CODE 0 18E6 18E6 78 1 2
+text33 CODE 0 E72 E72 13A 1 2
+text35 CODE 0 1A7E 1A7E 1E 1 2
+text36 CODE 0 1B06 1B06 2 1 2
+nvBANK0 BANK0 1 C6 C6 2 1 1
+cstackCOMRAM COMRAM 1 38 38 1E 1 1
+cstackBANK0 BANK0 1 C2 C2 4 1 1
+temp COMRAM 1 5A 5A 1 1 1
+bssBANK0 BANK0 1 60 60 62 1 1
 intcode CODE 0 8 8 44 1 2
-bssCOMRAM COMRAM 1 1 1 31 1 1
+bssCOMRAM COMRAM 1 1 1 37 1 1
 config CONFIG 4 300000 300000 E 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -65,9 +70,9 @@ config CONFIG 4 300000 300000 E 1 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM B4-E40 1
+RAM C8-E40 1
 SFR E41-FFF 1
-BANK0 B4-FF 1
+BANK0 C8-FF 1
 BANK1 100-1FF 1
 BANK2 200-2FF 1
 BANK3 300-3FF 1
@@ -78,21 +83,21 @@ BANK7 700-7FF 1
 BANK8 800-8FF 1
 BANK9 900-9FF 1
 CONST 4-7 1
-CONST 15E8-FFFF 1
-SMALLCONST 15E8-FFFF 1
+CONST 1B08-FFFF 1
+SMALLCONST 1B08-FFFF 1
 CODE 4-7 1
-CODE 15E8-FFFF 1
+CODE 1B08-FFFF 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
 BANK13 D00-DFF 1
 BANK14 E00-E40 1
-BIGRAM 5C-5F 1
-BIGRAM B4-E40 1
+BIGRAM 5B-5F 1
+BIGRAM C8-E40 1
 BIGSFR E41-FFF 1
-COMRAM 5C-5F 1
+COMRAM 5B-5F 1
 EEDATA F00000-F003FF 1
-MEDIUMCONST 15E8-FFFF 1
+MEDIUMCONST 1B08-FFFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -107,580 +112,672 @@ MEDIUMCONST 15E8-FFFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\DDISP_FW_V1.X.production.o
-8 intcode CODE >17047:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-8 intcode CODE >58:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
-12 intcode CODE >61:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
-20 intcode CODE >63:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
-3C intcode CODE >65:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
-40 intcode CODE >76:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
-15E6 text33 CODE >63:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-155E text32 CODE >503:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-155E text32 CODE >505:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-1578 text32 CODE >506:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-157A text32 CODE >507:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-C22 text30 CODE >431:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-C24 text30 CODE >432:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-C24 text30 CODE >433:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-C34 text30 CODE >437:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-C3A text30 CODE >438:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-C42 text30 CODE >439:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-C6C text30 CODE >440:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-C84 text30 CODE >441:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-CB6 text30 CODE >442:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-CCE text30 CODE >443:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-CEC text30 CODE >444:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-D04 text30 CODE >445:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-D22 text30 CODE >446:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-D3A text30 CODE >447:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-D4A text30 CODE >448:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-D5A text30 CODE >449:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-13C6 text29 CODE >451:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-13C8 text29 CODE >452:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-13C8 text29 CODE >457:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-13F2 text29 CODE >458:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-141C text29 CODE >459:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-142C text29 CODE >460:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-143C text29 CODE >461:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-6B6 text28 CODE >313:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-6B6 text28 CODE >315:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-6BA text28 CODE >318:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-6C8 text28 CODE >320:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-6D6 text28 CODE >323:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-6E2 text28 CODE >324:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-710 text28 CODE >325:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-714 text28 CODE >329:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-720 text28 CODE >330:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-746 text28 CODE >333:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-756 text28 CODE >334:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-766 text28 CODE >335:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-776 text28 CODE >336:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-786 text28 CODE >337:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-796 text28 CODE >338:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-7A6 text28 CODE >339:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-7B6 text28 CODE >340:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-7C6 text28 CODE >341:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-7D6 text28 CODE >342:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-7D8 text28 CODE >343:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-7DC text28 CODE >344:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-7E0 text28 CODE >345:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-7F0 text28 CODE >347:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-7FE text28 CODE >350:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-80A text28 CODE >351:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-838 text28 CODE >352:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-83C text28 CODE >356:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-848 text28 CODE >357:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-86E text28 CODE >360:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-87E text28 CODE >361:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-88E text28 CODE >362:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-89E text28 CODE >363:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-8AE text28 CODE >364:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-8BE text28 CODE >365:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-8CE text28 CODE >366:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-8DE text28 CODE >367:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-8EE text28 CODE >368:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-8FE text28 CODE >369:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-906 text28 CODE >372:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-908 text28 CODE >373:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-15D8 text27 CODE >498:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-15D8 text27 CODE >500:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-15E0 text27 CODE >501:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-90A text26 CODE >65:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-90A text26 CODE >67:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-90E text26 CODE >68:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-922 text26 CODE >73:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-926 text26 CODE >78:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-92A text26 CODE >92:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-930 text26 CODE >97:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-932 text26 CODE >98:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-934 text26 CODE >99:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-936 text26 CODE >100:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-93A text26 CODE >101:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-93C text26 CODE >102:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-93E text26 CODE >103:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-940 text26 CODE >104:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-944 text26 CODE >109:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-948 text26 CODE >110:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-94C text26 CODE >114:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-950 text26 CODE >115:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-954 text26 CODE >116:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-958 text26 CODE >117:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-95C text26 CODE >122:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-960 text26 CODE >123:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-964 text26 CODE >124:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-968 text26 CODE >125:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-96C text26 CODE >126:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-970 text26 CODE >127:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-974 text26 CODE >128:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-978 text26 CODE >129:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-97C text26 CODE >134:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-980 text26 CODE >135:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-984 text26 CODE >136:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-988 text26 CODE >137:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-98C text26 CODE >138:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-990 text26 CODE >139:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-994 text26 CODE >140:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-998 text26 CODE >141:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-99C text26 CODE >142:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9A0 text26 CODE >143:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9A4 text26 CODE >144:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9A8 text26 CODE >145:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9AC text26 CODE >146:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9B0 text26 CODE >147:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9B4 text26 CODE >148:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9B8 text26 CODE >149:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9BC text26 CODE >150:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9C0 text26 CODE >151:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9C4 text26 CODE >152:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9C8 text26 CODE >153:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9CC text26 CODE >154:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9D0 text26 CODE >155:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9D4 text26 CODE >156:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9D8 text26 CODE >157:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9DC text26 CODE >159:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9E0 text26 CODE >160:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9E4 text26 CODE >161:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9E8 text26 CODE >162:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9EC text26 CODE >163:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9F0 text26 CODE >164:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9F4 text26 CODE >165:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9F8 text26 CODE >166:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-9FC text26 CODE >167:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A00 text26 CODE >168:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A04 text26 CODE >169:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A08 text26 CODE >170:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A0C text26 CODE >171:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A10 text26 CODE >172:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A14 text26 CODE >173:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A18 text26 CODE >174:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A1C text26 CODE >175:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A20 text26 CODE >176:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A24 text26 CODE >177:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A28 text26 CODE >178:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A2C text26 CODE >179:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A30 text26 CODE >180:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A34 text26 CODE >181:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A38 text26 CODE >182:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A3C text26 CODE >183:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A40 text26 CODE >184:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A44 text26 CODE >185:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A48 text26 CODE >186:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A4C text26 CODE >187:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A50 text26 CODE >188:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A54 text26 CODE >189:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A58 text26 CODE >190:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A5C text26 CODE >191:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A60 text26 CODE >192:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A64 text26 CODE >193:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A68 text26 CODE >194:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A6C text26 CODE >195:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A6E text26 CODE >196:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A70 text26 CODE >197:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A72 text26 CODE >198:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A76 text26 CODE >213:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A7A text26 CODE >214:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A7E text26 CODE >215:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A82 text26 CODE >217:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A8E text26 CODE >218:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A90 text26 CODE >219:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A92 text26 CODE >221:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-A96 text26 CODE >222:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-AAC text26 CODE >224:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-15CE text25 CODE >165:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-15CE text25 CODE >166:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-15D6 text25 CODE >167:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-15C4 text24 CODE >157:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-15C4 text24 CODE >158:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-15CC text24 CODE >159:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-15BA text23 CODE >161:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-15BA text23 CODE >162:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-15C2 text23 CODE >163:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-143E text22 CODE >66:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-143E text22 CODE >71:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-1442 text22 CODE >74:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-1446 text22 CODE >77:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-144A text22 CODE >80:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-144E text22 CODE >83:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-1452 text22 CODE >86:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-145E text22 CODE >87:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-146A text22 CODE >88:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-1476 text22 CODE >90:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-147A text22 CODE >92:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-15E2 text21 CODE >52:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
-15E2 text21 CODE >55:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
-15E4 text21 CODE >56:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
-15A8 text20 CODE >60:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
-15A8 text20 CODE >63:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
-15AC text20 CODE >65:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
-15B0 text20 CODE >67:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
-15B4 text20 CODE >69:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
-15B8 text20 CODE >70:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
-147C text19 CODE >55:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-147C text19 CODE >60:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-1480 text19 CODE >61:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-1484 text19 CODE >62:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-1488 text19 CODE >63:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-148C text19 CODE >64:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-1490 text19 CODE >69:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-1494 text19 CODE >70:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-1498 text19 CODE >71:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-149C text19 CODE >72:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-14A0 text19 CODE >73:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-14A2 text19 CODE >78:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-14A8 text19 CODE >79:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-14AC text19 CODE >84:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-14B0 text19 CODE >85:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-14B2 text19 CODE >94:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
-1592 text18 CODE >50:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
-1592 text18 CODE >53:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
-1596 text18 CODE >54:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
-159A text18 CODE >55:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
-159E text18 CODE >56:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
-15A2 text18 CODE >57:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
-15A6 text18 CODE >58:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/mcc.c
-AAE text17 CODE >463:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-AAE text17 CODE >464:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-AAE text17 CODE >466:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-AC0 text17 CODE >469:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-ACC text17 CODE >470:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-AFA text17 CODE >473:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-B06 text17 CODE >474:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-B34 text17 CODE >478:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-B3A text17 CODE >479:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-B6C text17 CODE >480:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-B74 text17 CODE >481:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-B7A text17 CODE >482:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-B88 text17 CODE >485:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-BB6 text17 CODE >486:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-BC2 text17 CODE >487:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-BC6 text17 CODE >489:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-BD2 text17 CODE >490:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-BDE text17 CODE >491:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-C10 text17 CODE >492:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-C20 text17 CODE >496:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-39C text16 CODE >236:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-39C text16 CODE >238:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-3A0 text16 CODE >239:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-3A4 text16 CODE >240:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-3A8 text16 CODE >241:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-3AC text16 CODE >244:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-3BC text16 CODE >246:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-408 text16 CODE >248:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-40C text16 CODE >249:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-410 text16 CODE >250:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-414 text16 CODE >251:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-418 text16 CODE >252:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-42A text16 CODE >253:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-43A text16 CODE >254:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-44A text16 CODE >255:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-45A text16 CODE >256:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-46A text16 CODE >257:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-47A text16 CODE >258:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-48A text16 CODE >259:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-49A text16 CODE >260:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-4AA text16 CODE >262:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-4AC text16 CODE >263:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-4AC text16 CODE >265:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-4B0 text16 CODE >266:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-4BE text16 CODE >269:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-50A text16 CODE >271:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-50E text16 CODE >272:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-512 text16 CODE >273:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-516 text16 CODE >274:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-51A text16 CODE >275:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-52C text16 CODE >276:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-53C text16 CODE >277:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-54C text16 CODE >278:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-55C text16 CODE >279:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-56C text16 CODE >280:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-57C text16 CODE >281:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-58C text16 CODE >282:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-59C text16 CODE >283:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-5AC text16 CODE >285:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-5B2 text16 CODE >288:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-5C0 text16 CODE >291:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-60C text16 CODE >293:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-610 text16 CODE >294:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-614 text16 CODE >295:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-618 text16 CODE >296:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-61C text16 CODE >297:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-62E text16 CODE >298:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-63E text16 CODE >299:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-64E text16 CODE >300:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-65E text16 CODE >301:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-66E text16 CODE >302:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-67E text16 CODE >303:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-68E text16 CODE >304:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-69E text16 CODE >305:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-6AE text16 CODE >307:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-6B4 text16 CODE >309:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-6B4 text16 CODE >311:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/ecan.c
-150C text15 CODE >31:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-150C text15 CODE >32:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-1512 text15 CODE >33:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-1522 text15 CODE >34:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-1526 text15 CODE >35:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-152A text15 CODE >36:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-1536 text15 CODE >37:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-14E0 text14 CODE >23:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-14E0 text14 CODE >24:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-14E6 text14 CODE >25:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-14F6 text14 CODE >26:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-14FA text14 CODE >27:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-14FE text14 CODE >28:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-150A text14 CODE >29:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-14B4 text13 CODE >15:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-14B4 text13 CODE >16:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-14BA text13 CODE >17:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-14CA text13 CODE >18:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-14CE text13 CODE >19:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-14D2 text13 CODE >20:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-14DE text13 CODE >21:C:\Users\ethan\Downloads\DDISP_FW_V1.X\can_interface.c
-157C text12 CODE >132:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-157E text12 CODE >134:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-157E text12 CODE >136:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-158C text12 CODE >138:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-1590 text12 CODE >139:C:\Users\ethan\Downloads\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
-12B4 text11 CODE >52:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-12B4 text11 CODE >53:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-12CC text11 CODE >54:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-12D6 text11 CODE >56:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-12DC text11 CODE >57:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-12EC text11 CODE >58:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-12F2 text11 CODE >59:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1302 text11 CODE >60:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1308 text11 CODE >61:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1318 text11 CODE >62:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-131E text11 CODE >63:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-132E text11 CODE >64:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1334 text11 CODE >65:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1344 text11 CODE >66:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-134A text11 CODE >67:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-121C text10 CODE >135:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-121C text10 CODE >136:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1234 text10 CODE >137:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-123E text10 CODE >139:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1244 text10 CODE >140:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1254 text10 CODE >141:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-125A text10 CODE >142:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-126A text10 CODE >143:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1270 text10 CODE >144:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1280 text10 CODE >145:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1286 text10 CODE >146:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1296 text10 CODE >147:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-129C text10 CODE >148:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-12AC text10 CODE >149:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-12B2 text10 CODE >150:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1184 text9 CODE >151:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1184 text9 CODE >152:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-119C text9 CODE >153:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-11A6 text9 CODE >155:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-11AC text9 CODE >156:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-11BC text9 CODE >157:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-11C2 text9 CODE >158:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-11D2 text9 CODE >159:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-11D8 text9 CODE >160:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-11E8 text9 CODE >161:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-11EE text9 CODE >162:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-11FE text9 CODE >163:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1204 text9 CODE >164:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1214 text9 CODE >165:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-121A text9 CODE >166:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-10EC text8 CODE >103:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-10EC text8 CODE >104:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1104 text8 CODE >105:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-110E text8 CODE >107:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1114 text8 CODE >108:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1124 text8 CODE >109:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-112A text8 CODE >110:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-113A text8 CODE >111:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1140 text8 CODE >112:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1150 text8 CODE >113:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1156 text8 CODE >114:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1166 text8 CODE >115:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-116C text8 CODE >116:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-117C text8 CODE >117:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1182 text8 CODE >118:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1054 text7 CODE >119:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1054 text7 CODE >120:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-106C text7 CODE >121:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1076 text7 CODE >123:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-107C text7 CODE >124:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-108C text7 CODE >125:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1092 text7 CODE >126:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-10A2 text7 CODE >127:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-10A8 text7 CODE >128:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-10B8 text7 CODE >129:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-10BE text7 CODE >130:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-10CE text7 CODE >131:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-10D4 text7 CODE >132:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-10E4 text7 CODE >133:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-10EA text7 CODE >134:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-FBC text6 CODE >4:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-FBC text6 CODE >5:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-FD4 text6 CODE >6:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-FDE text6 CODE >8:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-FE4 text6 CODE >9:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-FF4 text6 CODE >10:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-FFA text6 CODE >11:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-100A text6 CODE >12:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1010 text6 CODE >13:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1020 text6 CODE >14:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1026 text6 CODE >15:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1036 text6 CODE >16:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-103C text6 CODE >17:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-104C text6 CODE >18:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1052 text6 CODE >19:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F24 text5 CODE >87:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F24 text5 CODE >88:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F3C text5 CODE >89:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F46 text5 CODE >91:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F4C text5 CODE >92:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F5C text5 CODE >93:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F62 text5 CODE >94:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F72 text5 CODE >95:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F78 text5 CODE >96:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F88 text5 CODE >97:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F8E text5 CODE >98:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F9E text5 CODE >99:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-FA4 text5 CODE >100:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-FB4 text5 CODE >101:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-FBA text5 CODE >102:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E8C text4 CODE >68:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E8C text4 CODE >69:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-EA4 text4 CODE >73:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-EAE text4 CODE >75:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-EB4 text4 CODE >76:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-EC4 text4 CODE >77:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-ECA text4 CODE >78:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-EDA text4 CODE >79:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-EE0 text4 CODE >80:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-EF0 text4 CODE >81:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-EF6 text4 CODE >82:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F06 text4 CODE >83:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F0C text4 CODE >84:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F1C text4 CODE >85:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-F22 text4 CODE >86:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-DF4 text3 CODE >20:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-DF4 text3 CODE >21:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E0C text3 CODE >22:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E16 text3 CODE >24:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E1C text3 CODE >25:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E2C text3 CODE >26:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E32 text3 CODE >27:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E42 text3 CODE >28:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E48 text3 CODE >29:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E58 text3 CODE >30:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E5E text3 CODE >31:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E6E text3 CODE >32:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E74 text3 CODE >33:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E84 text3 CODE >34:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-E8A text3 CODE >35:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-D5C text2 CODE >36:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-D5C text2 CODE >37:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-D74 text2 CODE >38:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-D7E text2 CODE >40:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-D84 text2 CODE >41:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-D94 text2 CODE >42:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-D9A text2 CODE >43:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-DAA text2 CODE >44:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-DB0 text2 CODE >45:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-DC0 text2 CODE >46:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-DC6 text2 CODE >47:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-DD6 text2 CODE >48:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-DDC text2 CODE >49:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-DEC text2 CODE >50:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-DF2 text2 CODE >51:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-134C text1 CODE >168:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-134C text1 CODE >169:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1358 text1 CODE >170:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1364 text1 CODE >171:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1370 text1 CODE >172:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-137C text1 CODE >173:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1388 text1 CODE >174:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-1394 text1 CODE >175:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-13A0 text1 CODE >176:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-13AC text1 CODE >177:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-13B8 text1 CODE >178:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-13C4 text1 CODE >179:C:\Users\ethan\Downloads\DDISP_FW_V1.X\uart_interface.c
-50 text0 CODE >47:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-50 text0 CODE >48:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-54 text0 CODE >49:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-56 text0 CODE >50:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-6C text0 CODE >51:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-70 text0 CODE >53:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-74 text0 CODE >54:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-7C text0 CODE >55:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-84 text0 CODE >58:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-88 text0 CODE >59:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-98 text0 CODE >99:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-AA text0 CODE >100:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-B2 text0 CODE >101:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-BE text0 CODE >102:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-CE text0 CODE >103:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-DA text0 CODE >104:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-EA text0 CODE >106:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-FC text0 CODE >107:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-104 text0 CODE >108:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-110 text0 CODE >109:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-120 text0 CODE >110:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-12C text0 CODE >111:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-13C text0 CODE >113:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-14E text0 CODE >114:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-156 text0 CODE >115:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-162 text0 CODE >116:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-172 text0 CODE >117:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-17E text0 CODE >118:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-18E text0 CODE >120:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-19E text0 CODE >121:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-1A2 text0 CODE >122:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-1A6 text0 CODE >124:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-1AA text0 CODE >126:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-1B4 text0 CODE >127:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-1CC text0 CODE >131:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-1D4 text0 CODE >132:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-1DC text0 CODE >133:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-1E4 text0 CODE >136:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-212 text0 CODE >137:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-21A text0 CODE >138:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-226 text0 CODE >139:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-22A text0 CODE >145:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-246 text0 CODE >146:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-256 text0 CODE >148:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-2E2 text0 CODE >149:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-2F2 text0 CODE >150:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-2FE text0 CODE >153:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-316 text0 CODE >154:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-326 text0 CODE >155:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-336 text0 CODE >156:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-342 text0 CODE >157:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-346 text0 CODE >159:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-356 text0 CODE >160:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-362 text0 CODE >164:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-37A text0 CODE >165:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-38A text0 CODE >166:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-394 text0 CODE >169:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
-1538 cinit CODE >9928:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-1538 cinit CODE >9930:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-1538 cinit CODE >9933:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-1538 cinit CODE >10026:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-153C cinit CODE >10027:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-153E cinit CODE >10028:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-153E cinit CODE >10029:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-1540 cinit CODE >10030:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-1542 cinit CODE >10031:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-1544 cinit CODE >10034:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-1548 cinit CODE >10035:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-154A cinit CODE >10036:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-154A cinit CODE >10037:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-154C cinit CODE >10038:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-154E cinit CODE >10039:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-1550 cinit CODE >10045:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-1550 cinit CODE >10047:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-1552 cinit CODE >10048:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-1554 cinit CODE >10050:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-1556 cinit CODE >10051:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-1558 cinit CODE >10052:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
-155A cinit CODE >10053:C:\Users\ethan\AppData\Local\Temp\xcAsrt8.s
+8 intcode CODE >18279:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+8 intcode CODE >58:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
+12 intcode CODE >61:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
+20 intcode CODE >63:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
+3C intcode CODE >65:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
+40 intcode CODE >76:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
+1B06 text36 CODE >63:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+1A7E text35 CODE >503:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+1A7E text35 CODE >505:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+1A98 text35 CODE >506:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+1A9A text35 CODE >507:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+E72 text33 CODE >431:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+E74 text33 CODE >432:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+E74 text33 CODE >433:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+E84 text33 CODE >437:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+E8A text33 CODE >438:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+E92 text33 CODE >439:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+EBC text33 CODE >440:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+ED4 text33 CODE >441:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+F06 text33 CODE >442:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+F1E text33 CODE >443:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+F3C text33 CODE >444:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+F54 text33 CODE >445:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+F72 text33 CODE >446:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+F8A text33 CODE >447:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+F9A text33 CODE >448:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+FAA text33 CODE >449:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+18E6 text32 CODE >451:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+18E8 text32 CODE >452:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+18E8 text32 CODE >457:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+1912 text32 CODE >458:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+193C text32 CODE >459:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+194C text32 CODE >460:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+195C text32 CODE >461:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+906 text31 CODE >313:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+906 text31 CODE >315:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+90A text31 CODE >318:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+918 text31 CODE >320:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+926 text31 CODE >323:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+932 text31 CODE >324:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+960 text31 CODE >325:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+964 text31 CODE >329:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+970 text31 CODE >330:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+996 text31 CODE >333:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+9A6 text31 CODE >334:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+9B6 text31 CODE >335:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+9C6 text31 CODE >336:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+9D6 text31 CODE >337:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+9E6 text31 CODE >338:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+9F6 text31 CODE >339:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+A06 text31 CODE >340:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+A16 text31 CODE >341:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+A26 text31 CODE >342:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+A28 text31 CODE >343:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+A2C text31 CODE >344:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+A30 text31 CODE >345:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+A40 text31 CODE >347:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+A4E text31 CODE >350:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+A5A text31 CODE >351:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+A88 text31 CODE >352:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+A8C text31 CODE >356:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+A98 text31 CODE >357:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+ABE text31 CODE >360:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+ACE text31 CODE >361:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+ADE text31 CODE >362:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+AEE text31 CODE >363:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+AFE text31 CODE >364:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B0E text31 CODE >365:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B1E text31 CODE >366:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B2E text31 CODE >367:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B3E text31 CODE >368:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B4E text31 CODE >369:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B56 text31 CODE >372:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B58 text31 CODE >373:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+1AF8 text30 CODE >498:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+1AF8 text30 CODE >500:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+1B00 text30 CODE >501:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B5A text29 CODE >65:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B5A text29 CODE >67:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B5E text29 CODE >68:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B72 text29 CODE >73:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B76 text29 CODE >78:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B7A text29 CODE >92:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B80 text29 CODE >97:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B82 text29 CODE >98:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B84 text29 CODE >99:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B86 text29 CODE >100:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B8A text29 CODE >101:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B8C text29 CODE >102:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B8E text29 CODE >103:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B90 text29 CODE >104:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B94 text29 CODE >109:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B98 text29 CODE >110:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+B9C text29 CODE >114:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BA0 text29 CODE >115:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BA4 text29 CODE >116:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BA8 text29 CODE >117:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BAC text29 CODE >122:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BB0 text29 CODE >123:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BB4 text29 CODE >124:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BB8 text29 CODE >125:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BBC text29 CODE >126:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BC0 text29 CODE >127:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BC4 text29 CODE >128:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BC8 text29 CODE >129:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BCC text29 CODE >134:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BD0 text29 CODE >135:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BD4 text29 CODE >136:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BD8 text29 CODE >137:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BDC text29 CODE >138:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BE0 text29 CODE >139:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BE4 text29 CODE >140:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BE8 text29 CODE >141:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BEC text29 CODE >142:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BF0 text29 CODE >143:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BF4 text29 CODE >144:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BF8 text29 CODE >145:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+BFC text29 CODE >146:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C00 text29 CODE >147:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C04 text29 CODE >148:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C08 text29 CODE >149:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C0C text29 CODE >150:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C10 text29 CODE >151:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C14 text29 CODE >152:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C18 text29 CODE >153:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C1C text29 CODE >154:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C20 text29 CODE >155:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C24 text29 CODE >156:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C28 text29 CODE >157:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C2C text29 CODE >159:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C30 text29 CODE >160:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C34 text29 CODE >161:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C38 text29 CODE >162:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C3C text29 CODE >163:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C40 text29 CODE >164:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C44 text29 CODE >165:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C48 text29 CODE >166:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C4C text29 CODE >167:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C50 text29 CODE >168:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C54 text29 CODE >169:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C58 text29 CODE >170:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C5C text29 CODE >171:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C60 text29 CODE >172:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C64 text29 CODE >173:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C68 text29 CODE >174:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C6C text29 CODE >175:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C70 text29 CODE >176:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C74 text29 CODE >177:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C78 text29 CODE >178:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C7C text29 CODE >179:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C80 text29 CODE >180:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C84 text29 CODE >181:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C88 text29 CODE >182:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C8C text29 CODE >183:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C90 text29 CODE >184:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C94 text29 CODE >185:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C98 text29 CODE >186:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+C9C text29 CODE >187:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CA0 text29 CODE >188:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CA4 text29 CODE >189:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CA8 text29 CODE >190:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CAC text29 CODE >191:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CB0 text29 CODE >192:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CB4 text29 CODE >193:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CB8 text29 CODE >194:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CBC text29 CODE >195:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CBE text29 CODE >196:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CC0 text29 CODE >197:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CC2 text29 CODE >198:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CC6 text29 CODE >213:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CCA text29 CODE >214:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CCE text29 CODE >215:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CD2 text29 CODE >217:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CDE text29 CODE >218:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CE0 text29 CODE >219:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CE2 text29 CODE >221:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CE6 text29 CODE >222:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CFC text29 CODE >224:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+1AEE text28 CODE >165:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1AEE text28 CODE >166:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1AF6 text28 CODE >167:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1AE4 text27 CODE >157:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1AE4 text27 CODE >158:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1AEC text27 CODE >159:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1ADA text26 CODE >161:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1ADA text26 CODE >162:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1AE2 text26 CODE >163:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+195E text25 CODE >66:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+195E text25 CODE >71:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1962 text25 CODE >74:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1966 text25 CODE >77:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+196A text25 CODE >80:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+196E text25 CODE >83:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1972 text25 CODE >86:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+197E text25 CODE >87:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+198A text25 CODE >88:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1996 text25 CODE >90:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+199A text25 CODE >92:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1B02 text24 CODE >52:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
+1B02 text24 CODE >55:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
+1B04 text24 CODE >56:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/interrupt_manager.c
+1AC8 text23 CODE >60:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+1AC8 text23 CODE >63:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+1ACC text23 CODE >65:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+1AD0 text23 CODE >67:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+1AD4 text23 CODE >69:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+1AD8 text23 CODE >70:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+199C text22 CODE >55:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+199C text22 CODE >60:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19A0 text22 CODE >61:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19A4 text22 CODE >62:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19A8 text22 CODE >63:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19AC text22 CODE >64:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19B0 text22 CODE >69:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19B4 text22 CODE >70:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19B8 text22 CODE >71:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19BC text22 CODE >72:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19C0 text22 CODE >73:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19C2 text22 CODE >78:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19C8 text22 CODE >79:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19CC text22 CODE >84:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19D0 text22 CODE >85:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+19D2 text22 CODE >94:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/pin_manager.c
+1AB2 text21 CODE >50:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+1AB2 text21 CODE >53:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+1AB6 text21 CODE >54:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+1ABA text21 CODE >55:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+1ABE text21 CODE >56:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+1AC2 text21 CODE >57:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+1AC6 text21 CODE >58:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/mcc.c
+CFE text20 CODE >463:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CFE text20 CODE >464:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+CFE text20 CODE >466:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+D10 text20 CODE >469:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+D1C text20 CODE >470:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+D4A text20 CODE >473:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+D56 text20 CODE >474:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+D84 text20 CODE >478:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+D8A text20 CODE >479:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+DBC text20 CODE >480:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+DC4 text20 CODE >481:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+DCA text20 CODE >482:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+DD8 text20 CODE >485:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+E06 text20 CODE >486:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+E12 text20 CODE >487:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+E16 text20 CODE >489:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+E22 text20 CODE >490:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+E2E text20 CODE >491:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+E60 text20 CODE >492:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+E70 text20 CODE >496:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+5EC text19 CODE >236:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+5EC text19 CODE >238:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+5F0 text19 CODE >239:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+5F4 text19 CODE >240:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+5F8 text19 CODE >241:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+5FC text19 CODE >244:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+60C text19 CODE >246:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+658 text19 CODE >248:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+65C text19 CODE >249:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+660 text19 CODE >250:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+664 text19 CODE >251:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+668 text19 CODE >252:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+67A text19 CODE >253:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+68A text19 CODE >254:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+69A text19 CODE >255:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+6AA text19 CODE >256:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+6BA text19 CODE >257:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+6CA text19 CODE >258:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+6DA text19 CODE >259:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+6EA text19 CODE >260:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+6FA text19 CODE >262:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+6FC text19 CODE >263:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+6FC text19 CODE >265:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+700 text19 CODE >266:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+70E text19 CODE >269:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+75A text19 CODE >271:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+75E text19 CODE >272:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+762 text19 CODE >273:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+766 text19 CODE >274:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+76A text19 CODE >275:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+77C text19 CODE >276:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+78C text19 CODE >277:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+79C text19 CODE >278:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+7AC text19 CODE >279:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+7BC text19 CODE >280:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+7CC text19 CODE >281:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+7DC text19 CODE >282:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+7EC text19 CODE >283:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+7FC text19 CODE >285:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+802 text19 CODE >288:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+810 text19 CODE >291:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+85C text19 CODE >293:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+860 text19 CODE >294:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+864 text19 CODE >295:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+868 text19 CODE >296:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+86C text19 CODE >297:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+87E text19 CODE >298:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+88E text19 CODE >299:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+89E text19 CODE >300:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+8AE text19 CODE >301:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+8BE text19 CODE >302:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+8CE text19 CODE >303:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+8DE text19 CODE >304:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+8EE text19 CODE >305:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+8FE text19 CODE >307:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+904 text19 CODE >309:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+904 text19 CODE >311:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/ecan.c
+1A2C text18 CODE >31:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+1A2C text18 CODE >32:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+1A32 text18 CODE >33:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+1A42 text18 CODE >34:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+1A46 text18 CODE >35:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+1A4A text18 CODE >36:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+1A56 text18 CODE >37:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+1A00 text17 CODE >23:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+1A00 text17 CODE >24:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+1A06 text17 CODE >25:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+1A16 text17 CODE >26:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+1A1A text17 CODE >27:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+1A1E text17 CODE >28:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+1A2A text17 CODE >29:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+19D4 text16 CODE >15:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+19D4 text16 CODE >16:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+19DA text16 CODE >17:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+19EA text16 CODE >18:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+19EE text16 CODE >19:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+19F2 text16 CODE >20:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+19FE text16 CODE >21:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\can_interface.c
+118C text15 CODE >58:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+118C text15 CODE >59:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1190 text15 CODE >61:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+11A0 text15 CODE >62:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+11A4 text15 CODE >69:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+11B4 text15 CODE >70:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+11B8 text15 CODE >73:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+11C8 text15 CODE >74:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+11CC text15 CODE >75:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+11E0 text15 CODE >75:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+11EE text15 CODE >75:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+11F6 text15 CODE >75:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1200 text15 CODE >76:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1210 text15 CODE >77:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1214 text15 CODE >78:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1228 text15 CODE >78:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1236 text15 CODE >78:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1240 text15 CODE >80:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+125A text15 CODE >80:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1268 text15 CODE >80:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1270 text15 CODE >80:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+127A text15 CODE >81:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1A9C text14 CODE >132:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1A9E text14 CODE >134:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1A9E text14 CODE >136:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1AAC text14 CODE >138:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+1AB0 text14 CODE >139:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\mcc_generated_files/eusart1.c
+17D4 text13 CODE >52:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+17D4 text13 CODE >53:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+17EC text13 CODE >54:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+17F6 text13 CODE >56:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+17FC text13 CODE >57:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+180C text13 CODE >58:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1812 text13 CODE >59:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1822 text13 CODE >60:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1828 text13 CODE >61:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1838 text13 CODE >62:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+183E text13 CODE >63:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+184E text13 CODE >64:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1854 text13 CODE >65:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1864 text13 CODE >66:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+186A text13 CODE >67:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+173C text12 CODE >135:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+173C text12 CODE >136:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1754 text12 CODE >137:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+175E text12 CODE >139:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1764 text12 CODE >140:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1774 text12 CODE >141:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+177A text12 CODE >142:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+178A text12 CODE >143:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1790 text12 CODE >144:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+17A0 text12 CODE >145:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+17A6 text12 CODE >146:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+17B6 text12 CODE >147:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+17BC text12 CODE >148:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+17CC text12 CODE >149:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+17D2 text12 CODE >150:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+16A4 text11 CODE >151:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+16A4 text11 CODE >152:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+16BC text11 CODE >153:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+16C6 text11 CODE >155:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+16CC text11 CODE >156:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+16DC text11 CODE >157:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+16E2 text11 CODE >158:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+16F2 text11 CODE >159:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+16F8 text11 CODE >160:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1708 text11 CODE >161:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+170E text11 CODE >162:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+171E text11 CODE >163:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1724 text11 CODE >164:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1734 text11 CODE >165:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+173A text11 CODE >166:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+160C text10 CODE >103:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+160C text10 CODE >104:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1624 text10 CODE >105:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+162E text10 CODE >107:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1634 text10 CODE >108:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1644 text10 CODE >109:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+164A text10 CODE >110:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+165A text10 CODE >111:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1660 text10 CODE >112:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1670 text10 CODE >113:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1676 text10 CODE >114:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1686 text10 CODE >115:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+168C text10 CODE >116:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+169C text10 CODE >117:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+16A2 text10 CODE >118:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1574 text9 CODE >119:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1574 text9 CODE >120:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+158C text9 CODE >121:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1596 text9 CODE >123:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+159C text9 CODE >124:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+15AC text9 CODE >125:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+15B2 text9 CODE >126:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+15C2 text9 CODE >127:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+15C8 text9 CODE >128:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+15D8 text9 CODE >129:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+15DE text9 CODE >130:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+15EE text9 CODE >131:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+15F4 text9 CODE >132:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1604 text9 CODE >133:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+160A text9 CODE >134:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+14DC text8 CODE >4:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+14DC text8 CODE >5:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+14F4 text8 CODE >6:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+14FE text8 CODE >8:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1504 text8 CODE >9:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1514 text8 CODE >10:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+151A text8 CODE >11:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+152A text8 CODE >12:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1530 text8 CODE >13:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1540 text8 CODE >14:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1546 text8 CODE >15:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1556 text8 CODE >16:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+155C text8 CODE >17:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+156C text8 CODE >18:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1572 text8 CODE >19:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1444 text7 CODE >87:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1444 text7 CODE >88:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+145C text7 CODE >89:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1466 text7 CODE >91:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+146C text7 CODE >92:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+147C text7 CODE >93:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1482 text7 CODE >94:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1492 text7 CODE >95:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1498 text7 CODE >96:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+14A8 text7 CODE >97:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+14AE text7 CODE >98:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+14BE text7 CODE >99:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+14C4 text7 CODE >100:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+14D4 text7 CODE >101:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+14DA text7 CODE >102:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+13AC text6 CODE >68:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+13AC text6 CODE >69:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+13C4 text6 CODE >73:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+13CE text6 CODE >75:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+13D4 text6 CODE >76:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+13E4 text6 CODE >77:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+13EA text6 CODE >78:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+13FA text6 CODE >79:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1400 text6 CODE >80:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1410 text6 CODE >81:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1416 text6 CODE >82:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1426 text6 CODE >83:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+142C text6 CODE >84:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+143C text6 CODE >85:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1442 text6 CODE >86:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1314 text5 CODE >20:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1314 text5 CODE >21:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+132C text5 CODE >22:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1336 text5 CODE >24:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+133C text5 CODE >25:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+134C text5 CODE >26:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1352 text5 CODE >27:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1362 text5 CODE >28:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1368 text5 CODE >29:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1378 text5 CODE >30:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+137E text5 CODE >31:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+138E text5 CODE >32:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1394 text5 CODE >33:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+13A4 text5 CODE >34:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+13AA text5 CODE >35:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+127C text4 CODE >36:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+127C text4 CODE >37:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1294 text4 CODE >38:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+129E text4 CODE >40:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+12A4 text4 CODE >41:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+12B4 text4 CODE >42:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+12BA text4 CODE >43:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+12CA text4 CODE >44:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+12D0 text4 CODE >45:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+12E0 text4 CODE >46:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+12E6 text4 CODE >47:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+12F6 text4 CODE >48:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+12FC text4 CODE >49:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+130C text4 CODE >50:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1312 text4 CODE >51:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+186C text3 CODE >168:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+186C text3 CODE >169:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1878 text3 CODE >170:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1884 text3 CODE >171:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+1890 text3 CODE >172:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+189C text3 CODE >173:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+18A8 text3 CODE >174:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+18B4 text3 CODE >175:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+18C0 text3 CODE >176:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+18CC text3 CODE >177:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+18D8 text3 CODE >178:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+18E4 text3 CODE >179:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\uart_interface.c
+109C text2 CODE >9:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+109C text2 CODE >10:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+10A0 text2 CODE >12:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+10B0 text2 CODE >13:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+10B4 text2 CODE >20:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+10C4 text2 CODE >21:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+10C8 text2 CODE >24:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+10D8 text2 CODE >25:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+10DC text2 CODE >26:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+10F0 text2 CODE >26:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+10FE text2 CODE >26:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1106 text2 CODE >26:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1110 text2 CODE >27:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1120 text2 CODE >28:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1124 text2 CODE >29:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1138 text2 CODE >29:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1146 text2 CODE >29:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1150 text2 CODE >31:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+116A text2 CODE >31:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1178 text2 CODE >31:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1180 text2 CODE >31:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+118A text2 CODE >32:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+FAC text1 CODE >33:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+FAC text1 CODE >34:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+FB0 text1 CODE >36:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+FC0 text1 CODE >37:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+FC4 text1 CODE >44:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+FD4 text1 CODE >45:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+FD8 text1 CODE >48:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+FE8 text1 CODE >49:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+FEC text1 CODE >50:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1000 text1 CODE >50:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+100E text1 CODE >50:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1016 text1 CODE >50:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1020 text1 CODE >51:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1030 text1 CODE >52:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1034 text1 CODE >53:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1048 text1 CODE >53:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1056 text1 CODE >53:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1060 text1 CODE >55:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+107A text1 CODE >55:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1088 text1 CODE >55:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+1090 text1 CODE >55:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+109A text1 CODE >56:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\button_functionality.c
+50 text0 CODE >50:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+50 text0 CODE >51:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+54 text0 CODE >52:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+56 text0 CODE >53:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+6E text0 CODE >54:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+72 text0 CODE >55:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+8A text0 CODE >56:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+8A text0 CODE >57:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+94 text0 CODE >58:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+9C text0 CODE >61:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+A2 text0 CODE >62:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+B8 text0 CODE >68:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+100 text0 CODE >69:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+108 text0 CODE >70:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+114 text0 CODE >71:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+124 text0 CODE >72:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+130 text0 CODE >73:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+140 text0 CODE >75:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+188 text0 CODE >76:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+190 text0 CODE >77:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+19C text0 CODE >78:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+1AC text0 CODE >79:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+1B8 text0 CODE >80:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+1C8 text0 CODE >82:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+1EC text0 CODE >83:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+1F4 text0 CODE >84:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+1FC text0 CODE >85:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+204 text0 CODE >88:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+210 text0 CODE >89:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+220 text0 CODE >90:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+22C text0 CODE >91:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+23C text0 CODE >92:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+248 text0 CODE >93:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+258 text0 CODE >94:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+264 text0 CODE >95:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+274 text0 CODE >97:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+280 text0 CODE >98:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+290 text0 CODE >99:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+29C text0 CODE >100:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+2AC text0 CODE >104:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+2D0 text0 CODE >105:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+2D8 text0 CODE >106:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+2E4 text0 CODE >107:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+2F4 text0 CODE >108:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+300 text0 CODE >109:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+310 text0 CODE >111:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+334 text0 CODE >112:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+33C text0 CODE >113:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+348 text0 CODE >114:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+358 text0 CODE >115:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+364 text0 CODE >116:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+374 text0 CODE >118:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+398 text0 CODE >119:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+3A0 text0 CODE >120:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+3AC text0 CODE >121:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+3BC text0 CODE >122:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+3C8 text0 CODE >123:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+3D8 text0 CODE >136:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+3E0 text0 CODE >137:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+3E8 text0 CODE >138:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+3F0 text0 CODE >140:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+404 text0 CODE >141:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+418 text0 CODE >142:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+42C text0 CODE >144:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+45E text0 CODE >145:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+466 text0 CODE >146:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+472 text0 CODE >147:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+478 text0 CODE >153:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+494 text0 CODE >154:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+4A4 text0 CODE >156:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+530 text0 CODE >157:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+540 text0 CODE >158:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+54C text0 CODE >161:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+564 text0 CODE >162:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+574 text0 CODE >163:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+584 text0 CODE >164:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+590 text0 CODE >165:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+594 text0 CODE >167:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+5A4 text0 CODE >168:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+5B0 text0 CODE >172:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+5C8 text0 CODE >173:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+5D8 text0 CODE >174:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+5E4 text0 CODE >177:C:\Users\ethan\MPLABXProjects\DDISP_FW_V1.X\main.c
+1A58 cinit CODE >9941:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A58 cinit CODE >9943:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A58 cinit CODE >9946:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A58 cinit CODE >10051:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A5C cinit CODE >10052:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A5E cinit CODE >10053:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A5E cinit CODE >10054:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A60 cinit CODE >10055:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A62 cinit CODE >10056:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A64 cinit CODE >10059:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A68 cinit CODE >10060:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A6A cinit CODE >10061:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A6A cinit CODE >10062:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A6C cinit CODE >10063:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A6E cinit CODE >10064:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A70 cinit CODE >10070:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A70 cinit CODE >10072:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A72 cinit CODE >10073:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A74 cinit CODE >10075:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A76 cinit CODE >10076:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A78 cinit CODE >10077:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
+1A7A cinit CODE >10078:C:\Users\ethan\AppData\Local\Temp\xcAssh4.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -693,11 +790,13 @@ FC text0 CODE >107:C:\Users\ethan\Downloads\DDISP_FW_V1.X\main.c
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
+hazardButton@b2FunctionActive 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\DDISP_FW_V1.X.production.o
-__Hspace_0 15E8 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-__Hspace_1 B4 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
+__Hspace_0 1B08 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
+__Hspace_1 C8 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __Hspace_4 60000E 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
+_rightTurnButton FAC 0 CODE 0 text1 dist/default/production\DDISP_FW_V1.X.production.o
 _RXM0EIDH EFA 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXM0EIDL EFB 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXM0SIDH EF8 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
@@ -706,16 +805,17 @@ _RXM1EIDH EFE 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXM1EIDL EFF 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXM1SIDH EFC 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXM1SIDL EFD 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-EUSART1_SetErrorHandler@interruptHandler 34 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+EUSART1_SetErrorHandler@interruptHandler 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\DDISP_FW_V1.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-_EUSART1_Initialize 143E 0 CODE 0 text22 dist/default/production\DDISP_FW_V1.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+_EUSART1_Initialize 195E 0 CODE 0 text25 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_leftTurnButton 118C 0 CODE 0 text2 dist/default/production\DDISP_FW_V1.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_INTERRUPT_Initialize 15E6 0 CODE 0 text21 dist/default/production\DDISP_FW_V1.X.production.o
-_b8FuncActive 9 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_b10FuncActive 5 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_rx 24 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_batterySOCGraphic 1184 0 CODE 0 text9 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_INTERRUPT_Initialize 1B06 0 CODE 0 text24 dist/default/production\DDISP_FW_V1.X.production.o
+_b8FuncActive 7 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_b10FuncActive 2E 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_rx 1E 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_batterySOCGraphic 16A4 0 CODE 0 text11 dist/default/production\DDISP_FW_V1.X.production.o
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\DDISP_FW_V1.X.production.o
 _LATA F89 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _LATB F8A 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
@@ -723,97 +823,100 @@ _LATC F8B 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _LATD F8C 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _LATE F8D 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _WPUB F5B 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-_init 134C 0 CODE 0 text1 dist/default/production\DDISP_FW_V1.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+_init 186C 0 CODE 0 text3 dist/default/production\DDISP_FW_V1.X.production.o
 _main 50 0 CODE 0 text0 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_auxBattConn 134C 0 CODE 0 text11 dist/default/production\DDISP_FW_V1.X.production.o
-btemp 5B 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
-leftTurnIndicator@checksum 38 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-start 4C 0 CODE 0 init C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-CAN_receive@tempCanMsg 47 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_auxBattConn 186C 0 CODE 0 text13 dist/default/production\DDISP_FW_V1.X.production.o
+btemp 5A 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
+leftTurnIndicator@checksum 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+start 4C 0 CODE 0 init C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+CAN_receive@tempCanMsg 4D 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 _blinkb10 1 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_WakeUpDefaultInterruptHandler 15E6 0 CODE 0 text33 dist/default/production\DDISP_FW_V1.X.production.o
-_canRightSignal 14B4 0 CODE 0 text13 dist/default/production\DDISP_FW_V1.X.production.o
-_ECAN_WAKI_ISR 155E 0 CODE 0 text32 dist/default/production\DDISP_FW_V1.X.production.o
-ECAN_SetWakeUpInterruptHandler@handler 34 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-warningLED@value 35 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_latchb10 2C 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_WakeUpDefaultInterruptHandler 1B06 0 CODE 0 text36 dist/default/production\DDISP_FW_V1.X.production.o
+_canRightSignal 19D4 0 CODE 0 text16 dist/default/production\DDISP_FW_V1.X.production.o
+_ECAN_WAKI_ISR 1A7E 0 CODE 0 text35 dist/default/production\DDISP_FW_V1.X.production.o
+ECAN_SetWakeUpInterruptHandler@handler 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+warningLED@value 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Hpowerup 4C 0 CODE 0 powerup dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_batterySOC 12B4 0 CODE 0 text10 dist/default/production\DDISP_FW_V1.X.production.o
-ttemp5 5C 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
-ttemp6 5F 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
-ttemp7 63 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_batterySOC 17D4 0 CODE 0 text12 dist/default/production\DDISP_FW_V1.X.production.o
+ttemp5 5B 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
+ttemp6 5E 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
+ttemp7 62 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
 __LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_motorSpeed E8C 0 CODE 0 text4 dist/default/production\DDISP_FW_V1.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-intlevel0 0 0 CODE 0 text C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-intlevel1 0 0 CODE 0 text C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-intlevel2 0 0 CODE 0 text C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-intlevel3 0 0 CODE 0 text C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-motorControllerTemp@v2 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-motorControllerTemp@v3 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-motorControllerTemp@v4 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_motorSpeed 13AC 0 CODE 0 text6 dist/default/production\DDISP_FW_V1.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+intlevel0 0 0 CODE 0 text C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+intlevel1 0 0 CODE 0 text C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+intlevel2 0 0 CODE 0 text C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+intlevel3 0 0 CODE 0 text C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+motorControllerTemp@v2 40 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+motorControllerTemp@v3 42 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+motorControllerTemp@v4 44 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-batterySOC@value 35 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_convertCANid2Reg C22 0 CODE 0 text17 dist/default/production\DDISP_FW_V1.X.production.o
+batterySOC@value 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_convertCANid2Reg E72 0 CODE 0 text20 dist/default/production\DDISP_FW_V1.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\DDISP_FW_V1.X.production.o
-wtemp8 5C 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
+wtemp8 5B 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\DDISP_FW_V1.X.production.o
-convertCANid2Reg@wipSIDL 45 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-EUSART1_Write@txData 34 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+convertCANid2Reg@wipSIDL 4B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+EUSART1_Write@txData 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\DDISP_FW_V1.X.production.o
 _COMSTATbits F71 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-rightTurnIndicator@checksum 38 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_ECAN_SetWakeUpInterruptHandler 15E2 0 CODE 0 text27 dist/default/production\DDISP_FW_V1.X.production.o
+rightTurnIndicator@checksum 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_ECAN_SetWakeUpInterruptHandler 1B02 0 CODE 0 text30 dist/default/production\DDISP_FW_V1.X.production.o
 _ANCON0 F5D 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _ANCON1 F5C 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-convertCANid2Reg@tempPassedInID 34 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_ECAN_Initialize AAE 0 CODE 0 text26 dist/default/production\DDISP_FW_V1.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
+convertCANid2Reg@tempPassedInID 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_ECAN_Initialize CFE 0 CODE 0 text29 dist/default/production\DDISP_FW_V1.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
 _CANCON F6F 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __end_of_INTERRUPT_InterruptManager 4C 0 CODE 0 intcode dist/default/production\DDISP_FW_V1.X.production.o
 _CIOCON F70 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_canRightSignal 14E0 0 CODE 0 text13 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_convertReg2StandardCANid 143E 0 CODE 0 text29 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_canRightSignal 1A00 0 CODE 0 text16 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_convertReg2StandardCANid 195E 0 CODE 0 text32 dist/default/production\DDISP_FW_V1.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\DDISP_FW_V1.X.production.o
-main@tog 54 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_CAN_receive 90A 0 CODE 0 text28 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_CAN_receive B5A 0 CODE 0 text31 dist/default/production\DDISP_FW_V1.X.production.o
 _TXB0DLC F25 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXB1DLC F15 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXB2DLC F05 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXSTA1bits FAC 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\DDISP_FW_V1.X.production.o
-batterySOCGraphic@checksum 38 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+batterySOCGraphic@checksum 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__LnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\DDISP_FW_V1.X.production.o
 __Hintcodelo 4C 0 CODE 0 intcodelo dist/default/production\DDISP_FW_V1.X.production.o
-EUSART1_SetFramingErrorHandler@interruptHandler 34 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_CAN_transmit 39C 0 CODE 0 text16 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_motorSpeed F24 0 CODE 0 text4 dist/default/production\DDISP_FW_V1.X.production.o
-_motorControllerTemp F24 0 CODE 0 text5 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_canHazardSignal 1538 0 CODE 0 text15 dist/default/production\DDISP_FW_V1.X.production.o
-convertReg2StandardCANid@returnValue 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-convertReg2StandardCANid@ConvertedID 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-batterySOC@checksum 38 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-batterySOCGraphic@value 35 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+EUSART1_SetFramingErrorHandler@interruptHandler 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_CAN_transmit 5EC 0 CODE 0 text19 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_motorSpeed 1444 0 CODE 0 text6 dist/default/production\DDISP_FW_V1.X.production.o
+_hazardButton 118C 0 CODE 0 text15 dist/default/production\DDISP_FW_V1.X.production.o
+_motorControllerTemp 1444 0 CODE 0 text7 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_canHazardSignal 1A58 0 CODE 0 text18 dist/default/production\DDISP_FW_V1.X.production.o
+convertReg2StandardCANid@returnValue 41 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+convertReg2StandardCANid@ConvertedID 45 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+batterySOC@checksum 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+batterySOCGraphic@value 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 _INTCON2bits FF1 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-main@counter 50 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+rightTurnButton@b10Latch 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+main@counter C2 0 BANK0 1 cstackBANK0 dist/default/production\DDISP_FW_V1.X.production.o
 __Lintcodelo 4C 0 CODE 0 intcodelo dist/default/production\DDISP_FW_V1.X.production.o
-_PIN_MANAGER_Initialize 147C 0 CODE 0 text19 dist/default/production\DDISP_FW_V1.X.production.o
-leftTurnIndicator@v2 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-leftTurnIndicator@v3 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-leftTurnIndicator@v4 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-start_initialization 1538 0 CODE 0 cinit dist/default/production\DDISP_FW_V1.X.production.o
-_ECAN_Initialize 90A 0 CODE 0 text26 dist/default/production\DDISP_FW_V1.X.production.o
-_eusart1RxLastError 23 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_PIN_MANAGER_Initialize 199C 0 CODE 0 text22 dist/default/production\DDISP_FW_V1.X.production.o
+leftTurnIndicator@v2 40 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+leftTurnIndicator@v3 42 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+leftTurnIndicator@v4 44 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+start_initialization 1A58 0 CODE 0 cinit dist/default/production\DDISP_FW_V1.X.production.o
+_ECAN_Initialize B5A 0 CODE 0 text29 dist/default/production\DDISP_FW_V1.X.production.o
+_eusart1RxLastError 1D 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 _OSCCON FD3 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\DDISP_FW_V1.X.production.o
-CAN_receive@returnValue 49 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+CAN_receive@returnValue 4F 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 ___rparam_used 1 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RCREG1 FAE 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RCSTA1 FAB 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_SYSTEM_Initialize 15A8 0 CODE 0 text18 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_SYSTEM_Initialize 1AC8 0 CODE 0 text21 dist/default/production\DDISP_FW_V1.X.production.o
 _RXB0D0 F66 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXB0D1 F67 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXB0D2 F68 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
@@ -831,6 +934,8 @@ _RXB1D5 F3B 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXB1D6 F3C 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXB1D7 F3D 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _SPBRG1 FAF 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
+__pcstackBANK0 C2 0 BANK0 1 cstackBANK0 dist/default/production\DDISP_FW_V1.X.production.o
+rightTurnButton@b10FunctionActive 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 _TXB0D0 F26 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXB0D1 F27 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXB0D2 F28 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
@@ -857,19 +962,19 @@ _TXB2D6 F0C 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXB2D7 F0D 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXREG1 FAD 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXSTA1 FAC 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-_batteryTemp 10EC 0 CODE 0 text8 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_ECAN_WAKI_ISR 157C 0 CODE 0 text32 dist/default/production\DDISP_FW_V1.X.production.o
+_batteryTemp 160C 0 CODE 0 text10 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_ECAN_WAKI_ISR 1A9C 0 CODE 0 text35 dist/default/production\DDISP_FW_V1.X.production.o
 _EUSART1_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-batteryTemp@checksum 38 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+batteryTemp@checksum 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 _EUSART1_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-hazardSignal@v2 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-hazardSignal@v3 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-hazardSignal@v4 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_b1FuncActive 1F 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_canHazardSignal 150C 0 CODE 0 text15 dist/default/production\DDISP_FW_V1.X.production.o
-_convertReg2ExtendedCANid C22 0 CODE 0 text30 dist/default/production\DDISP_FW_V1.X.production.o
-_EUSART1_Write 157C 0 CODE 0 text12 dist/default/production\DDISP_FW_V1.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+hazardSignal@v2 40 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+hazardSignal@v3 42 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+hazardSignal@v4 44 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_b1FuncActive 36 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_canHazardSignal 1A2C 0 CODE 0 text18 dist/default/production\DDISP_FW_V1.X.production.o
+_convertReg2ExtendedCANid E72 0 CODE 0 text33 dist/default/production\DDISP_FW_V1.X.production.o
+_EUSART1_Write 1A9C 0 CODE 0 text14 dist/default/production\DDISP_FW_V1.X.production.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\DDISP_FW_V1.X.production.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\DDISP_FW_V1.X.production.o
 __Hbank2 0 0 ABS 0 bank2 dist/default/production\DDISP_FW_V1.X.production.o
@@ -903,19 +1008,21 @@ __Hbank11 0 0 ABS 0 bank11 dist/default/production\DDISP_FW_V1.X.production.o
 __Hbank12 0 0 ABS 0 bank12 dist/default/production\DDISP_FW_V1.X.production.o
 __Hbank13 0 0 ABS 0 bank13 dist/default/production\DDISP_FW_V1.X.production.o
 __Hbank14 0 0 ABS 0 bank14 dist/default/production\DDISP_FW_V1.X.production.o
-_ECAN_SetWakeUpInterruptHandler 15D8 0 CODE 0 text27 dist/default/production\DDISP_FW_V1.X.production.o
+_ECAN_SetWakeUpInterruptHandler 1AF8 0 CODE 0 text30 dist/default/production\DDISP_FW_V1.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\DDISP_FW_V1.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\DDISP_FW_V1.X.production.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_CAN_transmit 6B6 0 CODE 0 text16 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_rightTurnIndicator E8C 0 CODE 0 text3 dist/default/production\DDISP_FW_V1.X.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
+__end_of_CAN_transmit 906 0 CODE 0 text19 dist/default/production\DDISP_FW_V1.X.production.o
+leftTurnButton@b1FunctionActive 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_rightTurnIndicator 13AC 0 CODE 0 text5 dist/default/production\DDISP_FW_V1.X.production.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
 _BAUDCON1 FA7 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-_hazardSignal 1054 0 CODE 0 text7 dist/default/production\DDISP_FW_V1.X.production.o
-motorSpeed@checksum 38 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_hazardSignal 1574 0 CODE 0 text9 dist/default/production\DDISP_FW_V1.X.production.o
+motorSpeed@checksum 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\DDISP_FW_V1.X.production.o
 __Hconfig 30000E 0 CONFIG 4 config dist/default/production\DDISP_FW_V1.X.production.o
-_b3FuncActive 13 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_hazardButton 127C 0 CODE 0 text15 dist/default/production\DDISP_FW_V1.X.production.o
+_b3FuncActive 11 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Lbank0 0 0 ABS 0 bank0 dist/default/production\DDISP_FW_V1.X.production.o
 __Lbank1 0 0 ABS 0 bank1 dist/default/production\DDISP_FW_V1.X.production.o
 __Lbank2 0 0 ABS 0 bank2 dist/default/production\DDISP_FW_V1.X.production.o
@@ -944,28 +1051,28 @@ __Ltext6 0 0 ABS 0 text6 dist/default/production\DDISP_FW_V1.X.production.o
 __Ltext7 0 0 ABS 0 text7 dist/default/production\DDISP_FW_V1.X.production.o
 __Ltext8 0 0 ABS 0 text8 dist/default/production\DDISP_FW_V1.X.production.o
 __Ltext9 0 0 ABS 0 text9 dist/default/production\DDISP_FW_V1.X.production.o
-convertReg2StandardCANid@tempRXBn_SIDH 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-convertReg2StandardCANid@tempRXBn_SIDL 34 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_EUSART1_FramingErrorHandler 59 0 COMRAM 1 nvCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_EUSART1_OverrunErrorHandler 57 0 COMRAM 1 nvCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+convertReg2StandardCANid@tempRXBn_SIDH 40 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+convertReg2StandardCANid@tempRXBn_SIDL 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_EUSART1_FramingErrorHandler 58 0 COMRAM 1 nvCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_EUSART1_OverrunErrorHandler 56 0 COMRAM 1 nvCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_WakeUpDefaultInterruptHandler 15E8 0 CODE 0 text33 dist/default/production\DDISP_FW_V1.X.production.o
-convertReg2ExtendedCANid@CAN_standardLo_ID_hi3bits 42 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_WakeUpDefaultInterruptHandler 1B08 0 CODE 0 text36 dist/default/production\DDISP_FW_V1.X.production.o
+convertReg2ExtendedCANid@CAN_standardLo_ID_hi3bits 48 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\DDISP_FW_V1.X.production.o
 _PORTAbits F80 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-batteryTemp@value 35 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+batteryTemp@value 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 _PORTCbits F82 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _REFOCON F9A 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-hazardSignal@checksum 38 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+hazardSignal@checksum 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 _INTCONbits FF2 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-_INTERRUPT_Initialize 15E2 0 CODE 0 text21 dist/default/production\DDISP_FW_V1.X.production.o
+_INTERRUPT_Initialize 1B02 0 CODE 0 text24 dist/default/production\DDISP_FW_V1.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production\DDISP_FW_V1.X.production.o
 __Hdata 0 0 ABS 0 data dist/default/production\DDISP_FW_V1.X.production.o
 __Hheap 0 0 HEAP 7 heap dist/default/production\DDISP_FW_V1.X.production.o
 __Hinit 50 0 CODE 0 init dist/default/production\DDISP_FW_V1.X.production.o
 __Hrbit 0 0 COMRAM 1 rbit dist/default/production\DDISP_FW_V1.X.production.o
 __Hrbss 0 0 COMRAM 1 rbss dist/default/production\DDISP_FW_V1.X.production.o
-__Htemp 5C 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
+__Htemp 5B 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
 __Htext 0 0 ABS 0 text dist/default/production\DDISP_FW_V1.X.production.o
 __Labs1 0 0 ABS 0 abs1 dist/default/production\DDISP_FW_V1.X.production.o
 __Ldata 0 0 ABS 0 data dist/default/production\DDISP_FW_V1.X.production.o
@@ -973,48 +1080,54 @@ __Lheap 0 0 HEAP 7 heap dist/default/production\DDISP_FW_V1.X.production.o
 __Linit 4C 0 CODE 0 init dist/default/production\DDISP_FW_V1.X.production.o
 __Lrbit 0 0 COMRAM 1 rbit dist/default/production\DDISP_FW_V1.X.production.o
 __Lrbss 0 0 COMRAM 1 rbss dist/default/production\DDISP_FW_V1.X.production.o
-__Ltemp 5B 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
+__Ltemp 5A 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
 __Ltext 0 0 ABS 0 text dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_motorControllerTemp FBC 0 CODE 0 text5 dist/default/production\DDISP_FW_V1.X.production.o
-int$flags 5B 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
-_b5FuncActive F 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__pnvBANK0 C6 0 BANK0 1 nvBANK0 dist/default/production\DDISP_FW_V1.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_motorControllerTemp 14DC 0 CODE 0 text7 dist/default/production\DDISP_FW_V1.X.production.o
+int$flags 5A 0 COMRAM 1 temp dist/default/production\DDISP_FW_V1.X.production.o
+_b5FuncActive D 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Hintret 0 0 ABS 0 intret dist/default/production\DDISP_FW_V1.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\DDISP_FW_V1.X.production.o
-__S0 15E8 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-__S1 B4 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
+__S0 1B08 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
+__S1 C8 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __S4 0 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __S5 0 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-_tx1 A6 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
-_tx2 98 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
-_tx3 8A 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
-_tx4 7C 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
-_tx5 6E 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
-_tx6 60 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
+_tx1 B4 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
+_tx2 A6 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
+_tx3 98 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
+_tx4 8A 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
+_tx5 7C 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
+_tx6 6E 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
+_tx7 60 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
 _EUSART1_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-auxBattConn@checksum 38 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-__pnvCOMRAM 55 0 COMRAM 1 nvCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_rightTurnIndicator DF4 0 CODE 0 text3 dist/default/production\DDISP_FW_V1.X.production.o
-leftTurnIndicator@value 35 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-convertReg2ExtendedCANid@returnValue 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-convertReg2ExtendedCANid@ConvertedID 43 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_b7FuncActive B 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-canLeftSignal@number 4C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+auxBattConn@checksum 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__pnvCOMRAM 56 0 COMRAM 1 nvCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_rightTurnIndicator 1314 0 CODE 0 text5 dist/default/production\DDISP_FW_V1.X.production.o
+leftTurnIndicator@value 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+convertReg2ExtendedCANid@returnValue 43 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+convertReg2ExtendedCANid@ConvertedID 49 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_b7FuncActive 9 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+canLeftSignal@number 52 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\DDISP_FW_V1.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\DDISP_FW_V1.X.production.o
 _ECANCON F72 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-_SYSTEM_Initialize 1592 0 CODE 0 text18 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_leftTurnIndicator 1054 0 CODE 0 text6 dist/default/production\DDISP_FW_V1.X.production.o
-_canLeftSignal 14E0 0 CODE 0 text14 dist/default/production\DDISP_FW_V1.X.production.o
-?_convertReg2ExtendedCANid 34 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_SYSTEM_Initialize 1AB2 0 CODE 0 text21 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_leftTurnIndicator 1574 0 CODE 0 text8 dist/default/production\DDISP_FW_V1.X.production.o
+_canLeftSignal 1A00 0 CODE 0 text17 dist/default/production\DDISP_FW_V1.X.production.o
+?_convertReg2ExtendedCANid 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 _lastb10 3 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_latchb1 34 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_latchb2 30 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\DDISP_FW_V1.X.production.o
 __Lintentry 0 0 ABS 0 intentry dist/default/production\DDISP_FW_V1.X.production.o
-CAN_transmit@tempCanMsg 46 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_b9FuncActive 7 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-CAN_transmit@tempEIDH 48 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-CAN_transmit@tempEIDL 49 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-CAN_transmit@tempSIDH 4A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-CAN_transmit@tempSIDL 4B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+CAN_transmit@tempCanMsg 4C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_b9FuncActive 5 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+CAN_transmit@tempEIDH 4E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+CAN_transmit@tempEIDL 4F 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+CAN_transmit@tempSIDH 50 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+CAN_transmit@tempSIDL 51 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Hramtop F00 0 RAM 0 ramtop dist/default/production\DDISP_FW_V1.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\DDISP_FW_V1.X.production.o
 __activetblptr 2 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
@@ -1041,41 +1154,47 @@ __Htext27 0 0 ABS 0 text27 dist/default/production\DDISP_FW_V1.X.production.o
 __Htext28 0 0 ABS 0 text28 dist/default/production\DDISP_FW_V1.X.production.o
 __Htext29 0 0 ABS 0 text29 dist/default/production\DDISP_FW_V1.X.production.o
 __Htext30 0 0 ABS 0 text30 dist/default/production\DDISP_FW_V1.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production\DDISP_FW_V1.X.production.o
 __Htext32 0 0 ABS 0 text32 dist/default/production\DDISP_FW_V1.X.production.o
 __Htext33 0 0 ABS 0 text33 dist/default/production\DDISP_FW_V1.X.production.o
-__Htext34 0 0 ABS 0 text34 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_hazardSignal 10EC 0 CODE 0 text7 dist/default/production\DDISP_FW_V1.X.production.o
+__Htext35 0 0 ABS 0 text35 dist/default/production\DDISP_FW_V1.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production\DDISP_FW_V1.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_hazardSignal 160C 0 CODE 0 text9 dist/default/production\DDISP_FW_V1.X.production.o
 _INTERRUPT_InterruptManager 8 0 CODE 0 intcode dist/default/production\DDISP_FW_V1.X.production.o
-_lastb1 1D 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_lastb2 17 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_lastb1 19 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_lastb2 15 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 _PIE5bits F76 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-motorControllerTemp@checksum 38 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-__ptext10 121C 0 CODE 0 text10 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext11 12B4 0 CODE 0 text11 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext12 157C 0 CODE 0 text12 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext13 14B4 0 CODE 0 text13 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext14 14E0 0 CODE 0 text14 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext15 150C 0 CODE 0 text15 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext16 39C 0 CODE 0 text16 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext17 AAE 0 CODE 0 text17 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext18 1592 0 CODE 0 text18 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext19 147C 0 CODE 0 text19 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext20 15A8 0 CODE 0 text20 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext21 15E2 0 CODE 0 text21 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext22 143E 0 CODE 0 text22 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext23 15BA 0 CODE 0 text23 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext24 15C4 0 CODE 0 text24 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext25 15CE 0 CODE 0 text25 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext26 90A 0 CODE 0 text26 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext27 15D8 0 CODE 0 text27 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext28 6B6 0 CODE 0 text28 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext29 13C6 0 CODE 0 text29 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext30 C22 0 CODE 0 text30 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext32 155E 0 CODE 0 text32 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext33 15E6 0 CODE 0 text33 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext34 0 0 CODE 0 text34 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_PIN_MANAGER_Initialize 14B4 0 CODE 0 text19 dist/default/production\DDISP_FW_V1.X.production.o
-_EUSART1_ErrorHandler 55 0 COMRAM 1 nvCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+motorControllerTemp@checksum 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__ptext10 160C 0 CODE 0 text10 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext11 16A4 0 CODE 0 text11 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext12 173C 0 CODE 0 text12 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext13 17D4 0 CODE 0 text13 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext14 1A9C 0 CODE 0 text14 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext15 118C 0 CODE 0 text15 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext16 19D4 0 CODE 0 text16 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext17 1A00 0 CODE 0 text17 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext18 1A2C 0 CODE 0 text18 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext19 5EC 0 CODE 0 text19 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext20 CFE 0 CODE 0 text20 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext21 1AB2 0 CODE 0 text21 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext22 199C 0 CODE 0 text22 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext23 1AC8 0 CODE 0 text23 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext24 1B02 0 CODE 0 text24 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext25 195E 0 CODE 0 text25 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext26 1ADA 0 CODE 0 text26 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext27 1AE4 0 CODE 0 text27 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext28 1AEE 0 CODE 0 text28 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext29 B5A 0 CODE 0 text29 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext30 1AF8 0 CODE 0 text30 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext31 906 0 CODE 0 text31 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext32 18E6 0 CODE 0 text32 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext33 E72 0 CODE 0 text33 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext35 1A7E 0 CODE 0 text35 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext36 1B06 0 CODE 0 text36 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext37 0 0 CODE 0 text37 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_PIN_MANAGER_Initialize 19D4 0 CODE 0 text22 dist/default/production\DDISP_FW_V1.X.production.o
+_EUSART1_ErrorHandler C6 0 BANK0 1 nvBANK0 dist/default/production\DDISP_FW_V1.X.production.o
 __Lbank10 0 0 ABS 0 bank10 dist/default/production\DDISP_FW_V1.X.production.o
 __Lbank11 0 0 ABS 0 bank11 dist/default/production\DDISP_FW_V1.X.production.o
 __Lbank12 0 0 ABS 0 bank12 dist/default/production\DDISP_FW_V1.X.production.o
@@ -1090,55 +1209,56 @@ _RXB0DLC F65 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXB1DLC F35 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXFCON0 E46 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXFCON1 E47 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-_blinkb1 1B 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_blinkb2 15 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_blinkb1 17 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_blinkb2 13 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 _LATCbits F8B 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-_EUSART1_SetErrorHandler 15CE 0 CODE 0 text25 dist/default/production\DDISP_FW_V1.X.production.o
+_EUSART1_SetErrorHandler 1AEE 0 CODE 0 text28 dist/default/production\DDISP_FW_V1.X.production.o
 _RCSTA1bits FAB 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_EUSART1_SetErrorHandler 15D8 0 CODE 0 text25 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_EUSART1_SetErrorHandler 1AF8 0 CODE 0 text28 dist/default/production\DDISP_FW_V1.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\DDISP_FW_V1.X.production.o
-motorSpeed@value 35 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-auxBattConn@v2 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-auxBattConn@v3 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-auxBattConn@v4 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_auxBattConn 12B4 0 CODE 0 text11 dist/default/production\DDISP_FW_V1.X.production.o
-main@speed 52 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+motorSpeed@value 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+auxBattConn@v2 40 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+auxBattConn@v3 42 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+auxBattConn@v4 44 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_auxBattConn 17D4 0 CODE 0 text13 dist/default/production\DDISP_FW_V1.X.production.o
+main@speed C4 0 BANK0 1 cstackBANK0 dist/default/production\DDISP_FW_V1.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\DDISP_FW_V1.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-convertReg2ExtendedCANid@tempRXBn_EIDH 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-convertReg2ExtendedCANid@tempRXBn_EIDL 34 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-convertReg2ExtendedCANid@tempRXBn_SIDH 35 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-convertReg2ExtendedCANid@tempRXBn_SIDL 36 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-hazardSignal@value 35 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-batterySOCGraphic@v2 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-batterySOCGraphic@v3 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-batterySOCGraphic@v4 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_EUSART1_SetFramingErrorHandler 15CE 0 CODE 0 text24 dist/default/production\DDISP_FW_V1.X.production.o
-stackhi 0 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-stacklo 0 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-__end_of_EUSART1_SetOverrunErrorHandler 15C4 0 CODE 0 text23 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_EUSART1_Write 1592 0 CODE 0 text12 dist/default/production\DDISP_FW_V1.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+convertReg2ExtendedCANid@tempRXBn_EIDH 42 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+convertReg2ExtendedCANid@tempRXBn_EIDL 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+convertReg2ExtendedCANid@tempRXBn_SIDH 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+convertReg2ExtendedCANid@tempRXBn_SIDL 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+hazardSignal@value 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+batterySOCGraphic@v2 40 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+batterySOCGraphic@v3 42 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+batterySOCGraphic@v4 44 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_EUSART1_SetFramingErrorHandler 1AEE 0 CODE 0 text27 dist/default/production\DDISP_FW_V1.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+stacklo 0 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+__end_of_EUSART1_SetOverrunErrorHandler 1AE4 0 CODE 0 text26 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_EUSART1_Write 1AB2 0 CODE 0 text14 dist/default/production\DDISP_FW_V1.X.production.o
 __Lintcode 8 0 CODE 0 intcode dist/default/production\DDISP_FW_V1.X.production.o
 _OSCCON2 FD2 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _OSCTUNE F9B 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production\DDISP_FW_V1.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\DDISP_FW_V1.X.production.o
-_warningLED D5C 0 CODE 0 text2 dist/default/production\DDISP_FW_V1.X.production.o
+_warningLED 127C 0 CODE 0 text4 dist/default/production\DDISP_FW_V1.X.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __Lspace_1 0 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __Lspace_4 0 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-convertReg2ExtendedCANid@CAN_standardLo_ID_lo2bits 41 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\DDISP_FW_V1.X.production.o
+convertReg2ExtendedCANid@CAN_standardLo_ID_lo2bits 47 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 _PIR1bits F9E 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _PIR5bits F77 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_leftTurnIndicator FBC 0 CODE 0 text6 dist/default/production\DDISP_FW_V1.X.production.o
+_leftTurnIndicator 14DC 0 CODE 0 text8 dist/default/production\DDISP_FW_V1.X.production.o
 _TXB2CONbits F00 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-motorSpeed@v2 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-motorSpeed@v3 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-motorSpeed@v4 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-end_of_initialization 1550 0 CODE 0 cinit dist/default/production\DDISP_FW_V1.X.production.o
+motorSpeed@v2 40 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+motorSpeed@v3 42 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+motorSpeed@v4 44 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+end_of_initialization 1A70 0 CODE 0 cinit dist/default/production\DDISP_FW_V1.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\DDISP_FW_V1.X.production.o
 __Hintentry 0 0 ABS 0 intentry dist/default/production\DDISP_FW_V1.X.production.o
 _RCONbits FD0 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
@@ -1169,9 +1289,9 @@ _RXF15SIDL E6D 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\DDISP_FW_V1.X.production.o
 __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
 _RXB1CONbits F30 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-batteryTemp@v2 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-batteryTemp@v3 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-batteryTemp@v4 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+batteryTemp@v2 40 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+batteryTemp@v3 42 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+batteryTemp@v4 44 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Lramtop F00 0 RAM 0 ramtop dist/default/production\DDISP_FW_V1.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\DDISP_FW_V1.X.production.o
 _BRGCON1 E43 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
@@ -1181,7 +1301,7 @@ _TXB0EIDH F23 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXB0EIDL F24 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXB0SIDH F21 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXB0SIDL F22 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-__pcinit 1538 0 CODE 0 cinit dist/default/production\DDISP_FW_V1.X.production.o
+__pcinit 1A58 0 CODE 0 cinit dist/default/production\DDISP_FW_V1.X.production.o
 _TXB1EIDH F13 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXB1EIDL F14 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXB1SIDH F11 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
@@ -1190,18 +1310,18 @@ _TXB2EIDH F03 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXB2EIDL F04 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXB2SIDH F01 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _TXB2SIDL F02 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_batteryTemp 1184 0 CODE 0 text8 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_batteryTemp 16A4 0 CODE 0 text10 dist/default/production\DDISP_FW_V1.X.production.o
 __ptext0 50 0 CODE 0 text0 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext1 134C 0 CODE 0 text1 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext2 D5C 0 CODE 0 text2 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext3 DF4 0 CODE 0 text3 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext4 E8C 0 CODE 0 text4 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext5 F24 0 CODE 0 text5 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext6 FBC 0 CODE 0 text6 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext7 1054 0 CODE 0 text7 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext8 10EC 0 CODE 0 text8 dist/default/production\DDISP_FW_V1.X.production.o
-__ptext9 1184 0 CODE 0 text9 dist/default/production\DDISP_FW_V1.X.production.o
-convertCANid2Reg@canIdType 38 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__ptext1 FAC 0 CODE 0 text1 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext2 109C 0 CODE 0 text2 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext3 186C 0 CODE 0 text3 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext4 127C 0 CODE 0 text4 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext5 1314 0 CODE 0 text5 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext6 13AC 0 CODE 0 text6 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext7 1444 0 CODE 0 text7 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext8 14DC 0 CODE 0 text8 dist/default/production\DDISP_FW_V1.X.production.o
+__ptext9 1574 0 CODE 0 text9 dist/default/production\DDISP_FW_V1.X.production.o
+convertCANid2Reg@canIdType 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\DDISP_FW_V1.X.production.o
 __Ltext10 0 0 ABS 0 text10 dist/default/production\DDISP_FW_V1.X.production.o
 __Ltext11 0 0 ABS 0 text11 dist/default/production\DDISP_FW_V1.X.production.o
@@ -1224,41 +1344,47 @@ __Ltext27 0 0 ABS 0 text27 dist/default/production\DDISP_FW_V1.X.production.o
 __Ltext28 0 0 ABS 0 text28 dist/default/production\DDISP_FW_V1.X.production.o
 __Ltext29 0 0 ABS 0 text29 dist/default/production\DDISP_FW_V1.X.production.o
 __Ltext30 0 0 ABS 0 text30 dist/default/production\DDISP_FW_V1.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production\DDISP_FW_V1.X.production.o
 __Ltext32 0 0 ABS 0 text32 dist/default/production\DDISP_FW_V1.X.production.o
 __Ltext33 0 0 ABS 0 text33 dist/default/production\DDISP_FW_V1.X.production.o
-__Ltext34 0 0 ABS 0 text34 dist/default/production\DDISP_FW_V1.X.production.o
-__ramtop F00 0 RAM 0 ramtop C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-canHazardSignal@number 4C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__Ltext35 0 0 ABS 0 text35 dist/default/production\DDISP_FW_V1.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production\DDISP_FW_V1.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production\DDISP_FW_V1.X.production.o
+__ramtop F00 0 RAM 0 ramtop C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+canHazardSignal@number 52 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Lpowerup 4C 0 CODE 0 powerup dist/default/production\DDISP_FW_V1.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\DDISP_FW_V1.X.production.o
 _TXB1CONbits F10 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-_convertReg2StandardCANid 13C6 0 CODE 0 text29 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_convertReg2ExtendedCANid D5C 0 CODE 0 text30 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_canLeftSignal 150C 0 CODE 0 text14 dist/default/production\DDISP_FW_V1.X.production.o
+_convertReg2StandardCANid 18E6 0 CODE 0 text32 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_convertReg2ExtendedCANid FAC 0 CODE 0 text33 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_canLeftSignal 1A2C 0 CODE 0 text17 dist/default/production\DDISP_FW_V1.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\DDISP_FW_V1.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-___heap_lo 0 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAsrt8.o
-__end_of_warningLED DF4 0 CODE 0 text2 dist/default/production\DDISP_FW_V1.X.production.o
-_CAN_receive 6B6 0 CODE 0 text28 dist/default/production\DDISP_FW_V1.X.production.o
-motorControllerTemp@value 35 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+___heap_lo 0 0 ABS 0 - C:\Users\ethan\AppData\Local\Temp\xcAssh4.o
+__end_of_warningLED 1314 0 CODE 0 text4 dist/default/production\DDISP_FW_V1.X.production.o
+_CAN_receive 906 0 CODE 0 text31 dist/default/production\DDISP_FW_V1.X.production.o
+motorControllerTemp@value 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXB0CONbits F60 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\DDISP_FW_V1.X.production.o
-__end_of__initialization 1550 0 CODE 0 cinit dist/default/production\DDISP_FW_V1.X.production.o
+__end_of__initialization 1A70 0 CODE 0 cinit dist/default/production\DDISP_FW_V1.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\DDISP_FW_V1.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\DDISP_FW_V1.X.production.o
 _SPBRGH1 F7D 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_batterySOCGraphic 121C 0 CODE 0 text9 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_batterySOCGraphic 173C 0 CODE 0 text11 dist/default/production\DDISP_FW_V1.X.production.o
 _TXB0CONbits F20 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-__pcstackCOMRAM 32 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-warningLED@checksum 38 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_EUSART1_SetFramingErrorHandler 15C4 0 CODE 0 text24 dist/default/production\DDISP_FW_V1.X.production.o
-_EUSART1_SetOverrunErrorHandler 15BA 0 CODE 0 text23 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_init 13C6 0 CODE 0 text1 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_main 39C 0 CODE 0 text0 dist/default/production\DDISP_FW_V1.X.production.o
+__pcstackCOMRAM 38 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+warningLED@checksum 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+hazardButton@b2Latch 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_rightTurnButton 109C 0 CODE 0 text1 dist/default/production\DDISP_FW_V1.X.production.o
+_EUSART1_SetFramingErrorHandler 1AE4 0 CODE 0 text27 dist/default/production\DDISP_FW_V1.X.production.o
+_EUSART1_SetOverrunErrorHandler 1ADA 0 CODE 0 text26 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_init 18E6 0 CODE 0 text3 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_main 5EC 0 CODE 0 text0 dist/default/production\DDISP_FW_V1.X.production.o
 __pintcode 8 0 CODE 0 intcode dist/default/production\DDISP_FW_V1.X.production.o
-_b2FuncActive 19 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_b2FuncActive 32 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 _BSEL0 E7D 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
+_leftTurnButton 109C 0 CODE 0 text2 dist/default/production\DDISP_FW_V1.X.production.o
 _CANSTAT F6E 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _MSEL0 E79 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _MSEL1 E7A 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
@@ -1285,20 +1411,21 @@ _RXB1EIDH F33 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXB1EIDL F34 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXB1SIDH F31 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXB1SIDL F32 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-canRightSignal@number 4C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_EUSART1_Initialize 147C 0 CODE 0 text22 dist/default/production\DDISP_FW_V1.X.production.o
-__end_of_OSCILLATOR_Initialize 15BA 0 CODE 0 text20 dist/default/production\DDISP_FW_V1.X.production.o
-batterySOC@v2 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-batterySOC@v3 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-batterySOC@v4 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-?_convertReg2StandardCANid 34 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-__initialization 1538 0 CODE 0 cinit dist/default/production\DDISP_FW_V1.X.production.o
-convertCANid2Reg@passedInEIDH 39 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-convertCANid2Reg@passedInEIDL 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_b4FuncActive 11 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-convertCANid2Reg@passedInSIDH 3D 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-convertCANid2Reg@passedInSIDL 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-auxBattConn@value 35 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+leftTurnButton@b1Latch 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+canRightSignal@number 52 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_EUSART1_Initialize 199C 0 CODE 0 text25 dist/default/production\DDISP_FW_V1.X.production.o
+__end_of_OSCILLATOR_Initialize 1ADA 0 CODE 0 text23 dist/default/production\DDISP_FW_V1.X.production.o
+batterySOC@v2 40 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+batterySOC@v3 42 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+batterySOC@v4 44 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+?_convertReg2StandardCANid 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+__initialization 1A58 0 CODE 0 cinit dist/default/production\DDISP_FW_V1.X.production.o
+convertCANid2Reg@passedInEIDH 3F 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+convertCANid2Reg@passedInEIDL 41 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_b4FuncActive F 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+convertCANid2Reg@passedInSIDH 43 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+convertCANid2Reg@passedInSIDL 45 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+auxBattConn@value 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\DDISP_FW_V1.X.production.o
 _RXF0EIDH EE2 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXF0EIDL EE3 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
@@ -1348,24 +1475,24 @@ _RXFBCON4 E75 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXFBCON5 E76 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXFBCON6 E77 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
 _RXFBCON7 E78 0 ABS 0 - dist/default/production\DDISP_FW_V1.X.production.o
-_convertCANid2Reg AAE 0 CODE 0 text17 dist/default/production\DDISP_FW_V1.X.production.o
-warningLED@v2 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-warningLED@v3 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-warningLED@v4 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_convertCANid2Reg CFE 0 CODE 0 text20 dist/default/production\DDISP_FW_V1.X.production.o
+warningLED@v2 40 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+warningLED@v3 42 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+warningLED@v4 44 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\DDISP_FW_V1.X.production.o
 __Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\DDISP_FW_V1.X.production.o
-rightTurnIndicator@v2 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-rightTurnIndicator@v3 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-rightTurnIndicator@v4 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+rightTurnIndicator@v2 40 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+rightTurnIndicator@v3 42 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+rightTurnIndicator@v4 44 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\DDISP_FW_V1.X.production.o
-_batterySOC 121C 0 CODE 0 text10 dist/default/production\DDISP_FW_V1.X.production.o
+_batterySOC 173C 0 CODE 0 text12 dist/default/production\DDISP_FW_V1.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\DDISP_FW_V1.X.production.o
-EUSART1_SetOverrunErrorHandler@interruptHandler 34 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_WakeUpInterruptHandler 21 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+EUSART1_SetOverrunErrorHandler@interruptHandler 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_WakeUpInterruptHandler 1B 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 __Hintcode 4C 0 CODE 0 intcode dist/default/production\DDISP_FW_V1.X.production.o
-rightTurnIndicator@value 35 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
-_OSCILLATOR_Initialize 15A8 0 CODE 0 text20 dist/default/production\DDISP_FW_V1.X.production.o
-_b6FuncActive D 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+rightTurnIndicator@value 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
+_OSCILLATOR_Initialize 1AC8 0 CODE 0 text23 dist/default/production\DDISP_FW_V1.X.production.o
+_b6FuncActive B 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1391,9 +1518,9 @@ _b6FuncActive D 0 COMRAM 1 bssCOMRAM dist/default/production\DDISP_FW_V1.X.produ
 # All other numeric quantities are in decimal.
 %SEGMENTS
 reset_vec 0 0 0 4 1
-bssBANK0 1 60 60 54 1
-intcode 0 8 8 15E0 1
-bssCOMRAM 1 1 1 5B 1
+bssBANK0 1 60 60 68 1
+intcode 0 8 8 1B00 1
+bssCOMRAM 1 1 1 5A 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

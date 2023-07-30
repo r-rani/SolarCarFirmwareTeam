@@ -5,9 +5,9 @@
 #include "mcc_generated_files/mcc.h"
 
 void buttonRuntime(int*,int*);//Runtime Checking
-void leftTurnButton(int*);
-void rightTurnButton(int*);
-void hazardButton(int*);
+void leftTurnButton(int*, int*);
+void rightTurnButton(int*, int*);
+void hazardButton(int*, int*);
 
 #endif
 
