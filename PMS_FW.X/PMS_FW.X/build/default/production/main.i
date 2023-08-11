@@ -20694,24 +20694,19 @@ typedef enum
     channel_Temp_diode = 0x1D,
     channel_Vdd_core = 0x1E,
     channel_1_024V_bandgap = 0x1F,
-    IO_RA0 = 0x0,
-    IO_RA1 = 0x1,
-    IO_RA2 = 0x2,
-    IO_RA3 = 0x3,
-    channel_AN4 = 0x4,
-    channel_AN6 = 0x6
+    channel_AN4 = 0x4
 } adc_channel_t;
-# 133 "./mcc_generated_files/adc.h"
+# 128 "./mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 162 "./mcc_generated_files/adc.h"
+# 157 "./mcc_generated_files/adc.h"
 void ADC_StartConversion(adc_channel_t channel);
-# 194 "./mcc_generated_files/adc.h"
+# 189 "./mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 227 "./mcc_generated_files/adc.h"
+# 222 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 257 "./mcc_generated_files/adc.h"
+# 252 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 285 "./mcc_generated_files/adc.h"
+# 280 "./mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
 # 56 "./mcc_generated_files/mcc.h" 2
 
@@ -20765,7 +20760,7 @@ static float THRESVOLT = 10.2;
 static int STARTUP_SUCCESS = 0;
 static int iterator = 0;
 
-uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8,tx9,tx10, tx11, tx12,tx13;
+uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8,tx9,tx10,tx13;
 
 int highOrlow(float voltage){
     int output;
@@ -20797,30 +20792,6 @@ int ADC_Conv_pinSeven(){
     }
     return highOrlow(input_voltage);
 }
-
-float ADC_Conv_pinNine(){
-    float adc_val = ADC_GetConversion(channel_AN6);
-    float volt = adc_val*3.0;
-        if (highOrlow(volt)==1){
-        tx11.frame.idType = 1;
-        tx11.frame.id = 0x89;
-        tx11.frame.dlc = 0x01;
-        tx11.frame.data0 = 1;
-        CAN_transmit(&tx11);
-    }
-    else{
-        tx12.frame.idType = 1;
-        tx12.frame.id = 0x99;
-        tx12.frame.dlc = 0x01;
-        tx12.frame.data0 = 1;
-        CAN_transmit(&tx12);
-    }
-    return highOrlow(volt);
-}
-
-
-
-
 
 
 void canbus_msg_MPPT(int number){
@@ -20893,7 +20864,7 @@ void canbus_motor_rearL_tx(int number){
     tx8.frame.data0 = number;
     CAN_transmit(&tx8);
 }
-# 182 "main.c"
+# 158 "main.c"
 void undo_seq(void){
     if (PORTAbits.RA1 == 1){
         do { LATAbits.LATA1 = 0; } while(0);
@@ -20942,7 +20913,7 @@ void start_up_seq(void){
         do { LATCbits.LATC6 = 1; } while(0);
 
 
-        if (ADC_Conv_pinNine() == 1){
+        if (PORTEbits.RE1 == 1){
             do { LATAbits.LATA2 = 1; } while(0);
             do { LATAbits.LATA3 = 1; } while(0);
             do { LATCbits.LATC1 = 1; } while(0);
@@ -20983,7 +20954,7 @@ void start_up_seq(void){
 
 
                 if(1){
-# 279 "main.c"
+# 255 "main.c"
                         do { LATCbits.LATC0 = 1; } while(0);
                         do { LATCbits.LATC3 = 1; } while(0);
                         _delay((unsigned long)((500)*(20000000/4000.0)));
@@ -21046,7 +21017,7 @@ void aux_battery_failure(void){
     if (ADC_Conv_pinSeven() == 0){
 
 
-        if (ADC_Conv_pinNine() == 1){
+        if (PORTEbits.RE1 == 1){
 
 
             canbus_msg_auxfail(1);
@@ -21088,7 +21059,7 @@ void main(void)
             if (ADC_Conv_pinSeven() == 0){
                 shutdown_seq();
 
-            }else if (ADC_Conv_pinNine() == 0){
+            }else if (PORTEbits.RE1 == 0){
 
                 e_stop_seq();
             }

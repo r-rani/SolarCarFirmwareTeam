@@ -20543,7 +20543,7 @@ void PIN_MANAGER_Initialize(void)
 
 
 
-    ANCON0 = 0xFF;
+    ANCON0 = 0xBF;
     ANCON1 = 0x7F;
 
 

@@ -20,12 +20,8 @@
 static float THRESVOLT = 10.2; //10.2V - actual should be 12V, but 10.2V due to ADC module
 static int STARTUP_SUCCESS = false; //boolean for startup process success
 static int iterator = 0; //motor while loop iterator 
-//Remove pin 9 as adc and replace all instance w high and low
-//motor controller ID is consitently going up (find why)
-//remove ADC from pin 9 and check the pin 7 ADC func 
-//if doesnt complete startup adn keeps clicking so replace pin 9 
-//output for precharge currently will change to just 1 pin 
-uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8,tx9,tx10, tx11, tx12,tx13; //initializations for transmit and receive messages
+
+uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8,tx9,tx10,tx13; //initializations for transmit and receive messages
 
 int highOrlow(float voltage){
     int output;
@@ -57,30 +53,6 @@ int ADC_Conv_pinSeven(){
     }
     return highOrlow(input_voltage);
 }
-
-float ADC_Conv_pinNine(){
-    float adc_val = ADC_GetConversion(channel_AN6);
-    float volt = adc_val*3.0;
-        if (highOrlow(volt)==1){
-        tx11.frame.idType = 1;
-        tx11.frame.id = 0x89; //Arbitration ID
-        tx11.frame.dlc = 0x01; //1 byte
-        tx11.frame.data0 = 1;
-        CAN_transmit(&tx11);
-    }
-    else{
-        tx12.frame.idType = 1;
-        tx12.frame.id = 0x99; //Arbitration ID
-        tx12.frame.dlc = 0x01; //1 byte
-        tx12.frame.data0 = 1;
-        CAN_transmit(&tx12);
-    }
-    return highOrlow(volt);    
-}
-
-
-
-
 //create a function for each DDISP message
 //MPPT Error DDISP
 void canbus_msg_MPPT(int number){
@@ -231,7 +203,7 @@ void start_up_seq(void){
         IO_RC6_SetHigh(); //Set pin 25 high
         //Read pin 9 now -- checking HV line
         //if (highOrlow(IO_RE1_GetValue()) == 1){
-        if (ADC_Conv_pinNine() == 1){
+        if (IO_RE1_GetValue() == 1){
             IO_RA2_SetHigh(); //ati dcdc
             IO_RA3_SetHigh(); //ati aux
             IO_RC1_SetHigh(); //neg connector 1
@@ -342,7 +314,7 @@ void aux_battery_failure(void){
     if (ADC_Conv_pinSeven() == 0){ //pin 7 and pin 9 are analog inputs   -----> need to set as analog? 
         //Read pin 9
         //if (highOrlow(IO_RE1_GetValue()) == 1){
-        if (ADC_Conv_pinNine() == 1){
+        if (IO_RE1_GetValue() == 1){
             //Supplemental battery failure 
             //Display AUX Battery Failure on DDISP
             canbus_msg_auxfail(1);
@@ -384,7 +356,7 @@ void main(void)
             if (ADC_Conv_pinSeven() == 0){   //AUX low
                 shutdown_seq();
            // }else if (highOrlow(IO_RE1_GetValue()) == 0){ //DCDC low
-            }else if (ADC_Conv_pinNine() == 0){ //DCDC low
+            }else if (IO_RE1_GetValue() == 0){ //DCDC low
 
                 e_stop_seq();
             }
