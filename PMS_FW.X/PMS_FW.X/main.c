@@ -20,8 +20,14 @@
 static float THRESVOLT = 10.2; //10.2V - actual should be 12V, but 10.2V due to ADC module
 static int STARTUP_SUCCESS = false; //boolean for startup process success
 static int iterator = 0; //motor while loop iterator 
+//Remove pin 9 as adc and replace all instance w high and low
+//motor controller ID is consitently going up (find why)
+//remove ADC from pin 9 and check the pin 7 ADC func 
+//if doesnt complete startup adn keeps clicking so replace pin 9 
+//output for precharge currently will change to just 1 pin 
+uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8,tx9,tx10, tx11, tx12,tx13; //initializations for transmit and receive messages
 
-int highOrlow(int voltage){
+int highOrlow(float voltage){
     int output;
     if (voltage >= 10.2) {
         output = 1;
@@ -32,7 +38,48 @@ int highOrlow(int voltage){
     return output;
 }
 
-uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8; //initializations for transmit and receive messages
+int ADC_Conv_pinSeven(){
+    float adc_val = ADC_GetConversion(channel_AN4);
+    float input_voltage = adc_val*3.0;
+    if (highOrlow(input_voltage)==1){
+        tx9.frame.idType = 1;
+        tx9.frame.id = 0x69; //Arbitration ID
+        tx9.frame.dlc = 0x01; //1 byte
+        tx9.frame.data0 = 1;
+        CAN_transmit(&tx9);
+    }
+    else{
+        tx10.frame.idType = 1;
+        tx10.frame.id = 0x79; //Arbitration ID
+        tx10.frame.dlc = 0x01; //1 byte
+        tx10.frame.data0 = 1;
+        CAN_transmit(&tx10);
+    }
+    return highOrlow(input_voltage);
+}
+
+float ADC_Conv_pinNine(){
+    float adc_val = ADC_GetConversion(channel_AN6);
+    float volt = adc_val*3.0;
+        if (highOrlow(volt)==1){
+        tx11.frame.idType = 1;
+        tx11.frame.id = 0x89; //Arbitration ID
+        tx11.frame.dlc = 0x01; //1 byte
+        tx11.frame.data0 = 1;
+        CAN_transmit(&tx11);
+    }
+    else{
+        tx12.frame.idType = 1;
+        tx12.frame.id = 0x99; //Arbitration ID
+        tx12.frame.dlc = 0x01; //1 byte
+        tx12.frame.data0 = 1;
+        CAN_transmit(&tx12);
+    }
+    return highOrlow(volt);    
+}
+
+
+
 
 //create a function for each DDISP message
 //MPPT Error DDISP
@@ -164,36 +211,27 @@ void undo_seq(void){
     if (IO_RA3_GetValue() == 1){       //ATI auxiliary
         IO_RA3_SetLow();
     }
+    if (IO_RC6_GetValue() == 1){       //DCDC Disable
+        IO_RC6_SetLow();
+    }
     if (IO_RA2_GetValue() == 1){      //ATI DCDC
         IO_RA2_SetLow();
     }
-   /* if (highOrlow(IO_RE1_GetValue()) == 1){     //read DCDC
-        IO_RE1_SetLow();
-    }*/
-    if ((IO_RE1_GetValue()) == 1){     //read DCDC
-        IO_RE1_SetLow();
-    }
-    /*if (IO_RA0_GetValue() == 1){ //hv on
-        IO_RA0_SetLow();
-    }*/
+
+
     if ((IO_RA0_GetValue()) == 1){     //hv on
         IO_RA0_SetLow();
-    }
-    if (highOrlow(IO_RA5_GetValue()) == 1){    //read AUX
-        IO_RA5_SetLow();
     }
 }
 
 void start_up_seq(void){
     //Read pin 7
-    //if (highOrlow(IO_RA5_GetValue()) == 1){
-    if ((IO_RA5_GetValue()) == 1){
+    if (ADC_Conv_pinSeven() == 1){
         IO_RA0_SetHigh(); //pin 2 - hv on
-        IO_RE1_SetHigh(); //read dcdc - pin 9
-        
+        IO_RC6_SetHigh(); //Set pin 25 high
         //Read pin 9 now -- checking HV line
         //if (highOrlow(IO_RE1_GetValue()) == 1){
-        if ((IO_RE1_GetValue()) == 1){
+        if (ADC_Conv_pinNine() == 1){
             IO_RA2_SetHigh(); //ati dcdc
             IO_RA3_SetHigh(); //ati aux
             IO_RC1_SetHigh(); //neg connector 1
@@ -256,7 +294,12 @@ void start_up_seq(void){
                         IO_RA1_SetHigh();
                         //check MPPT is on AGAIN - if on, startup success. otherwise fail (canbus_msg_MPPT(1))
                         STARTUP_SUCCESS = 1;
-                            }
+                        tx13.frame.idType = 1;
+                        tx13.frame.id = 0x22; //Arbitration ID
+                        tx13.frame.dlc = 0x01; //1 byte
+                        tx13.frame.data0 = 1;
+                        CAN_transmit(&tx13);
+                    }
                 }/* else{
                     undo_seq();
                     //Send Motor Error message to DDISP
@@ -272,8 +315,7 @@ void start_up_seq(void){
 
 void shutdown_seq(void){
     //Read pin 7 - MCU READ AUX
-    //if (highOrlow(IO_RA5_GetValue()) == 0){ 
-    if ((IO_RA5_GetValue()) == 0){ 
+    if (ADC_Conv_pinSeven() == 0){ 
         //system turns off electronically?
         //Stores successful system shut-down somewhere
         canbus_shutdown_success(1); //transmits CANBUS with unique id ----> shutdown
@@ -297,11 +339,10 @@ void e_stop_seq(void){
 //Boundary Cases
 void aux_battery_failure(void){
     //Read pin 7
-   // if (highOrlow(IO_RA5_GetValue()) == 0){ //pin 7 and pin 9 are analog inputs   -----> need to set as analog? 
-    if ((IO_RA5_GetValue()) == 0){
+    if (ADC_Conv_pinSeven() == 0){ //pin 7 and pin 9 are analog inputs   -----> need to set as analog? 
         //Read pin 9
         //if (highOrlow(IO_RE1_GetValue()) == 1){
-        if ((IO_RE1_GetValue()) == 1){
+        if (ADC_Conv_pinNine() == 1){
             //Supplemental battery failure 
             //Display AUX Battery Failure on DDISP
             canbus_msg_auxfail(1);
@@ -312,7 +353,7 @@ void aux_battery_failure(void){
 void aux_battery_LV(void){
     //Read pin 7
     //if (IO_RA5_GetValue() < THRESVOLT){
-    if (IO_RA5_GetValue() != 1){
+    if (ADC_Conv_pinSeven() != 1){
 
         //send msg to DDISP -- LOW AUX VOLTAGE
         canbus_msg_auxlow(1);
@@ -329,19 +370,21 @@ void main(void)
         //if the boolean for startup is false (startup has not run yet), then run startup. Else, don't.
         
         //pins 7 and 9 should constantly be monitored
+
+        
         if (STARTUP_SUCCESS == 0){
-            //if (highOrlow(IO_RA5_GetValue()) == 1){ //AUX high
-            if ((IO_RA5_GetValue()) == 1){ //AUX high
+            //if (ADC_Conv_pinSeven()) == 1){ //AUX high
+            if (ADC_Conv_pinSeven() == 1){ //AUX high
                 start_up_seq();
             }
         }
         
         if (STARTUP_SUCCESS == 1){
-            //if (highOrlow(IO_RA5_GetValue()) == 0){   //AUX low
-            if ((IO_RA5_GetValue()) == 0){   //AUX low
+            //if (ADC_Conv_pinSeven()) == 0){   //AUX low
+            if (ADC_Conv_pinSeven() == 0){   //AUX low
                 shutdown_seq();
            // }else if (highOrlow(IO_RE1_GetValue()) == 0){ //DCDC low
-            }else if ((IO_RE1_GetValue()) == 0){ //DCDC low
+            }else if (ADC_Conv_pinNine() == 0){ //DCDC low
 
                 e_stop_seq();
             }
