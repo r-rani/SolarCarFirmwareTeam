@@ -20694,19 +20694,24 @@ typedef enum
     channel_Temp_diode = 0x1D,
     channel_Vdd_core = 0x1E,
     channel_1_024V_bandgap = 0x1F,
-    channel_AN4 = 0x4
+    IO_RA0 = 0x0,
+    IO_RA1 = 0x1,
+    IO_RA2 = 0x2,
+    IO_RA3 = 0x3,
+    channel_AN4 = 0x4,
+    IO_RE1 = 0x6
 } adc_channel_t;
-# 128 "./mcc_generated_files/adc.h"
+# 133 "./mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 157 "./mcc_generated_files/adc.h"
+# 162 "./mcc_generated_files/adc.h"
 void ADC_StartConversion(adc_channel_t channel);
-# 189 "./mcc_generated_files/adc.h"
+# 194 "./mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 222 "./mcc_generated_files/adc.h"
+# 227 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 252 "./mcc_generated_files/adc.h"
+# 257 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 280 "./mcc_generated_files/adc.h"
+# 285 "./mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
 # 56 "./mcc_generated_files/mcc.h" 2
 
@@ -20755,7 +20760,7 @@ void SYSTEM_Initialize(void);
 # 85 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
 # 2 "main.c" 2
-# 20 "main.c"
+# 22 "main.c"
 static float THRESVOLT = 10.2;
 static int STARTUP_SUCCESS = 0;
 static int iterator = 0;
@@ -20778,15 +20783,15 @@ int ADC_Conv_pinSeven(){
     adc_val = (adc_val / 1023.0)*5.0;
     float input_voltage = adc_val*3.0;
     if (highOrlow(input_voltage)==1){
-        tx9.frame.idType = 1;
-        tx9.frame.id = 0x69;
-        tx9.frame.dlc = 0x01;
-        tx9.frame.data0 = 1;
-        CAN_transmit(&tx9);
+
+
+
+
+
     }
     else{
         tx10.frame.idType = 1;
-        tx10.frame.id = 0x79;
+        tx10.frame.id = 0x69;
         tx10.frame.dlc = 0x01;
         tx10.frame.data0 = 1;
         CAN_transmit(&tx10);
@@ -20865,7 +20870,7 @@ void canbus_motor_rearL_tx(int number){
     tx8.frame.data0 = number;
     CAN_transmit(&tx8);
 }
-# 159 "main.c"
+# 161 "main.c"
 void undo_seq(void){
     if (PORTAbits.RA1 == 1){
         do { LATAbits.LATA1 = 0; } while(0);
@@ -20912,6 +20917,7 @@ void start_up_seq(void){
     if (ADC_Conv_pinSeven() == 1){
         do { LATAbits.LATA0 = 1; } while(0);
         do { LATCbits.LATC6 = 1; } while(0);
+        _delay((unsigned long)((50)*(20000000/4000.0)));
 
 
         if (PORTEbits.RE1 == 1){
@@ -20955,7 +20961,7 @@ void start_up_seq(void){
 
 
                 if(1){
-# 256 "main.c"
+# 259 "main.c"
                         do { LATCbits.LATC0 = 1; } while(0);
                         do { LATCbits.LATC3 = 1; } while(0);
                         _delay((unsigned long)((500)*(20000000/4000.0)));
@@ -20970,11 +20976,6 @@ void start_up_seq(void){
                         do { LATAbits.LATA1 = 1; } while(0);
 
                         STARTUP_SUCCESS = 1;
-                        tx13.frame.idType = 1;
-                        tx13.frame.id = 0x22;
-                        tx13.frame.dlc = 0x01;
-                        tx13.frame.data0 = 1;
-                        CAN_transmit(&tx13);
                     }
                 }
 
@@ -20988,17 +20989,7 @@ void start_up_seq(void){
         }
     }
 }
-
-void shutdown_seq(void){
-
-    if (ADC_Conv_pinSeven() == 0){
-
-
-        canbus_shutdown_success(1);
-    }
-    canbus_shutdown_success(1);
-}
-
+# 297 "main.c"
 void e_stop_seq(void){
 
 
@@ -21050,17 +21041,18 @@ void main(void)
 
         if (STARTUP_SUCCESS == 0){
 
-            if (ADC_Conv_pinSeven() == 1){
+
                 start_up_seq();
             }
-        }
+
 
         if (STARTUP_SUCCESS == 1){
 
             if (ADC_Conv_pinSeven() == 0){
-                shutdown_seq();
+                canbus_shutdown_success(1);
 
-            }else if (PORTEbits.RE1 == 0){
+            }
+            else if (PORTEbits.RE1 == 0){
 
                 e_stop_seq();
             }
@@ -21068,6 +21060,5 @@ void main(void)
 
         aux_battery_failure();
         aux_battery_LV();
-
-        }
-}
+    }
+ }

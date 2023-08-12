@@ -9,15 +9,25 @@ channel_CTMU 28
 channel_Temp_diode 29
 channel_Vdd_core 30
 channel_1_024V_bandgap 31
+IO_RA0 0
+IO_RA1 1
+IO_RA2 2
+IO_RA3 3
 channel_AN4 4
+IO_RE1 6
 ]
-"38 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
+"40 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
 [e E12720 . `uc
 channel_CTMU 28
 channel_Temp_diode 29
 channel_Vdd_core 30
 channel_1_024V_bandgap 31
+IO_RA0 0
+IO_RA1 1
+IO_RA2 2
+IO_RA3 3
 channel_AN4 4
+IO_RE1 6
 ]
 "4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
@@ -47,37 +57,35 @@ channel_AN4 4
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"26 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
+"28 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
 [v _highOrlow highOrlow `(i  1 e 2 0 ]
-"37
+"39
 [v _ADC_Conv_pinSeven ADC_Conv_pinSeven `(i  1 e 2 0 ]
-"68
+"70
 [v _canbus_msg_motor canbus_msg_motor `(v  1 e 1 0 ]
-"77
+"79
 [v _canbus_msg_startupfail canbus_msg_startupfail `(v  1 e 1 0 ]
-"86
+"88
 [v _canbus_msg_bps canbus_msg_bps `(v  1 e 1 0 ]
-"95
+"97
 [v _canbus_msg_auxfail canbus_msg_auxfail `(v  1 e 1 0 ]
-"104
+"106
 [v _canbus_msg_auxlow canbus_msg_auxlow `(v  1 e 1 0 ]
-"113
+"115
 [v _canbus_shutdown_success canbus_shutdown_success `(v  1 e 1 0 ]
-"122
+"124
 [v _canbus_motor_rearL_tx canbus_motor_rearL_tx `(v  1 e 1 0 ]
-"159
+"161
 [v _undo_seq undo_seq `(v  1 e 1 0 ]
-"200
+"202
 [v _start_up_seq start_up_seq `(v  1 e 1 0 ]
-"289
-[v _shutdown_seq shutdown_seq `(v  1 e 1 0 ]
-"299
+"297
 [v _e_stop_seq e_stop_seq `(v  1 e 1 0 ]
-"313
+"311
 [v _aux_battery_failure aux_battery_failure `(v  1 e 1 0 ]
-"326
+"324
 [v _aux_battery_LV aux_battery_LV `(v  1 e 1 0 ]
-"336
+"334
 [v _main main `(v  1 e 1 0 ]
 "62 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
@@ -614,7 +622,7 @@ channel_AN4 4
 ]
 [u S284 . 1 `S270 1 . 1 0 `S279 1 . 1 0 ]
 [v _PIR5bits PIR5bits `VES284  1 e 1 @3959 ]
-[s S1190 . 1 `uc 1 RA0 1 0 :1:0 
+[s S1200 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -624,15 +632,15 @@ channel_AN4 4
 `uc 1 RA7 1 0 :1:7 
 ]
 "30019
-[s S1199 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+[s S1209 . 1 `uc 1 ULPWUIN 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 LVDIN 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 RJPU 1 0 :1:7 
 ]
-[u S1205 . 1 `S1190 1 . 1 0 `S1199 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES1205  1 e 1 @3968 ]
-[s S1264 . 1 `uc 1 RC0 1 0 :1:0 
+[u S1215 . 1 `S1200 1 . 1 0 `S1209 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES1215  1 e 1 @3968 ]
+[s S1274 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -642,39 +650,39 @@ channel_AN4 4
 `uc 1 RC7 1 0 :1:7 
 ]
 "30171
-[s S1273 . 1 `uc 1 . 1 0 :1:0 
+[s S1283 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 CCP2 1 0 :1:1 
 `uc 1 PA1 1 0 :1:2 
 ]
-[s S1277 . 1 `uc 1 . 1 0 :1:0 
+[s S1287 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 PA2 1 0 :1:1 
 ]
-[u S1280 . 1 `S1264 1 . 1 0 `S1273 1 . 1 0 `S1277 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES1280  1 e 1 @3970 ]
-[s S1341 . 1 `uc 1 RE0 1 0 :1:0 
+[u S1290 . 1 `S1274 1 . 1 0 `S1283 1 . 1 0 `S1287 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES1290  1 e 1 @3970 ]
+[s S1353 . 1 `uc 1 RE0 1 0 :1:0 
 `uc 1 RE1 1 0 :1:1 
 `uc 1 RE2 1 0 :1:2 
 `uc 1 RE3 1 0 :1:3 
 ]
 "30331
-[s S1346 . 1 `uc 1 PD2 1 0 :1:0 
+[s S1358 . 1 `uc 1 PD2 1 0 :1:0 
 `uc 1 PC2 1 0 :1:1 
 `uc 1 CCP10 1 0 :1:2 
 `uc 1 CCP9E 1 0 :1:3 
 ]
-[s S1351 . 1 `uc 1 RDE 1 0 :1:0 
+[s S1363 . 1 `uc 1 RDE 1 0 :1:0 
 `uc 1 WRE 1 0 :1:1 
 `uc 1 CS 1 0 :1:2 
 `uc 1 PC3E 1 0 :1:3 
 ]
-[s S1356 . 1 `uc 1 . 1 0 :2:0 
+[s S1368 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 PB2 1 0 :1:2 
 ]
-[u S1359 . 1 `S1341 1 . 1 0 `S1346 1 . 1 0 `S1351 1 . 1 0 `S1356 1 . 1 0 ]
-[v _PORTEbits PORTEbits `VES1359  1 e 1 @3972 ]
+[u S1371 . 1 `S1353 1 . 1 0 `S1358 1 . 1 0 `S1363 1 . 1 0 `S1368 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES1371  1 e 1 @3972 ]
 "30492
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
-[s S1224 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S1234 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -684,7 +692,7 @@ channel_AN4 4
 `uc 1 LATA7 1 0 :1:7 
 ]
 "30519
-[s S1233 . 1 `uc 1 LA0 1 0 :1:0 
+[s S1243 . 1 `uc 1 LA0 1 0 :1:0 
 `uc 1 LA1 1 0 :1:1 
 `uc 1 LA2 1 0 :1:2 
 `uc 1 LA3 1 0 :1:3 
@@ -693,13 +701,13 @@ channel_AN4 4
 `uc 1 LA6 1 0 :1:6 
 `uc 1 LA7 1 0 :1:7 
 ]
-[u S1242 . 1 `S1224 1 . 1 0 `S1233 1 . 1 0 ]
-[v _LATAbits LATAbits `VES1242  1 e 1 @3977 ]
+[u S1252 . 1 `S1234 1 . 1 0 `S1243 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1252  1 e 1 @3977 ]
 "30594
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
 "30706
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
-[s S1301 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S1311 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -709,7 +717,7 @@ channel_AN4 4
 `uc 1 LATC7 1 0 :1:7 
 ]
 "30733
-[s S1310 . 1 `uc 1 LC0 1 0 :1:0 
+[s S1320 . 1 `uc 1 LC0 1 0 :1:0 
 `uc 1 LC1 1 0 :1:1 
 `uc 1 LC2 1 0 :1:2 
 `uc 1 LC3 1 0 :1:3 
@@ -718,8 +726,8 @@ channel_AN4 4
 `uc 1 LC6 1 0 :1:6 
 `uc 1 LC7 1 0 :1:7 
 ]
-[u S1319 . 1 `S1301 1 . 1 0 `S1310 1 . 1 0 ]
-[v _LATCbits LATCbits `VES1319  1 e 1 @3979 ]
+[u S1329 . 1 `S1311 1 . 1 0 `S1320 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1329  1 e 1 @3979 ]
 "30818
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
 "30930
@@ -744,16 +752,16 @@ channel_AN4 4
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
 "34938
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
-[s S1079 . 1 `uc 1 . 1 0 :1:0 
+[s S1084 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_NOT_DONE 1 0 :1:1 
 ]
 "34983
-[s S1082 . 1 `uc 1 ADON 1 0 :1:0 
+[s S1087 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :5:2 
 ]
 "34983
-[s S1086 . 1 `uc 1 . 1 0 :1:0 
+[s S1091 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 DONE 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -762,30 +770,30 @@ channel_AN4 4
 `uc 1 CHS4 1 0 :1:6 
 ]
 "34983
-[s S1094 . 1 `uc 1 . 1 0 :1:0 
+[s S1099 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
 "34983
-[s S1097 . 1 `uc 1 . 1 0 :1:0 
+[s S1102 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_DONE 1 0 :1:1 
 ]
 "34983
-[s S1100 . 1 `uc 1 . 1 0 :1:0 
+[s S1105 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nDONE 1 0 :1:1 
 ]
 "34983
-[s S1103 . 1 `uc 1 . 1 0 :1:0 
+[s S1108 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GODONE 1 0 :1:1 
 ]
 "34983
-[s S1106 . 1 `uc 1 . 1 0 :1:0 
+[s S1111 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_DONE 1 0 :1:1 
 ]
 "34983
-[u S1109 . 1 `S1079 1 . 1 0 `S1082 1 . 1 0 `S1086 1 . 1 0 `S1094 1 . 1 0 `S1097 1 . 1 0 `S1100 1 . 1 0 `S1103 1 . 1 0 `S1106 1 . 1 0 ]
+[u S1114 . 1 `S1084 1 . 1 0 `S1087 1 . 1 0 `S1091 1 . 1 0 `S1099 1 . 1 0 `S1102 1 . 1 0 `S1105 1 . 1 0 `S1108 1 . 1 0 `S1111 1 . 1 0 ]
 "34983
 "34983
-[v _ADCON0bits ADCON0bits `VES1109  1 e 1 @4034 ]
+[v _ADCON0bits ADCON0bits `VES1114  1 e 1 @4034 ]
 "35070
 [v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
 "35090
@@ -893,12 +901,12 @@ channel_AN4 4
 "37236
 "37236
 [v _INTCONbits INTCONbits `VES100  1 e 1 @4082 ]
-"21 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
+"23 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
 [v _STARTUP_SUCCESS STARTUP_SUCCESS `i  1 s 2 STARTUP_SUCCESS ]
-"22
+"24
 [v _iterator iterator `i  1 s 2 iterator ]
 [s S334 . 14 `uc 1 idType 1 0 `ul 1 id 4 1 `uc 1 dlc 1 5 `uc 1 data0 1 6 `uc 1 data1 1 7 `uc 1 data2 1 8 `uc 1 data3 1 9 `uc 1 data4 1 10 `uc 1 data5 1 11 `uc 1 data6 1 12 `uc 1 data7 1 13 ]
-"24
+"26
 [u S346 . 14 `S334 1 frame 14 0 `[14]uc 1 array 14 0 ]
 [v _rx rx `S346  1 e 14 0 ]
 [v _tx1 tx1 `S346  1 e 14 0 ]
@@ -909,43 +917,41 @@ channel_AN4 4
 [v _tx6 tx6 `S346  1 e 14 0 ]
 [v _tx7 tx7 `S346  1 e 14 0 ]
 [v _tx8 tx8 `S346  1 e 14 0 ]
-[v _tx9 tx9 `S346  1 e 14 0 ]
 [v _tx10 tx10 `S346  1 e 14 0 ]
-[v _tx13 tx13 `S346  1 e 14 0 ]
 "54 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/ecan.c
 [v _WakeUpInterruptHandler WakeUpInterruptHandler `*.37(v  1 s 2 WakeUpInterruptHandler ]
-"336 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
+"334 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"370
+"368
 } 0
-"200
+"202
 [v _start_up_seq start_up_seq `(v  1 e 1 0 ]
 {
-"287
+"285
 } 0
-"159
+"161
 [v _undo_seq undo_seq `(v  1 e 1 0 ]
 {
-"198
+"200
 } 0
-"77
+"79
 [v _canbus_msg_startupfail canbus_msg_startupfail `(v  1 e 1 0 ]
 {
 [v canbus_msg_startupfail@number number `i  1 p 2 26 ]
-"83
+"85
 } 0
-"68
+"70
 [v _canbus_msg_motor canbus_msg_motor `(v  1 e 1 0 ]
 {
 [v canbus_msg_motor@number number `i  1 p 2 26 ]
-"74
+"76
 } 0
-"122
+"124
 [v _canbus_motor_rearL_tx canbus_motor_rearL_tx `(v  1 e 1 0 ]
 {
 [v canbus_motor_rearL_tx@number number `i  1 p 2 26 ]
-"128
+"130
 } 0
 "320 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/ecan.c
 [v _CAN_receive CAN_receive `(uc  1 e 1 0 ]
@@ -993,67 +999,62 @@ channel_AN4 4
 [v convertReg2ExtendedCANid@tempRXBn_EIDH tempRXBn_EIDH `uc  1 a 1 10 ]
 "456
 } 0
-"289 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
-[v _shutdown_seq shutdown_seq `(v  1 e 1 0 ]
-{
-"297
-} 0
-"113
-[v _canbus_shutdown_success canbus_shutdown_success `(v  1 e 1 0 ]
-{
-[v canbus_shutdown_success@number number `i  1 p 2 26 ]
-"119
-} 0
-"299
+"297 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
 [v _e_stop_seq e_stop_seq `(v  1 e 1 0 ]
 {
-"310
+"308
 } 0
-"86
+"88
 [v _canbus_msg_bps canbus_msg_bps `(v  1 e 1 0 ]
 {
 [v canbus_msg_bps@number number `i  1 p 2 26 ]
-"92
+"94
 } 0
-"313
+"115
+[v _canbus_shutdown_success canbus_shutdown_success `(v  1 e 1 0 ]
+{
+[v canbus_shutdown_success@number number `i  1 p 2 26 ]
+"121
+} 0
+"311
 [v _aux_battery_failure aux_battery_failure `(v  1 e 1 0 ]
 {
-"324
+"322
 } 0
-"95
+"97
 [v _canbus_msg_auxfail canbus_msg_auxfail `(v  1 e 1 0 ]
 {
 [v canbus_msg_auxfail@number number `i  1 p 2 26 ]
-"101
+"103
 } 0
-"326
+"324
 [v _aux_battery_LV aux_battery_LV `(v  1 e 1 0 ]
 {
-"334
+"332
 } 0
-"104
+"106
 [v _canbus_msg_auxlow canbus_msg_auxlow `(v  1 e 1 0 ]
 {
 [v canbus_msg_auxlow@number number `i  1 p 2 26 ]
-"110
+"112
 } 0
-"37
+"39
 [v _ADC_Conv_pinSeven ADC_Conv_pinSeven `(i  1 e 2 0 ]
 {
-"38
-[v ADC_Conv_pinSeven@adc_val adc_val `f  1 a 4 58 ]
 "40
+[v ADC_Conv_pinSeven@adc_val adc_val `f  1 a 4 58 ]
+"42
 [v ADC_Conv_pinSeven@input_voltage input_voltage `f  1 a 4 54 ]
-"56
+"58
 } 0
-"26
+"28
 [v _highOrlow highOrlow `(i  1 e 2 0 ]
 {
-"27
+"29
 [v highOrlow@output output `i  1 a 2 18 ]
-"26
+"28
 [v highOrlow@voltage voltage `f  1 p 4 14 ]
-"35
+"37
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\flge.c
 [v ___flge __flge `(b  1 e 0 0 ]
@@ -1080,17 +1081,17 @@ channel_AN4 4
 "8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S2080 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S2066 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S2085 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S2088 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2080 1 fAsBytes 4 0 `S2085 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S2088  1 a 4 46 ]
+[s S2071 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S2074 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2066 1 fAsBytes 4 0 `S2071 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2074  1 a 4 46 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 40 ]
-[s S2156 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S2142 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S2159 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2156 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S2159  1 a 2 50 ]
+[u S2145 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2142 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2145  1 a 2 50 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 45 ]
 "11

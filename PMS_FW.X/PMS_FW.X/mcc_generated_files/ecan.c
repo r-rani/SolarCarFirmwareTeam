@@ -209,7 +209,7 @@ void ECAN_Initialize(void)
     */
     
     /**
-	Baud rate: 50kbps
+	Baud rate: 250kbps
 	System frequency: 20000000
     ECAN clock frequency: 20000000
 	Time quanta: 10
@@ -217,7 +217,7 @@ void ECAN_Initialize(void)
 	Sample point: 80%
 	*/
     
-    BRGCON1 = 0x13;
+    BRGCON1 = 0x03;
     BRGCON2 = 0xA8;
     BRGCON3 = 0x01;
     

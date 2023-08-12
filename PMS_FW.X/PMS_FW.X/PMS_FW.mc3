@@ -532,7 +532,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ECAN" name="canBaudComboBox"/>
-         <value>50kbps</value>
+         <value>250kbps</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ECAN" name="canClockFreqKey"/>
@@ -4116,7 +4116,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="BRGCON1"/>
-         <value>19</value>
+         <value>3</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="BRGCON2"/>
@@ -6076,7 +6076,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="BRGCON1" settingAlias="BRP"/>
-         <value>TQ = (2 x 20)/FOSC</value>
+         <value>TQ = (2 x 4)/FOSC</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="BRGCON1" settingAlias="SJW"/>
@@ -12618,7 +12618,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\adc.h</file>
-         <hash>cfc91d22a964934452f1b2278e2247a0030377d0ba0eb5f52b0d4f0f5988dd54</hash>
+         <hash>8f1d4cd677a8f038e97923a9c4d0ad7b6c606a95d87477ec015d6e98350b356c</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
@@ -12630,7 +12630,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\ecan.c</file>
-         <hash>44ebd372739eaa8477faa18cdbd9beafb18f9d6f421f4bd00d30f6cc891111c0</hash>
+         <hash>bcf796c509347606fb6b17a6d5b82f9670e0731a311ed1b5e22f7c00147caa47</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>

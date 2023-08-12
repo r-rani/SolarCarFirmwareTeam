@@ -17,6 +17,8 @@
 //#define DDISP_OUT //pin ? 
 //#define MOTOR_ON // pin ?
 
+
+
 static float THRESVOLT = 10.2; //10.2V - actual should be 12V, but 10.2V due to ADC module
 static int STARTUP_SUCCESS = false; //boolean for startup process success
 static int iterator = 0; //motor while loop iterator 
@@ -39,11 +41,11 @@ int ADC_Conv_pinSeven(){
     adc_val = (adc_val / 1023.0)*5.0; //12 bit adc , 5V= reference voltage
     float input_voltage = adc_val*3.0;
     if (highOrlow(input_voltage)==1){
-        tx9.frame.idType = 1;
-        tx9.frame.id = 0x420; //Arbitration ID
-        tx9.frame.dlc = 0x01; //1 byte
-        tx9.frame.data0 = 1;
-        CAN_transmit(&tx9);
+//        tx9.frame.idType = 1;
+//        tx9.frame.id = 0x420; //Arbitration ID
+//        tx9.frame.dlc = 0x01; //1 byte
+//        tx9.frame.data0 = 1;
+//        CAN_transmit(&tx9);
     }
     else{
         tx10.frame.idType = 1;
@@ -202,6 +204,7 @@ void start_up_seq(void){
     if (ADC_Conv_pinSeven() == 1){
         IO_RA0_SetHigh(); //pin 2 - hv on
         IO_RC6_SetHigh(); //Set pin 25 high
+        __delay_ms(50);
         //Read pin 9 now -- checking HV line
         //if (highOrlow(IO_RE1_GetValue()) == 1){
         if (IO_RE1_GetValue() == 1){
@@ -267,11 +270,6 @@ void start_up_seq(void){
                         IO_RA1_SetHigh();
                         //check MPPT is on AGAIN - if on, startup success. otherwise fail (canbus_msg_MPPT(1))
                         STARTUP_SUCCESS = 1;
-                        tx13.frame.idType = 1;
-                        tx13.frame.id = 0x22; //Arbitration ID
-                        tx13.frame.dlc = 0x01; //1 byte
-                        tx13.frame.data0 = 1;
-                        CAN_transmit(&tx13);
                     }
                 }/* else{
                     undo_seq();
@@ -286,15 +284,15 @@ void start_up_seq(void){
     }
 }
 
-void shutdown_seq(void){
-    //Read pin 7 - MCU READ AUX
-    if (ADC_Conv_pinSeven() == 0){ 
-        //system turns off electronically?
-        //Stores successful system shut-down somewhere
-        canbus_shutdown_success(1); //transmits CANBUS with unique id ----> shutdown
-    }
-    canbus_shutdown_success(1);
-}
+//void shutdown_seq(void){
+//    //Read pin 7 - MCU READ AUX
+//   // if (ADC_Conv_pinSeven() == 0){ 
+//        //system turns off electronically?
+//        //Stores successful system shut-down somewhere
+//    canbus_shutdown_success(1); //transmits CANBUS with unique id ----> shutdown
+//    //}
+//    //canbus_shutdown_success(1);
+//}
 
 void e_stop_seq(void){
     //Read pin 9 - read dcdc
@@ -343,21 +341,22 @@ void main(void)
         //if the boolean for startup is false (startup has not run yet), then run startup. Else, don't.
         
         //pins 7 and 9 should constantly be monitored
-
+        
         
         if (STARTUP_SUCCESS == 0){
             //if (ADC_Conv_pinSeven()) == 1){ //AUX high
-            if (ADC_Conv_pinSeven() == 1){ //AUX high
+            //if (ADC_Conv_pinSeven() == 1){ //AUX high
                 start_up_seq();
             }
-        }
+        
         
         if (STARTUP_SUCCESS == 1){
             //if (ADC_Conv_pinSeven()) == 0){   //AUX low
             if (ADC_Conv_pinSeven() == 0){   //AUX low
-                shutdown_seq();
+                canbus_shutdown_success(1);
            // }else if (highOrlow(IO_RE1_GetValue()) == 0){ //DCDC low
-            }else if (IO_RE1_GetValue() == 0){ //DCDC low
+            }
+            else if (IO_RE1_GetValue() == 0){ //DCDC low
 
                 e_stop_seq();
             }
@@ -365,9 +364,8 @@ void main(void)
         
         aux_battery_failure();
         aux_battery_LV();
-        
-        }
-}
+    }
+ }
 /**
  End of File
 */

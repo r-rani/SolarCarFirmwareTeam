@@ -2353,8 +2353,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/ecan.c: 205:     RXF15SIDL = 0xE3;
 [e = _RXF15SIDL -> -> 227 `i `uc ]
 "220
-[; ;mcc_generated_files/ecan.c: 220:     BRGCON1 = 0x13;
-[e = _BRGCON1 -> -> 19 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 220:     BRGCON1 = 0x03;
+[e = _BRGCON1 -> -> 3 `i `uc ]
 "221
 [; ;mcc_generated_files/ecan.c: 221:     BRGCON2 = 0xA8;
 [e = _BRGCON2 -> -> 168 `i `uc ]
