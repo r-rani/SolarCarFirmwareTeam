@@ -14,8 +14,6 @@
 //#define POS_CON_1 //pin 15 - RC0
 //#define POS_CON_2 //pin 18 - RC3
 //#define READ_MPPT //pin 3 - RA1
-//#define DDISP_OUT //pin ? 
-//#define MOTOR_ON // pin ?
 
 
 
@@ -129,35 +127,6 @@ void canbus_motor_rearL_tx(int number){
     CAN_transmit(&tx8);
 }
 
-////CAN receive for motor - 4 functions
-//void canbus_motor_rearL(uCAN_MSG rx1){
-//    rx1.frame.idType = 1;
-//    rx1.frame.id = 0x08950225; //ID value
-//    rx1.frame.dlc = 0x01; //1 byte
-//    rx1.frame.data0 = 0x00000001;  //power mode
-//}
-//
-//void canbus_motor_rearR(uCAN_MSG rx2){
-//    rx2.frame.idType = 1;
-//    rx2.frame.id = 0x08950245; //ID value
-//    rx2.frame.dlc = 0x01; //1 byte
-//    rx2.frame.data0 = 0x00000001;  //power mode
-//}
-//
-//void canbus_motor_frontL(uCAN_MSG rx3){
-//    rx3.frame.idType = 1;
-//    rx3.frame.id = 0x08950265; //ID value
-//    rx3.frame.dlc = 0x01; //1 byte
-//    rx3.frame.data0 = 0x00000001;  //power mode
-//}
-//
-//void canbus_motor_frontR(uCAN_MSG rx4){
-//    rx4.frame.idType = 1;
-//    rx4.frame.id = 0x08950285; //ID value
-//    rx4.frame.dlc = 0x01; //1 byte
-//    rx4.frame.data0 = 0x00000001;  //power mode
-//}
-
 void undo_seq(void){
     if (IO_RA1_GetValue() == 1){     //read mppt
         IO_RA1_SetLow();
@@ -174,9 +143,6 @@ void undo_seq(void){
     if (IO_RC0_GetValue() == 1){     //positive connector 1
         IO_RC0_SetLow();
     }
-//    if (MOTOR_ON == 1){      //motor on pin
-//        MOTOR_ON == LOW;
-//    }
     if (IO_RC4_GetValue() == 1){     //negative connector 2
         IO_RC4_SetLow();
     }
