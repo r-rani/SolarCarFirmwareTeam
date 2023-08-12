@@ -49,9 +49,9 @@
         <targetDevice>PIC18F46K80</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>pk4hybrid</platformTool>
+        <platformTool>PICkit3PlatformTool</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.36</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>

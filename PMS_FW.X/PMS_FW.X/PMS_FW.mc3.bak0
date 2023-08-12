@@ -1,4 +1,4 @@
-<config configName="default" projectName="PMS_FW" configVersion="1.1" device="PIC18F46K80" deviceLibraryClass="com.microchip.mcc.mcu8.Mcu8PeripheralLibrary" coreVersion="5.4.4">
+<config configName="default" projectName="PMS_FW" configVersion="1.1" device="PIC18F46K80" deviceLibraryClass="com.microchip.mcc.mcu8.Mcu8PeripheralLibrary" coreVersion="5.4.11">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -12591,58 +12591,58 @@
          <value>4194.30400</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.TreeMap">
+   <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>main.c</file>
-         <hash>38af3cf765c11fa66645c60c26f06ac4188a5f392f0dbe4a36c1f94f96fb06f4</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\adc.c</file>
-         <hash>7c92be5c65a8d1d8160d3b1e6a5813fe5d3d9b90a05f7b1201224b06507d9a90</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\adc.h</file>
-         <hash>cfc91d22a964934452f1b2278e2247a0030377d0ba0eb5f52b0d4f0f5988dd54</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\device_config.c</file>
-         <hash>bfa9a845cc51527aa1e024998e1f440168e5e59dba1ab0082caa3af7d2ec0830</hash>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>21d3e6bf1511ac653c0153b2d1a3eb8cd5db525187f519fb6511b9879b0ce532</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
          <hash>3a59dc060569423fa49fb0efa8ac35f6a38ec2e435432e2ac31fe24efad554ff</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\ecan.c</file>
-         <hash>44ebd372739eaa8477faa18cdbd9beafb18f9d6f421f4bd00d30f6cc891111c0</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\ecan.h</file>
-         <hash>8fae077d5123fb408bd51409b4a0f1bb1c91c2fa40b8ea2b93825467e1c74967</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\interrupt_manager.c</file>
-         <hash>ae85a6fea9e7d0ee77c99730e86b8714cb07a379b27bef174c7654356f866ad0</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\interrupt_manager.h</file>
          <hash>7548b0a19317ce666c478ed44fc9c81ac4e839285c50c46177ffd452fdc53bfc</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>007464ea6b8828a9bc878acb9a9e424771122b5c00938ea3de1963d549cac4a0</hash>
+         <file>main.c</file>
+         <hash>38af3cf765c11fa66645c60c26f06ac4188a5f392f0dbe4a36c1f94f96fb06f4</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>21d3e6bf1511ac653c0153b2d1a3eb8cd5db525187f519fb6511b9879b0ce532</hash>
+         <file>mcc_generated_files\device_config.c</file>
+         <hash>bfa9a845cc51527aa1e024998e1f440168e5e59dba1ab0082caa3af7d2ec0830</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>60ae94cd4f2368c69cd0162dd62b1cd2182d930de5cd5a9ded0c8eb55313e9ce</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\adc.h</file>
+         <hash>cfc91d22a964934452f1b2278e2247a0030377d0ba0eb5f52b0d4f0f5988dd54</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
          <hash>9d25124207b4d59b748fa29185f5c9969e8d0756bc4743446c2ec53c6635e39f</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\pin_manager.h</file>
-         <hash>60ae94cd4f2368c69cd0162dd62b1cd2182d930de5cd5a9ded0c8eb55313e9ce</hash>
+         <file>mcc_generated_files\adc.c</file>
+         <hash>7c92be5c65a8d1d8160d3b1e6a5813fe5d3d9b90a05f7b1201224b06507d9a90</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\ecan.c</file>
+         <hash>44ebd372739eaa8477faa18cdbd9beafb18f9d6f421f4bd00d30f6cc891111c0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>007464ea6b8828a9bc878acb9a9e424771122b5c00938ea3de1963d549cac4a0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>ae85a6fea9e7d0ee77c99730e86b8714cb07a379b27bef174c7654356f866ad0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\ecan.h</file>
+         <hash>8fae077d5123fb408bd51409b4a0f1bb1c91c2fa40b8ea2b93825467e1c74967</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

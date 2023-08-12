@@ -1,27 +1,27 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\ranir\AppData\Local\Temp\xcAsh0g.\driver_tmp_3.o
+ dist/default/production\PMS_FW.X.production.hex
  -Odist/default/production\PMS_FW.X.production.hex
  -logfile=dist/default/production\PMS_FW.X.production.hxl
  -addressing=1
  -break=300000
 
 ### Memory Usage ###
- Input file ranges:
-  0h - 3h		(C:\Users\ranir\AppData\Local\Temp\xcAsh0g.\driver_tmp_3.o)
-  8h - 1C1Dh		(C:\Users\ranir\AppData\Local\Temp\xcAsh0g.\driver_tmp_3.o)
-  200000h - 200007h		(C:\Users\ranir\AppData\Local\Temp\xcAsh0g.\driver_tmp_3.o)
-  300000h - 30000Dh		(C:\Users\ranir\AppData\Local\Temp\xcAsh0g.\driver_tmp_3.o)
+ Intel Hex-file ranges:
+  0h - 3h		(dist/default/production\PMS_FW.X.production.hex)
+  8h - 1C21h		(dist/default/production\PMS_FW.X.production.hex)
+  200000h - 200007h		(dist/default/production\PMS_FW.X.production.hex)
+  300000h - 30000Dh		(dist/default/production\PMS_FW.X.production.hex)
  Unused ranges:
   4h - 7h
-  1C1Eh - 1FFFFFh
+  1C22h - 1FFFFFh
   200008h - 2FFFFFh
 
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\ranir\AppData\Local\Temp\xcAsh0g.\driver_tmp_3.o)
+  H1 = Intel Hex-file         (dist/default/production\PMS_FW.X.production.hex)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------
@@ -474,7 +474,8 @@
 00001BE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001BF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001C00 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00001C10 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 -- --
+00001C10 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001C20 | H1 H1 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
 00200000 | H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- -- --
 ----------------------------------------------------------
