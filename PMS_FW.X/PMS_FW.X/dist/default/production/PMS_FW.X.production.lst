@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.41 build 20230208172133 
-                                                                                               Fri Aug 11 15:28:08 2023
+                                                                                               Sat Aug 12 02:08:43 2023
 
 Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1 
      1                           	processor	18F46K80
@@ -2751,14 +2751,14 @@ Microchip MPLAB XC8 C Compiler v2.41 (Free license) build 20230208172133 Og1
   2629   0013C0  C00A  F03D         	movff	?___xxtofl+2,ADC_Conv_pinSeven@adc_val+2
   2630   0013C4  C00B  F03E         	movff	?___xxtofl+3,ADC_Conv_pinSeven@adc_val+3
   2631   0013C8                     
-  2632                           ;main.c: 39:     adc_val = (adc_val / 4095.0)*5.0;
+  2632                           ;main.c: 39:     adc_val = (adc_val / 1023.0)*5.0;
   2633   0013C8  0E00               	movlw	0
   2634   0013CA  6E07               	movwf	___fldiv@a^0,c
-  2635   0013CC  0EF0               	movlw	240
+  2635   0013CC  0EC0               	movlw	192
   2636   0013CE  6E08               	movwf	(___fldiv@a+1)^0,c
   2637   0013D0  0E7F               	movlw	127
   2638   0013D2  6E09               	movwf	(___fldiv@a+2)^0,c
-  2639   0013D4  0E45               	movlw	69
+  2639   0013D4  0E44               	movlw	68
   2640   0013D6  6E0A               	movwf	(___fldiv@a+3)^0,c
   2641   0013D8  C03B  F003         	movff	ADC_Conv_pinSeven@adc_val,___fldiv@b
   2642   0013DC  C03C  F004         	movff	ADC_Conv_pinSeven@adc_val+1,___fldiv@b+1
@@ -6993,7 +6993,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.41 build 20230208172133 
-Symbol Table                                                                                   Fri Aug 11 15:28:08 2023
+Symbol Table                                                                                   Sat Aug 12 02:08:43 2023
 
                                      ___fldiv@aexp 001B                                       ___fldiv@bexp 001A  
                                      ___fldiv@sign 0013                                                 l33 19E0  

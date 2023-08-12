@@ -1590,8 +1590,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _adc_val `f ~T0 @X0 1 a ]
 [e = _adc_val -> ( _ADC_GetConversion (1 . `E12720 4 `f ]
 "39
-[; ;main.c: 39:     adc_val = (adc_val / 4095.0)*5.0;
-[e = _adc_val -> * / -> _adc_val `d .4095.0 .5.0 `f ]
+[; ;main.c: 39:     adc_val = (adc_val / 1023.0)*5.0;
+[e = _adc_val -> * / -> _adc_val `d .1023.0 .5.0 `f ]
 "40
 [; ;main.c: 40:     float input_voltage = adc_val*3.0;
 [v _input_voltage `f ~T0 @X0 1 a ]

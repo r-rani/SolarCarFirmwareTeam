@@ -20775,7 +20775,7 @@ int highOrlow(float voltage){
 
 int ADC_Conv_pinSeven(){
     float adc_val = ADC_GetConversion(channel_AN4);
-    adc_val = (adc_val / 4095.0)*5.0;
+    adc_val = (adc_val / 1023.0)*5.0;
     float input_voltage = adc_val*3.0;
     if (highOrlow(input_voltage)==1){
         tx9.frame.idType = 1;

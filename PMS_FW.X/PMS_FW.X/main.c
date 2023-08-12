@@ -36,18 +36,18 @@ int highOrlow(float voltage){
 
 int ADC_Conv_pinSeven(){
     float adc_val = ADC_GetConversion(channel_AN4);
-    adc_val = (adc_val / 4095.0)*5.0; //12 bit adc , 5V= reference voltage
+    adc_val = (adc_val / 1023.0)*5.0; //12 bit adc , 5V= reference voltage
     float input_voltage = adc_val*3.0;
     if (highOrlow(input_voltage)==1){
         tx9.frame.idType = 1;
-        tx9.frame.id = 0x69; //Arbitration ID
+        tx9.frame.id = 0x420; //Arbitration ID
         tx9.frame.dlc = 0x01; //1 byte
         tx9.frame.data0 = 1;
         CAN_transmit(&tx9);
     }
     else{
         tx10.frame.idType = 1;
-        tx10.frame.id = 0x79; //Arbitration ID
+        tx10.frame.id = 0x69; //Arbitration ID
         tx10.frame.dlc = 0x01; //1 byte
         tx10.frame.data0 = 1;
         CAN_transmit(&tx10);
