@@ -20775,6 +20775,7 @@ int highOrlow(float voltage){
 
 int ADC_Conv_pinSeven(){
     float adc_val = ADC_GetConversion(channel_AN4);
+    adc_val = (adc_val / 4095.0)*5.0;
     float input_voltage = adc_val*3.0;
     if (highOrlow(input_voltage)==1){
         tx9.frame.idType = 1;
@@ -20864,7 +20865,7 @@ void canbus_motor_rearL_tx(int number){
     tx8.frame.data0 = number;
     CAN_transmit(&tx8);
 }
-# 158 "main.c"
+# 159 "main.c"
 void undo_seq(void){
     if (PORTAbits.RA1 == 1){
         do { LATAbits.LATA1 = 0; } while(0);
@@ -20954,7 +20955,7 @@ void start_up_seq(void){
 
 
                 if(1){
-# 255 "main.c"
+# 256 "main.c"
                         do { LATCbits.LATC0 = 1; } while(0);
                         do { LATCbits.LATC3 = 1; } while(0);
                         _delay((unsigned long)((500)*(20000000/4000.0)));

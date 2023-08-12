@@ -51,33 +51,33 @@ channel_AN4 4
 [v _highOrlow highOrlow `(i  1 e 2 0 ]
 "37
 [v _ADC_Conv_pinSeven ADC_Conv_pinSeven `(i  1 e 2 0 ]
-"67
+"68
 [v _canbus_msg_motor canbus_msg_motor `(v  1 e 1 0 ]
-"76
+"77
 [v _canbus_msg_startupfail canbus_msg_startupfail `(v  1 e 1 0 ]
-"85
+"86
 [v _canbus_msg_bps canbus_msg_bps `(v  1 e 1 0 ]
-"94
+"95
 [v _canbus_msg_auxfail canbus_msg_auxfail `(v  1 e 1 0 ]
-"103
+"104
 [v _canbus_msg_auxlow canbus_msg_auxlow `(v  1 e 1 0 ]
-"112
+"113
 [v _canbus_shutdown_success canbus_shutdown_success `(v  1 e 1 0 ]
-"121
+"122
 [v _canbus_motor_rearL_tx canbus_motor_rearL_tx `(v  1 e 1 0 ]
-"158
+"159
 [v _undo_seq undo_seq `(v  1 e 1 0 ]
-"199
+"200
 [v _start_up_seq start_up_seq `(v  1 e 1 0 ]
-"288
+"289
 [v _shutdown_seq shutdown_seq `(v  1 e 1 0 ]
-"298
+"299
 [v _e_stop_seq e_stop_seq `(v  1 e 1 0 ]
-"312
+"313
 [v _aux_battery_failure aux_battery_failure `(v  1 e 1 0 ]
-"325
+"326
 [v _aux_battery_LV aux_battery_LV `(v  1 e 1 0 ]
-"335
+"336
 [v _main main `(v  1 e 1 0 ]
 "62 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
@@ -914,38 +914,38 @@ channel_AN4 4
 [v _tx13 tx13 `S346  1 e 14 0 ]
 "54 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/ecan.c
 [v _WakeUpInterruptHandler WakeUpInterruptHandler `*.37(v  1 s 2 WakeUpInterruptHandler ]
-"335 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
+"336 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"369
+"370
 } 0
-"199
+"200
 [v _start_up_seq start_up_seq `(v  1 e 1 0 ]
 {
-"286
+"287
 } 0
-"158
+"159
 [v _undo_seq undo_seq `(v  1 e 1 0 ]
 {
-"197
+"198
 } 0
-"76
+"77
 [v _canbus_msg_startupfail canbus_msg_startupfail `(v  1 e 1 0 ]
 {
 [v canbus_msg_startupfail@number number `i  1 p 2 26 ]
-"82
+"83
 } 0
-"67
+"68
 [v _canbus_msg_motor canbus_msg_motor `(v  1 e 1 0 ]
 {
 [v canbus_msg_motor@number number `i  1 p 2 26 ]
-"73
+"74
 } 0
-"121
+"122
 [v _canbus_motor_rearL_tx canbus_motor_rearL_tx `(v  1 e 1 0 ]
 {
 [v canbus_motor_rearL_tx@number number `i  1 p 2 26 ]
-"127
+"128
 } 0
 "320 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/ecan.c
 [v _CAN_receive CAN_receive `(uc  1 e 1 0 ]
@@ -993,58 +993,58 @@ channel_AN4 4
 [v convertReg2ExtendedCANid@tempRXBn_EIDH tempRXBn_EIDH `uc  1 a 1 10 ]
 "456
 } 0
-"288 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
+"289 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
 [v _shutdown_seq shutdown_seq `(v  1 e 1 0 ]
 {
-"296
+"297
 } 0
-"112
+"113
 [v _canbus_shutdown_success canbus_shutdown_success `(v  1 e 1 0 ]
 {
 [v canbus_shutdown_success@number number `i  1 p 2 26 ]
-"118
+"119
 } 0
-"298
+"299
 [v _e_stop_seq e_stop_seq `(v  1 e 1 0 ]
 {
-"309
+"310
 } 0
-"85
+"86
 [v _canbus_msg_bps canbus_msg_bps `(v  1 e 1 0 ]
 {
 [v canbus_msg_bps@number number `i  1 p 2 26 ]
-"91
+"92
 } 0
-"312
+"313
 [v _aux_battery_failure aux_battery_failure `(v  1 e 1 0 ]
 {
-"323
+"324
 } 0
-"94
+"95
 [v _canbus_msg_auxfail canbus_msg_auxfail `(v  1 e 1 0 ]
 {
 [v canbus_msg_auxfail@number number `i  1 p 2 26 ]
-"100
+"101
 } 0
-"325
+"326
 [v _aux_battery_LV aux_battery_LV `(v  1 e 1 0 ]
 {
-"333
+"334
 } 0
-"103
+"104
 [v _canbus_msg_auxlow canbus_msg_auxlow `(v  1 e 1 0 ]
 {
 [v canbus_msg_auxlow@number number `i  1 p 2 26 ]
-"109
+"110
 } 0
 "37
 [v _ADC_Conv_pinSeven ADC_Conv_pinSeven `(i  1 e 2 0 ]
 {
-"39
-[v ADC_Conv_pinSeven@input_voltage input_voltage `f  1 a 4 33 ]
 "38
-[v ADC_Conv_pinSeven@adc_val adc_val `f  1 a 4 29 ]
-"55
+[v ADC_Conv_pinSeven@adc_val adc_val `f  1 a 4 58 ]
+"40
+[v ADC_Conv_pinSeven@input_voltage input_voltage `f  1 a 4 54 ]
+"56
 } 0
 "26
 [v _highOrlow highOrlow `(i  1 e 2 0 ]
@@ -1084,23 +1084,43 @@ channel_AN4 4
 "13
 [s S2085 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
 [u S2088 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2080 1 fAsBytes 4 0 `S2085 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S2088  1 a 4 21 ]
+[v ___flmul@prod prod `S2088  1 a 4 46 ]
 "12
-[v ___flmul@grs grs `ul  1 a 4 15 ]
+[v ___flmul@grs grs `ul  1 a 4 40 ]
 [s S2156 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
 [u S2159 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2156 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S2159  1 a 2 25 ]
+[v ___flmul@temp temp `S2159  1 a 2 50 ]
 "10
-[v ___flmul@bexp bexp `uc  1 a 1 20 ]
+[v ___flmul@bexp bexp `uc  1 a 1 45 ]
 "11
-[v ___flmul@aexp aexp `uc  1 a 1 19 ]
+[v ___flmul@aexp aexp `uc  1 a 1 44 ]
 "9
-[v ___flmul@sign sign `uc  1 a 1 14 ]
+[v ___flmul@sign sign `uc  1 a 1 39 ]
 "8
-[v ___flmul@b b `d  1 p 4 2 ]
-[v ___flmul@a a `d  1 p 4 6 ]
+[v ___flmul@b b `d  1 p 4 27 ]
+[v ___flmul@a a `d  1 p 4 31 ]
 "205
+} 0
+"11 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 21 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 14 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 19 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 26 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 25 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 18 ]
+"11
+[v ___fldiv@b b `d  1 p 4 2 ]
+[v ___fldiv@a a `d  1 p 4 6 ]
+"185
 } 0
 "243 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/ecan.c
 [v _CAN_transmit CAN_transmit `(uc  1 e 1 0 ]
