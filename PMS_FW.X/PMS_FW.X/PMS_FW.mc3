@@ -1,4 +1,4 @@
-<config configName="default" projectName="PMS_FW" configVersion="1.1" device="PIC18F46K80" deviceLibraryClass="com.microchip.mcc.mcu8.Mcu8PeripheralLibrary" coreVersion="5.4.4">
+<config configName="default" projectName="PMS_FW" configVersion="1.1" device="PIC18F46K80" deviceLibraryClass="com.microchip.mcc.mcu8.Mcu8PeripheralLibrary" coreVersion="5.4.11">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -84,7 +84,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="CHSN_AN6"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="CUST_NAME_1_024V_bandgap"/>
@@ -9816,7 +9816,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RE1"/>
-         <value>IO_RE1</value>
+         <value>channel_AN6</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RE2"/>
@@ -9960,7 +9960,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RE1"/>
-         <value>input</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RE2"/>
@@ -11368,7 +11368,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ANCON0"/>
-         <value>191</value>
+         <value>255</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ANCON1"/>
@@ -11452,7 +11452,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANCON0" settingAlias="ANSEL6"/>
-         <value>digital</value>
+         <value>analog</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANCON0" settingAlias="ANSEL7"/>
@@ -12597,31 +12597,12 @@
          <hash>38af3cf765c11fa66645c60c26f06ac4188a5f392f0dbe4a36c1f94f96fb06f4</hash>
       </entry>
       <entry>
-<<<<<<< HEAD
-         <file>mcc_generated_files\device_config.c</file>
-         <hash>bfa9a845cc51527aa1e024998e1f440168e5e59dba1ab0082caa3af7d2ec0830</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.h</file>
-         <hash>60ae94cd4f2368c69cd0162dd62b1cd2182d930de5cd5a9ded0c8eb55313e9ce</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\adc.h</file>
-         <hash>8f1d4cd677a8f038e97923a9c4d0ad7b6c606a95d87477ec015d6e98350b356c</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.c</file>
-         <hash>9d25124207b4d59b748fa29185f5c9969e8d0756bc4743446c2ec53c6635e39f</hash>
-      </entry>
-      <entry>
-=======
->>>>>>> 28ea97a09e623a757f1ec8b4b90942844ee98c39
          <file>mcc_generated_files\adc.c</file>
          <hash>7c92be5c65a8d1d8160d3b1e6a5813fe5d3d9b90a05f7b1201224b06507d9a90</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\adc.h</file>
-         <hash>cfc91d22a964934452f1b2278e2247a0030377d0ba0eb5f52b0d4f0f5988dd54</hash>
+         <hash>3a7904c64529d4ce3f8c2c985864825675138bf0d6afde3b96cbee7f56afeded</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.c</file>
@@ -12657,11 +12638,11 @@
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
-         <hash>9d25124207b4d59b748fa29185f5c9969e8d0756bc4743446c2ec53c6635e39f</hash>
+         <hash>57b47cc914afac609db6f7d5ec4c5d8e9a817c6551458c6295ce66fb7fbc270b</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.h</file>
-         <hash>60ae94cd4f2368c69cd0162dd62b1cd2182d930de5cd5a9ded0c8eb55313e9ce</hash>
+         <hash>a6bde487921385a748bf093275a876cf3afc0325e10cb09423cec9d9474b1ae5</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

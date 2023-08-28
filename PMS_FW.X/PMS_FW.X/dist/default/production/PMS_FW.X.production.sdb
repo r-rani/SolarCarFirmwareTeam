@@ -9,30 +9,17 @@ channel_CTMU 28
 channel_Temp_diode 29
 channel_Vdd_core 30
 channel_1_024V_bandgap 31
-IO_RA0 0
-IO_RA1 1
-IO_RA2 2
-IO_RA3 3
 channel_AN4 4
-IO_RE1 6
+channel_AN6 6
 ]
-<<<<<<< HEAD
-"40 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
-[e E12720 . `uc
-=======
 "36 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
 [e E12717 . `uc
->>>>>>> 28ea97a09e623a757f1ec8b4b90942844ee98c39
 channel_CTMU 28
 channel_Temp_diode 29
 channel_Vdd_core 30
 channel_1_024V_bandgap 31
-IO_RA0 0
-IO_RA1 1
-IO_RA2 2
-IO_RA3 3
 channel_AN4 4
-IO_RE1 6
+channel_AN6 6
 ]
 "4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
@@ -62,69 +49,33 @@ IO_RE1 6
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-<<<<<<< HEAD
-"28 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
-[v _highOrlow highOrlow `(i  1 e 2 0 ]
-"39
-[v _ADC_Conv_pinSeven ADC_Conv_pinSeven `(i  1 e 2 0 ]
-"70
-[v _canbus_msg_motor canbus_msg_motor `(v  1 e 1 0 ]
-"79
-[v _canbus_msg_startupfail canbus_msg_startupfail `(v  1 e 1 0 ]
-"88
-[v _canbus_msg_bps canbus_msg_bps `(v  1 e 1 0 ]
-"97
-[v _canbus_msg_auxfail canbus_msg_auxfail `(v  1 e 1 0 ]
-"106
-[v _canbus_msg_auxlow canbus_msg_auxlow `(v  1 e 1 0 ]
-"115
-[v _canbus_shutdown_success canbus_shutdown_success `(v  1 e 1 0 ]
-"124
-[v _canbus_motor_rearL_tx canbus_motor_rearL_tx `(v  1 e 1 0 ]
-"161
-[v _undo_seq undo_seq `(v  1 e 1 0 ]
-"202
-[v _start_up_seq start_up_seq `(v  1 e 1 0 ]
-"297
-[v _e_stop_seq e_stop_seq `(v  1 e 1 0 ]
-"311
-[v _aux_battery_failure aux_battery_failure `(v  1 e 1 0 ]
-"324
-[v _aux_battery_LV aux_battery_LV `(v  1 e 1 0 ]
-"334
-=======
 "24 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
 [v _highOrlow highOrlow `(i  1 e 2 0 ]
 "35
 [v _ADC_Conv_pinSeven ADC_Conv_pinSeven `(i  1 e 2 0 ]
-"66
+"56
+[v _ADC_Conv_pinNine ADC_Conv_pinNine `(i  1 e 2 0 ]
+"87
 [v _canbus_msg_motor canbus_msg_motor `(v  1 e 1 0 ]
-"75
+"96
 [v _canbus_msg_startupfail canbus_msg_startupfail `(v  1 e 1 0 ]
-"84
+"105
 [v _canbus_msg_bps canbus_msg_bps `(v  1 e 1 0 ]
-"93
+"114
 [v _canbus_msg_auxfail canbus_msg_auxfail `(v  1 e 1 0 ]
-"102
+"123
 [v _canbus_msg_auxlow canbus_msg_auxlow `(v  1 e 1 0 ]
-"111
+"132
 [v _canbus_shutdown_success canbus_shutdown_success `(v  1 e 1 0 ]
-"120
+"141
 [v _canbus_motor_rearL_tx canbus_motor_rearL_tx `(v  1 e 1 0 ]
-"128
+"149
 [v _undo_seq undo_seq `(v  1 e 1 0 ]
-"166
+"196
 [v _start_up_seq start_up_seq `(v  1 e 1 0 ]
-"255
-[v _shutdown_seq shutdown_seq `(v  1 e 1 0 ]
-"265
+"295
 [v _e_stop_seq e_stop_seq `(v  1 e 1 0 ]
-"279
-[v _aux_battery_failure aux_battery_failure `(v  1 e 1 0 ]
-"292
-[v _aux_battery_LV aux_battery_LV `(v  1 e 1 0 ]
-"302
->>>>>>> 28ea97a09e623a757f1ec8b4b90942844ee98c39
+"325
 [v _main main `(v  1 e 1 0 ]
 "62 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
@@ -136,8 +87,6 @@ IO_RE1 6
 [v _ECAN_Initialize ECAN_Initialize `(v  1 e 1 0 ]
 "243
 [v _CAN_transmit CAN_transmit `(uc  1 e 1 0 ]
-"320
-[v _CAN_receive CAN_receive `(uc  1 e 1 0 ]
 "438
 [v _convertReg2ExtendedCANid convertReg2ExtendedCANid `(ul  1 s 4 convertReg2ExtendedCANid ]
 "458
@@ -158,185 +107,185 @@ IO_RE1 6
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "55 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"192 C:/Users/ethan/.mchp_packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k80.h
+"193 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
 [v _BRGCON1 BRGCON1 `VEuc  1 e 1 @3651 ]
-"268
+"269
 [v _BRGCON2 BRGCON2 `VEuc  1 e 1 @3652 ]
-"353
+"354
 [v _BRGCON3 BRGCON3 `VEuc  1 e 1 @3653 ]
-"406
+"407
 [v _RXFCON0 RXFCON0 `VEuc  1 e 1 @3654 ]
-"468
+"469
 [v _RXFCON1 RXFCON1 `VEuc  1 e 1 @3655 ]
-"530
+"531
 [v _RXF6SIDH RXF6SIDH `VEuc  1 e 1 @3656 ]
-"650
+"651
 [v _RXF6SIDL RXF6SIDL `VEuc  1 e 1 @3657 ]
-"757
+"758
 [v _RXF6EIDH RXF6EIDH `VEuc  1 e 1 @3658 ]
-"877
+"878
 [v _RXF6EIDL RXF6EIDL `VEuc  1 e 1 @3659 ]
-"997
+"998
 [v _RXF7SIDH RXF7SIDH `VEuc  1 e 1 @3660 ]
-"1117
+"1118
 [v _RXF7SIDL RXF7SIDL `VEuc  1 e 1 @3661 ]
-"1224
+"1225
 [v _RXF7EIDH RXF7EIDH `VEuc  1 e 1 @3662 ]
-"1344
+"1345
 [v _RXF7EIDL RXF7EIDL `VEuc  1 e 1 @3663 ]
-"1464
+"1465
 [v _RXF8SIDH RXF8SIDH `VEuc  1 e 1 @3664 ]
-"1584
+"1585
 [v _RXF8SIDL RXF8SIDL `VEuc  1 e 1 @3665 ]
-"1691
+"1692
 [v _RXF8EIDH RXF8EIDH `VEuc  1 e 1 @3666 ]
-"1811
+"1812
 [v _RXF8EIDL RXF8EIDL `VEuc  1 e 1 @3667 ]
-"1931
+"1932
 [v _RXF9SIDH RXF9SIDH `VEuc  1 e 1 @3668 ]
-"2051
+"2052
 [v _RXF9SIDL RXF9SIDL `VEuc  1 e 1 @3669 ]
-"2158
+"2159
 [v _RXF9EIDH RXF9EIDH `VEuc  1 e 1 @3670 ]
-"2278
+"2279
 [v _RXF9EIDL RXF9EIDL `VEuc  1 e 1 @3671 ]
-"2398
+"2399
 [v _RXF10SIDH RXF10SIDH `VEuc  1 e 1 @3672 ]
-"2518
+"2519
 [v _RXF10SIDL RXF10SIDL `VEuc  1 e 1 @3673 ]
-"2625
+"2626
 [v _RXF10EIDH RXF10EIDH `VEuc  1 e 1 @3674 ]
-"2745
+"2746
 [v _RXF10EIDL RXF10EIDL `VEuc  1 e 1 @3675 ]
-"2865
+"2866
 [v _RXF11SIDH RXF11SIDH `VEuc  1 e 1 @3676 ]
-"2985
+"2986
 [v _RXF11SIDL RXF11SIDL `VEuc  1 e 1 @3677 ]
-"3092
+"3093
 [v _RXF11EIDH RXF11EIDH `VEuc  1 e 1 @3678 ]
-"3212
+"3213
 [v _RXF11EIDL RXF11EIDL `VEuc  1 e 1 @3679 ]
-"3332
+"3333
 [v _RXF12SIDH RXF12SIDH `VEuc  1 e 1 @3680 ]
-"3452
+"3453
 [v _RXF12SIDL RXF12SIDL `VEuc  1 e 1 @3681 ]
-"3559
+"3560
 [v _RXF12EIDH RXF12EIDH `VEuc  1 e 1 @3682 ]
-"3679
+"3680
 [v _RXF12EIDL RXF12EIDL `VEuc  1 e 1 @3683 ]
-"3799
+"3800
 [v _RXF13SIDH RXF13SIDH `VEuc  1 e 1 @3684 ]
-"3919
+"3920
 [v _RXF13SIDL RXF13SIDL `VEuc  1 e 1 @3685 ]
-"4026
+"4027
 [v _RXF13EIDH RXF13EIDH `VEuc  1 e 1 @3686 ]
-"4146
+"4147
 [v _RXF13EIDL RXF13EIDL `VEuc  1 e 1 @3687 ]
-"4266
+"4267
 [v _RXF14SIDH RXF14SIDH `VEuc  1 e 1 @3688 ]
-"4386
+"4387
 [v _RXF14SIDL RXF14SIDL `VEuc  1 e 1 @3689 ]
-"4493
+"4494
 [v _RXF14EIDH RXF14EIDH `VEuc  1 e 1 @3690 ]
-"4613
+"4614
 [v _RXF14EIDL RXF14EIDL `VEuc  1 e 1 @3691 ]
-"4733
+"4734
 [v _RXF15SIDH RXF15SIDH `VEuc  1 e 1 @3692 ]
-"4853
+"4854
 [v _RXF15SIDL RXF15SIDL `VEuc  1 e 1 @3693 ]
-"4960
+"4961
 [v _RXF15EIDH RXF15EIDH `VEuc  1 e 1 @3694 ]
-"5080
+"5081
 [v _RXF15EIDL RXF15EIDL `VEuc  1 e 1 @3695 ]
-"5252
+"5253
 [v _RXFBCON0 RXFBCON0 `VEuc  1 e 1 @3697 ]
-"5336
+"5337
 [v _RXFBCON1 RXFBCON1 `VEuc  1 e 1 @3698 ]
-"5420
+"5421
 [v _RXFBCON2 RXFBCON2 `VEuc  1 e 1 @3699 ]
-"5504
+"5505
 [v _RXFBCON3 RXFBCON3 `VEuc  1 e 1 @3700 ]
-"5588
+"5589
 [v _RXFBCON4 RXFBCON4 `VEuc  1 e 1 @3701 ]
-"5672
+"5673
 [v _RXFBCON5 RXFBCON5 `VEuc  1 e 1 @3702 ]
-"5756
+"5757
 [v _RXFBCON6 RXFBCON6 `VEuc  1 e 1 @3703 ]
-"5840
+"5841
 [v _RXFBCON7 RXFBCON7 `VEuc  1 e 1 @3704 ]
-"5924
+"5925
 [v _MSEL0 MSEL0 `VEuc  1 e 1 @3705 ]
-"6012
+"6013
 [v _MSEL1 MSEL1 `VEuc  1 e 1 @3706 ]
-"6100
+"6101
 [v _MSEL2 MSEL2 `VEuc  1 e 1 @3707 ]
-"6188
+"6189
 [v _MSEL3 MSEL3 `VEuc  1 e 1 @3708 ]
-"6276
+"6277
 [v _BSEL0 BSEL0 `VEuc  1 e 1 @3709 ]
-"16279
+"16280
 [v _RXF0SIDH RXF0SIDH `VEuc  1 e 1 @3808 ]
-"16399
+"16400
 [v _RXF0SIDL RXF0SIDL `VEuc  1 e 1 @3809 ]
-"16506
+"16507
 [v _RXF0EIDH RXF0EIDH `VEuc  1 e 1 @3810 ]
-"16626
+"16627
 [v _RXF0EIDL RXF0EIDL `VEuc  1 e 1 @3811 ]
-"16746
+"16747
 [v _RXF1SIDH RXF1SIDH `VEuc  1 e 1 @3812 ]
-"16866
+"16867
 [v _RXF1SIDL RXF1SIDL `VEuc  1 e 1 @3813 ]
-"16973
+"16974
 [v _RXF1EIDH RXF1EIDH `VEuc  1 e 1 @3814 ]
-"17093
+"17094
 [v _RXF1EIDL RXF1EIDL `VEuc  1 e 1 @3815 ]
-"17213
+"17214
 [v _RXF2SIDH RXF2SIDH `VEuc  1 e 1 @3816 ]
-"17333
+"17334
 [v _RXF2SIDL RXF2SIDL `VEuc  1 e 1 @3817 ]
-"17440
+"17441
 [v _RXF2EIDH RXF2EIDH `VEuc  1 e 1 @3818 ]
-"17560
+"17561
 [v _RXF2EIDL RXF2EIDL `VEuc  1 e 1 @3819 ]
-"17680
+"17681
 [v _RXF3SIDH RXF3SIDH `VEuc  1 e 1 @3820 ]
-"17800
+"17801
 [v _RXF3SIDL RXF3SIDL `VEuc  1 e 1 @3821 ]
-"17907
+"17908
 [v _RXF3EIDH RXF3EIDH `VEuc  1 e 1 @3822 ]
-"18027
+"18028
 [v _RXF3EIDL RXF3EIDL `VEuc  1 e 1 @3823 ]
-"18147
+"18148
 [v _RXF4SIDH RXF4SIDH `VEuc  1 e 1 @3824 ]
-"18267
+"18268
 [v _RXF4SIDL RXF4SIDL `VEuc  1 e 1 @3825 ]
-"18374
+"18375
 [v _RXF4EIDH RXF4EIDH `VEuc  1 e 1 @3826 ]
-"18494
+"18495
 [v _RXF4EIDL RXF4EIDL `VEuc  1 e 1 @3827 ]
-"18614
+"18615
 [v _RXF5SIDH RXF5SIDH `VEuc  1 e 1 @3828 ]
-"18734
+"18735
 [v _RXF5SIDL RXF5SIDL `VEuc  1 e 1 @3829 ]
-"18841
+"18842
 [v _RXF5EIDH RXF5EIDH `VEuc  1 e 1 @3830 ]
-"18961
+"18962
 [v _RXF5EIDL RXF5EIDL `VEuc  1 e 1 @3831 ]
-"19081
+"19082
 [v _RXM0SIDH RXM0SIDH `VEuc  1 e 1 @3832 ]
-"19201
+"19202
 [v _RXM0SIDL RXM0SIDL `VEuc  1 e 1 @3833 ]
-"19308
+"19309
 [v _RXM0EIDH RXM0EIDH `VEuc  1 e 1 @3834 ]
-"19428
+"19429
 [v _RXM0EIDL RXM0EIDL `VEuc  1 e 1 @3835 ]
-"19548
+"19549
 [v _RXM1SIDH RXM1SIDH `VEuc  1 e 1 @3836 ]
-"19668
+"19669
 [v _RXM1SIDL RXM1SIDL `VEuc  1 e 1 @3837 ]
-"19775
+"19776
 [v _RXM1EIDH RXM1EIDH `VEuc  1 e 1 @3838 ]
-"19895
+"19896
 [v _RXM1EIDL RXM1EIDL `VEuc  1 e 1 @3839 ]
 [s S349 . 1 `uc 1 TXPRI 1 0 :2:0 
 `uc 1 . 1 0 :1:2 
@@ -346,7 +295,7 @@ IO_RE1 6
 `uc 1 TXABT 1 0 :1:6 
 `uc 1 TXBIF 1 0 :1:7 
 ]
-"20045
+"20046
 [s S357 . 1 `uc 1 TXPRI0 1 0 :1:0 
 `uc 1 TXPRI1 1 0 :1:1 
 ]
@@ -361,33 +310,33 @@ IO_RE1 6
 ]
 [u S495 . 1 `S349 1 . 1 0 `S357 1 . 1 0 `S486 1 . 1 0 ]
 [v _TXB2CONbits TXB2CONbits `VES495  1 e 1 @3840 ]
-"20125
+"20126
 [v _TXB2SIDH TXB2SIDH `VEuc  1 e 1 @3841 ]
-"20245
+"20246
 [v _TXB2SIDL TXB2SIDL `VEuc  1 e 1 @3842 ]
-"20357
+"20358
 [v _TXB2EIDH TXB2EIDH `VEuc  1 e 1 @3843 ]
-"20477
+"20478
 [v _TXB2EIDL TXB2EIDL `VEuc  1 e 1 @3844 ]
-"20597
+"20598
 [v _TXB2DLC TXB2DLC `VEuc  1 e 1 @3845 ]
-"20683
+"20684
 [v _TXB2D0 TXB2D0 `VEuc  1 e 1 @3846 ]
-"20753
+"20754
 [v _TXB2D1 TXB2D1 `VEuc  1 e 1 @3847 ]
-"20823
+"20824
 [v _TXB2D2 TXB2D2 `VEuc  1 e 1 @3848 ]
-"20893
+"20894
 [v _TXB2D3 TXB2D3 `VEuc  1 e 1 @3849 ]
-"20963
+"20964
 [v _TXB2D4 TXB2D4 `VEuc  1 e 1 @3850 ]
-"21033
+"21034
 [v _TXB2D5 TXB2D5 `VEuc  1 e 1 @3851 ]
-"21103
+"21104
 [v _TXB2D6 TXB2D6 `VEuc  1 e 1 @3852 ]
-"21173
+"21174
 [v _TXB2D7 TXB2D7 `VEuc  1 e 1 @3853 ]
-"21476
+"21477
 [s S428 . 1 `uc 1 TXB1PRI0 1 0 :1:0 
 `uc 1 TXB1PRI1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
@@ -399,33 +348,33 @@ IO_RE1 6
 ]
 [u S437 . 1 `S349 1 . 1 0 `S357 1 . 1 0 `S428 1 . 1 0 ]
 [v _TXB1CONbits TXB1CONbits `VES437  1 e 1 @3856 ]
-"21556
+"21557
 [v _TXB1SIDH TXB1SIDH `VEuc  1 e 1 @3857 ]
-"21676
+"21677
 [v _TXB1SIDL TXB1SIDL `VEuc  1 e 1 @3858 ]
-"21788
+"21789
 [v _TXB1EIDH TXB1EIDH `VEuc  1 e 1 @3859 ]
-"21908
+"21909
 [v _TXB1EIDL TXB1EIDL `VEuc  1 e 1 @3860 ]
-"22028
+"22029
 [v _TXB1DLC TXB1DLC `VEuc  1 e 1 @3861 ]
-"22114
+"22115
 [v _TXB1D0 TXB1D0 `VEuc  1 e 1 @3862 ]
-"22184
+"22185
 [v _TXB1D1 TXB1D1 `VEuc  1 e 1 @3863 ]
-"22254
+"22255
 [v _TXB1D2 TXB1D2 `VEuc  1 e 1 @3864 ]
-"22324
+"22325
 [v _TXB1D3 TXB1D3 `VEuc  1 e 1 @3865 ]
-"22394
+"22395
 [v _TXB1D4 TXB1D4 `VEuc  1 e 1 @3866 ]
-"22464
+"22465
 [v _TXB1D5 TXB1D5 `VEuc  1 e 1 @3867 ]
-"22534
+"22535
 [v _TXB1D6 TXB1D6 `VEuc  1 e 1 @3868 ]
-"22604
+"22605
 [v _TXB1D7 TXB1D7 `VEuc  1 e 1 @3869 ]
-"22907
+"22908
 [s S360 . 1 `uc 1 TXB0PRI0 1 0 :1:0 
 `uc 1 TXB0PRI1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
@@ -437,31 +386,31 @@ IO_RE1 6
 ]
 [u S369 . 1 `S349 1 . 1 0 `S357 1 . 1 0 `S360 1 . 1 0 ]
 [v _TXB0CONbits TXB0CONbits `VES369  1 e 1 @3872 ]
-"22987
+"22988
 [v _TXB0SIDH TXB0SIDH `VEuc  1 e 1 @3873 ]
-"23107
+"23108
 [v _TXB0SIDL TXB0SIDL `VEuc  1 e 1 @3874 ]
-"23219
+"23220
 [v _TXB0EIDH TXB0EIDH `VEuc  1 e 1 @3875 ]
-"23339
+"23340
 [v _TXB0EIDL TXB0EIDL `VEuc  1 e 1 @3876 ]
-"23459
+"23460
 [v _TXB0DLC TXB0DLC `VEuc  1 e 1 @3877 ]
-"23545
+"23546
 [v _TXB0D0 TXB0D0 `VEuc  1 e 1 @3878 ]
-"23615
+"23616
 [v _TXB0D1 TXB0D1 `VEuc  1 e 1 @3879 ]
-"23685
+"23686
 [v _TXB0D2 TXB0D2 `VEuc  1 e 1 @3880 ]
-"23755
+"23756
 [v _TXB0D3 TXB0D3 `VEuc  1 e 1 @3881 ]
-"23825
+"23826
 [v _TXB0D4 TXB0D4 `VEuc  1 e 1 @3882 ]
-"23895
+"23896
 [v _TXB0D5 TXB0D5 `VEuc  1 e 1 @3883 ]
-"23965
+"23966
 [v _TXB0D6 TXB0D6 `VEuc  1 e 1 @3884 ]
-"24035
+"24036
 [v _TXB0D7 TXB0D7 `VEuc  1 e 1 @3885 ]
 [s S641 . 1 `uc 1 FILHIT0 1 0 :1:0 
 `uc 1 FILHIT1 1 0 :1:1 
@@ -472,7 +421,7 @@ IO_RE1 6
 `uc 1 RXM1 1 0 :1:6 
 `uc 1 RXFUL 1 0 :1:7 
 ]
-"24353
+"24354
 [s S650 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 RXRTRRO 1 0 :1:3 
 `uc 1 . 1 0 :1:4 
@@ -499,37 +448,37 @@ IO_RE1 6
 ]
 [u S674 . 1 `S641 1 . 1 0 `S650 1 . 1 0 `S655 1 . 1 0 `S660 1 . 1 0 `S669 1 . 1 0 ]
 [v _RXB1CONbits RXB1CONbits `VES674  1 e 1 @3888 ]
-"24468
+"24469
 [v _RXB1SIDH RXB1SIDH `VEuc  1 e 1 @3889 ]
-"24588
+"24589
 [v _RXB1SIDL RXB1SIDL `VEuc  1 e 1 @3890 ]
-"24705
+"24706
 [v _RXB1EIDH RXB1EIDH `VEuc  1 e 1 @3891 ]
-"24825
+"24826
 [v _RXB1EIDL RXB1EIDL `VEuc  1 e 1 @3892 ]
-"24945
+"24946
 [v _RXB1DLC RXB1DLC `VEuc  1 e 1 @3893 ]
-"25059
+"25060
 [v _RXB1D0 RXB1D0 `VEuc  1 e 1 @3894 ]
-"25129
+"25130
 [v _RXB1D1 RXB1D1 `VEuc  1 e 1 @3895 ]
-"25199
+"25200
 [v _RXB1D2 RXB1D2 `VEuc  1 e 1 @3896 ]
-"25269
+"25270
 [v _RXB1D3 RXB1D3 `VEuc  1 e 1 @3897 ]
-"25339
+"25340
 [v _RXB1D4 RXB1D4 `VEuc  1 e 1 @3898 ]
-"25409
+"25410
 [v _RXB1D5 RXB1D5 `VEuc  1 e 1 @3899 ]
-"25479
+"25480
 [v _RXB1D6 RXB1D6 `VEuc  1 e 1 @3900 ]
-"25549
+"25550
 [v _RXB1D7 RXB1D7 `VEuc  1 e 1 @3901 ]
-"26912
+"26913
 [v _WPUB WPUB `VEuc  1 e 1 @3931 ]
-"26974
+"26975
 [v _ANCON1 ANCON1 `VEuc  1 e 1 @3932 ]
-"27074
+"27075
 [v _ANCON0 ANCON0 `VEuc  1 e 1 @3933 ]
 [s S533 . 1 `uc 1 FILHIT0 1 0 :1:0 
 `uc 1 JTOFF_FILHIT1 1 0 :1:1 
@@ -540,7 +489,7 @@ IO_RE1 6
 `uc 1 RXM1 1 0 :1:6 
 `uc 1 RXFUL 1 0 :1:7 
 ]
-"27767
+"27768
 [s S542 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 JTOFF 1 0 :1:1 
 `uc 1 RB0DBEN 1 0 :1:2 
@@ -571,37 +520,37 @@ IO_RE1 6
 ]
 [u S570 . 1 `S533 1 . 1 0 `S542 1 . 1 0 `S549 1 . 1 0 `S556 1 . 1 0 `S565 1 . 1 0 ]
 [v _RXB0CONbits RXB0CONbits `VES570  1 e 1 @3936 ]
-"27902
+"27903
 [v _RXB0SIDH RXB0SIDH `VEuc  1 e 1 @3937 ]
-"28022
+"28023
 [v _RXB0SIDL RXB0SIDL `VEuc  1 e 1 @3938 ]
-"28139
+"28140
 [v _RXB0EIDH RXB0EIDH `VEuc  1 e 1 @3939 ]
-"28259
+"28260
 [v _RXB0EIDL RXB0EIDL `VEuc  1 e 1 @3940 ]
-"28379
+"28380
 [v _RXB0DLC RXB0DLC `VEuc  1 e 1 @3941 ]
-"28493
+"28494
 [v _RXB0D0 RXB0D0 `VEuc  1 e 1 @3942 ]
-"28563
+"28564
 [v _RXB0D1 RXB0D1 `VEuc  1 e 1 @3943 ]
-"28633
+"28634
 [v _RXB0D2 RXB0D2 `VEuc  1 e 1 @3944 ]
-"28703
+"28704
 [v _RXB0D3 RXB0D3 `VEuc  1 e 1 @3945 ]
-"28773
+"28774
 [v _RXB0D4 RXB0D4 `VEuc  1 e 1 @3946 ]
-"28843
+"28844
 [v _RXB0D5 RXB0D5 `VEuc  1 e 1 @3947 ]
-"28913
+"28914
 [v _RXB0D6 RXB0D6 `VEuc  1 e 1 @3948 ]
-"28983
+"28984
 [v _RXB0D7 RXB0D7 `VEuc  1 e 1 @3949 ]
-"29053
+"29054
 [v _CANSTAT CANSTAT `VEuc  1 e 1 @3950 ]
-"29164
+"29165
 [v _CANCON CANCON `VEuc  1 e 1 @3951 ]
-"29256
+"29257
 [v _CIOCON CIOCON `VEuc  1 e 1 @3952 ]
 [s S727 . 1 `uc 1 EWARN 1 0 :1:0 
 `uc 1 RXWARN 1 0 :1:1 
@@ -612,7 +561,7 @@ IO_RE1 6
 `uc 1 RXB1OVFL 1 0 :1:6 
 `uc 1 RXB0OVFL 1 0 :1:7 
 ]
-"29331
+"29332
 [s S736 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 NOT_FIFOEMPTY 1 0 :1:7 
 ]
@@ -625,7 +574,7 @@ IO_RE1 6
 ]
 [u S746 . 1 `S727 1 . 1 0 `S736 1 . 1 0 `S739 1 . 1 0 `S742 1 . 1 0 ]
 [v _COMSTATbits COMSTATbits `VES746  1 e 1 @3953 ]
-"29396
+"29397
 [v _ECANCON ECANCON `VEuc  1 e 1 @3954 ]
 [s S302 . 1 `uc 1 RXB0IE 1 0 :1:0 
 `uc 1 RXB1IE 1 0 :1:1 
@@ -636,7 +585,7 @@ IO_RE1 6
 `uc 1 WAKIE 1 0 :1:6 
 `uc 1 IRXIE 1 0 :1:7 
 ]
-"29556
+"29557
 [s S311 . 1 `uc 1 FIFOWMIE 1 0 :1:0 
 `uc 1 RXBnIE 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
@@ -653,7 +602,7 @@ IO_RE1 6
 `uc 1 WAKIF 1 0 :1:6 
 `uc 1 IRXIF 1 0 :1:7 
 ]
-"29639
+"29640
 [s S279 . 1 `uc 1 FIFOWMIF 1 0 :1:0 
 `uc 1 RXBnIF 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
@@ -661,7 +610,7 @@ IO_RE1 6
 ]
 [u S284 . 1 `S270 1 . 1 0 `S279 1 . 1 0 ]
 [v _PIR5bits PIR5bits `VES284  1 e 1 @3959 ]
-[s S1200 . 1 `uc 1 RA0 1 0 :1:0 
+[s S1192 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -670,16 +619,16 @@ IO_RE1 6
 `uc 1 RA6 1 0 :1:6 
 `uc 1 RA7 1 0 :1:7 
 ]
-"30019
-[s S1209 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+"30020
+[s S1201 . 1 `uc 1 ULPWUIN 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 LVDIN 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 RJPU 1 0 :1:7 
 ]
-[u S1215 . 1 `S1200 1 . 1 0 `S1209 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES1215  1 e 1 @3968 ]
-[s S1274 . 1 `uc 1 RC0 1 0 :1:0 
+[u S1207 . 1 `S1192 1 . 1 0 `S1201 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES1207  1 e 1 @3968 ]
+[s S1268 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -688,40 +637,19 @@ IO_RE1 6
 `uc 1 RC6 1 0 :1:6 
 `uc 1 RC7 1 0 :1:7 
 ]
-"30171
-[s S1283 . 1 `uc 1 . 1 0 :1:0 
+"30172
+[s S1277 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 CCP2 1 0 :1:1 
 `uc 1 PA1 1 0 :1:2 
 ]
-[s S1287 . 1 `uc 1 . 1 0 :1:0 
+[s S1281 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 PA2 1 0 :1:1 
 ]
-[u S1290 . 1 `S1274 1 . 1 0 `S1283 1 . 1 0 `S1287 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES1290  1 e 1 @3970 ]
-[s S1353 . 1 `uc 1 RE0 1 0 :1:0 
-`uc 1 RE1 1 0 :1:1 
-`uc 1 RE2 1 0 :1:2 
-`uc 1 RE3 1 0 :1:3 
-]
-"30331
-[s S1358 . 1 `uc 1 PD2 1 0 :1:0 
-`uc 1 PC2 1 0 :1:1 
-`uc 1 CCP10 1 0 :1:2 
-`uc 1 CCP9E 1 0 :1:3 
-]
-[s S1363 . 1 `uc 1 RDE 1 0 :1:0 
-`uc 1 WRE 1 0 :1:1 
-`uc 1 CS 1 0 :1:2 
-`uc 1 PC3E 1 0 :1:3 
-]
-[s S1368 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 PB2 1 0 :1:2 
-]
-[u S1371 . 1 `S1353 1 . 1 0 `S1358 1 . 1 0 `S1363 1 . 1 0 `S1368 1 . 1 0 ]
-[v _PORTEbits PORTEbits `VES1371  1 e 1 @3972 ]
-"30492
+[u S1284 . 1 `S1268 1 . 1 0 `S1277 1 . 1 0 `S1281 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES1284  1 e 1 @3970 ]
+"30493
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
-[s S1234 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S1226 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -730,8 +658,8 @@ IO_RE1 6
 `uc 1 LATA6 1 0 :1:6 
 `uc 1 LATA7 1 0 :1:7 
 ]
-"30519
-[s S1243 . 1 `uc 1 LA0 1 0 :1:0 
+"30520
+[s S1235 . 1 `uc 1 LA0 1 0 :1:0 
 `uc 1 LA1 1 0 :1:1 
 `uc 1 LA2 1 0 :1:2 
 `uc 1 LA3 1 0 :1:3 
@@ -740,13 +668,13 @@ IO_RE1 6
 `uc 1 LA6 1 0 :1:6 
 `uc 1 LA7 1 0 :1:7 
 ]
-[u S1252 . 1 `S1234 1 . 1 0 `S1243 1 . 1 0 ]
-[v _LATAbits LATAbits `VES1252  1 e 1 @3977 ]
-"30594
+[u S1244 . 1 `S1226 1 . 1 0 `S1235 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1244  1 e 1 @3977 ]
+"30595
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
-"30706
+"30707
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
-[s S1311 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S1305 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -755,8 +683,8 @@ IO_RE1 6
 `uc 1 LATC6 1 0 :1:6 
 `uc 1 LATC7 1 0 :1:7 
 ]
-"30733
-[s S1320 . 1 `uc 1 LC0 1 0 :1:0 
+"30734
+[s S1314 . 1 `uc 1 LC0 1 0 :1:0 
 `uc 1 LC1 1 0 :1:1 
 `uc 1 LC2 1 0 :1:2 
 `uc 1 LC3 1 0 :1:3 
@@ -765,42 +693,42 @@ IO_RE1 6
 `uc 1 LC6 1 0 :1:6 
 `uc 1 LC7 1 0 :1:7 
 ]
-[u S1329 . 1 `S1311 1 . 1 0 `S1320 1 . 1 0 ]
-[v _LATCbits LATCbits `VES1329  1 e 1 @3979 ]
-"30818
+[u S1323 . 1 `S1305 1 . 1 0 `S1314 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1323  1 e 1 @3979 ]
+"30819
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
-"30930
+"30931
 [v _LATE LATE `VEuc  1 e 1 @3981 ]
-"31088
+"31089
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
-"31145
+"31146
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
-"31207
+"31208
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
-"31269
+"31270
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
-"31331
+"31332
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
-"31407
+"31408
 [v _REFOCON REFOCON `VEuc  1 e 1 @3994 ]
-"31472
+"31473
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
-"34763
+"34764
 [v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
-"34834
+"34835
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
-"34938
+"34939
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
-[s S1084 . 1 `uc 1 . 1 0 :1:0 
+[s S1080 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_NOT_DONE 1 0 :1:1 
 ]
-"34983
-[s S1087 . 1 `uc 1 ADON 1 0 :1:0 
+"34984
+[s S1083 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :5:2 
 ]
-"34983
-[s S1091 . 1 `uc 1 . 1 0 :1:0 
+"34984
+[s S1087 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 DONE 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -808,58 +736,58 @@ IO_RE1 6
 `uc 1 CHS3 1 0 :1:5 
 `uc 1 CHS4 1 0 :1:6 
 ]
-"34983
-[s S1099 . 1 `uc 1 . 1 0 :1:0 
+"34984
+[s S1095 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
-"34983
-[s S1102 . 1 `uc 1 . 1 0 :1:0 
+"34984
+[s S1098 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_DONE 1 0 :1:1 
 ]
-"34983
-[s S1105 . 1 `uc 1 . 1 0 :1:0 
+"34984
+[s S1101 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nDONE 1 0 :1:1 
 ]
-"34983
-[s S1108 . 1 `uc 1 . 1 0 :1:0 
+"34984
+[s S1104 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GODONE 1 0 :1:1 
 ]
-"34983
-[s S1111 . 1 `uc 1 . 1 0 :1:0 
+"34984
+[s S1107 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_DONE 1 0 :1:1 
 ]
-"34983
-[u S1114 . 1 `S1084 1 . 1 0 `S1087 1 . 1 0 `S1091 1 . 1 0 `S1099 1 . 1 0 `S1102 1 . 1 0 `S1105 1 . 1 0 `S1108 1 . 1 0 `S1111 1 . 1 0 ]
-"34983
-"34983
-[v _ADCON0bits ADCON0bits `VES1114  1 e 1 @4034 ]
-"35070
+"34984
+[u S1110 . 1 `S1080 1 . 1 0 `S1083 1 . 1 0 `S1087 1 . 1 0 `S1095 1 . 1 0 `S1098 1 . 1 0 `S1101 1 . 1 0 `S1104 1 . 1 0 `S1107 1 . 1 0 ]
+"34984
+"34984
+[v _ADCON0bits ADCON0bits `VES1110  1 e 1 @4034 ]
+"35071
 [v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
-"35090
+"35091
 [v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
 [s S904 . 1 `uc 1 NOT_BOR 1 0 :1:0 
 ]
-"36011
+"36012
 [s S906 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_POR 1 0 :1:1 
 ]
-"36011
+"36012
 [s S909 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_PD 1 0 :1:2 
 ]
-"36011
+"36012
 [s S912 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_TO 1 0 :1:3 
 ]
-"36011
+"36012
 [s S915 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 NOT_RI 1 0 :1:4 
 ]
-"36011
+"36012
 [s S918 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_CM 1 0 :1:5 
 ]
-"36011
+"36012
 [s S921 . 1 `uc 1 nBOR 1 0 :1:0 
 `uc 1 nPOR 1 0 :1:1 
 `uc 1 nPD 1 0 :1:2 
@@ -869,7 +797,7 @@ IO_RE1 6
 `uc 1 SBOREN 1 0 :1:6 
 `uc 1 IPEN 1 0 :1:7 
 ]
-"36011
+"36012
 [s S930 . 1 `uc 1 BOR 1 0 :1:0 
 `uc 1 POR 1 0 :1:1 
 `uc 1 PD 1 0 :1:2 
@@ -877,19 +805,19 @@ IO_RE1 6
 `uc 1 RI 1 0 :1:4 
 `uc 1 CM 1 0 :1:5 
 ]
-"36011
+"36012
 [u S937 . 1 `S904 1 . 1 0 `S906 1 . 1 0 `S909 1 . 1 0 `S912 1 . 1 0 `S915 1 . 1 0 `S918 1 . 1 0 `S921 1 . 1 0 `S930 1 . 1 0 ]
-"36011
-"36011
+"36012
+"36012
 [v _RCONbits RCONbits `VES937  1 e 1 @4048 ]
-"36176
+"36177
 [v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
-"36248
+"36249
 [v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
 [s S37 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 NOT_RBPU 1 0 :1:7 
 ]
-"37134
+"37135
 [s S40 . 1 `uc 1 RBIP 1 0 :1:0 
 `uc 1 INT3IP 1 0 :1:1 
 `uc 1 TMR0IP 1 0 :1:2 
@@ -899,17 +827,17 @@ IO_RE1 6
 `uc 1 INTEDG0 1 0 :1:6 
 `uc 1 nRBPU 1 0 :1:7 
 ]
-"37134
+"37135
 [s S49 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT3P 1 0 :1:1 
 `uc 1 T0IP 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 RBPU 1 0 :1:7 
 ]
-"37134
+"37135
 [u S55 . 1 `S37 1 . 1 0 `S40 1 . 1 0 `S49 1 . 1 0 ]
-"37134
-"37134
+"37135
+"37135
 [v _INTCON2bits INTCON2bits `VES55  1 e 1 @4081 ]
 [s S78 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
@@ -920,7 +848,7 @@ IO_RE1 6
 `uc 1 PEIE_GIEL 1 0 :1:6 
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
-"37236
+"37237
 [s S87 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
@@ -930,33 +858,21 @@ IO_RE1 6
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"37236
+"37237
 [s S96 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-"37236
+"37237
 [u S100 . 1 `S78 1 . 1 0 `S87 1 . 1 0 `S96 1 . 1 0 ]
-"37236
-"37236
+"37237
+"37237
 [v _INTCONbits INTCONbits `VES100  1 e 1 @4082 ]
-<<<<<<< HEAD
-"23 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
-[v _STARTUP_SUCCESS STARTUP_SUCCESS `i  1 s 2 STARTUP_SUCCESS ]
-"24
-[v _iterator iterator `i  1 s 2 iterator ]
-[s S334 . 14 `uc 1 idType 1 0 `ul 1 id 4 1 `uc 1 dlc 1 5 `uc 1 data0 1 6 `uc 1 data1 1 7 `uc 1 data2 1 8 `uc 1 data3 1 9 `uc 1 data4 1 10 `uc 1 data5 1 11 `uc 1 data6 1 12 `uc 1 data7 1 13 ]
-"26
-=======
 "19 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
 [v _STARTUP_SUCCESS STARTUP_SUCCESS `i  1 s 2 STARTUP_SUCCESS ]
-"20
-[v _iterator iterator `i  1 s 2 iterator ]
 [s S334 . 14 `uc 1 idType 1 0 `ul 1 id 4 1 `uc 1 dlc 1 5 `uc 1 data0 1 6 `uc 1 data1 1 7 `uc 1 data2 1 8 `uc 1 data3 1 9 `uc 1 data4 1 10 `uc 1 data5 1 11 `uc 1 data6 1 12 `uc 1 data7 1 13 ]
 "22
->>>>>>> 28ea97a09e623a757f1ec8b4b90942844ee98c39
 [u S346 . 14 `S334 1 frame 14 0 `[14]uc 1 array 14 0 ]
-[v _rx rx `S346  1 e 14 0 ]
 [v _tx1 tx1 `S346  1 e 14 0 ]
 [v _tx2 tx2 `S346  1 e 14 0 ]
 [v _tx3 tx3 `S346  1 e 14 0 ]
@@ -966,226 +882,42 @@ IO_RE1 6
 [v _tx7 tx7 `S346  1 e 14 0 ]
 [v _tx8 tx8 `S346  1 e 14 0 ]
 [v _tx10 tx10 `S346  1 e 14 0 ]
-<<<<<<< HEAD
-"54 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/ecan.c
-[v _WakeUpInterruptHandler WakeUpInterruptHandler `*.37(v  1 s 2 WakeUpInterruptHandler ]
-"334 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
-[v _main main `(v  1 e 1 0 ]
-{
-"368
-} 0
-"202
-[v _start_up_seq start_up_seq `(v  1 e 1 0 ]
-{
-"285
-} 0
-"161
-[v _undo_seq undo_seq `(v  1 e 1 0 ]
-{
-"200
-} 0
-"79
-[v _canbus_msg_startupfail canbus_msg_startupfail `(v  1 e 1 0 ]
-{
-[v canbus_msg_startupfail@number number `i  1 p 2 26 ]
-"85
-} 0
-"70
-[v _canbus_msg_motor canbus_msg_motor `(v  1 e 1 0 ]
-{
-[v canbus_msg_motor@number number `i  1 p 2 26 ]
-"76
-} 0
-"124
-[v _canbus_motor_rearL_tx canbus_motor_rearL_tx `(v  1 e 1 0 ]
-{
-[v canbus_motor_rearL_tx@number number `i  1 p 2 26 ]
-"130
-=======
-[v _tx13 tx13 `S346  1 e 14 0 ]
+[v _tx20 tx20 `S346  1 e 14 0 ]
+[v _tx21 tx21 `S346  1 e 14 0 ]
 "54 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/ecan.c
 [v _WakeUpInterruptHandler WakeUpInterruptHandler `*.37(v  1 s 2 WakeUpInterruptHandler ]
-"302 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
+"325 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"336
+"354
 } 0
-"166
+"196
 [v _start_up_seq start_up_seq `(v  1 e 1 0 ]
 {
-"253
+"283
 } 0
-"128
+"149
 [v _undo_seq undo_seq `(v  1 e 1 0 ]
 {
-"164
+"194
 } 0
-"75
+"96
 [v _canbus_msg_startupfail canbus_msg_startupfail `(v  1 e 1 0 ]
 {
 [v canbus_msg_startupfail@number number `i  1 p 2 26 ]
-"81
+"102
 } 0
-"66
+"87
 [v _canbus_msg_motor canbus_msg_motor `(v  1 e 1 0 ]
 {
 [v canbus_msg_motor@number number `i  1 p 2 26 ]
-"72
+"93
 } 0
-"120
+"141
 [v _canbus_motor_rearL_tx canbus_motor_rearL_tx `(v  1 e 1 0 ]
 {
 [v canbus_motor_rearL_tx@number number `i  1 p 2 26 ]
-"126
->>>>>>> 28ea97a09e623a757f1ec8b4b90942844ee98c39
-} 0
-"320 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/ecan.c
-[v _CAN_receive CAN_receive `(uc  1 e 1 0 ]
-{
-"322
-[v CAN_receive@returnValue returnValue `uc  1 a 1 23 ]
-[s S334 . 14 `uc 1 idType 1 0 `ul 1 id 4 1 `uc 1 dlc 1 5 `uc 1 data0 1 6 `uc 1 data1 1 7 `uc 1 data2 1 8 `uc 1 data3 1 9 `uc 1 data4 1 10 `uc 1 data5 1 11 `uc 1 data6 1 12 `uc 1 data7 1 13 ]
-"320
-[u S346 . 14 `S334 1 frame 14 0 `[14]uc 1 array 14 0 ]
-[v CAN_receive@tempCanMsg tempCanMsg `*.39S346  1 p 2 21 ]
-"380
-} 0
-"458
-[v _convertReg2StandardCANid convertReg2StandardCANid `(ul  1 s 4 convertReg2StandardCANid ]
-{
-[v convertReg2StandardCANid@tempRXBn_SIDH tempRXBn_SIDH `uc  1 a 1 wreg ]
-"460
-[v convertReg2StandardCANid@ConvertedID ConvertedID `ul  1 a 4 13 ]
-"459
-[v convertReg2StandardCANid@returnValue returnValue `ul  1 a 4 9 ]
-"458
-[v convertReg2StandardCANid@tempRXBn_SIDH tempRXBn_SIDH `uc  1 a 1 wreg ]
-[v convertReg2StandardCANid@tempRXBn_SIDL tempRXBn_SIDL `uc  1 p 1 2 ]
-[v convertReg2StandardCANid@tempRXBn_SIDH tempRXBn_SIDH `uc  1 a 1 8 ]
-"468
-} 0
-"438
-[v _convertReg2ExtendedCANid convertReg2ExtendedCANid `(ul  1 s 4 convertReg2ExtendedCANid ]
-{
-[v convertReg2ExtendedCANid@tempRXBn_EIDH tempRXBn_EIDH `uc  1 a 1 wreg ]
-"440
-[v convertReg2ExtendedCANid@ConvertedID ConvertedID `ul  1 a 4 17 ]
-"439
-[v convertReg2ExtendedCANid@returnValue returnValue `ul  1 a 4 11 ]
-"442
-[v convertReg2ExtendedCANid@CAN_standardLo_ID_hi3bits CAN_standardLo_ID_hi3bits `uc  1 a 1 16 ]
-"441
-[v convertReg2ExtendedCANid@CAN_standardLo_ID_lo2bits CAN_standardLo_ID_lo2bits `uc  1 a 1 15 ]
-"438
-[v convertReg2ExtendedCANid@tempRXBn_EIDH tempRXBn_EIDH `uc  1 a 1 wreg ]
-[v convertReg2ExtendedCANid@tempRXBn_EIDL tempRXBn_EIDL `uc  1 p 1 2 ]
-[v convertReg2ExtendedCANid@tempRXBn_SIDH tempRXBn_SIDH `uc  1 p 1 3 ]
-[v convertReg2ExtendedCANid@tempRXBn_SIDL tempRXBn_SIDL `uc  1 p 1 4 ]
-"440
-[v convertReg2ExtendedCANid@tempRXBn_EIDH tempRXBn_EIDH `uc  1 a 1 10 ]
-"456
-} 0
-<<<<<<< HEAD
-"297 C:\Users\ranir\Desktop\GitRepos\SolarCarFirmware\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
-[v _e_stop_seq e_stop_seq `(v  1 e 1 0 ]
-{
-"308
-} 0
-"88
-[v _canbus_msg_bps canbus_msg_bps `(v  1 e 1 0 ]
-{
-[v canbus_msg_bps@number number `i  1 p 2 26 ]
-"94
-} 0
-"115
-[v _canbus_shutdown_success canbus_shutdown_success `(v  1 e 1 0 ]
-{
-[v canbus_shutdown_success@number number `i  1 p 2 26 ]
-"121
-} 0
-"311
-[v _aux_battery_failure aux_battery_failure `(v  1 e 1 0 ]
-{
-"322
-} 0
-"97
-[v _canbus_msg_auxfail canbus_msg_auxfail `(v  1 e 1 0 ]
-{
-[v canbus_msg_auxfail@number number `i  1 p 2 26 ]
-"103
-} 0
-"324
-[v _aux_battery_LV aux_battery_LV `(v  1 e 1 0 ]
-{
-"332
-} 0
-"106
-[v _canbus_msg_auxlow canbus_msg_auxlow `(v  1 e 1 0 ]
-{
-[v canbus_msg_auxlow@number number `i  1 p 2 26 ]
-"112
-} 0
-"39
-[v _ADC_Conv_pinSeven ADC_Conv_pinSeven `(i  1 e 2 0 ]
-{
-"40
-[v ADC_Conv_pinSeven@adc_val adc_val `f  1 a 4 58 ]
-"42
-[v ADC_Conv_pinSeven@input_voltage input_voltage `f  1 a 4 54 ]
-"58
-} 0
-"28
-[v _highOrlow highOrlow `(i  1 e 2 0 ]
-{
-"29
-[v highOrlow@output output `i  1 a 2 18 ]
-"28
-[v highOrlow@voltage voltage `f  1 p 4 14 ]
-"37
-=======
-"255 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
-[v _shutdown_seq shutdown_seq `(v  1 e 1 0 ]
-{
-"263
-} 0
-"111
-[v _canbus_shutdown_success canbus_shutdown_success `(v  1 e 1 0 ]
-{
-[v canbus_shutdown_success@number number `i  1 p 2 26 ]
-"117
-} 0
-"265
-[v _e_stop_seq e_stop_seq `(v  1 e 1 0 ]
-{
-"276
-} 0
-"84
-[v _canbus_msg_bps canbus_msg_bps `(v  1 e 1 0 ]
-{
-[v canbus_msg_bps@number number `i  1 p 2 26 ]
-"90
-} 0
-"279
-[v _aux_battery_failure aux_battery_failure `(v  1 e 1 0 ]
-{
-"290
-} 0
-"93
-[v _canbus_msg_auxfail canbus_msg_auxfail `(v  1 e 1 0 ]
-{
-[v canbus_msg_auxfail@number number `i  1 p 2 26 ]
-"99
-} 0
-"292
-[v _aux_battery_LV aux_battery_LV `(v  1 e 1 0 ]
-{
-"300
-} 0
-"102
-[v _canbus_msg_auxlow canbus_msg_auxlow `(v  1 e 1 0 ]
-{
-[v canbus_msg_auxlow@number number `i  1 p 2 26 ]
-"108
+"147
 } 0
 "35
 [v _ADC_Conv_pinSeven ADC_Conv_pinSeven `(i  1 e 2 0 ]
@@ -1196,6 +928,15 @@ IO_RE1 6
 [v ADC_Conv_pinSeven@input_voltage input_voltage `f  1 a 4 54 ]
 "54
 } 0
+"56
+[v _ADC_Conv_pinNine ADC_Conv_pinNine `(i  1 e 2 0 ]
+{
+"57
+[v ADC_Conv_pinNine@adc_val adc_val `f  1 a 4 58 ]
+"59
+[v ADC_Conv_pinNine@input_voltage input_voltage `f  1 a 4 54 ]
+"75
+} 0
 "24
 [v _highOrlow highOrlow `(i  1 e 2 0 ]
 {
@@ -1204,7 +945,6 @@ IO_RE1 6
 "24
 [v highOrlow@voltage voltage `f  1 p 4 14 ]
 "33
->>>>>>> 28ea97a09e623a757f1ec8b4b90942844ee98c39
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\flge.c
 [v ___flge __flge `(b  1 e 0 0 ]
@@ -1231,17 +971,17 @@ IO_RE1 6
 "8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S2066 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S2051 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S2071 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S2074 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2066 1 fAsBytes 4 0 `S2071 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S2074  1 a 4 46 ]
+[s S2056 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S2059 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2051 1 fAsBytes 4 0 `S2056 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2059  1 a 4 46 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 40 ]
-[s S2142 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S2127 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S2145 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2142 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S2145  1 a 2 50 ]
+[u S2130 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2127 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2130  1 a 2 50 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 45 ]
 "11
@@ -1273,6 +1013,32 @@ IO_RE1 6
 [v ___fldiv@a a `d  1 p 4 6 ]
 "185
 } 0
+"108 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/adc.c
+[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
+{
+[v ADC_GetConversion@channel channel `E12396  1 a 1 wreg ]
+[v ADC_GetConversion@channel channel `E12396  1 a 1 wreg ]
+"111
+[v ADC_GetConversion@channel channel `E12396  1 a 1 6 ]
+"127
+} 0
+"295 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\main.c
+[v _e_stop_seq e_stop_seq `(v  1 e 1 0 ]
+{
+"299
+} 0
+"105
+[v _canbus_msg_bps canbus_msg_bps `(v  1 e 1 0 ]
+{
+[v canbus_msg_bps@number number `i  1 p 2 26 ]
+"111
+} 0
+"132
+[v _canbus_shutdown_success canbus_shutdown_success `(v  1 e 1 0 ]
+{
+[v canbus_shutdown_success@number number `i  1 p 2 26 ]
+"138
+} 0
 "243 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/ecan.c
 [v _CAN_transmit CAN_transmit `(uc  1 e 1 0 ]
 {
@@ -1303,15 +1069,6 @@ IO_RE1 6
 [v convertCANid2Reg@passedInSIDH passedInSIDH `*.39uc  1 p 2 11 ]
 [v convertCANid2Reg@passedInSIDL passedInSIDL `*.39uc  1 p 2 13 ]
 "503
-} 0
-"108 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/adc.c
-[v _ADC_GetConversion ADC_GetConversion `(us  1 e 2 0 ]
-{
-[v ADC_GetConversion@channel channel `E12396  1 a 1 wreg ]
-[v ADC_GetConversion@channel channel `E12396  1 a 1 wreg ]
-"111
-[v ADC_GetConversion@channel channel `E12396  1 a 1 6 ]
-"127
 } 0
 "50 C:\Users\ethan\Documents\Github\SolarCarFirmwareTeam\PMS_FW.X\PMS_FW.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
