@@ -46,6 +46,25 @@
 /*
                          Main application
  */
+
+/*
+ Global variables
+ */
+int latchOn; //0 if the latch is open/off, 1 if the latch is closed/on
+
+uCAN_MSG rx, tx;
+
+/*
+ Functions
+ */
+
+void shutdown(void){    //shutdown the latch if CAN shutdown message received
+    if (latchOn == 1){
+        IO_RD1_SetLow();    //set pin 20 low
+        latchOn = 0;
+    }
+}
+
 void main(void)
 {
     // Initialize the device
@@ -69,7 +88,9 @@ void main(void)
 
     while (1)
     {
-        // Add your application code
+    
+        //CAN shutdown- check if message received from PMS
+        
     }
 }
 /**
