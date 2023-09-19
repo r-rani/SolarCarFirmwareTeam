@@ -100,7 +100,11 @@ void main(void)
 
     while (1)
     {
-    
+        if(CAN_receive(&rx)){
+            if(rx.frame.idType == /*?*/){
+                shutdown();
+            }
+        }
         //CAN shutdown- check if message received from PMS
         
     }
