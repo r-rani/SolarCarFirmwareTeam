@@ -67,7 +67,7 @@ void shutdown(void){    //shutdown the latch if CAN shutdown message received
 
 void shutdown_normal(void){
     //If statement to check if 5V is measured at pin 36
-    if (RB3_GetValue() == 5){
+    if (RB3_GetValue() == 1){
        // If statement to check status of start-up flag
         if (latchOn == 1){
             IO_RD1_SetLow(); //set pin 20 low
@@ -87,7 +87,7 @@ void main(void)
     // Use the following macros to:
 
     // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
+    INTERRUPT_GlobalInterruptEnable();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
@@ -100,8 +100,8 @@ void main(void)
 
     while (1)
     {
-        if(CAN_receive(&rx)){
-            if(rx.frame.idType == /*?*/){
+        if(CAN_receive(&rx)){   //if received a CAN msg, shutdown
+            if(rx.frame.idType == 1){
                 shutdown();
             }
         }

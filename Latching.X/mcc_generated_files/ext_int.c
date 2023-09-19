@@ -27,6 +27,8 @@
 #include <xc.h>
 #include "ext_int.h"
 
+extern int latchOn;
+
 void (*INT0_InterruptHandler)(void);
 void (*INT1_InterruptHandler)(void);
 void (*INT2_InterruptHandler)(void);
