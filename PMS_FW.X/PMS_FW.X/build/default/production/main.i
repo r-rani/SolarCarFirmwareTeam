@@ -20783,61 +20783,28 @@ int ADC_Conv_pinSeven(){
     float adc_val = ADC_GetConversion(channel_AN4);
     adc_val = (adc_val / 1023.0)*5.0;
     float input_voltage = adc_val*3.0;
-    if (highOrlow(input_voltage)==1){
-
-
-
-
-
+    if (input_voltage >= 10.2){
+        return 1;
     }
     else{
-        tx10.frame.idType = 1;
-        tx10.frame.id = 0x69;
-        tx10.frame.dlc = 0x01;
-        tx10.frame.data0 = 1;
-        CAN_transmit(&tx10);
+        return 0;
     }
-    return highOrlow(input_voltage);
 }
 
 int ADC_Conv_pinNine(){
     float adc_val = ADC_GetConversion(channel_AN6);
     adc_val = (adc_val / 1023.0)*5.0;
     float input_voltage = adc_val*3.0;
-    if (highOrlow(input_voltage)==1){
-
-
-
-
-
+    if (input_voltage >= 12){
+        return 1;
     }
     else{
-        tx10.frame.idType = 1;
-        tx10.frame.id = 0x69;
-        tx10.frame.dlc = 0x01;
-        tx10.frame.data0 = 1;
-        CAN_transmit(&tx10);
+        return 0;
     }
-    return highOrlow(input_voltage);
+
+
 }
 
-
-void canbus_msg_MPPT(int number){
-    tx1.frame.idType = 1;
-    tx1.frame.id = 0x1;
-    tx1.frame.dlc = 0x01;
-    tx1.frame.data0 = number;
-    CAN_transmit(&tx1);
-}
-
-
-void canbus_msg_motor(int number){
-    tx2.frame.idType = 1;
-    tx2.frame.id = 0x2;
-    tx2.frame.dlc = 0x01;
-    tx2.frame.data0 = number;
-    CAN_transmit(&tx2);
-}
 
 
 void canbus_msg_startupfail(int number){
@@ -20884,149 +20851,51 @@ void canbus_shutdown_success(int number){
     CAN_transmit(&tx7);
 }
 
-
-void canbus_motor_rearL_tx(int number){
+void canbus_latch_shutdown(int number){
     tx8.frame.idType = 1;
-    tx8.frame.id = 0x08F89540;
+    tx8.frame.id = 0x17;
     tx8.frame.dlc = 0x01;
     tx8.frame.data0 = number;
     CAN_transmit(&tx8);
 }
 
-void undo_seq(void){
-    if (PORTAbits.RA1 == 1){
-        do { LATAbits.LATA1 = 0; } while(0);
-        _delay((unsigned long)((5)*(20000000/4000.0)));
-    }
-    if (PORTCbits.RC3 == 1){
-        do { LATCbits.LATC3 = 0; } while(0);
-        _delay((unsigned long)((5)*(20000000/4000.0)));
-    }
-    if (PORTCbits.RC0 == 1){
-        do { LATCbits.LATC0 = 0; } while(0);
-        _delay((unsigned long)((5)*(20000000/4000.0)));
-    }
-    if (PORTCbits.RC5 == 1){
-        do { LATCbits.LATC5 = 0; } while(0);
-        _delay((unsigned long)((5)*(20000000/4000.0)));
-    }
-    if (PORTCbits.RC2 == 1){
-        do { LATCbits.LATC2 = 0; } while(0);
-        _delay((unsigned long)((5)*(20000000/4000.0)));
-    }
-    if (PORTCbits.RC4 == 1){
-        do { LATCbits.LATC4 = 0; } while(0);
-        _delay((unsigned long)((5)*(20000000/4000.0)));
-    }
-    if (PORTCbits.RC1== 1){
-        do { LATCbits.LATC1 = 0; } while(0);
-        _delay((unsigned long)((5)*(20000000/4000.0)));
-    }
-    if (PORTAbits.RA3 == 1){
-        do { LATAbits.LATA3 = 0; } while(0);
-        _delay((unsigned long)((5)*(20000000/4000.0)));
-    }
-    if (PORTAbits.RA2 == 1){
-        do { LATAbits.LATA2 = 0; } while(0);
-        _delay((unsigned long)((5)*(20000000/4000.0)));
-    }
-    if (PORTCbits.RC6 == 1){
-        do { LATCbits.LATC6 = 0; } while(0);
-        _delay((unsigned long)((5)*(20000000/4000.0)));
-    }
-    if ((PORTAbits.RA0) == 1){
-        do { LATAbits.LATA0 = 0; } while(0);
-        _delay((unsigned long)((5)*(20000000/4000.0)));
-    }
-}
-
 void start_up_seq(void){
 
     if (ADC_Conv_pinSeven() == 1){
-        do { LATAbits.LATA0 = 1; } while(0);
+        do { LATCbits.LATC1 = 1; } while(0);
+        do { LATCbits.LATC2 = 1; } while(0);
+        _delay((unsigned long)((1000)*(20000000/4000.0)));
+        do { LATCbits.LATC0 = 1; } while(0);
+        do { LATCbits.LATC2 = 0; } while(0);
         do { LATCbits.LATC6 = 1; } while(0);
-        _delay((unsigned long)((50)*(20000000/4000.0)));
 
 
         if (ADC_Conv_pinNine() == 1){
             do { LATAbits.LATA2 = 1; } while(0);
             do { LATAbits.LATA3 = 1; } while(0);
-            do { LATCbits.LATC1 = 1; } while(0);
-            do { LATCbits.LATC4 = 1; } while(0);
-            _delay((unsigned long)((5)*(20000000/4000.0)));
-
-            do { LATCbits.LATC2 = 1; } while(0);
-            do { LATCbits.LATC5 = 1; } while(0);
-            _delay((unsigned long)((5)*(20000000/4000.0)));
-
-
-
-            canbus_motor_rearL_tx(0b00000010);
-# 232 "main.c"
-            if (iterator > 1000){
-
-                undo_seq();
-                canbus_msg_motor(1);
-            }
-
-
-            else{
-
-
-
-                if(1){
-# 252 "main.c"
-                        do { LATCbits.LATC0 = 1; } while(0);
-                        do { LATCbits.LATC3 = 1; } while(0);
-                        _delay((unsigned long)((500)*(20000000/4000.0)));
-
-
-                        do { LATCbits.LATC2 = 0; } while(0);
-                        do { LATCbits.LATC5 = 0; } while(0);
-                        _delay((unsigned long)((10)*(20000000/4000.0)));
-
-
-
-                        do { LATAbits.LATA1 = 1; } while(0);
-                        STARTUP_SUCCESS = 1;
-                        tx20.frame.idType = 1;
-                        tx20.frame.id = 0x183;
-                        tx20.frame.dlc = 1;
-                        tx20.frame.data0 = STARTUP_SUCCESS;
-                        CAN_transmit(&tx20);
-
-                    }
-                }
-
-
-
-
-        }else{
-            undo_seq();
+            STARTUP_SUCCESS = 1;
+        }
+        else{
+            do { LATCbits.LATC0 = 0; } while(0);
+            do { LATCbits.LATC1 = 0; } while(0);
 
             canbus_msg_startupfail(1);
+            canbus_latch_shutdown(1);
+
         }
     }
+    else{
+        _delay((unsigned long)((5000)*(20000000/4000.0)));
+
+        canbus_msg_auxlow(1);
+        canbus_latch_shutdown(1);
+    }
 }
-# 295 "main.c"
+# 158 "main.c"
 void e_stop_seq(void){
         canbus_msg_bps(1);
         do { LATAbits.LATA3 = 0; } while(0);
         do { LATAbits.LATA2 = 0; } while(0);
-}
-
-
-void aux_battery_failure(void){
-
-    if (ADC_Conv_pinSeven() == 0){
-
-
-        if (ADC_Conv_pinNine() == 1){
-
-
-            canbus_msg_auxfail(1);
-        }
-    }
 }
 
 void aux_battery_LV(void){
@@ -21065,7 +20934,6 @@ void main(void){
                 e_stop_seq();
             }
         }
-
 
     }
  }

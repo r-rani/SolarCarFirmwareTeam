@@ -17,60 +17,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "158 ./mcc_generated_files/ecan.h
 [; ;./mcc_generated_files/ecan.h: 158: uint8_t CAN_transmit(uCAN_MSG *tempCanMsg);
 [v _CAN_transmit `(uc ~T0 @X0 0 ef1`*S1544 ]
-"30002 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30002:     struct {
-[s S1138 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1138 . RA0 RA1 RA2 RA3 . RA5 RA6 RA7 ]
-"30012
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30012:     struct {
-[s S1139 :1 `uc 1 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1139 . ULPWUIN . LVDIN . RJPU ]
-"30001
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30001: typedef union {
-[u S1137 `S1138 1 `S1139 1 ]
-[n S1137 . . . ]
-"30020
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30020: extern volatile PORTAbits_t PORTAbits __attribute__((address(0xF80)));
-[v _PORTAbits `VS1137 ~T0 @X0 0 e@3968 ]
-"30499
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30499:     struct {
-[s S1161 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1161 . LATA0 LATA1 LATA2 LATA3 . LATA5 LATA6 LATA7 ]
-"30509
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30509:     struct {
-[s S1162 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1162 . LA0 LA1 LA2 LA3 . LA5 LA6 LA7 ]
-"30498
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30498: typedef union {
-[u S1160 `S1161 1 `S1162 1 ]
-[n S1160 . . . ]
-"30520
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30520: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
-[v _LATAbits `VS1160 ~T0 @X0 0 e@3977 ]
-[v F192 `(v ~T0 @X0 1 tf1`ul ]
-"12 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\builtins.h
-[v __delay `JF192 ~T0 @X0 0 e ]
-[p i __delay ]
-"30152 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30152:     struct {
-[s S1144 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1144 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
-"30162
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30162:     struct {
-[s S1145 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1145 . . CCP2 PA1 ]
-"30167
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30167:     struct {
-[s S1146 :1 `uc 1 :1 `uc 1 ]
-[n S1146 . . PA2 ]
-"30151
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30151: typedef union {
-[u S1143 `S1144 1 `S1145 1 `S1146 1 ]
-[n S1143 . . . . ]
-"30172
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30172: extern volatile PORTCbits_t PORTCbits __attribute__((address(0xF82)));
-[v _PORTCbits `VS1143 ~T0 @X0 0 e@3970 ]
-"30713
+"30713 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30713:     struct {
 [s S1167 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1167 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
@@ -85,6 +32,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 "30734
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30734: extern volatile LATCbits_t LATCbits __attribute__((address(0xF8B)));
 [v _LATCbits `VS1166 ~T0 @X0 0 e@3979 ]
+[v F192 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\builtins.h
+[v __delay `JF192 ~T0 @X0 0 e ]
+[p i __delay ]
+"30499 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30499:     struct {
+[s S1161 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1161 . LATA0 LATA1 LATA2 LATA3 . LATA5 LATA6 LATA7 ]
+"30509
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30509:     struct {
+[s S1162 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1162 . LA0 LA1 LA2 LA3 . LA5 LA6 LA7 ]
+"30498
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30498: typedef union {
+[u S1160 `S1161 1 `S1162 1 ]
+[n S1160 . . . ]
+"30520
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30520: extern volatile LATAbits_t LATAbits __attribute__((address(0xF89)));
+[v _LATAbits `VS1160 ~T0 @X0 0 e@3977 ]
 [p mainexit ]
 "72 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
@@ -1573,873 +1539,493 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _input_voltage `f ~T0 @X0 1 a ]
 [e = _input_voltage -> * -> _adc_val `d .3.0 `f ]
 "39
-[; ;main.c: 39:     if (highOrlow(input_voltage)==1){
-[e $ ! == ( _highOrlow (1 _input_voltage -> 1 `i 1550  ]
+[; ;main.c: 39:     if (input_voltage >= 10.2){
+[e $ ! >= -> _input_voltage `d .10.2 1550  ]
 {
-"45
-[; ;main.c: 45:     }
+"40
+[; ;main.c: 40:         return 1;
+[e ) -> 1 `i ]
+[e $UE 1549  ]
+"41
+[; ;main.c: 41:     }
 }
 [e $U 1551  ]
-"46
-[; ;main.c: 46:     else{
+"42
+[; ;main.c: 42:     else{
 [e :U 1550 ]
 {
-"47
-[; ;main.c: 47:         tx10.frame.idType = 1;
-[e = . . _tx10 0 0 -> -> 1 `i `uc ]
-"48
-[; ;main.c: 48:         tx10.frame.id = 0x69;
-[e = . . _tx10 0 1 -> -> -> 105 `i `l `ul ]
-"49
-[; ;main.c: 49:         tx10.frame.dlc = 0x01;
-[e = . . _tx10 0 2 -> -> 1 `i `uc ]
-"50
-[; ;main.c: 50:         tx10.frame.data0 = 1;
-[e = . . _tx10 0 3 -> -> 1 `i `uc ]
-"51
-[; ;main.c: 51:         CAN_transmit(&tx10);
-[e ( _CAN_transmit (1 &U _tx10 ]
-"52
-[; ;main.c: 52:     }
+"43
+[; ;main.c: 43:         return 0;
+[e ) -> 0 `i ]
+[e $UE 1549  ]
+"44
+[; ;main.c: 44:     }
 }
 [e :U 1551 ]
-"53
-[; ;main.c: 53:     return highOrlow(input_voltage);
-[e ) ( _highOrlow (1 _input_voltage ]
-[e $UE 1549  ]
-"54
-[; ;main.c: 54: }
+"45
+[; ;main.c: 45: }
 [e :UE 1549 ]
 }
-"56
-[; ;main.c: 56: int ADC_Conv_pinNine(){
+"47
+[; ;main.c: 47: int ADC_Conv_pinNine(){
 [v _ADC_Conv_pinNine `(i ~T0 @X0 1 ef ]
 {
 [e :U _ADC_Conv_pinNine ]
 [f ]
-"57
-[; ;main.c: 57:     float adc_val = ADC_GetConversion(channel_AN6);
+"48
+[; ;main.c: 48:     float adc_val = ADC_GetConversion(channel_AN6);
 [v _adc_val `f ~T0 @X0 1 a ]
 [e = _adc_val -> ( _ADC_GetConversion (1 . `E12717 5 `f ]
-"58
-[; ;main.c: 58:     adc_val = (adc_val / 1023.0)*5.0;
+"49
+[; ;main.c: 49:     adc_val = (adc_val / 1023.0)*5.0;
 [e = _adc_val -> * / -> _adc_val `d .1023.0 .5.0 `f ]
-"59
-[; ;main.c: 59:     float input_voltage = adc_val*3.0;
+"50
+[; ;main.c: 50:     float input_voltage = adc_val*3.0;
 [v _input_voltage `f ~T0 @X0 1 a ]
 [e = _input_voltage -> * -> _adc_val `d .3.0 `f ]
-"60
-[; ;main.c: 60:     if (highOrlow(input_voltage)==1){
-[e $ ! == ( _highOrlow (1 _input_voltage -> 1 `i 1553  ]
+"51
+[; ;main.c: 51:     if (input_voltage >= 12){
+[e $ ! >= _input_voltage -> -> 12 `i `f 1553  ]
 {
-"66
-[; ;main.c: 66:     }
+"52
+[; ;main.c: 52:         return 1;
+[e ) -> 1 `i ]
+[e $UE 1552  ]
+"53
+[; ;main.c: 53:     }
 }
 [e $U 1554  ]
-"67
-[; ;main.c: 67:     else{
+"54
+[; ;main.c: 54:     else{
 [e :U 1553 ]
 {
-"68
-[; ;main.c: 68:         tx10.frame.idType = 1;
-[e = . . _tx10 0 0 -> -> 1 `i `uc ]
-"69
-[; ;main.c: 69:         tx10.frame.id = 0x69;
-[e = . . _tx10 0 1 -> -> -> 105 `i `l `ul ]
-"70
-[; ;main.c: 70:         tx10.frame.dlc = 0x01;
-[e = . . _tx10 0 2 -> -> 1 `i `uc ]
-"71
-[; ;main.c: 71:         tx10.frame.data0 = 1;
-[e = . . _tx10 0 3 -> -> 1 `i `uc ]
-"72
-[; ;main.c: 72:         CAN_transmit(&tx10);
-[e ( _CAN_transmit (1 &U _tx10 ]
-"73
-[; ;main.c: 73:     }
+"55
+[; ;main.c: 55:         return 0;
+[e ) -> 0 `i ]
+[e $UE 1552  ]
+"56
+[; ;main.c: 56:     }
 }
 [e :U 1554 ]
-"74
-[; ;main.c: 74:     return highOrlow(input_voltage);
-[e ) ( _highOrlow (1 _input_voltage ]
-[e $UE 1552  ]
-"75
-[; ;main.c: 75: }
+"59
+[; ;main.c: 59: }
 [e :UE 1552 ]
 }
-"78
-[; ;main.c: 78: void canbus_msg_MPPT(int number){
-[v _canbus_msg_MPPT `(v ~T0 @X0 1 ef1`i ]
-{
-[e :U _canbus_msg_MPPT ]
-[v _number `i ~T0 @X0 1 r1 ]
-[f ]
-"79
-[; ;main.c: 79:     tx1.frame.idType = 1;
-[e = . . _tx1 0 0 -> -> 1 `i `uc ]
-"80
-[; ;main.c: 80:     tx1.frame.id = 0x1;
-[e = . . _tx1 0 1 -> -> -> 1 `i `l `ul ]
-"81
-[; ;main.c: 81:     tx1.frame.dlc = 0x01;
-[e = . . _tx1 0 2 -> -> 1 `i `uc ]
-"82
-[; ;main.c: 82:     tx1.frame.data0 = number;
-[e = . . _tx1 0 3 -> _number `uc ]
-"83
-[; ;main.c: 83:     CAN_transmit(&tx1);
-[e ( _CAN_transmit (1 &U _tx1 ]
-"84
-[; ;main.c: 84: }
-[e :UE 1555 ]
-}
-"87
-[; ;main.c: 87: void canbus_msg_motor(int number){
-[v _canbus_msg_motor `(v ~T0 @X0 1 ef1`i ]
-{
-[e :U _canbus_msg_motor ]
-[v _number `i ~T0 @X0 1 r1 ]
-[f ]
-"88
-[; ;main.c: 88:     tx2.frame.idType = 1;
-[e = . . _tx2 0 0 -> -> 1 `i `uc ]
-"89
-[; ;main.c: 89:     tx2.frame.id = 0x2;
-[e = . . _tx2 0 1 -> -> -> 2 `i `l `ul ]
-"90
-[; ;main.c: 90:     tx2.frame.dlc = 0x01;
-[e = . . _tx2 0 2 -> -> 1 `i `uc ]
-"91
-[; ;main.c: 91:     tx2.frame.data0 = number;
-[e = . . _tx2 0 3 -> _number `uc ]
-"92
-[; ;main.c: 92:     CAN_transmit(&tx2);
-[e ( _CAN_transmit (1 &U _tx2 ]
-"93
-[; ;main.c: 93: }
-[e :UE 1556 ]
-}
-"96
-[; ;main.c: 96: void canbus_msg_startupfail(int number){
+"63
+[; ;main.c: 63: void canbus_msg_startupfail(int number){
 [v _canbus_msg_startupfail `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _canbus_msg_startupfail ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"97
-[; ;main.c: 97:     tx3.frame.idType = 1;
+"64
+[; ;main.c: 64:     tx3.frame.idType = 1;
 [e = . . _tx3 0 0 -> -> 1 `i `uc ]
-"98
-[; ;main.c: 98:     tx3.frame.id = 0x3;
+"65
+[; ;main.c: 65:     tx3.frame.id = 0x3;
 [e = . . _tx3 0 1 -> -> -> 3 `i `l `ul ]
-"99
-[; ;main.c: 99:     tx3.frame.dlc = 0x01;
+"66
+[; ;main.c: 66:     tx3.frame.dlc = 0x01;
 [e = . . _tx3 0 2 -> -> 1 `i `uc ]
-"100
-[; ;main.c: 100:     tx3.frame.data0 = number;
+"67
+[; ;main.c: 67:     tx3.frame.data0 = number;
 [e = . . _tx3 0 3 -> _number `uc ]
-"101
-[; ;main.c: 101:     CAN_transmit(&tx3);
+"68
+[; ;main.c: 68:     CAN_transmit(&tx3);
 [e ( _CAN_transmit (1 &U _tx3 ]
-"102
-[; ;main.c: 102: }
-[e :UE 1557 ]
+"69
+[; ;main.c: 69: }
+[e :UE 1555 ]
 }
-"105
-[; ;main.c: 105: void canbus_msg_bps(int number){
+"72
+[; ;main.c: 72: void canbus_msg_bps(int number){
 [v _canbus_msg_bps `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _canbus_msg_bps ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"106
-[; ;main.c: 106:     tx4.frame.idType = 1;
+"73
+[; ;main.c: 73:     tx4.frame.idType = 1;
 [e = . . _tx4 0 0 -> -> 1 `i `uc ]
-"107
-[; ;main.c: 107:     tx4.frame.id = 0x4;
+"74
+[; ;main.c: 74:     tx4.frame.id = 0x4;
 [e = . . _tx4 0 1 -> -> -> 4 `i `l `ul ]
-"108
-[; ;main.c: 108:     tx4.frame.dlc = 0x01;
+"75
+[; ;main.c: 75:     tx4.frame.dlc = 0x01;
 [e = . . _tx4 0 2 -> -> 1 `i `uc ]
-"109
-[; ;main.c: 109:     tx4.frame.data0 = number;
+"76
+[; ;main.c: 76:     tx4.frame.data0 = number;
 [e = . . _tx4 0 3 -> _number `uc ]
-"110
-[; ;main.c: 110:     CAN_transmit(&tx4);
+"77
+[; ;main.c: 77:     CAN_transmit(&tx4);
 [e ( _CAN_transmit (1 &U _tx4 ]
-"111
-[; ;main.c: 111: }
-[e :UE 1558 ]
+"78
+[; ;main.c: 78: }
+[e :UE 1556 ]
 }
-"114
-[; ;main.c: 114: void canbus_msg_auxfail(int number){
+"81
+[; ;main.c: 81: void canbus_msg_auxfail(int number){
 [v _canbus_msg_auxfail `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _canbus_msg_auxfail ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"115
-[; ;main.c: 115:     tx5.frame.idType = 1;
+"82
+[; ;main.c: 82:     tx5.frame.idType = 1;
 [e = . . _tx5 0 0 -> -> 1 `i `uc ]
-"116
-[; ;main.c: 116:     tx5.frame.id = 0x9;
+"83
+[; ;main.c: 83:     tx5.frame.id = 0x9;
 [e = . . _tx5 0 1 -> -> -> 9 `i `l `ul ]
-"117
-[; ;main.c: 117:     tx5.frame.dlc = 0x01;
+"84
+[; ;main.c: 84:     tx5.frame.dlc = 0x01;
 [e = . . _tx5 0 2 -> -> 1 `i `uc ]
-"118
-[; ;main.c: 118:     tx5.frame.data0 = number;
+"85
+[; ;main.c: 85:     tx5.frame.data0 = number;
 [e = . . _tx5 0 3 -> _number `uc ]
-"119
-[; ;main.c: 119:     CAN_transmit(&tx5);
+"86
+[; ;main.c: 86:     CAN_transmit(&tx5);
 [e ( _CAN_transmit (1 &U _tx5 ]
-"120
-[; ;main.c: 120: }
-[e :UE 1559 ]
+"87
+[; ;main.c: 87: }
+[e :UE 1557 ]
 }
-"123
-[; ;main.c: 123: void canbus_msg_auxlow(int number){
+"90
+[; ;main.c: 90: void canbus_msg_auxlow(int number){
 [v _canbus_msg_auxlow `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _canbus_msg_auxlow ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"124
-[; ;main.c: 124:     tx6.frame.idType = 1;
+"91
+[; ;main.c: 91:     tx6.frame.idType = 1;
 [e = . . _tx6 0 0 -> -> 1 `i `uc ]
-"125
-[; ;main.c: 125:     tx6.frame.id = 0x5;
+"92
+[; ;main.c: 92:     tx6.frame.id = 0x5;
 [e = . . _tx6 0 1 -> -> -> 5 `i `l `ul ]
-"126
-[; ;main.c: 126:     tx6.frame.dlc = 0x01;
+"93
+[; ;main.c: 93:     tx6.frame.dlc = 0x01;
 [e = . . _tx6 0 2 -> -> 1 `i `uc ]
-"127
-[; ;main.c: 127:     tx6.frame.data0 = number;
+"94
+[; ;main.c: 94:     tx6.frame.data0 = number;
 [e = . . _tx6 0 3 -> _number `uc ]
-"128
-[; ;main.c: 128:     CAN_transmit(&tx6);
+"95
+[; ;main.c: 95:     CAN_transmit(&tx6);
 [e ( _CAN_transmit (1 &U _tx6 ]
-"129
-[; ;main.c: 129: }
-[e :UE 1560 ]
+"96
+[; ;main.c: 96: }
+[e :UE 1558 ]
 }
-"132
-[; ;main.c: 132: void canbus_shutdown_success(int number){
+"99
+[; ;main.c: 99: void canbus_shutdown_success(int number){
 [v _canbus_shutdown_success `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _canbus_shutdown_success ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"133
-[; ;main.c: 133:     tx7.frame.idType = 1;
+"100
+[; ;main.c: 100:     tx7.frame.idType = 1;
 [e = . . _tx7 0 0 -> -> 1 `i `uc ]
-"134
-[; ;main.c: 134:     tx7.frame.id = 0x18;
+"101
+[; ;main.c: 101:     tx7.frame.id = 0x18;
 [e = . . _tx7 0 1 -> -> -> 24 `i `l `ul ]
-"135
-[; ;main.c: 135:     tx7.frame.dlc = 0x01;
+"102
+[; ;main.c: 102:     tx7.frame.dlc = 0x01;
 [e = . . _tx7 0 2 -> -> 1 `i `uc ]
-"136
-[; ;main.c: 136:     tx7.frame.data0 = number;
+"103
+[; ;main.c: 103:     tx7.frame.data0 = number;
 [e = . . _tx7 0 3 -> _number `uc ]
-"137
-[; ;main.c: 137:     CAN_transmit(&tx7);
+"104
+[; ;main.c: 104:     CAN_transmit(&tx7);
 [e ( _CAN_transmit (1 &U _tx7 ]
-"138
-[; ;main.c: 138: }
-[e :UE 1561 ]
+"105
+[; ;main.c: 105: }
+[e :UE 1559 ]
 }
-"141
-[; ;main.c: 141: void canbus_motor_rearL_tx(int number){
-[v _canbus_motor_rearL_tx `(v ~T0 @X0 1 ef1`i ]
+"107
+[; ;main.c: 107: void canbus_latch_shutdown(int number){
+[v _canbus_latch_shutdown `(v ~T0 @X0 1 ef1`i ]
 {
-[e :U _canbus_motor_rearL_tx ]
+[e :U _canbus_latch_shutdown ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"142
-[; ;main.c: 142:     tx8.frame.idType = 1;
+"108
+[; ;main.c: 108:     tx8.frame.idType = 1;
 [e = . . _tx8 0 0 -> -> 1 `i `uc ]
-"143
-[; ;main.c: 143:     tx8.frame.id = 0x08F89540;
-[e = . . _tx8 0 1 -> -> 150508864 `l `ul ]
-"144
-[; ;main.c: 144:     tx8.frame.dlc = 0x01;
+"109
+[; ;main.c: 109:     tx8.frame.id = 0x17;
+[e = . . _tx8 0 1 -> -> -> 23 `i `l `ul ]
+"110
+[; ;main.c: 110:     tx8.frame.dlc = 0x01;
 [e = . . _tx8 0 2 -> -> 1 `i `uc ]
-"145
-[; ;main.c: 145:     tx8.frame.data0 = number;
+"111
+[; ;main.c: 111:     tx8.frame.data0 = number;
 [e = . . _tx8 0 3 -> _number `uc ]
-"146
-[; ;main.c: 146:     CAN_transmit(&tx8);
+"112
+[; ;main.c: 112:     CAN_transmit(&tx8);
 [e ( _CAN_transmit (1 &U _tx8 ]
-"147
-[; ;main.c: 147: }
-[e :UE 1562 ]
+"113
+[; ;main.c: 113: }
+[e :UE 1560 ]
 }
-"149
-[; ;main.c: 149: void undo_seq(void){
-[v _undo_seq `(v ~T0 @X0 1 ef ]
+"115
+[; ;main.c: 115: void start_up_seq(void){
+[v _start_up_seq `(v ~T0 @X0 1 ef ]
 {
-[e :U _undo_seq ]
+[e :U _start_up_seq ]
 [f ]
-"150
-[; ;main.c: 150:     if (PORTAbits.RA1 == 1){
-[e $ ! == -> . . _PORTAbits 0 1 `i -> 1 `i 1564  ]
+"117
+[; ;main.c: 117:     if (ADC_Conv_pinSeven() == 1){
+[e $ ! == ( _ADC_Conv_pinSeven ..  -> 1 `i 1562  ]
 {
-"151
-[; ;main.c: 151:         do { LATAbits.LATA1 = 0; } while(0);
-[e :U 1567 ]
+"118
+[; ;main.c: 118:         do { LATCbits.LATC1 = 1; } while(0);
+[e :U 1565 ]
 {
-[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
-}
-[e :U 1566 ]
-"152
-[; ;main.c: 152:         _delay((unsigned long)((5)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"153
-[; ;main.c: 153:     }
+[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1564 ]
-"154
-[; ;main.c: 154:     if (PORTCbits.RC3 == 1){
-[e $ ! == -> . . _PORTCbits 0 3 `i -> 1 `i 1568  ]
+"119
+[; ;main.c: 119:         do { LATCbits.LATC2 = 1; } while(0);
+[e :U 1568 ]
 {
-"155
-[; ;main.c: 155:         do { LATCbits.LATC3 = 0; } while(0);
+[e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
+}
+[e :U 1567 ]
+"120
+[; ;main.c: 120:         _delay((unsigned long)((1000)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"121
+[; ;main.c: 121:         do { LATCbits.LATC0 = 1; } while(0);
 [e :U 1571 ]
 {
-[e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
+[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 1570 ]
-"156
-[; ;main.c: 156:         _delay((unsigned long)((5)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"157
-[; ;main.c: 157:     }
-}
-[e :U 1568 ]
-"158
-[; ;main.c: 158:     if (PORTCbits.RC0 == 1){
-[e $ ! == -> . . _PORTCbits 0 0 `i -> 1 `i 1572  ]
-{
-"159
-[; ;main.c: 159:         do { LATCbits.LATC0 = 0; } while(0);
-[e :U 1575 ]
-{
-[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
-}
+"122
+[; ;main.c: 122:         do { LATCbits.LATC2 = 0; } while(0);
 [e :U 1574 ]
-"160
-[; ;main.c: 160:         _delay((unsigned long)((5)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"161
-[; ;main.c: 161:     }
-}
-[e :U 1572 ]
-"162
-[; ;main.c: 162:     if (PORTCbits.RC5 == 1){
-[e $ ! == -> . . _PORTCbits 0 5 `i -> 1 `i 1576  ]
-{
-"163
-[; ;main.c: 163:         do { LATCbits.LATC5 = 0; } while(0);
-[e :U 1579 ]
-{
-[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
-}
-[e :U 1578 ]
-"164
-[; ;main.c: 164:         _delay((unsigned long)((5)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"165
-[; ;main.c: 165:     }
-}
-[e :U 1576 ]
-"166
-[; ;main.c: 166:     if (PORTCbits.RC2 == 1){
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1580  ]
-{
-"167
-[; ;main.c: 167:         do { LATCbits.LATC2 = 0; } while(0);
-[e :U 1583 ]
 {
 [e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
 }
-[e :U 1582 ]
-"168
-[; ;main.c: 168:         _delay((unsigned long)((5)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"169
-[; ;main.c: 169:     }
+[e :U 1573 ]
+"123
+[; ;main.c: 123:         do { LATCbits.LATC6 = 1; } while(0);
+[e :U 1577 ]
+{
+[e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
+}
+[e :U 1576 ]
+"126
+[; ;main.c: 126:         if (ADC_Conv_pinNine() == 1){
+[e $ ! == ( _ADC_Conv_pinNine ..  -> 1 `i 1578  ]
+{
+"127
+[; ;main.c: 127:             do { LATAbits.LATA2 = 1; } while(0);
+[e :U 1581 ]
+{
+[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 }
 [e :U 1580 ]
-"170
-[; ;main.c: 170:     if (PORTCbits.RC4 == 1){
-[e $ ! == -> . . _PORTCbits 0 4 `i -> 1 `i 1584  ]
-{
-"171
-[; ;main.c: 171:         do { LATCbits.LATC4 = 0; } while(0);
-[e :U 1587 ]
-{
-[e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
-}
-[e :U 1586 ]
-"172
-[; ;main.c: 172:         _delay((unsigned long)((5)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"173
-[; ;main.c: 173:     }
-}
+"128
+[; ;main.c: 128:             do { LATAbits.LATA3 = 1; } while(0);
 [e :U 1584 ]
-"174
-[; ;main.c: 174:     if (PORTCbits.RC1== 1){
-[e $ ! == -> . . _PORTCbits 0 1 `i -> 1 `i 1588  ]
 {
-"175
-[; ;main.c: 175:         do { LATCbits.LATC1 = 0; } while(0);
+[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 1583 ]
+"129
+[; ;main.c: 129:             STARTUP_SUCCESS = 1;
+[e = _STARTUP_SUCCESS -> 1 `i ]
+"130
+[; ;main.c: 130:         }
+}
+[e $U 1585  ]
+"131
+[; ;main.c: 131:         else{
+[e :U 1578 ]
+{
+"132
+[; ;main.c: 132:             do { LATCbits.LATC0 = 0; } while(0);
+[e :U 1588 ]
+{
+[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
+}
+[e :U 1587 ]
+"133
+[; ;main.c: 133:             do { LATCbits.LATC1 = 0; } while(0);
 [e :U 1591 ]
 {
 [e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1590 ]
-"176
-[; ;main.c: 176:         _delay((unsigned long)((5)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"177
-[; ;main.c: 177:     }
+"135
+[; ;main.c: 135:             canbus_msg_startupfail(1);
+[e ( _canbus_msg_startupfail (1 -> 1 `i ]
+"136
+[; ;main.c: 136:             canbus_latch_shutdown(1);
+[e ( _canbus_latch_shutdown (1 -> 1 `i ]
+"138
+[; ;main.c: 138:         }
 }
-[e :U 1588 ]
-"178
-[; ;main.c: 178:     if (PORTAbits.RA3 == 1){
-[e $ ! == -> . . _PORTAbits 0 3 `i -> 1 `i 1592  ]
+[e :U 1585 ]
+"139
+[; ;main.c: 139:     }
+}
+[e $U 1592  ]
+"140
+[; ;main.c: 140:     else{
+[e :U 1562 ]
 {
-"179
-[; ;main.c: 179:         do { LATAbits.LATA3 = 0; } while(0);
-[e :U 1595 ]
+"141
+[; ;main.c: 141:         _delay((unsigned long)((5000)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 5000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"143
+[; ;main.c: 143:         canbus_msg_auxlow(1);
+[e ( _canbus_msg_auxlow (1 -> 1 `i ]
+"144
+[; ;main.c: 144:         canbus_latch_shutdown(1);
+[e ( _canbus_latch_shutdown (1 -> 1 `i ]
+"145
+[; ;main.c: 145:     }
+}
+[e :U 1592 ]
+"146
+[; ;main.c: 146: }
+[e :UE 1561 ]
+}
+"158
+[; ;main.c: 158: void e_stop_seq(void){
+[v _e_stop_seq `(v ~T0 @X0 1 ef ]
+{
+[e :U _e_stop_seq ]
+[f ]
+"159
+[; ;main.c: 159:         canbus_msg_bps(1);
+[e ( _canbus_msg_bps (1 -> 1 `i ]
+"160
+[; ;main.c: 160:         do { LATAbits.LATA3 = 0; } while(0);
+[e :U 1596 ]
 {
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 1594 ]
-"180
-[; ;main.c: 180:         _delay((unsigned long)((5)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"181
-[; ;main.c: 181:     }
-}
-[e :U 1592 ]
-"182
-[; ;main.c: 182:     if (PORTAbits.RA2 == 1){
-[e $ ! == -> . . _PORTAbits 0 2 `i -> 1 `i 1596  ]
-{
-"183
-[; ;main.c: 183:         do { LATAbits.LATA2 = 0; } while(0);
+[e :U 1595 ]
+"161
+[; ;main.c: 161:         do { LATAbits.LATA2 = 0; } while(0);
 [e :U 1599 ]
 {
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 }
 [e :U 1598 ]
-"184
-[; ;main.c: 184:         _delay((unsigned long)((5)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"185
-[; ;main.c: 185:     }
+"162
+[; ;main.c: 162: }
+[e :UE 1593 ]
 }
-[e :U 1596 ]
-"186
-[; ;main.c: 186:     if (PORTCbits.RC6 == 1){
-[e $ ! == -> . . _PORTCbits 0 6 `i -> 1 `i 1600  ]
-{
-"187
-[; ;main.c: 187:         do { LATCbits.LATC6 = 0; } while(0);
-[e :U 1603 ]
-{
-[e = . . _LATCbits 0 6 -> -> 0 `i `uc ]
-}
-[e :U 1602 ]
-"188
-[; ;main.c: 188:         _delay((unsigned long)((5)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"189
-[; ;main.c: 189:     }
-}
-[e :U 1600 ]
-"190
-[; ;main.c: 190:     if ((PORTAbits.RA0) == 1){
-[e $ ! == -> . . _PORTAbits 0 0 `i -> 1 `i 1604  ]
-{
-"191
-[; ;main.c: 191:         do { LATAbits.LATA0 = 0; } while(0);
-[e :U 1607 ]
-{
-[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
-}
-[e :U 1606 ]
-"192
-[; ;main.c: 192:         _delay((unsigned long)((5)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"193
-[; ;main.c: 193:     }
-}
-[e :U 1604 ]
-"194
-[; ;main.c: 194: }
-[e :UE 1563 ]
-}
-"196
-[; ;main.c: 196: void start_up_seq(void){
-[v _start_up_seq `(v ~T0 @X0 1 ef ]
-{
-[e :U _start_up_seq ]
-[f ]
-"198
-[; ;main.c: 198:     if (ADC_Conv_pinSeven() == 1){
-[e $ ! == ( _ADC_Conv_pinSeven ..  -> 1 `i 1609  ]
-{
-"199
-[; ;main.c: 199:         do { LATAbits.LATA0 = 1; } while(0);
-[e :U 1612 ]
-{
-[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
-}
-[e :U 1611 ]
-"200
-[; ;main.c: 200:         do { LATCbits.LATC6 = 1; } while(0);
-[e :U 1615 ]
-{
-[e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
-}
-[e :U 1614 ]
-"201
-[; ;main.c: 201:         _delay((unsigned long)((50)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"204
-[; ;main.c: 204:         if (ADC_Conv_pinNine() == 1){
-[e $ ! == ( _ADC_Conv_pinNine ..  -> 1 `i 1616  ]
-{
-"205
-[; ;main.c: 205:             do { LATAbits.LATA2 = 1; } while(0);
-[e :U 1619 ]
-{
-[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
-}
-[e :U 1618 ]
-"206
-[; ;main.c: 206:             do { LATAbits.LATA3 = 1; } while(0);
-[e :U 1622 ]
-{
-[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
-}
-[e :U 1621 ]
-"207
-[; ;main.c: 207:             do { LATCbits.LATC1 = 1; } while(0);
-[e :U 1625 ]
-{
-[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
-}
-[e :U 1624 ]
-"208
-[; ;main.c: 208:             do { LATCbits.LATC4 = 1; } while(0);
-[e :U 1628 ]
-{
-[e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
-}
-[e :U 1627 ]
-"209
-[; ;main.c: 209:             _delay((unsigned long)((5)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"211
-[; ;main.c: 211:             do { LATCbits.LATC2 = 1; } while(0);
-[e :U 1631 ]
-{
-[e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
-}
-[e :U 1630 ]
-"212
-[; ;main.c: 212:             do { LATCbits.LATC5 = 1; } while(0);
-[e :U 1634 ]
-{
-[e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
-}
-[e :U 1633 ]
-"213
-[; ;main.c: 213:             _delay((unsigned long)((5)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"217
-[; ;main.c: 217:             canbus_motor_rearL_tx(0b00000010);
-[e ( _canbus_motor_rearL_tx (1 -> 2 `i ]
-"232
-[; ;main.c: 232:             if (iterator > 1000){
-[e $ ! > _iterator -> 1000 `i 1635  ]
-{
-"234
-[; ;main.c: 234:                 undo_seq();
-[e ( _undo_seq ..  ]
-"235
-[; ;main.c: 235:                 canbus_msg_motor(1);
-[e ( _canbus_msg_motor (1 -> 1 `i ]
-"236
-[; ;main.c: 236:             }
-}
-[e $U 1636  ]
-"239
-[; ;main.c: 239:             else{
-[e :U 1635 ]
-{
-"243
-[; ;main.c: 243:                 if(1){
-[e $ ! != -> 1 `i -> 0 `i 1637  ]
-{
-"252
-[; ;main.c: 252:                         do { LATCbits.LATC0 = 1; } while(0);
-[e :U 1640 ]
-{
-[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
-}
-[e :U 1639 ]
-"253
-[; ;main.c: 253:                         do { LATCbits.LATC3 = 1; } while(0);
-[e :U 1643 ]
-{
-[e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
-}
-[e :U 1642 ]
-"254
-[; ;main.c: 254:                         _delay((unsigned long)((500)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"257
-[; ;main.c: 257:                         do { LATCbits.LATC2 = 0; } while(0);
-[e :U 1646 ]
-{
-[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
-}
-[e :U 1645 ]
-"258
-[; ;main.c: 258:                         do { LATCbits.LATC5 = 0; } while(0);
-[e :U 1649 ]
-{
-[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
-}
-[e :U 1648 ]
-"259
-[; ;main.c: 259:                         _delay((unsigned long)((10)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"263
-[; ;main.c: 263:                         do { LATAbits.LATA1 = 1; } while(0);
-[e :U 1652 ]
-{
-[e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
-}
-[e :U 1651 ]
-"264
-[; ;main.c: 264:                         STARTUP_SUCCESS = 1;
-[e = _STARTUP_SUCCESS -> 1 `i ]
-"265
-[; ;main.c: 265:                         tx20.frame.idType = 1;
-[e = . . _tx20 0 0 -> -> 1 `i `uc ]
-"266
-[; ;main.c: 266:                         tx20.frame.id = 0x183;
-[e = . . _tx20 0 1 -> -> -> 387 `i `l `ul ]
-"267
-[; ;main.c: 267:                         tx20.frame.dlc = 1;
-[e = . . _tx20 0 2 -> -> 1 `i `uc ]
-"268
-[; ;main.c: 268:                         tx20.frame.data0 = STARTUP_SUCCESS;
-[e = . . _tx20 0 3 -> _STARTUP_SUCCESS `uc ]
-"269
-[; ;main.c: 269:                         CAN_transmit(&tx20);
-[e ( _CAN_transmit (1 &U _tx20 ]
-"271
-[; ;main.c: 271:                     }
-}
-[e :U 1637 ]
-"272
-[; ;main.c: 272:                 }
-}
-[e :U 1636 ]
-"277
-[; ;main.c: 277:         }else{
-}
-[e $U 1653  ]
-[e :U 1616 ]
-{
-"278
-[; ;main.c: 278:             undo_seq();
-[e ( _undo_seq ..  ]
-"280
-[; ;main.c: 280:             canbus_msg_startupfail(1);
-[e ( _canbus_msg_startupfail (1 -> 1 `i ]
-"281
-[; ;main.c: 281:         }
-}
-[e :U 1653 ]
-"282
-[; ;main.c: 282:     }
-}
-[e :U 1609 ]
-"283
-[; ;main.c: 283: }
-[e :UE 1608 ]
-}
-"295
-[; ;main.c: 295: void e_stop_seq(void){
-[v _e_stop_seq `(v ~T0 @X0 1 ef ]
-{
-[e :U _e_stop_seq ]
-[f ]
-"296
-[; ;main.c: 296:         canbus_msg_bps(1);
-[e ( _canbus_msg_bps (1 -> 1 `i ]
-"297
-[; ;main.c: 297:         do { LATAbits.LATA3 = 0; } while(0);
-[e :U 1657 ]
-{
-[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
-}
-[e :U 1656 ]
-"298
-[; ;main.c: 298:         do { LATAbits.LATA2 = 0; } while(0);
-[e :U 1660 ]
-{
-[e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-}
-[e :U 1659 ]
-"299
-[; ;main.c: 299: }
-[e :UE 1654 ]
-}
-"302
-[; ;main.c: 302: void aux_battery_failure(void){
-[v _aux_battery_failure `(v ~T0 @X0 1 ef ]
-{
-[e :U _aux_battery_failure ]
-[f ]
-"304
-[; ;main.c: 304:     if (ADC_Conv_pinSeven() == 0){
-[e $ ! == ( _ADC_Conv_pinSeven ..  -> 0 `i 1662  ]
-{
-"307
-[; ;main.c: 307:         if (ADC_Conv_pinNine() == 1){
-[e $ ! == ( _ADC_Conv_pinNine ..  -> 1 `i 1663  ]
-{
-"310
-[; ;main.c: 310:             canbus_msg_auxfail(1);
-[e ( _canbus_msg_auxfail (1 -> 1 `i ]
-"311
-[; ;main.c: 311:         }
-}
-[e :U 1663 ]
-"312
-[; ;main.c: 312:     }
-}
-[e :U 1662 ]
-"313
-[; ;main.c: 313: }
-[e :UE 1661 ]
-}
-"315
-[; ;main.c: 315: void aux_battery_LV(void){
+"164
+[; ;main.c: 164: void aux_battery_LV(void){
 [v _aux_battery_LV `(v ~T0 @X0 1 ef ]
 {
 [e :U _aux_battery_LV ]
 [f ]
-"318
-[; ;main.c: 318:     if (ADC_Conv_pinSeven() != 1){
-[e $ ! != ( _ADC_Conv_pinSeven ..  -> 1 `i 1665  ]
+"167
+[; ;main.c: 167:     if (ADC_Conv_pinSeven() != 1){
+[e $ ! != ( _ADC_Conv_pinSeven ..  -> 1 `i 1601  ]
 {
-"321
-[; ;main.c: 321:         canbus_msg_auxlow(1);
+"170
+[; ;main.c: 170:         canbus_msg_auxlow(1);
 [e ( _canbus_msg_auxlow (1 -> 1 `i ]
-"322
-[; ;main.c: 322:     }
+"171
+[; ;main.c: 171:     }
 }
-[e :U 1665 ]
-"323
-[; ;main.c: 323: }
-[e :UE 1664 ]
+[e :U 1601 ]
+"172
+[; ;main.c: 172: }
+[e :UE 1600 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"325
-[; ;main.c: 325: void main(void){
+"174
+[; ;main.c: 174: void main(void){
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"327
-[; ;main.c: 327:     SYSTEM_Initialize();
+"176
+[; ;main.c: 176:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"328
-[; ;main.c: 328:     STARTUP_SUCCESS = 0;
+"177
+[; ;main.c: 177:     STARTUP_SUCCESS = 0;
 [e = _STARTUP_SUCCESS -> 0 `i ]
-"330
-[; ;main.c: 330:     while (1){
-[e :U 1668 ]
+"179
+[; ;main.c: 179:     while (1){
+[e :U 1604 ]
 {
-"334
-[; ;main.c: 334:         tx21.frame.idType = 1;
+"183
+[; ;main.c: 183:         tx21.frame.idType = 1;
 [e = . . _tx21 0 0 -> -> 1 `i `uc ]
-"335
-[; ;main.c: 335:         tx21.frame.id = 0x39;
+"184
+[; ;main.c: 184:         tx21.frame.id = 0x39;
 [e = . . _tx21 0 1 -> -> -> 57 `i `l `ul ]
-"336
-[; ;main.c: 336:         tx21.frame.dlc = 1;
+"185
+[; ;main.c: 185:         tx21.frame.dlc = 1;
 [e = . . _tx21 0 2 -> -> 1 `i `uc ]
-"337
-[; ;main.c: 337:         tx21.frame.data0 = ADC_Conv_pinNine();
+"186
+[; ;main.c: 186:         tx21.frame.data0 = ADC_Conv_pinNine();
 [e = . . _tx21 0 3 -> ( _ADC_Conv_pinNine ..  `uc ]
-"338
-[; ;main.c: 338:         CAN_transmit(&tx21);
+"187
+[; ;main.c: 187:         CAN_transmit(&tx21);
 [e ( _CAN_transmit (1 &U _tx21 ]
-"339
-[; ;main.c: 339:         if (STARTUP_SUCCESS == 0){
-[e $ ! == _STARTUP_SUCCESS -> 0 `i 1670  ]
+"188
+[; ;main.c: 188:         if (STARTUP_SUCCESS == 0){
+[e $ ! == _STARTUP_SUCCESS -> 0 `i 1606  ]
 {
-"340
-[; ;main.c: 340:                 start_up_seq();
+"189
+[; ;main.c: 189:                 start_up_seq();
 [e ( _start_up_seq ..  ]
-"341
-[; ;main.c: 341:             }
+"190
+[; ;main.c: 190:             }
 }
-[e $U 1671  ]
-"342
-[; ;main.c: 342:         else{
-[e :U 1670 ]
+[e $U 1607  ]
+"191
+[; ;main.c: 191:         else{
+[e :U 1606 ]
 {
-"343
-[; ;main.c: 343:             if (ADC_Conv_pinSeven() == 0){
-[e $ ! == ( _ADC_Conv_pinSeven ..  -> 0 `i 1672  ]
+"192
+[; ;main.c: 192:             if (ADC_Conv_pinSeven() == 0){
+[e $ ! == ( _ADC_Conv_pinSeven ..  -> 0 `i 1608  ]
 {
-"344
-[; ;main.c: 344:                 canbus_shutdown_success(1);
+"193
+[; ;main.c: 193:                 canbus_shutdown_success(1);
 [e ( _canbus_shutdown_success (1 -> 1 `i ]
-"345
-[; ;main.c: 345:                 STARTUP_SUCCESS = 0;
+"194
+[; ;main.c: 194:                 STARTUP_SUCCESS = 0;
 [e = _STARTUP_SUCCESS -> 0 `i ]
-"346
-[; ;main.c: 346:             }
+"195
+[; ;main.c: 195:             }
 }
-[e $U 1673  ]
-"347
-[; ;main.c: 347:             else if (ADC_Conv_pinNine() == 0){
-[e :U 1672 ]
-[e $ ! == ( _ADC_Conv_pinNine ..  -> 0 `i 1674  ]
+[e $U 1609  ]
+"196
+[; ;main.c: 196:             else if (ADC_Conv_pinNine() == 0){
+[e :U 1608 ]
+[e $ ! == ( _ADC_Conv_pinNine ..  -> 0 `i 1610  ]
 {
-"348
-[; ;main.c: 348:                 e_stop_seq();
+"197
+[; ;main.c: 197:                 e_stop_seq();
 [e ( _e_stop_seq ..  ]
-"349
-[; ;main.c: 349:             }
+"198
+[; ;main.c: 198:             }
 }
-[e :U 1674 ]
-[e :U 1673 ]
-"350
-[; ;main.c: 350:         }
+[e :U 1610 ]
+[e :U 1609 ]
+"199
+[; ;main.c: 199:         }
 }
-[e :U 1671 ]
-"353
-[; ;main.c: 353:     }
+[e :U 1607 ]
+"201
+[; ;main.c: 201:     }
 }
-[e :U 1667 ]
-[e $U 1668  ]
-[e :U 1669 ]
-"354
-[; ;main.c: 354:  }
-[e :UE 1666 ]
+[e :U 1603 ]
+[e $U 1604  ]
+[e :U 1605 ]
+"202
+[; ;main.c: 202:  }
+[e :UE 1602 ]
 }

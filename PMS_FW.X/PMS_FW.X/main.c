@@ -36,61 +36,28 @@ int ADC_Conv_pinSeven(){
     float adc_val = ADC_GetConversion(channel_AN4);
     adc_val = (adc_val / 1023.0)*5.0; //10 bit adc , 5V= reference voltage
     float input_voltage = adc_val*3.0;
-    if (highOrlow(input_voltage)==1){
-//        tx9.frame.idType = 1;
-//        tx9.frame.id = 0x420; //Arbitration ID
-//        tx9.frame.dlc = 0x01; //1 byte
-//        tx9.frame.data0 = 1;
-//        CAN_transmit(&tx9);
+    if (input_voltage >= 10.2){
+        return 1;
     }
     else{
-        tx10.frame.idType = 1;
-        tx10.frame.id = 0x69; //Arbitration ID
-        tx10.frame.dlc = 0x01; //1 byte
-        tx10.frame.data0 = 1;
-        CAN_transmit(&tx10);
+        return 0;
     }
-    return highOrlow(input_voltage);
 }
 
 int ADC_Conv_pinNine(){
     float adc_val = ADC_GetConversion(channel_AN6);
     adc_val = (adc_val / 1023.0)*5.0; //10 bit adc , 5V= reference voltage
     float input_voltage = adc_val*3.0;
-    if (highOrlow(input_voltage)==1){
-//        tx9.frame.idType = 1;
-//        tx9.frame.id = 0x420; //Arbitration ID
-//        tx9.frame.dlc = 0x01; //1 byte
-//        tx9.frame.data0 = 1;
-//        CAN_transmit(&tx9);
+    if (input_voltage >= 12){
+        return 1;
     }
     else{
-        tx10.frame.idType = 1;
-        tx10.frame.id = 0x69; //Arbitration ID
-        tx10.frame.dlc = 0x01; //1 byte
-        tx10.frame.data0 = 1;
-        CAN_transmit(&tx10);
+        return 0;
     }
-    return highOrlow(input_voltage);
+    
+
 }
 //create a function for each DDISP message
-//MPPT Error DDISP
-void canbus_msg_MPPT(int number){
-    tx1.frame.idType = 1;
-    tx1.frame.id = 0x1; //Arbitration ID
-    tx1.frame.dlc = 0x01; //1 byte
-    tx1.frame.data0 = number; //data that gets sent - error codes don't require data 
-    CAN_transmit(&tx1);
-}
-
-//Motor Error DDISP
-void canbus_msg_motor(int number){
-    tx2.frame.idType = 1;
-    tx2.frame.id = 0x2; //Arbitration ID
-    tx2.frame.dlc = 0x01; //1 byte
-    tx2.frame.data0 = number;
-    CAN_transmit(&tx2);
-}
 
 //START UP FAIL DDISP
 void canbus_msg_startupfail(int number){
@@ -137,148 +104,44 @@ void canbus_shutdown_success(int number){
     CAN_transmit(&tx7);
 }
 
-//CANBUS request frame transmission - for motor, transmitting a frame
-void canbus_motor_rearL_tx(int number){
+void canbus_latch_shutdown(int number){
     tx8.frame.idType = 1;
-    tx8.frame.id = 0x08F89540; //frame ID for rearLeft wheel
-    tx8.frame.dlc = 0x01; //1 byte
-    tx8.frame.data0 = number; //data that gets sent - error codes don't require data
+    tx8.frame.id = 0x17;
+    tx8.frame.dlc = 0x01;
+    tx8.frame.data0 = number;
     CAN_transmit(&tx8);
-}
-
-void undo_seq(void){
-    if (IO_RA1_GetValue() == 1){     //read mppt
-        IO_RA1_SetLow();
-        __delay_ms(5);
-    }
-    if (IO_RC3_GetValue() == 1){     //positive connector 2
-        IO_RC3_SetLow();
-        __delay_ms(5);
-    }
-    if (IO_RC0_GetValue() == 1){     //positive connector 1
-        IO_RC0_SetLow();
-        __delay_ms(5);
-    }
-    if (IO_RC5_GetValue() == 1){       //precharge 2
-        IO_RC5_SetLow();
-        __delay_ms(5);
-    }
-    if (IO_RC2_GetValue() == 1){       //precharge 1
-        IO_RC2_SetLow();
-        __delay_ms(5);
-    }
-    if (IO_RC4_GetValue() == 1){     //negative connector 2
-        IO_RC4_SetLow();
-        __delay_ms(5);
-    }
-    if (IO_RC1_GetValue()== 1){      //negative connector 1
-        IO_RC1_SetLow();
-        __delay_ms(5);
-    }
-    if (IO_RA3_GetValue() == 1){       //ATI auxiliary
-        IO_RA3_SetLow();
-        __delay_ms(5);
-    }
-    if (IO_RA2_GetValue() == 1){      //ATI DCDC
-        IO_RA2_SetLow();
-        __delay_ms(5);
-    }
-    if (IO_RC6_GetValue() == 1){       //DCDC Disable
-        IO_RC6_SetLow();
-        __delay_ms(5);
-    }
-    if ((IO_RA0_GetValue()) == 1){     //hv on
-        IO_RA0_SetLow();
-        __delay_ms(5);
-    }
 }
 
 void start_up_seq(void){
     //Read pin 7
     if (ADC_Conv_pinSeven() == 1){
-        IO_RA0_SetHigh(); //pin 2 - hv on
-        IO_RC6_SetHigh(); //Set pin 25 high
-        __delay_ms(50);
+        IO_RC1_SetHigh(); //pin 2 - hv on
+        IO_RC2_SetHigh(); //Set pin 25 high
+        __delay_ms(1000);
+        IO_RC0_SetHigh();
+        IO_RC2_SetLow();
+        IO_RC6_SetHigh();
         //Read pin 9 now -- checking HV line
         //if (highOrlow(IO_RE1_GetValue()) == 1){
         if (ADC_Conv_pinNine() == 1){
             IO_RA2_SetHigh(); //ati dcdc
             IO_RA3_SetHigh(); //ati aux
-            IO_RC1_SetHigh(); //neg connector 1
-            IO_RC4_SetHigh(); //neg connector 2
-            __delay_ms(5); //sleep for 5ms between steps in this process
-            
-            IO_RC2_SetHigh(); //precharge 1
-            IO_RC5_SetHigh(); //precharge 2
-            __delay_ms(5);
-            
-            //request command - transmission ---> here we are calling frame 1 (for wheels), hence the binary is 10
-            //frame 0 = 01, frame 1 = 10
-            canbus_motor_rearL_tx(0b00000010);
-            
-            //while loop that checks for previous frame request command if received 
-            /*while (1){
-                if (CAN_receive(&rx) && rx.frame.id == 0x08950225){
-                        break;
-                }else{
-                    iterator += 1;
-                    break;//NEW
-                }
-                if (iterator > 1000){ //iterated 1000+ times without receiving rx message 
-                    break;
-                }
-            } //while loop end*/
-            
-            if (iterator > 1000){
-                //send motor error to DDISP
-                undo_seq();
-                canbus_msg_motor(1); 
-            }
-            //Motor Controller Check
-            //else if (rx.frame.idType == 1 && rx.frame.id == 0x08950225 && rx.frame.dlc == 0x01){
-            else{
-                    //unlikely that the other bits in data0 are also 0, so we bitwise AND it with 1 to check if 
-                    //the bit we are concerned about (power) is equal to 1 (on)
-                    //if (rx.frame.data0 && 0b00000001 == 1){
-                if(1){//NEW
-                        
-//                if (rx.frame.idType == 1 && rx.frame.id == 0x08950245 &&
-//                    rx.frame.dlc = 0x01 && rx.frame.data0 = 0x00000001){
-//                if (rx.frame.idType == 1 && rx.frame.id == 0x08950265 &&
-//                    rx.frame.dlc = 0x01 && rx.frame.data0 = 0x00000001){
-//                if (rx.frame.idType == 1 && rx.frame.id == 0x08950285 &&
-//                    rx.frame.dlc = 0x01 && rx.frame.data0 = 0x00000001){
-//                    
-                        IO_RC0_SetHigh(); //pos connector 1
-                        IO_RC3_SetHigh(); //pos connector 2
-                        __delay_ms(500); //motor controller requires longer times in between steps to charge precharge
-
-                        //precharge is turned OFF now
-                        IO_RC2_SetLow(); //precharge 1
-                        IO_RC5_SetLow(); //precharge 2
-                        __delay_ms(10);
-
-                        //Wait to receive a MPPT message from CAN
-                        //If MPPT is working and ON, we set pin 1 to high
-                        IO_RA1_SetHigh();
-                        STARTUP_SUCCESS = 1;
-                        tx20.frame.idType = 1;
-                        tx20.frame.id = 0x183;
-                        tx20.frame.dlc = 1;
-                        tx20.frame.data0 = STARTUP_SUCCESS;
-                        CAN_transmit(&tx20);
-                        //check MPPT is on AGAIN - if on, startup success. otherwise fail (canbus_msg_MPPT(1))
-                    }
-                }/* else{
-                    undo_seq();
-                    //Send Motor Error message to DDISP
-                    canbus_msg_motor(1);
-            }*/
-        }else{
-            undo_seq();
-            //Send "START UP FAIL" to DDISP
-            canbus_msg_startupfail(1);
+            STARTUP_SUCCESS = 1;
         }
+        else{
+            IO_RC0_SetLow();
+            IO_RC1_SetLow();
+            //ERROR 2
+            canbus_msg_startupfail(1);
+            canbus_latch_shutdown(1);
+            
+        }   
+    }
+    else{
+        __delay_ms(5000);
+        //ERROR 1
+        canbus_msg_auxlow(1);
+        canbus_latch_shutdown(1);
     }
 }
 
@@ -296,20 +159,6 @@ void e_stop_seq(void){
         canbus_msg_bps(1);
         IO_RA3_SetLow();  //ati aux
         IO_RA2_SetLow(); //ati dcdc
-}
-
-//Boundary Cases
-void aux_battery_failure(void){
-    //Read pin 7
-    if (ADC_Conv_pinSeven() == 0){ //pin 7 and pin 9 are analog inputs   -----> need to set as analog? 
-        //Read pin 9
-        //if (highOrlow(IO_RE1_GetValue()) == 1){
-        if (ADC_Conv_pinNine() == 1){
-            //Supplemental battery failure 
-            //Display AUX Battery Failure on DDISP
-            canbus_msg_auxfail(1);
-        }
-    }
 }
 
 void aux_battery_LV(void){
@@ -348,7 +197,6 @@ void main(void){
                 e_stop_seq();
             }
         } 
-        //aux_battery_failure();
         //aux_battery_LV();
     }
  }
