@@ -100,8 +100,8 @@ void main(void)
 
     while (1)
     {
-        if(CAN_receive(&rx)){
-            if(rx.frame.idType == /*?*/){
+        if(CAN_receive(&rx)){   //if received a CAN msg, shutdown
+            if(rx.frame.idType == 1){
                 shutdown();
             }
         }
