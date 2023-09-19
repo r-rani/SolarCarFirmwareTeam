@@ -67,7 +67,7 @@ void shutdown(void){    //shutdown the latch if CAN shutdown message received
 
 void shutdown_normal(void){
     //If statement to check if 5V is measured at pin 36
-    if (RB3_GetValue() == 5){
+    if (RB3_GetValue() == 1){
        // If statement to check status of start-up flag
         if (latchOn == 1){
             IO_RD1_SetLow(); //set pin 20 low
