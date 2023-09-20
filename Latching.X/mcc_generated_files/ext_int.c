@@ -28,7 +28,6 @@
 #include "ext_int.h"
 
 extern int latchOn;
-extern void shutdown(void);
 
 void (*INT0_InterruptHandler)(void);
 void (*INT1_InterruptHandler)(void);
@@ -136,9 +135,11 @@ void INT3_SetInterruptHandler(void (* InterruptHandler)(void)){
 }
 
 void INT3_DefaultInterruptHandler(void){
-    
-    // add your INT3 interrupt custom code
-    // or set custom function using INT3_SetInterruptHandler()
+    if(latchOn){    //when power button pressed, check if latch is on
+        shutdown();
+    }else{
+        startup();
+    }
 }
 
 void EXT_INT_Initialize(void)

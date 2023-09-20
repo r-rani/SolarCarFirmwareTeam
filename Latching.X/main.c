@@ -58,45 +58,26 @@ uCAN_MSG rx, txstart, txstop;
  Functions
  */
 
-
 void startup(void){
-    if (RB3_GetValue() == 1){ //check if 5V received on interrupt pin 36
-        RB1_SetHigh(); //set pin 20 high
+    RB1_SetHigh(); //set pin 20 high
         
-        //transmit via CAN that AUX power is now live
-        //start up message - id=0x31, dlc=0x1, data0=1
-        txstart.frame.idType = 1;
-        txstart.frame.id = 0x31;
-        txstart.frame.dlc = 0x1;
-        txstart.frame.data0 = 1;
-        CAN_transmit(&txstart);
+    //transmit via CAN that AUX power is now live
+    //start up message - id=0x31, dlc=0x1, data0=1
+    txstart.frame.idType = 1;
+    txstart.frame.id = 0x31;
+    txstart.frame.dlc = 0x1;
+    txstart.frame.data0 = 1;
+    CAN_transmit(&txstart);
         
-        latchOn == 1; //set start up flag to true        
-    }
+    latchOn = 1; //set start up flag to true        
+
 }
-
-//also need to tx startup message on 0x31
-
-
 
 void shutdown(void){    //shutdown the latch if CAN shutdown message received
-    //NEEDS TO TX CAN MSG WHEN SHUTTING DOWN - ID 0x255 (tentative)
-    if (latchOn == 1){
-        IO_RD1_SetLow();    //set pin 20 low
-        latchOn = 0;
-    }
-}
-
-void shutdown_normal(void){
-    //If statement to check if 5V is measured at pin 36
-    if (RB3_GetValue() == 1){
-       // If statement to check status of start-up flag
-        if (latchOn == 1){
-            IO_RD1_SetLow(); //set pin 20 low
-            latchOn = 0; // Changing start-up flag to False(0)
-        } 
-    } 
-    
+    //NEEDS TO TX CAN MSG WHEN SHUTTING DOWN - ID 0x255 
+    //wait 2s after sending message to shut down
+    IO_RD1_SetLow();    //set pin 20 low
+    latchOn = 0;
 }
 
 void main(void)
