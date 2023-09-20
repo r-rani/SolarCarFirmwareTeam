@@ -58,7 +58,11 @@ uCAN_MSG rx, tx;
  Functions
  */
 
+//also need to tx startup message on 0x31
+
+
 void shutdown(void){    //shutdown the latch if CAN shutdown message received
+    //NEEDS TO TX CAN MSG WHEN SHUTTING DOWN - ID 0x255 (tentative)
     if (latchOn == 1){
         IO_RD1_SetLow();    //set pin 20 low
         latchOn = 0;
