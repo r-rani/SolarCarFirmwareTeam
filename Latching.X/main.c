@@ -65,11 +65,11 @@ void startup(void){
         
         //transmit via CAN that AUX power is now live
         //start up message - id=0x31, dlc=0x1, data0=1
-        tx.frame.idType = 1;
-        tx.frame.id = 0x31;
-        tx.frame.dlc = 0x1;
-        tx.frame.data0 = 1;
-        CAN_transmit(&tx);
+        txstart.frame.idType = 1;
+        txstart.frame.id = 0x31;
+        txstart.frame.dlc = 0x1;
+        txstart.frame.data0 = 1;
+        CAN_transmit(&txstart);
         
         latchOn == 1; //set start up flag to true        
     }
