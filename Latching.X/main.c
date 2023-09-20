@@ -52,7 +52,7 @@
  */
 int latchOn; //0 if the latch is open/off, 1 if the latch is closed/on
 
-uCAN_MSG rx, tx;
+uCAN_MSG rx, txstart, txstop;
 
 /*
  Functions
