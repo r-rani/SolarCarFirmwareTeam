@@ -58,6 +58,22 @@ uCAN_MSG rx, tx;
  Functions
  */
 
+void startup(void){
+    if (RB3_GetValue() == 1){ //check if 5V received on interrupt pin 36
+        RB1_SetHigh(); //set pin 20 high
+        
+        //transmit via CAN that AUX power is now live
+        //start up message - id=0x31, dlc=0x1, data0=1
+        tx.frame.idType = 1;
+        tx.frame.id = 0x31;
+        tx.frame.dlc = 0x1;
+        tx.frame.data0 = 1;
+        CAN_transmit(&tx);
+        
+        latchOn == 1; //set start up flag to true        
+    }
+}
+
 void shutdown(void){    //shutdown the latch if CAN shutdown message received
     if (latchOn == 1){
         IO_RD1_SetLow();    //set pin 20 low
