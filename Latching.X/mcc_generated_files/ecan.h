@@ -1,17 +1,17 @@
 /**
-  CAN Generated Driver API Header File
+  ECAN Generated Driver API Header File
 
   @Company
     Microchip Technology Inc.
 
   @File Name
-    can.h
+    ecan.h
 
   @Summary
     This is the generated header file for the ECAN driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
   @Description
-    This header file provides APIs driver for CAN.
+    This header file provides APIs driver for ECAN.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC18F46K80
@@ -88,7 +88,7 @@ typedef union {
 #define ECAN_ISR_ECAN_WAKI ECAN_WAKI_ISR
 
 /**
-  Section: CAN APIs
+  Section: ECAN APIs
 */
 
 /**
