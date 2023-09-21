@@ -135,11 +135,7 @@ void INT3_SetInterruptHandler(void (* InterruptHandler)(void)){
 }
 
 void INT3_DefaultInterruptHandler(void){
-    if(latchOn){    //when power button pressed, check if latch is on
-        shutdown();
-    }else{
-        startup();
-    }
+    //user code (this gets overwritten by MCC, use main.c INT3_ISR)
 }
 
 void EXT_INT_Initialize(void)

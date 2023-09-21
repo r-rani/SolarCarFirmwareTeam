@@ -42,6 +42,7 @@
 */
 
 #include "mcc_generated_files/mcc.h"
+#define CAN_INT 0
 
 /*
                          Main application
@@ -87,11 +88,34 @@ void shutdown(void){    //shutdown the latch if CAN shutdown message received
     latchOn = 0;
 }
 
+void INT3_ISR(void){
+    if(latchOn){    //when power button pressed, check if latch is on
+        shutdown();
+    }else{
+        startup();
+    }
+}
+
+#if CAN_INT
+void CAN_ISR(void){
+    if(CAN_receive(&rx)){   //if received a CAN msg, shutdown
+            if(rx.frame.idType == 1){
+                shutdown();
+            }
+        }
+}
+#endif
+
 void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
-
+    INT3_SetInterruptHandler(INT3_ISR);
+    #if CAN_INT
+    ECAN_SetWakeUpInterruptHandler(CAN_ISR);
+    #endif
+    
+    
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts
     // Use the following macros to:
@@ -99,24 +123,18 @@ void main(void)
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();
 
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
     // Enable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptEnable();
+    INTERRUPT_PeripheralInterruptEnable();
 
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
-
-    while (1)
-    {
+    while (1){
+        //look into ecan interrupts
+        #if !CAN_INT
         if(CAN_receive(&rx)){   //if received a CAN msg, shutdown
             if(rx.frame.idType == 1){
                 shutdown();
             }
-        }
-        //CAN shutdown- check if message received from PMS
-        
+        }   
+        #endif
     }
 }
 /**
