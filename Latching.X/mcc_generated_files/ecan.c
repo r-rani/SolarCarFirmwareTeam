@@ -54,8 +54,8 @@
 static void (*WakeUpInterruptHandler)(void);
 
 /**
-    Local Functions
-*/  
+Local Functions
+*/
 static uint32_t convertReg2ExtendedCANid(uint8_t tempRXBn_EIDH, uint8_t tempRXBn_EIDL, uint8_t tempRXBn_SIDH, uint8_t tempRXBn_SIDL);
 static uint32_t convertReg2StandardCANid(uint8_t tempRXBn_SIDH, uint8_t tempRXBn_SIDL);
 static void convertCANid2Reg(uint32_t tempPassedInID, uint8_t canIdType, uint8_t *passedInEIDH, uint8_t *passedInEIDL, uint8_t *passedInSIDH, uint8_t *passedInSIDL);
@@ -66,44 +66,75 @@ void ECAN_Initialize(void)
 {
     CANCON = 0x80;
     while (0x80 != (CANSTAT & 0xE0)); // wait until ECAN is in config mode
-    
+
     /**
-    Mode 0
+    Mode 1
     */
-    ECANCON = 0x00;
-    
+    ECANCON = 0x40;
+
     /**
     Initialize CAN I/O
     */
     CIOCON = 0x20;
-    
+
     /**
     Mask and Filter definitions
     ........................................................    
     CAN ID		ID Type		Mask				Filter		Buffer    
     ........................................................    
+    0x17		SID		Acceptance Mask 0		Filter 0	RXB0
     ........................................................
-    */
- 
-/**    
-    Initialize Receive Masks
-*/   
-    RXM0EIDH = 0x00;
-    RXM0EIDL = 0x00;
-    RXM0SIDH = 0x00;
-    RXM0SIDL = 0x00;
-    RXM1EIDH = 0x00;
-    RXM1EIDL = 0x00;
-    RXM1SIDH = 0x00;
-    RXM1SIDL = 0x00;
+    */    
  
     /**
+    Configure Generic Buffers to be Transmit or Receive
+    */
+    BSEL0 = 0x00;
+
+    /**    
+    Initialize Receive Masks
+    */
+    RXM0EIDH = 0xFF;
+    RXM0EIDL = 0xFF;
+    RXM0SIDH = 0xFF;
+    RXM0SIDL = 0xE3;
+    RXM1EIDH = 0xFF;
+    RXM1EIDL = 0xFF;
+    RXM1SIDH = 0xFF;
+    RXM1SIDL = 0xE3;
+    
+    /**
+    Enable Filters
+    */
+    RXFCON0 = 0x01;
+    RXFCON1 = 0x00;
+    /**
+    Assign Filters to Masks
+    */
+    MSEL0 = 0x00;
+    MSEL1 = 0x00;
+    MSEL2 = 0x00;
+    MSEL3 = 0x00;
+    
+    /**
+    Assign Filters to Buffers
+    */
+    RXFBCON0 = 0x00;
+    RXFBCON1 = 0x00;
+    RXFBCON2 = 0x00;
+    RXFBCON3 = 0x00;
+    RXFBCON4 = 0x00;
+    RXFBCON5 = 0x00;
+    RXFBCON6 = 0x00;
+    RXFBCON7 = 0x00;
+    
+    /**
     Initialize Receive Filters
-    */   
+    */
     RXF0EIDH = 0x00;
     RXF0EIDL = 0x00;
-    RXF0SIDH = 0x00;
-    RXF0SIDL = 0x00;
+    RXF0SIDH = 0x02;
+    RXF0SIDL = 0xE0;
     RXF1EIDH = 0x00;
     RXF1EIDL = 0x00;
     RXF1SIDH = 0x00;
@@ -124,21 +155,62 @@ void ECAN_Initialize(void)
     RXF5EIDL = 0x00;
     RXF5SIDH = 0x00;
     RXF5SIDL = 0x00;
-
+    
+    RXF6EIDH = 0x00;
+    RXF6EIDL = 0x00;
+    RXF6SIDH = 0x00;
+    RXF6SIDL = 0x00;
+    RXF7EIDH = 0x00;
+    RXF7EIDL = 0x00;
+    RXF7SIDH = 0x00;
+    RXF7SIDL = 0x00;
+    RXF8EIDH = 0x00;
+    RXF8EIDL = 0x00;
+    RXF8SIDH = 0x00;
+    RXF8SIDL = 0x00;
+    RXF9EIDH = 0x00;
+    RXF9EIDL = 0x00;
+    RXF9SIDH = 0x00;
+    RXF9SIDL = 0x00;
+    RXF10EIDH = 0x00;
+    RXF10EIDL = 0x00;
+    RXF10SIDH = 0x00;
+    RXF10SIDL = 0x00;
+    RXF11EIDH = 0x00;
+    RXF11EIDL = 0x00;
+    RXF11SIDH = 0x00;
+    RXF11SIDL = 0x00;
+    RXF12EIDH = 0x00;
+    RXF12EIDL = 0x00;
+    RXF12SIDH = 0x00;
+    RXF12SIDL = 0x00;
+    RXF13EIDH = 0x00;
+    RXF13EIDL = 0x00;
+    RXF13SIDH = 0x00;
+    RXF13SIDL = 0x00;
+    RXF14EIDH = 0x00;
+    RXF14EIDL = 0x00;
+    RXF14SIDH = 0x00;
+    RXF14SIDL = 0x00;
+    RXF15EIDH = 0xFF;
+    RXF15EIDL = 0xFF;
+    RXF15SIDH = 0xFF;
+    RXF15SIDL = 0xE3;
+    
     /**
     Initialize CAN Timings
     */
     
-  	/**
-        Baud rate: 20kbps
-        System frequency: 20000000
-        ECAN clock frequency: 20000000
-        Time quanta: 10
-        Sample point: 1-1-6-2
-        Sample point: 80%
-	*/ 
+    /**
+	Baud rate: 500kbps
+	System frequency: 20000000
+    ECAN clock frequency: 20000000
+	Time quanta: 10
+	Sample point: 1-1-6-2
+	Sample point: 80%
+	*/
     
-    BRGCON1 = 0x31;
+    BRGCON1 = 0x01;
     BRGCON2 = 0xA8;
     BRGCON3 = 0x01;
     
@@ -147,27 +219,26 @@ void ECAN_Initialize(void)
     PIE5bits.WAKIE = 1;
     
     CANCON = 0x00;
-    while (0x00 != (CANSTAT & 0xE0)); // wait until ECAN is in Normal mode   
-    
+    while (0x00 != (CANSTAT & 0xE0)); // wait until ECAN is in Normal mode
+
 }
-/**
+
+ /**
   Section: CAN APIs
 */
-
 void CAN_sleep(void) 
 {
     CANCON = 0x20; // request disable mode
     while ((CANSTAT & 0xE0) != 0x20); // wait until ECAN is in disable mode   
     //Wake up from sleep should set the CAN module straight into Normal mode
-
 }
 
-uint8_t CAN_transmit(uCAN_MSG *tempCanMsg) {
+uint8_t CAN_transmit(uCAN_MSG *tempCanMsg) 
+{
     uint8_t tempEIDH = 0;
     uint8_t tempEIDL = 0;
     uint8_t tempSIDH = 0;
     uint8_t tempSIDL = 0;
-
     uint8_t returnValue = 0;
 
     if (TXB0CONbits.TXREQ != 1) 
@@ -236,7 +307,6 @@ uint8_t CAN_transmit(uCAN_MSG *tempCanMsg) {
         TXB2CONbits.TXREQ = 1; //Set the buffer to transmit		
         returnValue = 1;
     }
-
     return (returnValue);
 }
 
@@ -244,20 +314,20 @@ uint8_t CAN_receive(uCAN_MSG *tempCanMsg)
 {
     uint8_t returnValue = 0;
 
-         //check which buffer the CAN message is in
+    //check which buffer the CAN message is in
     if (RXB0CONbits.RXFUL != 0) //CheckRXB0
     {
         if ((RXB0SIDL & 0x08) == 0x08) //If Extended Message
         {
             //message is extended
             tempCanMsg->frame.idType = (uint8_t) dEXTENDED_CAN_MSG_ID_2_0B;
-            tempCanMsg->frame.id     = convertReg2ExtendedCANid(RXB0EIDH, RXB0EIDL, RXB0SIDH, RXB0SIDL);
-        } 
-        else 
+            tempCanMsg->frame.id = convertReg2ExtendedCANid(RXB0EIDH, RXB0EIDL, RXB0SIDH, RXB0SIDL);
+        }
+        else
         {
             //message is standard
             tempCanMsg->frame.idType = (uint8_t) dSTANDARD_CAN_MSG_ID_2_0B;
-            tempCanMsg->frame.id     = convertReg2StandardCANid(RXB0SIDH, RXB0SIDL);
+            tempCanMsg->frame.id = convertReg2StandardCANid(RXB0SIDH, RXB0SIDL);
         }
 
         tempCanMsg->frame.dlc   = RXB0DLC;
@@ -271,20 +341,20 @@ uint8_t CAN_receive(uCAN_MSG *tempCanMsg)
         tempCanMsg->frame.data7 = RXB0D7;
         RXB0CONbits.RXFUL = 0;
         returnValue = 1;
-    } 
+    }
     else if (RXB1CONbits.RXFUL != 0) //CheckRXB1
     {
         if ((RXB1SIDL & 0x08) == 0x08) //If Extended Message
         {
             //message is extended
             tempCanMsg->frame.idType = (uint8_t) dEXTENDED_CAN_MSG_ID_2_0B;
-            tempCanMsg->frame.id     = convertReg2ExtendedCANid(RXB1EIDH, RXB1EIDL, RXB1SIDH, RXB1SIDL);
+            tempCanMsg->frame.id = convertReg2ExtendedCANid(RXB1EIDH, RXB1EIDL, RXB1SIDH, RXB1SIDL);
         }
         else
         {
             //message is standard
             tempCanMsg->frame.idType = (uint8_t) dSTANDARD_CAN_MSG_ID_2_0B;
-            tempCanMsg->frame.id     = convertReg2StandardCANid(RXB1SIDH, RXB1SIDL);
+            tempCanMsg->frame.id = convertReg2StandardCANid(RXB1SIDH, RXB1SIDL);
         }
 
         tempCanMsg->frame.dlc   = RXB1DLC;
@@ -302,8 +372,7 @@ uint8_t CAN_receive(uCAN_MSG *tempCanMsg)
     return (returnValue);
 }
 
-uint8_t CAN_messagesInBuffer(void) 
-{
+uint8_t CAN_messagesInBuffer(void) {
     uint8_t messageCount = 0;
     if (RXB0CONbits.RXFUL != 0) //CheckRXB0
     {
@@ -313,26 +382,23 @@ uint8_t CAN_messagesInBuffer(void)
     {
         messageCount++;
     }
-
     return (messageCount);
 }
 
-uint8_t CAN_isBusOff(void) 
-{
+uint8_t CAN_isBusOff(void) {
     uint8_t returnValue = 0;
 
     //COMSTAT bit 5 TXBO: Transmitter Bus-Off bit
     //1 = Transmit error counter > 255
     //0 = Transmit error counter less then or equal to 255
 
-    if (COMSTATbits.TXBO == 1) {
+    if (COMSTATbits.TXBO== 1) {
         returnValue = 1;
     }
     return (returnValue);
 }
 
-uint8_t CAN_isRXErrorPassive(void) 
-{
+uint8_t CAN_isRXErrorPassive(void) {
     uint8_t returnValue = 0;
 
     //COMSTAT bit 3 RXBP: Receiver Bus Passive bit
@@ -345,16 +411,14 @@ uint8_t CAN_isRXErrorPassive(void)
     return (returnValue);
 }
 
-uint8_t CAN_isTXErrorPassive(void) 
-{
+uint8_t CAN_isTXErrorPassive(void) {
     uint8_t returnValue = 0;
 
     //COMSTAT bit 4 TXBP: Transmitter Bus Passive bit
     //1 = Transmit error counter > 127
     //0 = Transmit error counter less then or equal to 127
 
-    if (COMSTATbits.TXBP == 1) 
-    {
+    if (COMSTATbits.TXBP == 1) {
         returnValue = 1;
     }
     return (returnValue);
@@ -364,9 +428,7 @@ uint8_t CAN_isTXErrorPassive(void)
 Internal functions
 */
 
-
-static uint32_t convertReg2ExtendedCANid(uint8_t tempRXBn_EIDH, uint8_t tempRXBn_EIDL, uint8_t tempRXBn_SIDH, uint8_t tempRXBn_SIDL) 
-{
+static uint32_t convertReg2ExtendedCANid(uint8_t tempRXBn_EIDH, uint8_t tempRXBn_EIDL, uint8_t tempRXBn_SIDH, uint8_t tempRXBn_SIDL) {
     uint32_t returnValue = 0;
     uint32_t ConvertedID = 0;
     uint8_t CAN_standardLo_ID_lo2bits;
@@ -382,12 +444,11 @@ static uint32_t convertReg2ExtendedCANid(uint8_t tempRXBn_EIDH, uint8_t tempRXBn
     ConvertedID = ConvertedID + tempRXBn_EIDH;
     ConvertedID = (ConvertedID << 8);
     ConvertedID = ConvertedID + tempRXBn_EIDL;
-    returnValue = ConvertedID;    
+    returnValue = ConvertedID;
     return (returnValue);
 }
 
-static uint32_t convertReg2StandardCANid(uint8_t tempRXBn_SIDH, uint8_t tempRXBn_SIDL) 
-{
+static uint32_t convertReg2StandardCANid(uint8_t tempRXBn_SIDH, uint8_t tempRXBn_SIDL) {
     uint32_t returnValue = 0;
     uint32_t ConvertedID;
     //if standard message (11 bits)
@@ -399,8 +460,7 @@ static uint32_t convertReg2StandardCANid(uint8_t tempRXBn_SIDH, uint8_t tempRXBn
     return (returnValue);
 }
 
-static void convertCANid2Reg(uint32_t tempPassedInID, uint8_t canIdType, uint8_t *passedInEIDH, uint8_t *passedInEIDL, uint8_t *passedInSIDH, uint8_t *passedInSIDL) 
-{
+static void convertCANid2Reg(uint32_t tempPassedInID, uint8_t canIdType, uint8_t *passedInEIDH, uint8_t *passedInEIDL, uint8_t *passedInSIDH, uint8_t *passedInSIDL) {
     uint8_t wipSIDL = 0;
 
     if (canIdType == dEXTENDED_CAN_MSG_ID_2_0B) {
@@ -424,8 +484,7 @@ static void convertCANid2Reg(uint32_t tempPassedInID, uint8_t canIdType, uint8_t
         //SIDH
         tempPassedInID = tempPassedInID >> 8;
         *passedInSIDH = 0xFF & tempPassedInID;
-    } 
-    else //(canIdType == dSTANDARD_CAN_MSG_ID_2_0B)
+    } else //(canIdType == dSTANDARD_CAN_MSG_ID_2_0B)
     {
         *passedInEIDH = 0;
         *passedInEIDL = 0;

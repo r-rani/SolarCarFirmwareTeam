@@ -88,7 +88,7 @@ void shutdown(void){    //shutdown the latch if CAN shutdown message received
     latchOn = 0;
 }
 
-void INT3_ISR(void){
+void Pin3_ISR(void){
     if(latchOn){    //when power button pressed, check if latch is on
         shutdown();
     }else{
@@ -110,7 +110,7 @@ void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
-    INT3_SetInterruptHandler(INT3_ISR);
+    INT3_SetInterruptHandler(Pin3_ISR);
     #if CAN_INT
     ECAN_SetWakeUpInterruptHandler(CAN_ISR);
     #endif
@@ -131,7 +131,9 @@ void main(void)
         #if !CAN_INT
         if(CAN_receive(&rx)){   //if received a CAN msg, shutdown
             if(rx.frame.idType == 1){
-                shutdown();
+                if(rx.frame.id == 0x17){
+                    shutdown();
+                }
             }
         }   
         #endif

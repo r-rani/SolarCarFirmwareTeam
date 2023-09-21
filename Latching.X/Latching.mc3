@@ -100,7 +100,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ECAN" name="canBaudComboBox"/>
-         <value>20kbps</value>
+         <value>500kbps</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ECAN" name="canClockFreqKey"/>
@@ -160,7 +160,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ECAN" name="message ID"/>
-         <value>291</value>
+         <value>23</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ECAN" name="rxPinMapper"/>
@@ -3187,6 +3187,26 @@
          <value>1</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%0%canFilter"/>
+         <value>Filter 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%0%canID"/>
+         <value>0x17</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%0%canIdType"/>
+         <value>SID</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%0%canMask"/>
+         <value>Acceptance Mask 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%0%canReceiveBuffer"/>
+         <value>RXB0</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="B0CON"/>
          <value>0</value>
       </entry>
@@ -3528,7 +3548,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="BRGCON1"/>
-         <value>49</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="BRGCON2"/>
@@ -3556,7 +3576,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="ECANCON"/>
-         <value>16</value>
+         <value>80</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="MSEL0"/>
@@ -3592,11 +3612,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXF0SIDH"/>
-         <value>0</value>
+         <value>2</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXF0SIDL"/>
-         <value>0</value>
+         <value>224</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXF10EIDH"/>
@@ -3680,19 +3700,19 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXF15EIDH"/>
-         <value>0</value>
+         <value>255</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXF15EIDL"/>
-         <value>0</value>
+         <value>255</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXF15SIDH"/>
-         <value>0</value>
+         <value>255</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXF15SIDL"/>
-         <value>0</value>
+         <value>227</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXF1EIDH"/>
@@ -3872,7 +3892,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXFCON0"/>
-         <value>0</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXFCON1"/>
@@ -3880,35 +3900,35 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXM0EIDH"/>
-         <value>0</value>
+         <value>255</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXM0EIDL"/>
-         <value>0</value>
+         <value>255</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXM0SIDH"/>
-         <value>0</value>
+         <value>255</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXM0SIDL"/>
-         <value>0</value>
+         <value>227</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXM1EIDH"/>
-         <value>0</value>
+         <value>255</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXM1EIDL"/>
-         <value>0</value>
+         <value>255</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXM1SIDH"/>
-         <value>0</value>
+         <value>255</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXM1SIDL"/>
-         <value>0</value>
+         <value>227</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="SDFLC"/>
@@ -5488,7 +5508,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="BRGCON1" settingAlias="BRP"/>
-         <value>TQ = (2 x 50)/FOSC</value>
+         <value>TQ = (2 x 2)/FOSC</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="BRGCON1" settingAlias="SJW"/>
@@ -5636,7 +5656,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="ECANCON" settingAlias="MDSEL"/>
-         <value>Legacy mode (Mode 0, default)</value>
+         <value>Enhanced Legacy mode (Mode 1)</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="ERRI" settingAlias="enable"/>
@@ -6628,7 +6648,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXF15SIDL" settingAlias="EID"/>
-         <value>0</value>
+         <value>3</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXF15SIDL" settingAlias="EXIDEN"/>
@@ -6636,15 +6656,15 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXF15SIDL" settingAlias="SID0"/>
-         <value>0</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXF15SIDL" settingAlias="SID1"/>
-         <value>0</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXF15SIDL" settingAlias="SID2"/>
-         <value>0</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXF1EIDH" settingAlias="EID10"/>
@@ -7756,7 +7776,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXFCON0" settingAlias="RXF0EN"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXFCON0" settingAlias="RXF1EN"/>
@@ -7916,7 +7936,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXM0SIDL" settingAlias="EID"/>
-         <value>0</value>
+         <value>3</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXM0SIDL" settingAlias="EXIDEN"/>
@@ -7924,15 +7944,15 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXM0SIDL" settingAlias="SID0"/>
-         <value>0</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXM0SIDL" settingAlias="SID1"/>
-         <value>0</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXM0SIDL" settingAlias="SID2"/>
-         <value>0</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXM1EIDH" settingAlias="EID10"/>
@@ -8032,7 +8052,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXM1SIDL" settingAlias="EID"/>
-         <value>0</value>
+         <value>3</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXM1SIDL" settingAlias="EXIDEN"/>
@@ -8040,15 +8060,15 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXM1SIDL" settingAlias="SID0"/>
-         <value>0</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXM1SIDL" settingAlias="SID1"/>
-         <value>0</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="RXM1SIDL" settingAlias="SID2"/>
-         <value>0</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="SDFLC" settingAlias="FLC"/>
@@ -12147,7 +12167,23 @@
          <value>4194.30400</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.TreeMap">
+   <generatedFileHashHistoryMap class="java.util.HashMap">
+      <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>f82c22732078395df5fd254c9241b43b77ade55dd13e923dac7091182cb4949c</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\device_config.h</file>
+         <hash>3a59dc060569423fa49fb0efa8ac35f6a38ec2e435432e2ac31fe24efad554ff</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\ext_int.c</file>
+         <hash>c053108724a1dc47ecd1dea579c8515143ea195011b53e6db0c2b95107f41fc0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>7548b0a19317ce666c478ed44fc9c81ac4e839285c50c46177ffd452fdc53bfc</hash>
+      </entry>
       <entry>
          <file>main.c</file>
          <hash>38af3cf765c11fa66645c60c26f06ac4188a5f392f0dbe4a36c1f94f96fb06f4</hash>
@@ -12157,20 +12193,20 @@
          <hash>64d2094f63f0635a776df42997a16a54dcbc70f64b643e955f80062d5099d384</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\device_config.h</file>
-         <hash>3a59dc060569423fa49fb0efa8ac35f6a38ec2e435432e2ac31fe24efad554ff</hash>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>bedd2bafc65765db21c4ff5f901784466ee248b1716e54ef826bf6c20a6ecb2a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>611667adfc94c4e6c9e650e65b04a51fce89908265c3747841db3bfdb37bb6c2</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\ecan.c</file>
-         <hash>2763d1fa1cff6d988f59b43e94ce5531e445d754f54f97b01bb8955ae0700eb1</hash>
+         <hash>6feb58d849235989c158422803328c5d16cf782bd47953c9e95b4a1509976d28</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\ecan.h</file>
-         <hash>722efda12c9d2c0bbaed1a7a4fa13f8eff4d748fbfa32dcf15858fa394b4fb11</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\ext_int.c</file>
-         <hash>c053108724a1dc47ecd1dea579c8515143ea195011b53e6db0c2b95107f41fc0</hash>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>c96822dd32c7e8288f7ae060c9ae1cc56537136986c84bf54157dc28b8971d52</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\ext_int.h</file>
@@ -12181,24 +12217,8 @@
          <hash>b7d816ef7cf6ec589b3d4f391b170be947750953649919d990223cf99045c036</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\interrupt_manager.h</file>
-         <hash>7548b0a19317ce666c478ed44fc9c81ac4e839285c50c46177ffd452fdc53bfc</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>c96822dd32c7e8288f7ae060c9ae1cc56537136986c84bf54157dc28b8971d52</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>f82c22732078395df5fd254c9241b43b77ade55dd13e923dac7091182cb4949c</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.c</file>
-         <hash>611667adfc94c4e6c9e650e65b04a51fce89908265c3747841db3bfdb37bb6c2</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.h</file>
-         <hash>bedd2bafc65765db21c4ff5f901784466ee248b1716e54ef826bf6c20a6ecb2a</hash>
+         <file>mcc_generated_files\ecan.h</file>
+         <hash>8fae077d5123fb408bd51409b4a0f1bb1c91c2fa40b8ea2b93825467e1c74967</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
