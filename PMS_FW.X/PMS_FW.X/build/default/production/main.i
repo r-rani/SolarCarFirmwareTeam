@@ -20768,17 +20768,6 @@ static int iterator = 0;
 
 uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8,tx9,tx10,tx13,tx20,tx21;
 
-int highOrlow(float voltage){
-    int output;
-    if (voltage >= 10.2) {
-        output = 1;
-    }
-    else{
-        output = 0;
-    }
-    return output;
-}
-
 int ADC_Conv_pinSeven(){
     float adc_val = ADC_GetConversion(channel_AN4);
     adc_val = (adc_val / 1023.0)*5.0;
@@ -20801,10 +20790,7 @@ int ADC_Conv_pinNine(){
     else{
         return 0;
     }
-
-
 }
-
 
 
 void canbus_msg_startupfail(int number){
@@ -20891,21 +20877,19 @@ void start_up_seq(void){
         canbus_latch_shutdown(1);
     }
 }
-# 158 "main.c"
+
+void shutdown_seq(void){
+    canbus_shutdown_success(1);
+}
+
 void e_stop_seq(void){
-        canbus_msg_bps(1);
-        do { LATAbits.LATA3 = 0; } while(0);
-        do { LATAbits.LATA2 = 0; } while(0);
+    canbus_msg_bps(1);
+    do { LATAbits.LATA3 = 0; } while(0);
+    do { LATAbits.LATA2 = 0; } while(0);
 }
 
 void aux_battery_LV(void){
-
-
-    if (ADC_Conv_pinSeven() != 1){
-
-
-        canbus_msg_auxlow(1);
-    }
+    canbus_msg_auxlow(1);
 }
 
 void main(void){
@@ -20914,26 +20898,23 @@ void main(void){
     STARTUP_SUCCESS = 0;
 
     while (1){
-
-
-
-        tx21.frame.idType = 1;
-        tx21.frame.id = 0x39;
-        tx21.frame.dlc = 1;
-        tx21.frame.data0 = ADC_Conv_pinNine();
-        CAN_transmit(&tx21);
         if (STARTUP_SUCCESS == 0){
                 start_up_seq();
-            }
+        }
         else{
-            if (ADC_Conv_pinSeven() == 0){
-                canbus_shutdown_success(1);
-                STARTUP_SUCCESS = 0;
+            if (CAN_receive(&rx)){
+                if (rx.frame.idType == 1){
+                    if (rx.frame.id == 0x255){
+                        shutdown_seq();
+                    }
+                }
             }
-            else if (ADC_Conv_pinNine() == 0){
+            if (ADC_Conv_pinSeven() == 0){
+                aux_battery_LV();
+            }
+            if (ADC_Conv_pinNine() == 0){
                 e_stop_seq();
             }
         }
-
     }
  }

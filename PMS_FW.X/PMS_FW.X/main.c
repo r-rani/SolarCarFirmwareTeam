@@ -21,17 +21,6 @@ static int iterator = 0; //motor while loop iterator
 
 uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8,tx9,tx10,tx13,tx20,tx21; //initializations for transmit and receive messages
 
-int highOrlow(float voltage){
-    int output;
-    if (voltage >= 10.2) {
-        output = 1;
-    }
-    else{
-        output = 0;
-    }
-    return output;
-}
-
 int ADC_Conv_pinSeven(){
     float adc_val = ADC_GetConversion(channel_AN4);
     adc_val = (adc_val / 1023.0)*5.0; //10 bit adc , 5V= reference voltage
@@ -54,10 +43,7 @@ int ADC_Conv_pinNine(){
     else{
         return 0;
     }
-    
-
 }
-//create a function for each DDISP message
 
 //START UP FAIL DDISP
 void canbus_msg_startupfail(int number){
@@ -145,30 +131,18 @@ void start_up_seq(void){
     }
 }
 
-//void shutdown_seq(void){
-//    //Read pin 7 - MCU READ AUX
-//   // if (ADC_Conv_pinSeven() == 0){ 
-//        //system turns off electronically?
-//        //Stores successful system shut-down somewhere
-//    canbus_shutdown_success(1); //transmits CANBUS with unique id ----> shutdown
-//    //}
-//    //canbus_shutdown_success(1);
-//}
+void shutdown_seq(void){
+    canbus_shutdown_success(1); //transmits CANBUS with unique id ----> shutdown
+}
 
 void e_stop_seq(void){
-        canbus_msg_bps(1);
-        IO_RA3_SetLow();  //ati aux
-        IO_RA2_SetLow(); //ati dcdc
+    canbus_msg_bps(1);
+    IO_RA3_SetLow();  //ati aux
+    IO_RA2_SetLow(); //ati dcdc
 }
 
 void aux_battery_LV(void){
-    //Read pin 7
-    //if (IO_RA5_GetValue() < THRESVOLT){
-    if (ADC_Conv_pinSeven() != 1){
-
-        //send msg to DDISP -- LOW AUX VOLTAGE
-        canbus_msg_auxlow(1);
-    }
+    canbus_msg_auxlow(1);
 }
 
 void main(void){
@@ -177,27 +151,24 @@ void main(void){
     STARTUP_SUCCESS = 0;
 
     while (1){
-        //call the functions 
-        //if the boolean for startup is false (startup has not run yet), then run startup. Else, don't.
-        //pins 7 and 9 should constantly be monitored
-        tx21.frame.idType = 1;
-        tx21.frame.id = 0x39;
-        tx21.frame.dlc = 1;
-        tx21.frame.data0 = ADC_Conv_pinNine();
-        CAN_transmit(&tx21);
         if (STARTUP_SUCCESS == 0){
                 start_up_seq();
-            }
+        }
         else{
-            if (ADC_Conv_pinSeven() == 0){   //AUX low
-                canbus_shutdown_success(1);
-                STARTUP_SUCCESS = 0;
+            if (CAN_receive(&rx)){
+                if (rx.frame.idType == 1){
+                    if (rx.frame.id == 0x255){
+                        shutdown_seq();
+                    }
+                }
             }
-            else if (ADC_Conv_pinNine() == 0){ //DCDC low
+            if (ADC_Conv_pinSeven() == 0){   //AUX low
+                aux_battery_LV();
+            }
+            if (ADC_Conv_pinNine() == 0){ //DCDC low
                 e_stop_seq();
             }
         } 
-        //aux_battery_LV();
     }
  }
 
