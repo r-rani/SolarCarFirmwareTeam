@@ -43,6 +43,7 @@
 
 #include "mcc_generated_files/mcc.h"
 #define CAN_INT 0
+#define Interrupt 0
 
 /*
                          Main application
@@ -51,7 +52,7 @@
 /*
  Global variables
  */
-int latchOn; //0 if the latch is open/off, 1 if the latch is closed/on
+int latchOn = 0; //0 if the latch is open/off, 1 if the latch is closed/on
 
 uCAN_MSG rx, txstart, txstop;
 
@@ -88,6 +89,7 @@ void shutdown(void){    //shutdown the latch if CAN shutdown message received
     latchOn = 0;
 }
 
+#if Interrupt
 void Pin3_ISR(void){
     if(latchOn){    //when power button pressed, check if latch is on
         shutdown();
@@ -95,6 +97,7 @@ void Pin3_ISR(void){
         startup();
     }
 }
+#endif
 
 #if CAN_INT
 void CAN_ISR(void){
@@ -106,11 +109,14 @@ void CAN_ISR(void){
 }
 #endif
 
-void main(void)
-{
+void main(void){
     // Initialize the device
     SYSTEM_Initialize();
+    
+    #if Interrupt
     INT3_SetInterruptHandler(Pin3_ISR);
+    #endif
+
     #if CAN_INT
     ECAN_SetWakeUpInterruptHandler(CAN_ISR);
     #endif
@@ -127,7 +133,19 @@ void main(void)
     INTERRUPT_PeripheralInterruptEnable();
 
     while (1){
+
         //look into ecan interrupts
+        #if !Interrupt
+        if (IO_RB3_GetValue()){
+            if (latchOn){
+                shutdown();
+            }else{
+                startup();
+            }
+            __delay_ms(200);
+        }
+        #endif
+
         #if !CAN_INT
         if(CAN_receive(&rx)){   //if received a CAN msg, shutdown
             if(rx.frame.idType == 1){
@@ -136,7 +154,7 @@ void main(void)
                 }
             }
         }   
-        #endif
+        #endif 
     }
 }
 /**

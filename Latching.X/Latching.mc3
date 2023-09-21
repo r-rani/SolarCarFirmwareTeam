@@ -8736,7 +8736,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="EXT_INT" name="INT3"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="EXT_INT" registerAlias="INTCON2" settingAlias="INTEDG0" alias="falling edge"/>
@@ -9304,7 +9304,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RB3"/>
-         <value/>
+         <value>IO_RB3</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RB4"/>
@@ -9448,7 +9448,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RB3"/>
-         <value>disabled</value>
+         <value>input</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RB4"/>
@@ -12169,16 +12169,16 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
+         <file>mcc_generated_files\ext_int.c</file>
+         <hash>c053108724a1dc47ecd1dea579c8515143ea195011b53e6db0c2b95107f41fc0</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\mcc.h</file>
          <hash>f82c22732078395df5fd254c9241b43b77ade55dd13e923dac7091182cb4949c</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
          <hash>3a59dc060569423fa49fb0efa8ac35f6a38ec2e435432e2ac31fe24efad554ff</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\ext_int.c</file>
-         <hash>c053108724a1dc47ecd1dea579c8515143ea195011b53e6db0c2b95107f41fc0</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\interrupt_manager.h</file>
@@ -12194,7 +12194,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.h</file>
-         <hash>bedd2bafc65765db21c4ff5f901784466ee248b1716e54ef826bf6c20a6ecb2a</hash>
+         <hash>64db9cf0180e368d8d321ffe4d2315d869f478c5f879a8dbf306811a1164be84</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
@@ -12205,12 +12205,12 @@
          <hash>6feb58d849235989c158422803328c5d16cf782bd47953c9e95b4a1509976d28</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>c96822dd32c7e8288f7ae060c9ae1cc56537136986c84bf54157dc28b8971d52</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\ext_int.h</file>
          <hash>a8656565fe885cd1f06b36b49269ff8d53b12cd5e401e32047b113175c762264</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>c96822dd32c7e8288f7ae060c9ae1cc56537136986c84bf54157dc28b8971d52</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\interrupt_manager.c</file>

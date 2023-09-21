@@ -99,15 +99,19 @@
 #define RB2_SetPullup()             do { WPUBbits.WPUB2 = 1; } while(0)
 #define RB2_ResetPullup()           do { WPUBbits.WPUB2 = 0; } while(0)
 
-// get/set RB3 procedures
-#define RB3_SetHigh()            do { LATBbits.LATB3 = 1; } while(0)
-#define RB3_SetLow()             do { LATBbits.LATB3 = 0; } while(0)
-#define RB3_Toggle()             do { LATBbits.LATB3 = ~LATBbits.LATB3; } while(0)
-#define RB3_GetValue()              PORTBbits.RB3
-#define RB3_SetDigitalInput()    do { TRISBbits.TRISB3 = 1; } while(0)
-#define RB3_SetDigitalOutput()   do { TRISBbits.TRISB3 = 0; } while(0)
-#define RB3_SetPullup()             do { WPUBbits.WPUB3 = 1; } while(0)
-#define RB3_ResetPullup()           do { WPUBbits.WPUB3 = 0; } while(0)
+// get/set IO_RB3 aliases
+#define IO_RB3_TRIS                 TRISBbits.TRISB3
+#define IO_RB3_LAT                  LATBbits.LATB3
+#define IO_RB3_PORT                 PORTBbits.RB3
+#define IO_RB3_WPU                  WPUBbits.WPUB3
+#define IO_RB3_SetHigh()            do { LATBbits.LATB3 = 1; } while(0)
+#define IO_RB3_SetLow()             do { LATBbits.LATB3 = 0; } while(0)
+#define IO_RB3_Toggle()             do { LATBbits.LATB3 = ~LATBbits.LATB3; } while(0)
+#define IO_RB3_GetValue()           PORTBbits.RB3
+#define IO_RB3_SetDigitalInput()    do { TRISBbits.TRISB3 = 1; } while(0)
+#define IO_RB3_SetDigitalOutput()   do { TRISBbits.TRISB3 = 0; } while(0)
+#define IO_RB3_SetPullup()          do { WPUBbits.WPUB3 = 1; } while(0)
+#define IO_RB3_ResetPullup()        do { WPUBbits.WPUB3 = 0; } while(0)
 
 // get/set RC6 procedures
 #define RC6_SetHigh()            do { LATCbits.LATC6 = 1; } while(0)

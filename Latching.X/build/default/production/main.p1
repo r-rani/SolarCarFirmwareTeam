@@ -30,35 +30,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v __delay `JF192 ~T0 @X0 0 e ]
 [p i __delay ]
 [p mainexit ]
-"72 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-[v F12750 `(v ~T0 @X0 0 tf ]
-"1126 ./mcc_generated_files/ext_int.h
-[; ;./mcc_generated_files/ext_int.h: 1126: void INT3_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _INT3_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F12750 ]
-"37211 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 37211:     struct {
-[s S1508 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1508 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
-"37221
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 37221:     struct {
-[s S1509 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1509 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
-"37231
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 37231:     struct {
-[s S1510 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1510 . . GIEL GIEH ]
-"37210
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 37210: typedef union {
-[u S1507 `S1508 1 `S1509 1 `S1510 1 ]
-[n S1507 . . . . ]
-"37237
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 37237: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
-[v _INTCONbits `VS1507 ~T0 @X0 0 e@4082 ]
-"182 ./mcc_generated_files/ecan.h
-[; ;./mcc_generated_files/ecan.h: 182: uint8_t CAN_receive(uCAN_MSG *tempCanMsg);
-[v _CAN_receive `(uc ~T0 @X0 0 ef1`*S1544 ]
 "55 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 55: __asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
@@ -1451,176 +1422,130 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37767
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 37767: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"54 main.c
-[; ;main.c: 54: int latchOn;
+"55 main.c
+[; ;main.c: 55: int latchOn = 0;
 [v _latchOn `i ~T0 @X0 1 e ]
-"56
-[; ;main.c: 56: uCAN_MSG rx, txstart, txstop;
+[i _latchOn
+-> 0 `i
+]
+"57
+[; ;main.c: 57: uCAN_MSG rx, txstart, txstop;
 [v _rx `S1544 ~T0 @X0 1 e ]
 [v _txstart `S1544 ~T0 @X0 1 e ]
 [v _txstop `S1544 ~T0 @X0 1 e ]
-"62
-[; ;main.c: 62: void startup(void){
+"63
+[; ;main.c: 63: void startup(void){
 [v _startup `(v ~T0 @X0 1 ef ]
 {
 [e :U _startup ]
 [f ]
-"63
-[; ;main.c: 63:     do { LATDbits.LATD1 = 1; } while(0);
+"64
+[; ;main.c: 64:     do { LATDbits.LATD1 = 1; } while(0);
 [e :U 1549 ]
 {
 [e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1548 ]
-"67
-[; ;main.c: 67:     txstart.frame.idType = 1;
-[e = . . _txstart 0 0 -> -> 1 `i `uc ]
 "68
-[; ;main.c: 68:     txstart.frame.id = 0x31;
-[e = . . _txstart 0 1 -> -> -> 49 `i `l `ul ]
+[; ;main.c: 68:     txstart.frame.idType = 1;
+[e = . . _txstart 0 0 -> -> 1 `i `uc ]
 "69
-[; ;main.c: 69:     txstart.frame.dlc = 0x1;
-[e = . . _txstart 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 69:     txstart.frame.id = 0x31;
+[e = . . _txstart 0 1 -> -> -> 49 `i `l `ul ]
 "70
-[; ;main.c: 70:     txstart.frame.data0 = 1;
-[e = . . _txstart 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 70:     txstart.frame.dlc = 0x1;
+[e = . . _txstart 0 2 -> -> 1 `i `uc ]
 "71
-[; ;main.c: 71:     CAN_transmit(&txstart);
+[; ;main.c: 71:     txstart.frame.data0 = 1;
+[e = . . _txstart 0 3 -> -> 1 `i `uc ]
+"72
+[; ;main.c: 72:     CAN_transmit(&txstart);
 [e ( _CAN_transmit (1 &U _txstart ]
-"73
-[; ;main.c: 73:     latchOn = 1;
+"74
+[; ;main.c: 74:     latchOn = 1;
 [e = _latchOn -> 1 `i ]
-"75
-[; ;main.c: 75: }
+"76
+[; ;main.c: 76: }
 [e :UE 1546 ]
 }
-"77
-[; ;main.c: 77: void shutdown(void){
+"78
+[; ;main.c: 78: void shutdown(void){
 [v _shutdown `(v ~T0 @X0 1 ef ]
 {
 [e :U _shutdown ]
 [f ]
-"80
-[; ;main.c: 80:     txstop.frame.idType = 1;
-[e = . . _txstop 0 0 -> -> 1 `i `uc ]
 "81
-[; ;main.c: 81:     txstop.frame.id = 0x255;
-[e = . . _txstop 0 1 -> -> -> 597 `i `l `ul ]
+[; ;main.c: 81:     txstop.frame.idType = 1;
+[e = . . _txstop 0 0 -> -> 1 `i `uc ]
 "82
-[; ;main.c: 82:     txstop.frame.dlc = 0x1;
-[e = . . _txstop 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 82:     txstop.frame.id = 0x255;
+[e = . . _txstop 0 1 -> -> -> 597 `i `l `ul ]
 "83
-[; ;main.c: 83:     txstop.frame.data0 = 1;
-[e = . . _txstop 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 83:     txstop.frame.dlc = 0x1;
+[e = . . _txstop 0 2 -> -> 1 `i `uc ]
 "84
-[; ;main.c: 84:     CAN_transmit(&txstop);
-[e ( _CAN_transmit (1 &U _txstop ]
+[; ;main.c: 84:     txstop.frame.data0 = 1;
+[e = . . _txstop 0 3 -> -> 1 `i `uc ]
 "85
-[; ;main.c: 85:     _delay((unsigned long)((2000)*(20000000/4000.0)));
+[; ;main.c: 85:     CAN_transmit(&txstop);
+[e ( _CAN_transmit (1 &U _txstop ]
+"86
+[; ;main.c: 86:     _delay((unsigned long)((2000)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"87
-[; ;main.c: 87:     do { LATDbits.LATD1 = 0; } while(0);
+"88
+[; ;main.c: 88:     do { LATDbits.LATD1 = 0; } while(0);
 [e :U 1553 ]
 {
 [e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1552 ]
-"88
-[; ;main.c: 88:     latchOn = 0;
-[e = _latchOn -> 0 `i ]
 "89
-[; ;main.c: 89: }
+[; ;main.c: 89:     latchOn = 0;
+[e = _latchOn -> 0 `i ]
+"90
+[; ;main.c: 90: }
 [e :UE 1550 ]
 }
-"91
-[; ;main.c: 91: void Pin3_ISR(void){
+"92
+[; ;main.c: 92: void Pin3_ISR(void){
 [v _Pin3_ISR `(v ~T0 @X0 1 ef ]
 {
 [e :U _Pin3_ISR ]
 [f ]
-"92
-[; ;main.c: 92:     if(latchOn){
+"93
+[; ;main.c: 93:     if(latchOn){
 [e $ ! != _latchOn -> 0 `i 1555  ]
 {
-"93
-[; ;main.c: 93:         shutdown();
-[e ( _shutdown ..  ]
 "94
-[; ;main.c: 94:     }else{
+[; ;main.c: 94:         shutdown();
+[e ( _shutdown ..  ]
+"95
+[; ;main.c: 95:     }else{
 }
 [e $U 1556  ]
 [e :U 1555 ]
 {
-"95
-[; ;main.c: 95:         startup();
-[e ( _startup ..  ]
 "96
-[; ;main.c: 96:     }
+[; ;main.c: 96:         startup();
+[e ( _startup ..  ]
+"97
+[; ;main.c: 97:     }
 }
 [e :U 1556 ]
-"97
-[; ;main.c: 97: }
+"98
+[; ;main.c: 98: }
 [e :UE 1554 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"109
-[; ;main.c: 109: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
 "110
-[; ;main.c: 110: {
+[; ;main.c: 110: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"111
+[; ;main.c: 111: {
 {
 [e :U _main ]
 [f ]
-"112
-[; ;main.c: 112:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"113
-[; ;main.c: 113:     INT3_SetInterruptHandler(Pin3_ISR);
-[e ( _INT3_SetInterruptHandler (1 &U _Pin3_ISR ]
-"124
-[; ;main.c: 124:     (INTCONbits.GIE = 1);
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-"127
-[; ;main.c: 127:     (INTCONbits.PEIE = 1);
-[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-"129
-[; ;main.c: 129:     while (1){
-[e :U 1559 ]
-{
-"132
-[; ;main.c: 132:         if(CAN_receive(&rx)){
-[e $ ! != -> ( _CAN_receive (1 &U _rx `i -> 0 `i 1561  ]
-{
-"133
-[; ;main.c: 133:             if(rx.frame.idType == 1){
-[e $ ! == -> . . _rx 0 0 `i -> 1 `i 1562  ]
-{
-"134
-[; ;main.c: 134:                 if(rx.frame.id == 0x17){
-[e $ ! == . . _rx 0 1 -> -> -> 23 `i `l `ul 1563  ]
-{
-"135
-[; ;main.c: 135:                     shutdown();
-[e ( _shutdown ..  ]
-"136
-[; ;main.c: 136:                 }
-}
-[e :U 1563 ]
-"137
-[; ;main.c: 137:             }
-}
-[e :U 1562 ]
-"138
-[; ;main.c: 138:         }
-}
-[e :U 1561 ]
-"140
-[; ;main.c: 140:     }
-}
-[e :U 1558 ]
-[e $U 1559  ]
-[e :U 1560 ]
-"141
-[; ;main.c: 141: }
+"159
+[; ;main.c: 159: }
 [e :UE 1557 ]
 }

@@ -20517,9 +20517,9 @@ unsigned char __t3rd16on(void);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 152 "./mcc_generated_files/pin_manager.h"
+# 156 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 164 "./mcc_generated_files/pin_manager.h"
+# 168 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -20778,8 +20778,8 @@ void SYSTEM_Initialize(void);
 # 85 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
 # 44 "main.c" 2
-# 54 "main.c"
-int latchOn;
+# 55 "main.c"
+int latchOn = 0;
 
 uCAN_MSG rx, txstart, txstop;
 
@@ -20823,28 +20823,8 @@ void Pin3_ISR(void){
         startup();
     }
 }
-# 109 "main.c"
+# 110 "main.c"
 void main(void)
 {
-
-    SYSTEM_Initialize();
-    INT3_SetInterruptHandler(Pin3_ISR);
-# 124 "main.c"
-    (INTCONbits.GIE = 1);
-
-
-    (INTCONbits.PEIE = 1);
-
-    while (1){
-
-
-        if(CAN_receive(&rx)){
-            if(rx.frame.idType == 1){
-                if(rx.frame.id == 0x17){
-                    shutdown();
-                }
-            }
-        }
-
-    }
+# 159 "main.c"
 }
