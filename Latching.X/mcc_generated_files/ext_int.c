@@ -116,7 +116,7 @@ void INT3_ISR(void)
 {
     EXT_INT3_InterruptFlagClear();
 
-    // Callback function gets called everytime this ISR executes
+    // Callback function gets called every time this ISR executes
     INT3_CallBack();    
 }
 

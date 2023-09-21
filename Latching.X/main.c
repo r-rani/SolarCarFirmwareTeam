@@ -59,7 +59,7 @@ uCAN_MSG rx, txstart, txstop;
  */
 
 void startup(void){
-    RB1_SetHigh(); //set pin 20 high
+    IO_RD1_SetHigh(); //set pin 20 high
         
     //transmit via CAN that AUX power is now live
     //start up message - id=0x31, dlc=0x1, data0=1
@@ -74,8 +74,15 @@ void startup(void){
 }
 
 void shutdown(void){    //shutdown the latch if CAN shutdown message received
-    //NEEDS TO TX CAN MSG WHEN SHUTTING DOWN - ID 0x255 
-    //wait 2s after sending message to shut down
+    
+    //transmit via CAN that the AUX will shut down in 2s
+    txstop.frame.idType = 1;
+    txstop.frame.id = 0x255;
+    txstop.frame.dlc = 0x1;
+    txstop.frame.data0 = 1;
+    CAN_transmit(&txstop);
+    __delay_ms(2000);
+    
     IO_RD1_SetLow();    //set pin 20 low
     latchOn = 0;
 }
