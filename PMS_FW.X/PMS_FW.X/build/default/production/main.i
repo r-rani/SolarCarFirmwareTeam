@@ -20520,9 +20520,9 @@ unsigned char __t3rd16on(void);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 259 "./mcc_generated_files/pin_manager.h"
+# 198 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 271 "./mcc_generated_files/pin_manager.h"
+# 210 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -20699,20 +20699,22 @@ typedef enum
     channel_Temp_diode = 0x1D,
     channel_Vdd_core = 0x1E,
     channel_1_024V_bandgap = 0x1F,
+    IO_RA2 = 0x2,
+    IO_RA3 = 0x3,
     channel_AN4 = 0x4,
     channel_AN6 = 0x6
 } adc_channel_t;
-# 129 "./mcc_generated_files/adc.h"
+# 131 "./mcc_generated_files/adc.h"
 void ADC_Initialize(void);
-# 158 "./mcc_generated_files/adc.h"
+# 160 "./mcc_generated_files/adc.h"
 void ADC_StartConversion(adc_channel_t channel);
-# 190 "./mcc_generated_files/adc.h"
+# 192 "./mcc_generated_files/adc.h"
 _Bool ADC_IsConversionDone(void);
-# 223 "./mcc_generated_files/adc.h"
+# 225 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversionResult(void);
-# 253 "./mcc_generated_files/adc.h"
+# 255 "./mcc_generated_files/adc.h"
 adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 281 "./mcc_generated_files/adc.h"
+# 283 "./mcc_generated_files/adc.h"
 void ADC_TemperatureAcquisitionDelay(void);
 # 56 "./mcc_generated_files/mcc.h" 2
 
@@ -20770,7 +20772,7 @@ uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8,tx9,tx10,tx13,tx20,tx21;
 
 int ADC_Conv_pinSeven(){
     float adc_val = ADC_GetConversion(channel_AN4);
-    adc_val = (adc_val / 1023.0)*5.0;
+    adc_val = (adc_val / 1023.0)*4.0;
     float input_voltage = adc_val*3.0;
     if (input_voltage >= 10.2){
         return 1;
@@ -20782,7 +20784,7 @@ int ADC_Conv_pinSeven(){
 
 int ADC_Conv_pinNine(){
     float adc_val = ADC_GetConversion(channel_AN6);
-    adc_val = (adc_val / 1023.0)*5.0;
+    adc_val = (adc_val / 1023.0)*4.0;
     float input_voltage = adc_val*3.0;
     if (input_voltage >= 12){
         return 1;
@@ -20837,6 +20839,22 @@ void canbus_shutdown_success(int number){
     CAN_transmit(&tx7);
 }
 
+void canbus_msg_startup_success(int number){
+    tx9.frame.idType = 1;
+    tx9.frame.id = 0x22;
+    tx9.frame.dlc = 0x01;
+    tx9.frame.data0 = number;
+    CAN_transmit(&tx9);
+}
+
+void canbus_msg_ok(int number){
+    tx10.frame.idType = 1;
+    tx10.frame.id = 0x111;
+    tx10.frame.dlc = 0x01;
+    tx10.frame.data0 = number;
+    CAN_transmit(&tx10);
+}
+
 void canbus_latch_shutdown(int number){
     tx8.frame.idType = 1;
     tx8.frame.id = 0x17;
@@ -20860,6 +20878,7 @@ void start_up_seq(void){
             do { LATAbits.LATA2 = 1; } while(0);
             do { LATAbits.LATA3 = 1; } while(0);
             STARTUP_SUCCESS = 1;
+            canbus_msg_startup_success(1);
         }
         else{
             do { LATCbits.LATC0 = 0; } while(0);
@@ -20896,7 +20915,7 @@ void main(void){
 
     SYSTEM_Initialize();
     STARTUP_SUCCESS = 0;
-
+    int iter = 0;
     while (1){
         if (STARTUP_SUCCESS == 0){
                 start_up_seq();
@@ -20915,6 +20934,12 @@ void main(void){
             if (ADC_Conv_pinNine() == 0){
                 e_stop_seq();
             }
+            if (iter >= 1000){
+                canbus_msg_ok(1);
+                iter = 0;
+            }
         }
+
+        iter += 1;
     }
  }

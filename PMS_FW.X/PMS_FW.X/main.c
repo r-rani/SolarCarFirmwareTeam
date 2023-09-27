@@ -23,7 +23,7 @@ uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8,tx9,tx10,tx13,tx20,tx21; //i
 
 int ADC_Conv_pinSeven(){
     float adc_val = ADC_GetConversion(channel_AN4);
-    adc_val = (adc_val / 1023.0)*5.0; //10 bit adc , 5V= reference voltage
+    adc_val = (adc_val / 1023.0)*4.0; //10 bit adc , 5V= reference voltage
     float input_voltage = adc_val*3.0;
     if (input_voltage >= 10.2){
         return 1;
@@ -35,7 +35,7 @@ int ADC_Conv_pinSeven(){
 
 int ADC_Conv_pinNine(){
     float adc_val = ADC_GetConversion(channel_AN6);
-    adc_val = (adc_val / 1023.0)*5.0; //10 bit adc , 5V= reference voltage
+    adc_val = (adc_val / 1023.0)*4.0; //10 bit adc , 5V= reference voltage
     float input_voltage = adc_val*3.0;
     if (input_voltage >= 12){
         return 1;
@@ -90,6 +90,22 @@ void canbus_shutdown_success(int number){
     CAN_transmit(&tx7);
 }
 
+void canbus_msg_startup_success(int number){
+    tx9.frame.idType = 1;
+    tx9.frame.id = 0x22; //Arbitration ID
+    tx9.frame.dlc = 0x01; //1 byte
+    tx9.frame.data0 = number;  //power mode
+    CAN_transmit(&tx9);   
+}
+
+void canbus_msg_ok(int number){
+    tx10.frame.idType = 1;
+    tx10.frame.id = 0x111; //Arbitration ID
+    tx10.frame.dlc = 0x01; //1 byte
+    tx10.frame.data0 = number;  //power mode
+    CAN_transmit(&tx10);   
+}
+
 void canbus_latch_shutdown(int number){
     tx8.frame.idType = 1;
     tx8.frame.id = 0x17;
@@ -113,6 +129,7 @@ void start_up_seq(void){
             IO_RA2_SetHigh(); //ati dcdc
             IO_RA3_SetHigh(); //ati aux
             STARTUP_SUCCESS = 1;
+            canbus_msg_startup_success(1);
         }
         else{
             IO_RC0_SetLow();
@@ -149,7 +166,7 @@ void main(void){
     // Initialize the device
     SYSTEM_Initialize();
     STARTUP_SUCCESS = 0;
-
+    int iter = 0;
     while (1){
         if (STARTUP_SUCCESS == 0){
                 start_up_seq();
@@ -168,7 +185,13 @@ void main(void){
             if (ADC_Conv_pinNine() == 0){ //DCDC low
                 e_stop_seq();
             }
-        } 
+            if (iter >= 1000){
+                canbus_msg_ok(1);
+                iter = 0;
+            }
+        }
+        
+        iter += 1;
     }
  }
 

@@ -1,26 +1,24 @@
 /**
-  Generated Pin Manager File
+  @Generated PIC10 / PIC12 / PIC16 / PIC18 MCUs Header File
 
-  Company:
+  @Company:
     Microchip Technology Inc.
 
-  File Name:
-    pin_manager.c
+  @File Name:
+    mcc.c
 
-  Summary:
-    This is the Pin Manager file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary:
+    This is the device_config.h file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  Description:
-    This header file provides implementations for pin APIs for all pins selected in the GUI.
+  @Description:
+    This header file provides implementations for driver APIs for all modules selected in the GUI.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC18F46K80
-        Driver Version    :  2.11
+        Driver Version    :  2.00
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.36 and above
+        Compiler          :  XC8 2.36 and above or later
         MPLAB             :  MPLAB X 6.00
-
-    Copyright (c) 2013 - 2015 released Microchip Technology Inc.  All rights reserved.
 */
 
 /*
@@ -46,59 +44,12 @@
     SOFTWARE.
 */
 
-#include "pin_manager.h"
+#ifndef DEVICE_CONFIG_H
+#define	DEVICE_CONFIG_H
 
+#define _XTAL_FREQ 20000000
 
-
-
-
-void PIN_MANAGER_Initialize(void)
-{
-    /**
-    LATx registers
-    */
-    LATE = 0x00;
-    LATD = 0x00;
-    LATA = 0x00;
-    LATB = 0x00;
-    LATC = 0x00;
-
-    /**
-    TRISx registers
-    */
-    TRISE = 0x07;
-    TRISA = 0xE3;
-    TRISB = 0xFB;
-    TRISC = 0xB8;
-    TRISD = 0xFF;
-
-    /**
-    ANSELx registers
-    */
-    ANCON0 = 0xFF;
-    ANCON1 = 0x7F;
-
-    /**
-    WPUx registers
-    */
-    WPUB = 0x00;
-    INTCON2bits.nRBPU = 1;
-
-
-
-
-
-
-   
-    
-}
-  
-void PIN_MANAGER_IOC(void)
-{   
-	// Clear global Interrupt-On-Change flag
-    INTCONbits.RBIF = 0;
-}
-
+#endif	/* DEVICE_CONFIG_H */
 /**
  End of File
 */

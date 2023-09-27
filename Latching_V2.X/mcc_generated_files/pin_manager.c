@@ -67,10 +67,10 @@ void PIN_MANAGER_Initialize(void)
     TRISx registers
     */
     TRISE = 0x07;
-    TRISA = 0xE3;
-    TRISB = 0xFB;
-    TRISC = 0xB8;
-    TRISD = 0xFF;
+    TRISA = 0xEF;
+    TRISB = 0xFF;
+    TRISC = 0xBF;
+    TRISD = 0xFD;
 
     /**
     ANSELx registers
