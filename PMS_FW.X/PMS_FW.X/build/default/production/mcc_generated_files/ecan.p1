@@ -2091,850 +2091,850 @@ Version 4.0 HI-TECH Software Intermediate Code
 "78
 [; ;mcc_generated_files/ecan.c: 78:     CIOCON = 0x20;
 [e = _CIOCON -> -> 32 `i `uc ]
-"99
-[; ;mcc_generated_files/ecan.c: 99:     BSEL0 = 0x00;
+"100
+[; ;mcc_generated_files/ecan.c: 100:     BSEL0 = 0x00;
 [e = _BSEL0 -> -> 0 `i `uc ]
-"104
-[; ;mcc_generated_files/ecan.c: 104:     RXM0EIDH = 0xFF;
-[e = _RXM0EIDH -> -> 255 `i `uc ]
 "105
-[; ;mcc_generated_files/ecan.c: 105:     RXM0EIDL = 0xFF;
-[e = _RXM0EIDL -> -> 255 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 105:     RXM0EIDH = 0xFF;
+[e = _RXM0EIDH -> -> 255 `i `uc ]
 "106
-[; ;mcc_generated_files/ecan.c: 106:     RXM0SIDH = 0x05;
-[e = _RXM0SIDH -> -> 5 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 106:     RXM0EIDL = 0xFF;
+[e = _RXM0EIDL -> -> 255 `i `uc ]
 "107
-[; ;mcc_generated_files/ecan.c: 107:     RXM0SIDL = 0xC3;
-[e = _RXM0SIDL -> -> 195 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 107:     RXM0SIDH = 0x01;
+[e = _RXM0SIDH -> -> 1 `i `uc ]
 "108
-[; ;mcc_generated_files/ecan.c: 108:     RXM1EIDH = 0xFF;
-[e = _RXM1EIDH -> -> 255 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 108:     RXM0SIDL = 0xC3;
+[e = _RXM0SIDL -> -> 195 `i `uc ]
 "109
-[; ;mcc_generated_files/ecan.c: 109:     RXM1EIDL = 0xFF;
-[e = _RXM1EIDL -> -> 255 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 109:     RXM1EIDH = 0xFF;
+[e = _RXM1EIDH -> -> 255 `i `uc ]
 "110
-[; ;mcc_generated_files/ecan.c: 110:     RXM1SIDH = 0xFF;
-[e = _RXM1SIDH -> -> 255 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 110:     RXM1EIDL = 0xFF;
+[e = _RXM1EIDL -> -> 255 `i `uc ]
 "111
-[; ;mcc_generated_files/ecan.c: 111:     RXM1SIDL = 0xE3;
+[; ;mcc_generated_files/ecan.c: 111:     RXM1SIDH = 0xFF;
+[e = _RXM1SIDH -> -> 255 `i `uc ]
+"112
+[; ;mcc_generated_files/ecan.c: 112:     RXM1SIDL = 0xE3;
 [e = _RXM1SIDL -> -> 227 `i `uc ]
-"116
-[; ;mcc_generated_files/ecan.c: 116:     RXFCON0 = 0x01;
-[e = _RXFCON0 -> -> 1 `i `uc ]
 "117
-[; ;mcc_generated_files/ecan.c: 117:     RXFCON1 = 0x00;
+[; ;mcc_generated_files/ecan.c: 117:     RXFCON0 = 0x01;
+[e = _RXFCON0 -> -> 1 `i `uc ]
+"118
+[; ;mcc_generated_files/ecan.c: 118:     RXFCON1 = 0x00;
 [e = _RXFCON1 -> -> 0 `i `uc ]
-"121
-[; ;mcc_generated_files/ecan.c: 121:     MSEL0 = 0x00;
-[e = _MSEL0 -> -> 0 `i `uc ]
 "122
-[; ;mcc_generated_files/ecan.c: 122:     MSEL1 = 0x00;
-[e = _MSEL1 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 122:     MSEL0 = 0x00;
+[e = _MSEL0 -> -> 0 `i `uc ]
 "123
-[; ;mcc_generated_files/ecan.c: 123:     MSEL2 = 0x00;
-[e = _MSEL2 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 123:     MSEL1 = 0x00;
+[e = _MSEL1 -> -> 0 `i `uc ]
 "124
-[; ;mcc_generated_files/ecan.c: 124:     MSEL3 = 0x00;
+[; ;mcc_generated_files/ecan.c: 124:     MSEL2 = 0x00;
+[e = _MSEL2 -> -> 0 `i `uc ]
+"125
+[; ;mcc_generated_files/ecan.c: 125:     MSEL3 = 0x00;
 [e = _MSEL3 -> -> 0 `i `uc ]
-"129
-[; ;mcc_generated_files/ecan.c: 129:     RXFBCON0 = 0x00;
-[e = _RXFBCON0 -> -> 0 `i `uc ]
 "130
-[; ;mcc_generated_files/ecan.c: 130:     RXFBCON1 = 0x00;
-[e = _RXFBCON1 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 130:     RXFBCON0 = 0x00;
+[e = _RXFBCON0 -> -> 0 `i `uc ]
 "131
-[; ;mcc_generated_files/ecan.c: 131:     RXFBCON2 = 0x00;
-[e = _RXFBCON2 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 131:     RXFBCON1 = 0x00;
+[e = _RXFBCON1 -> -> 0 `i `uc ]
 "132
-[; ;mcc_generated_files/ecan.c: 132:     RXFBCON3 = 0x00;
-[e = _RXFBCON3 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 132:     RXFBCON2 = 0x00;
+[e = _RXFBCON2 -> -> 0 `i `uc ]
 "133
-[; ;mcc_generated_files/ecan.c: 133:     RXFBCON4 = 0x00;
-[e = _RXFBCON4 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 133:     RXFBCON3 = 0x00;
+[e = _RXFBCON3 -> -> 0 `i `uc ]
 "134
-[; ;mcc_generated_files/ecan.c: 134:     RXFBCON5 = 0x00;
-[e = _RXFBCON5 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 134:     RXFBCON4 = 0x00;
+[e = _RXFBCON4 -> -> 0 `i `uc ]
 "135
-[; ;mcc_generated_files/ecan.c: 135:     RXFBCON6 = 0x00;
-[e = _RXFBCON6 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 135:     RXFBCON5 = 0x00;
+[e = _RXFBCON5 -> -> 0 `i `uc ]
 "136
-[; ;mcc_generated_files/ecan.c: 136:     RXFBCON7 = 0x00;
+[; ;mcc_generated_files/ecan.c: 136:     RXFBCON6 = 0x00;
+[e = _RXFBCON6 -> -> 0 `i `uc ]
+"137
+[; ;mcc_generated_files/ecan.c: 137:     RXFBCON7 = 0x00;
 [e = _RXFBCON7 -> -> 0 `i `uc ]
-"141
-[; ;mcc_generated_files/ecan.c: 141:     RXF0EIDH = 0x02;
-[e = _RXF0EIDH -> -> 2 `i `uc ]
 "142
-[; ;mcc_generated_files/ecan.c: 142:     RXF0EIDL = 0x25;
-[e = _RXF0EIDL -> -> 37 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 142:     RXF0EIDH = 0x02;
+[e = _RXF0EIDH -> -> 2 `i `uc ]
 "143
-[; ;mcc_generated_files/ecan.c: 143:     RXF0SIDH = 0x44;
-[e = _RXF0SIDH -> -> 68 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 143:     RXF0EIDL = 0x25;
+[e = _RXF0EIDL -> -> 37 `i `uc ]
 "144
-[; ;mcc_generated_files/ecan.c: 144:     RXF0SIDL = 0xA9;
-[e = _RXF0SIDL -> -> 169 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 144:     RXF0SIDH = 0x44;
+[e = _RXF0SIDH -> -> 68 `i `uc ]
 "145
-[; ;mcc_generated_files/ecan.c: 145:     RXF1EIDH = 0x00;
-[e = _RXF1EIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 145:     RXF0SIDL = 0xA9;
+[e = _RXF0SIDL -> -> 169 `i `uc ]
 "146
-[; ;mcc_generated_files/ecan.c: 146:     RXF1EIDL = 0x00;
-[e = _RXF1EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 146:     RXF1EIDH = 0x00;
+[e = _RXF1EIDH -> -> 0 `i `uc ]
 "147
-[; ;mcc_generated_files/ecan.c: 147:     RXF1SIDH = 0x00;
-[e = _RXF1SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 147:     RXF1EIDL = 0x00;
+[e = _RXF1EIDL -> -> 0 `i `uc ]
 "148
-[; ;mcc_generated_files/ecan.c: 148:     RXF1SIDL = 0x00;
-[e = _RXF1SIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 148:     RXF1SIDH = 0x00;
+[e = _RXF1SIDH -> -> 0 `i `uc ]
 "149
-[; ;mcc_generated_files/ecan.c: 149:     RXF2EIDH = 0x00;
-[e = _RXF2EIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 149:     RXF1SIDL = 0x00;
+[e = _RXF1SIDL -> -> 0 `i `uc ]
 "150
-[; ;mcc_generated_files/ecan.c: 150:     RXF2EIDL = 0x00;
-[e = _RXF2EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 150:     RXF2EIDH = 0x00;
+[e = _RXF2EIDH -> -> 0 `i `uc ]
 "151
-[; ;mcc_generated_files/ecan.c: 151:     RXF2SIDH = 0x00;
-[e = _RXF2SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 151:     RXF2EIDL = 0x00;
+[e = _RXF2EIDL -> -> 0 `i `uc ]
 "152
-[; ;mcc_generated_files/ecan.c: 152:     RXF2SIDL = 0x00;
-[e = _RXF2SIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 152:     RXF2SIDH = 0x00;
+[e = _RXF2SIDH -> -> 0 `i `uc ]
 "153
-[; ;mcc_generated_files/ecan.c: 153:     RXF3EIDH = 0x00;
-[e = _RXF3EIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 153:     RXF2SIDL = 0x00;
+[e = _RXF2SIDL -> -> 0 `i `uc ]
 "154
-[; ;mcc_generated_files/ecan.c: 154:     RXF3EIDL = 0x00;
-[e = _RXF3EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 154:     RXF3EIDH = 0x00;
+[e = _RXF3EIDH -> -> 0 `i `uc ]
 "155
-[; ;mcc_generated_files/ecan.c: 155:     RXF3SIDH = 0x00;
-[e = _RXF3SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 155:     RXF3EIDL = 0x00;
+[e = _RXF3EIDL -> -> 0 `i `uc ]
 "156
-[; ;mcc_generated_files/ecan.c: 156:     RXF3SIDL = 0x00;
-[e = _RXF3SIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 156:     RXF3SIDH = 0x00;
+[e = _RXF3SIDH -> -> 0 `i `uc ]
 "157
-[; ;mcc_generated_files/ecan.c: 157:     RXF4EIDH = 0x00;
-[e = _RXF4EIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 157:     RXF3SIDL = 0x00;
+[e = _RXF3SIDL -> -> 0 `i `uc ]
 "158
-[; ;mcc_generated_files/ecan.c: 158:     RXF4EIDL = 0x00;
-[e = _RXF4EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 158:     RXF4EIDH = 0x00;
+[e = _RXF4EIDH -> -> 0 `i `uc ]
 "159
-[; ;mcc_generated_files/ecan.c: 159:     RXF4SIDH = 0x00;
-[e = _RXF4SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 159:     RXF4EIDL = 0x00;
+[e = _RXF4EIDL -> -> 0 `i `uc ]
 "160
-[; ;mcc_generated_files/ecan.c: 160:     RXF4SIDL = 0x00;
-[e = _RXF4SIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 160:     RXF4SIDH = 0x00;
+[e = _RXF4SIDH -> -> 0 `i `uc ]
 "161
-[; ;mcc_generated_files/ecan.c: 161:     RXF5EIDH = 0x00;
-[e = _RXF5EIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 161:     RXF4SIDL = 0x00;
+[e = _RXF4SIDL -> -> 0 `i `uc ]
 "162
-[; ;mcc_generated_files/ecan.c: 162:     RXF5EIDL = 0x00;
-[e = _RXF5EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 162:     RXF5EIDH = 0x00;
+[e = _RXF5EIDH -> -> 0 `i `uc ]
 "163
-[; ;mcc_generated_files/ecan.c: 163:     RXF5SIDH = 0x00;
-[e = _RXF5SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 163:     RXF5EIDL = 0x00;
+[e = _RXF5EIDL -> -> 0 `i `uc ]
 "164
-[; ;mcc_generated_files/ecan.c: 164:     RXF5SIDL = 0x00;
+[; ;mcc_generated_files/ecan.c: 164:     RXF5SIDH = 0x00;
+[e = _RXF5SIDH -> -> 0 `i `uc ]
+"165
+[; ;mcc_generated_files/ecan.c: 165:     RXF5SIDL = 0x00;
 [e = _RXF5SIDL -> -> 0 `i `uc ]
-"166
-[; ;mcc_generated_files/ecan.c: 166:     RXF6EIDH = 0x00;
-[e = _RXF6EIDH -> -> 0 `i `uc ]
 "167
-[; ;mcc_generated_files/ecan.c: 167:     RXF6EIDL = 0x00;
-[e = _RXF6EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 167:     RXF6EIDH = 0x00;
+[e = _RXF6EIDH -> -> 0 `i `uc ]
 "168
-[; ;mcc_generated_files/ecan.c: 168:     RXF6SIDH = 0x00;
-[e = _RXF6SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 168:     RXF6EIDL = 0x00;
+[e = _RXF6EIDL -> -> 0 `i `uc ]
 "169
-[; ;mcc_generated_files/ecan.c: 169:     RXF6SIDL = 0x00;
-[e = _RXF6SIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 169:     RXF6SIDH = 0x00;
+[e = _RXF6SIDH -> -> 0 `i `uc ]
 "170
-[; ;mcc_generated_files/ecan.c: 170:     RXF7EIDH = 0x00;
-[e = _RXF7EIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 170:     RXF6SIDL = 0x00;
+[e = _RXF6SIDL -> -> 0 `i `uc ]
 "171
-[; ;mcc_generated_files/ecan.c: 171:     RXF7EIDL = 0x00;
-[e = _RXF7EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 171:     RXF7EIDH = 0x00;
+[e = _RXF7EIDH -> -> 0 `i `uc ]
 "172
-[; ;mcc_generated_files/ecan.c: 172:     RXF7SIDH = 0x00;
-[e = _RXF7SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 172:     RXF7EIDL = 0x00;
+[e = _RXF7EIDL -> -> 0 `i `uc ]
 "173
-[; ;mcc_generated_files/ecan.c: 173:     RXF7SIDL = 0x00;
-[e = _RXF7SIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 173:     RXF7SIDH = 0x00;
+[e = _RXF7SIDH -> -> 0 `i `uc ]
 "174
-[; ;mcc_generated_files/ecan.c: 174:     RXF8EIDH = 0x00;
-[e = _RXF8EIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 174:     RXF7SIDL = 0x00;
+[e = _RXF7SIDL -> -> 0 `i `uc ]
 "175
-[; ;mcc_generated_files/ecan.c: 175:     RXF8EIDL = 0x00;
-[e = _RXF8EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 175:     RXF8EIDH = 0x00;
+[e = _RXF8EIDH -> -> 0 `i `uc ]
 "176
-[; ;mcc_generated_files/ecan.c: 176:     RXF8SIDH = 0x00;
-[e = _RXF8SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 176:     RXF8EIDL = 0x00;
+[e = _RXF8EIDL -> -> 0 `i `uc ]
 "177
-[; ;mcc_generated_files/ecan.c: 177:     RXF8SIDL = 0x00;
-[e = _RXF8SIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 177:     RXF8SIDH = 0x00;
+[e = _RXF8SIDH -> -> 0 `i `uc ]
 "178
-[; ;mcc_generated_files/ecan.c: 178:     RXF9EIDH = 0x00;
-[e = _RXF9EIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 178:     RXF8SIDL = 0x00;
+[e = _RXF8SIDL -> -> 0 `i `uc ]
 "179
-[; ;mcc_generated_files/ecan.c: 179:     RXF9EIDL = 0x00;
-[e = _RXF9EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 179:     RXF9EIDH = 0x00;
+[e = _RXF9EIDH -> -> 0 `i `uc ]
 "180
-[; ;mcc_generated_files/ecan.c: 180:     RXF9SIDH = 0x00;
-[e = _RXF9SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 180:     RXF9EIDL = 0x00;
+[e = _RXF9EIDL -> -> 0 `i `uc ]
 "181
-[; ;mcc_generated_files/ecan.c: 181:     RXF9SIDL = 0x00;
-[e = _RXF9SIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 181:     RXF9SIDH = 0x00;
+[e = _RXF9SIDH -> -> 0 `i `uc ]
 "182
-[; ;mcc_generated_files/ecan.c: 182:     RXF10EIDH = 0x00;
-[e = _RXF10EIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 182:     RXF9SIDL = 0x00;
+[e = _RXF9SIDL -> -> 0 `i `uc ]
 "183
-[; ;mcc_generated_files/ecan.c: 183:     RXF10EIDL = 0x00;
-[e = _RXF10EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 183:     RXF10EIDH = 0x00;
+[e = _RXF10EIDH -> -> 0 `i `uc ]
 "184
-[; ;mcc_generated_files/ecan.c: 184:     RXF10SIDH = 0x00;
-[e = _RXF10SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 184:     RXF10EIDL = 0x00;
+[e = _RXF10EIDL -> -> 0 `i `uc ]
 "185
-[; ;mcc_generated_files/ecan.c: 185:     RXF10SIDL = 0x00;
-[e = _RXF10SIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 185:     RXF10SIDH = 0x00;
+[e = _RXF10SIDH -> -> 0 `i `uc ]
 "186
-[; ;mcc_generated_files/ecan.c: 186:     RXF11EIDH = 0x00;
-[e = _RXF11EIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 186:     RXF10SIDL = 0x00;
+[e = _RXF10SIDL -> -> 0 `i `uc ]
 "187
-[; ;mcc_generated_files/ecan.c: 187:     RXF11EIDL = 0x00;
-[e = _RXF11EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 187:     RXF11EIDH = 0x00;
+[e = _RXF11EIDH -> -> 0 `i `uc ]
 "188
-[; ;mcc_generated_files/ecan.c: 188:     RXF11SIDH = 0x00;
-[e = _RXF11SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 188:     RXF11EIDL = 0x00;
+[e = _RXF11EIDL -> -> 0 `i `uc ]
 "189
-[; ;mcc_generated_files/ecan.c: 189:     RXF11SIDL = 0x00;
-[e = _RXF11SIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 189:     RXF11SIDH = 0x00;
+[e = _RXF11SIDH -> -> 0 `i `uc ]
 "190
-[; ;mcc_generated_files/ecan.c: 190:     RXF12EIDH = 0x00;
-[e = _RXF12EIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 190:     RXF11SIDL = 0x00;
+[e = _RXF11SIDL -> -> 0 `i `uc ]
 "191
-[; ;mcc_generated_files/ecan.c: 191:     RXF12EIDL = 0x00;
-[e = _RXF12EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 191:     RXF12EIDH = 0x00;
+[e = _RXF12EIDH -> -> 0 `i `uc ]
 "192
-[; ;mcc_generated_files/ecan.c: 192:     RXF12SIDH = 0x00;
-[e = _RXF12SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 192:     RXF12EIDL = 0x00;
+[e = _RXF12EIDL -> -> 0 `i `uc ]
 "193
-[; ;mcc_generated_files/ecan.c: 193:     RXF12SIDL = 0x00;
-[e = _RXF12SIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 193:     RXF12SIDH = 0x00;
+[e = _RXF12SIDH -> -> 0 `i `uc ]
 "194
-[; ;mcc_generated_files/ecan.c: 194:     RXF13EIDH = 0x00;
-[e = _RXF13EIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 194:     RXF12SIDL = 0x00;
+[e = _RXF12SIDL -> -> 0 `i `uc ]
 "195
-[; ;mcc_generated_files/ecan.c: 195:     RXF13EIDL = 0x00;
-[e = _RXF13EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 195:     RXF13EIDH = 0x00;
+[e = _RXF13EIDH -> -> 0 `i `uc ]
 "196
-[; ;mcc_generated_files/ecan.c: 196:     RXF13SIDH = 0x00;
-[e = _RXF13SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 196:     RXF13EIDL = 0x00;
+[e = _RXF13EIDL -> -> 0 `i `uc ]
 "197
-[; ;mcc_generated_files/ecan.c: 197:     RXF13SIDL = 0x00;
-[e = _RXF13SIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 197:     RXF13SIDH = 0x00;
+[e = _RXF13SIDH -> -> 0 `i `uc ]
 "198
-[; ;mcc_generated_files/ecan.c: 198:     RXF14EIDH = 0x00;
-[e = _RXF14EIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 198:     RXF13SIDL = 0x00;
+[e = _RXF13SIDL -> -> 0 `i `uc ]
 "199
-[; ;mcc_generated_files/ecan.c: 199:     RXF14EIDL = 0x00;
-[e = _RXF14EIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 199:     RXF14EIDH = 0x00;
+[e = _RXF14EIDH -> -> 0 `i `uc ]
 "200
-[; ;mcc_generated_files/ecan.c: 200:     RXF14SIDH = 0x00;
-[e = _RXF14SIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 200:     RXF14EIDL = 0x00;
+[e = _RXF14EIDL -> -> 0 `i `uc ]
 "201
-[; ;mcc_generated_files/ecan.c: 201:     RXF14SIDL = 0x00;
-[e = _RXF14SIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 201:     RXF14SIDH = 0x00;
+[e = _RXF14SIDH -> -> 0 `i `uc ]
 "202
-[; ;mcc_generated_files/ecan.c: 202:     RXF15EIDH = 0xFF;
-[e = _RXF15EIDH -> -> 255 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 202:     RXF14SIDL = 0x00;
+[e = _RXF14SIDL -> -> 0 `i `uc ]
 "203
-[; ;mcc_generated_files/ecan.c: 203:     RXF15EIDL = 0xFF;
-[e = _RXF15EIDL -> -> 255 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 203:     RXF15EIDH = 0xFF;
+[e = _RXF15EIDH -> -> 255 `i `uc ]
 "204
-[; ;mcc_generated_files/ecan.c: 204:     RXF15SIDH = 0xFF;
-[e = _RXF15SIDH -> -> 255 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 204:     RXF15EIDL = 0xFF;
+[e = _RXF15EIDL -> -> 255 `i `uc ]
 "205
-[; ;mcc_generated_files/ecan.c: 205:     RXF15SIDL = 0xE3;
+[; ;mcc_generated_files/ecan.c: 205:     RXF15SIDH = 0xFF;
+[e = _RXF15SIDH -> -> 255 `i `uc ]
+"206
+[; ;mcc_generated_files/ecan.c: 206:     RXF15SIDL = 0xE3;
 [e = _RXF15SIDL -> -> 227 `i `uc ]
-"220
-[; ;mcc_generated_files/ecan.c: 220:     BRGCON1 = 0x03;
-[e = _BRGCON1 -> -> 3 `i `uc ]
 "221
-[; ;mcc_generated_files/ecan.c: 221:     BRGCON2 = 0xA8;
-[e = _BRGCON2 -> -> 168 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 221:     BRGCON1 = 0x03;
+[e = _BRGCON1 -> -> 3 `i `uc ]
 "222
-[; ;mcc_generated_files/ecan.c: 222:     BRGCON3 = 0x01;
+[; ;mcc_generated_files/ecan.c: 222:     BRGCON2 = 0xA8;
+[e = _BRGCON2 -> -> 168 `i `uc ]
+"223
+[; ;mcc_generated_files/ecan.c: 223:     BRGCON3 = 0x01;
 [e = _BRGCON3 -> -> 1 `i `uc ]
-"224
-[; ;mcc_generated_files/ecan.c: 224:     ECAN_SetWakeUpInterruptHandler(WakeUpDefaultInterruptHandler);
-[e ( _ECAN_SetWakeUpInterruptHandler (1 &U _WakeUpDefaultInterruptHandler ]
 "225
-[; ;mcc_generated_files/ecan.c: 225:     PIR5bits.WAKIF = 0;
-[e = . . _PIR5bits 0 6 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 225:     ECAN_SetWakeUpInterruptHandler(WakeUpDefaultInterruptHandler);
+[e ( _ECAN_SetWakeUpInterruptHandler (1 &U _WakeUpDefaultInterruptHandler ]
 "226
-[; ;mcc_generated_files/ecan.c: 226:     PIE5bits.WAKIE = 1;
+[; ;mcc_generated_files/ecan.c: 226:     PIR5bits.WAKIF = 0;
+[e = . . _PIR5bits 0 6 -> -> 0 `i `uc ]
+"227
+[; ;mcc_generated_files/ecan.c: 227:     PIE5bits.WAKIE = 1;
 [e = . . _PIE5bits 0 6 -> -> 1 `i `uc ]
-"228
-[; ;mcc_generated_files/ecan.c: 228:     CANCON = 0x00;
-[e = _CANCON -> -> 0 `i `uc ]
 "229
-[; ;mcc_generated_files/ecan.c: 229:     while (0x00 != (CANSTAT & 0xE0));
+[; ;mcc_generated_files/ecan.c: 229:     CANCON = 0x00;
+[e = _CANCON -> -> 0 `i `uc ]
+"230
+[; ;mcc_generated_files/ecan.c: 230:     while (0x00 != (CANSTAT & 0xE0));
 [e $U 1549  ]
 [e :U 1550 ]
 [e :U 1549 ]
 [e $ != -> 0 `i & -> _CANSTAT `i -> 224 `i 1550  ]
 [e :U 1551 ]
-"231
-[; ;mcc_generated_files/ecan.c: 231: }
+"232
+[; ;mcc_generated_files/ecan.c: 232: }
 [e :UE 1545 ]
 }
-"236
-[; ;mcc_generated_files/ecan.c: 236: void CAN_sleep(void)
-[v _CAN_sleep `(v ~T0 @X0 1 ef ]
 "237
-[; ;mcc_generated_files/ecan.c: 237: {
+[; ;mcc_generated_files/ecan.c: 237: void CAN_sleep(void)
+[v _CAN_sleep `(v ~T0 @X0 1 ef ]
+"238
+[; ;mcc_generated_files/ecan.c: 238: {
 {
 [e :U _CAN_sleep ]
 [f ]
-"238
-[; ;mcc_generated_files/ecan.c: 238:     CANCON = 0x20;
-[e = _CANCON -> -> 32 `i `uc ]
 "239
-[; ;mcc_generated_files/ecan.c: 239:     while ((CANSTAT & 0xE0) != 0x20);
+[; ;mcc_generated_files/ecan.c: 239:     CANCON = 0x20;
+[e = _CANCON -> -> 32 `i `uc ]
+"240
+[; ;mcc_generated_files/ecan.c: 240:     while ((CANSTAT & 0xE0) != 0x20);
 [e $U 1553  ]
 [e :U 1554 ]
 [e :U 1553 ]
 [e $ != & -> _CANSTAT `i -> 224 `i -> 32 `i 1554  ]
 [e :U 1555 ]
-"241
-[; ;mcc_generated_files/ecan.c: 241: }
+"242
+[; ;mcc_generated_files/ecan.c: 242: }
 [e :UE 1552 ]
 }
-"243
-[; ;mcc_generated_files/ecan.c: 243: uint8_t CAN_transmit(uCAN_MSG *tempCanMsg)
-[v _CAN_transmit `(uc ~T0 @X0 1 ef1`*S1542 ]
 "244
-[; ;mcc_generated_files/ecan.c: 244: {
+[; ;mcc_generated_files/ecan.c: 244: uint8_t CAN_transmit(uCAN_MSG *tempCanMsg)
+[v _CAN_transmit `(uc ~T0 @X0 1 ef1`*S1542 ]
+"245
+[; ;mcc_generated_files/ecan.c: 245: {
 {
 [e :U _CAN_transmit ]
-"243
-[; ;mcc_generated_files/ecan.c: 243: uint8_t CAN_transmit(uCAN_MSG *tempCanMsg)
-[v _tempCanMsg `*S1542 ~T0 @X0 1 r1 ]
 "244
-[; ;mcc_generated_files/ecan.c: 244: {
-[f ]
+[; ;mcc_generated_files/ecan.c: 244: uint8_t CAN_transmit(uCAN_MSG *tempCanMsg)
+[v _tempCanMsg `*S1542 ~T0 @X0 1 r1 ]
 "245
-[; ;mcc_generated_files/ecan.c: 245:     uint8_t tempEIDH = 0;
+[; ;mcc_generated_files/ecan.c: 245: {
+[f ]
+"246
+[; ;mcc_generated_files/ecan.c: 246:     uint8_t tempEIDH = 0;
 [v _tempEIDH `uc ~T0 @X0 1 a ]
 [e = _tempEIDH -> -> 0 `i `uc ]
-"246
-[; ;mcc_generated_files/ecan.c: 246:     uint8_t tempEIDL = 0;
+"247
+[; ;mcc_generated_files/ecan.c: 247:     uint8_t tempEIDL = 0;
 [v _tempEIDL `uc ~T0 @X0 1 a ]
 [e = _tempEIDL -> -> 0 `i `uc ]
-"247
-[; ;mcc_generated_files/ecan.c: 247:     uint8_t tempSIDH = 0;
+"248
+[; ;mcc_generated_files/ecan.c: 248:     uint8_t tempSIDH = 0;
 [v _tempSIDH `uc ~T0 @X0 1 a ]
 [e = _tempSIDH -> -> 0 `i `uc ]
-"248
-[; ;mcc_generated_files/ecan.c: 248:     uint8_t tempSIDL = 0;
+"249
+[; ;mcc_generated_files/ecan.c: 249:     uint8_t tempSIDL = 0;
 [v _tempSIDL `uc ~T0 @X0 1 a ]
 [e = _tempSIDL -> -> 0 `i `uc ]
-"249
-[; ;mcc_generated_files/ecan.c: 249:     uint8_t returnValue = 0;
+"250
+[; ;mcc_generated_files/ecan.c: 250:     uint8_t returnValue = 0;
 [v _returnValue `uc ~T0 @X0 1 a ]
 [e = _returnValue -> -> 0 `i `uc ]
-"251
-[; ;mcc_generated_files/ecan.c: 251:     if (TXB0CONbits.TXREQ != 1)
-[e $ ! != -> . . _TXB0CONbits 0 2 `i -> 1 `i 1557  ]
 "252
-[; ;mcc_generated_files/ecan.c: 252:     {
-{
+[; ;mcc_generated_files/ecan.c: 252:     if (TXB0CONbits.TXREQ != 1)
+[e $ ! != -> . . _TXB0CONbits 0 2 `i -> 1 `i 1557  ]
 "253
-[; ;mcc_generated_files/ecan.c: 253:         convertCANid2Reg(tempCanMsg->frame.id, tempCanMsg->frame.idType, &tempEIDH, &tempEIDL, &tempSIDH, &tempSIDL);
+[; ;mcc_generated_files/ecan.c: 253:     {
+{
+"254
+[; ;mcc_generated_files/ecan.c: 254:         convertCANid2Reg(tempCanMsg->frame.id, tempCanMsg->frame.idType, &tempEIDH, &tempEIDL, &tempSIDH, &tempSIDL);
 [e ( _convertCANid2Reg (4 , , , , , . . *U _tempCanMsg 0 1 . . *U _tempCanMsg 0 0 &U _tempEIDH &U _tempEIDL &U _tempSIDH &U _tempSIDL ]
-"255
-[; ;mcc_generated_files/ecan.c: 255:         TXB0EIDH = tempEIDH;
-[e = _TXB0EIDH _tempEIDH ]
 "256
-[; ;mcc_generated_files/ecan.c: 256:         TXB0EIDL = tempEIDL;
-[e = _TXB0EIDL _tempEIDL ]
+[; ;mcc_generated_files/ecan.c: 256:         TXB0EIDH = tempEIDH;
+[e = _TXB0EIDH _tempEIDH ]
 "257
-[; ;mcc_generated_files/ecan.c: 257:         TXB0SIDH = tempSIDH;
-[e = _TXB0SIDH _tempSIDH ]
+[; ;mcc_generated_files/ecan.c: 257:         TXB0EIDL = tempEIDL;
+[e = _TXB0EIDL _tempEIDL ]
 "258
-[; ;mcc_generated_files/ecan.c: 258:         TXB0SIDL = tempSIDL;
-[e = _TXB0SIDL _tempSIDL ]
+[; ;mcc_generated_files/ecan.c: 258:         TXB0SIDH = tempSIDH;
+[e = _TXB0SIDH _tempSIDH ]
 "259
-[; ;mcc_generated_files/ecan.c: 259:         TXB0DLC = tempCanMsg->frame.dlc;
-[e = _TXB0DLC . . *U _tempCanMsg 0 2 ]
+[; ;mcc_generated_files/ecan.c: 259:         TXB0SIDL = tempSIDL;
+[e = _TXB0SIDL _tempSIDL ]
 "260
-[; ;mcc_generated_files/ecan.c: 260:         TXB0D0 = tempCanMsg->frame.data0;
-[e = _TXB0D0 . . *U _tempCanMsg 0 3 ]
+[; ;mcc_generated_files/ecan.c: 260:         TXB0DLC = tempCanMsg->frame.dlc;
+[e = _TXB0DLC . . *U _tempCanMsg 0 2 ]
 "261
-[; ;mcc_generated_files/ecan.c: 261:         TXB0D1 = tempCanMsg->frame.data1;
-[e = _TXB0D1 . . *U _tempCanMsg 0 4 ]
+[; ;mcc_generated_files/ecan.c: 261:         TXB0D0 = tempCanMsg->frame.data0;
+[e = _TXB0D0 . . *U _tempCanMsg 0 3 ]
 "262
-[; ;mcc_generated_files/ecan.c: 262:         TXB0D2 = tempCanMsg->frame.data2;
-[e = _TXB0D2 . . *U _tempCanMsg 0 5 ]
+[; ;mcc_generated_files/ecan.c: 262:         TXB0D1 = tempCanMsg->frame.data1;
+[e = _TXB0D1 . . *U _tempCanMsg 0 4 ]
 "263
-[; ;mcc_generated_files/ecan.c: 263:         TXB0D3 = tempCanMsg->frame.data3;
-[e = _TXB0D3 . . *U _tempCanMsg 0 6 ]
+[; ;mcc_generated_files/ecan.c: 263:         TXB0D2 = tempCanMsg->frame.data2;
+[e = _TXB0D2 . . *U _tempCanMsg 0 5 ]
 "264
-[; ;mcc_generated_files/ecan.c: 264:         TXB0D4 = tempCanMsg->frame.data4;
-[e = _TXB0D4 . . *U _tempCanMsg 0 7 ]
+[; ;mcc_generated_files/ecan.c: 264:         TXB0D3 = tempCanMsg->frame.data3;
+[e = _TXB0D3 . . *U _tempCanMsg 0 6 ]
 "265
-[; ;mcc_generated_files/ecan.c: 265:         TXB0D5 = tempCanMsg->frame.data5;
-[e = _TXB0D5 . . *U _tempCanMsg 0 8 ]
+[; ;mcc_generated_files/ecan.c: 265:         TXB0D4 = tempCanMsg->frame.data4;
+[e = _TXB0D4 . . *U _tempCanMsg 0 7 ]
 "266
-[; ;mcc_generated_files/ecan.c: 266:         TXB0D6 = tempCanMsg->frame.data6;
-[e = _TXB0D6 . . *U _tempCanMsg 0 9 ]
+[; ;mcc_generated_files/ecan.c: 266:         TXB0D5 = tempCanMsg->frame.data5;
+[e = _TXB0D5 . . *U _tempCanMsg 0 8 ]
 "267
-[; ;mcc_generated_files/ecan.c: 267:         TXB0D7 = tempCanMsg->frame.data7;
+[; ;mcc_generated_files/ecan.c: 267:         TXB0D6 = tempCanMsg->frame.data6;
+[e = _TXB0D6 . . *U _tempCanMsg 0 9 ]
+"268
+[; ;mcc_generated_files/ecan.c: 268:         TXB0D7 = tempCanMsg->frame.data7;
 [e = _TXB0D7 . . *U _tempCanMsg 0 10 ]
-"269
-[; ;mcc_generated_files/ecan.c: 269:         TXB0CONbits.TXREQ = 1;
-[e = . . _TXB0CONbits 0 2 -> -> 1 `i `uc ]
 "270
-[; ;mcc_generated_files/ecan.c: 270:         returnValue = 1;
+[; ;mcc_generated_files/ecan.c: 270:         TXB0CONbits.TXREQ = 1;
+[e = . . _TXB0CONbits 0 2 -> -> 1 `i `uc ]
+"271
+[; ;mcc_generated_files/ecan.c: 271:         returnValue = 1;
 [e = _returnValue -> -> 1 `i `uc ]
-"272
-[; ;mcc_generated_files/ecan.c: 272:     }
+"273
+[; ;mcc_generated_files/ecan.c: 273:     }
 }
 [e $U 1558  ]
-"273
-[; ;mcc_generated_files/ecan.c: 273:     else if (TXB1CONbits.TXREQ != 1)
+"274
+[; ;mcc_generated_files/ecan.c: 274:     else if (TXB1CONbits.TXREQ != 1)
 [e :U 1557 ]
 [e $ ! != -> . . _TXB1CONbits 0 2 `i -> 1 `i 1559  ]
-"274
-[; ;mcc_generated_files/ecan.c: 274:     {
+"275
+[; ;mcc_generated_files/ecan.c: 275:     {
 {
-"276
-[; ;mcc_generated_files/ecan.c: 276:         convertCANid2Reg(tempCanMsg->frame.id, tempCanMsg->frame.idType, &tempEIDH, &tempEIDL, &tempSIDH, &tempSIDL);
+"277
+[; ;mcc_generated_files/ecan.c: 277:         convertCANid2Reg(tempCanMsg->frame.id, tempCanMsg->frame.idType, &tempEIDH, &tempEIDL, &tempSIDH, &tempSIDL);
 [e ( _convertCANid2Reg (4 , , , , , . . *U _tempCanMsg 0 1 . . *U _tempCanMsg 0 0 &U _tempEIDH &U _tempEIDL &U _tempSIDH &U _tempSIDL ]
-"278
-[; ;mcc_generated_files/ecan.c: 278:         TXB1EIDH = tempEIDH;
-[e = _TXB1EIDH _tempEIDH ]
 "279
-[; ;mcc_generated_files/ecan.c: 279:         TXB1EIDL = tempEIDL;
-[e = _TXB1EIDL _tempEIDL ]
+[; ;mcc_generated_files/ecan.c: 279:         TXB1EIDH = tempEIDH;
+[e = _TXB1EIDH _tempEIDH ]
 "280
-[; ;mcc_generated_files/ecan.c: 280:         TXB1SIDH = tempSIDH;
-[e = _TXB1SIDH _tempSIDH ]
+[; ;mcc_generated_files/ecan.c: 280:         TXB1EIDL = tempEIDL;
+[e = _TXB1EIDL _tempEIDL ]
 "281
-[; ;mcc_generated_files/ecan.c: 281:         TXB1SIDL = tempSIDL;
-[e = _TXB1SIDL _tempSIDL ]
+[; ;mcc_generated_files/ecan.c: 281:         TXB1SIDH = tempSIDH;
+[e = _TXB1SIDH _tempSIDH ]
 "282
-[; ;mcc_generated_files/ecan.c: 282:         TXB1DLC = tempCanMsg->frame.dlc;
-[e = _TXB1DLC . . *U _tempCanMsg 0 2 ]
+[; ;mcc_generated_files/ecan.c: 282:         TXB1SIDL = tempSIDL;
+[e = _TXB1SIDL _tempSIDL ]
 "283
-[; ;mcc_generated_files/ecan.c: 283:         TXB1D0 = tempCanMsg->frame.data0;
-[e = _TXB1D0 . . *U _tempCanMsg 0 3 ]
+[; ;mcc_generated_files/ecan.c: 283:         TXB1DLC = tempCanMsg->frame.dlc;
+[e = _TXB1DLC . . *U _tempCanMsg 0 2 ]
 "284
-[; ;mcc_generated_files/ecan.c: 284:         TXB1D1 = tempCanMsg->frame.data1;
-[e = _TXB1D1 . . *U _tempCanMsg 0 4 ]
+[; ;mcc_generated_files/ecan.c: 284:         TXB1D0 = tempCanMsg->frame.data0;
+[e = _TXB1D0 . . *U _tempCanMsg 0 3 ]
 "285
-[; ;mcc_generated_files/ecan.c: 285:         TXB1D2 = tempCanMsg->frame.data2;
-[e = _TXB1D2 . . *U _tempCanMsg 0 5 ]
+[; ;mcc_generated_files/ecan.c: 285:         TXB1D1 = tempCanMsg->frame.data1;
+[e = _TXB1D1 . . *U _tempCanMsg 0 4 ]
 "286
-[; ;mcc_generated_files/ecan.c: 286:         TXB1D3 = tempCanMsg->frame.data3;
-[e = _TXB1D3 . . *U _tempCanMsg 0 6 ]
+[; ;mcc_generated_files/ecan.c: 286:         TXB1D2 = tempCanMsg->frame.data2;
+[e = _TXB1D2 . . *U _tempCanMsg 0 5 ]
 "287
-[; ;mcc_generated_files/ecan.c: 287:         TXB1D4 = tempCanMsg->frame.data4;
-[e = _TXB1D4 . . *U _tempCanMsg 0 7 ]
+[; ;mcc_generated_files/ecan.c: 287:         TXB1D3 = tempCanMsg->frame.data3;
+[e = _TXB1D3 . . *U _tempCanMsg 0 6 ]
 "288
-[; ;mcc_generated_files/ecan.c: 288:         TXB1D5 = tempCanMsg->frame.data5;
-[e = _TXB1D5 . . *U _tempCanMsg 0 8 ]
+[; ;mcc_generated_files/ecan.c: 288:         TXB1D4 = tempCanMsg->frame.data4;
+[e = _TXB1D4 . . *U _tempCanMsg 0 7 ]
 "289
-[; ;mcc_generated_files/ecan.c: 289:         TXB1D6 = tempCanMsg->frame.data6;
-[e = _TXB1D6 . . *U _tempCanMsg 0 9 ]
+[; ;mcc_generated_files/ecan.c: 289:         TXB1D5 = tempCanMsg->frame.data5;
+[e = _TXB1D5 . . *U _tempCanMsg 0 8 ]
 "290
-[; ;mcc_generated_files/ecan.c: 290:         TXB1D7 = tempCanMsg->frame.data7;
+[; ;mcc_generated_files/ecan.c: 290:         TXB1D6 = tempCanMsg->frame.data6;
+[e = _TXB1D6 . . *U _tempCanMsg 0 9 ]
+"291
+[; ;mcc_generated_files/ecan.c: 291:         TXB1D7 = tempCanMsg->frame.data7;
 [e = _TXB1D7 . . *U _tempCanMsg 0 10 ]
-"292
-[; ;mcc_generated_files/ecan.c: 292:         TXB1CONbits.TXREQ = 1;
-[e = . . _TXB1CONbits 0 2 -> -> 1 `i `uc ]
 "293
-[; ;mcc_generated_files/ecan.c: 293:         returnValue = 1;
-[e = _returnValue -> -> 1 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 293:         TXB1CONbits.TXREQ = 1;
+[e = . . _TXB1CONbits 0 2 -> -> 1 `i `uc ]
 "294
-[; ;mcc_generated_files/ecan.c: 294:     }
+[; ;mcc_generated_files/ecan.c: 294:         returnValue = 1;
+[e = _returnValue -> -> 1 `i `uc ]
+"295
+[; ;mcc_generated_files/ecan.c: 295:     }
 }
 [e $U 1560  ]
-"295
-[; ;mcc_generated_files/ecan.c: 295:     else if (TXB2CONbits.TXREQ != 1)
+"296
+[; ;mcc_generated_files/ecan.c: 296:     else if (TXB2CONbits.TXREQ != 1)
 [e :U 1559 ]
 [e $ ! != -> . . _TXB2CONbits 0 2 `i -> 1 `i 1561  ]
-"296
-[; ;mcc_generated_files/ecan.c: 296:     {
+"297
+[; ;mcc_generated_files/ecan.c: 297:     {
 {
-"298
-[; ;mcc_generated_files/ecan.c: 298:         convertCANid2Reg(tempCanMsg->frame.id, tempCanMsg->frame.idType, &tempEIDH, &tempEIDL, &tempSIDH, &tempSIDL);
+"299
+[; ;mcc_generated_files/ecan.c: 299:         convertCANid2Reg(tempCanMsg->frame.id, tempCanMsg->frame.idType, &tempEIDH, &tempEIDL, &tempSIDH, &tempSIDL);
 [e ( _convertCANid2Reg (4 , , , , , . . *U _tempCanMsg 0 1 . . *U _tempCanMsg 0 0 &U _tempEIDH &U _tempEIDL &U _tempSIDH &U _tempSIDL ]
-"300
-[; ;mcc_generated_files/ecan.c: 300:         TXB2EIDH = tempEIDH;
-[e = _TXB2EIDH _tempEIDH ]
 "301
-[; ;mcc_generated_files/ecan.c: 301:         TXB2EIDL = tempEIDL;
-[e = _TXB2EIDL _tempEIDL ]
+[; ;mcc_generated_files/ecan.c: 301:         TXB2EIDH = tempEIDH;
+[e = _TXB2EIDH _tempEIDH ]
 "302
-[; ;mcc_generated_files/ecan.c: 302:         TXB2SIDH = tempSIDH;
-[e = _TXB2SIDH _tempSIDH ]
+[; ;mcc_generated_files/ecan.c: 302:         TXB2EIDL = tempEIDL;
+[e = _TXB2EIDL _tempEIDL ]
 "303
-[; ;mcc_generated_files/ecan.c: 303:         TXB2SIDL = tempSIDL;
-[e = _TXB2SIDL _tempSIDL ]
+[; ;mcc_generated_files/ecan.c: 303:         TXB2SIDH = tempSIDH;
+[e = _TXB2SIDH _tempSIDH ]
 "304
-[; ;mcc_generated_files/ecan.c: 304:         TXB2DLC = tempCanMsg->frame.dlc;
-[e = _TXB2DLC . . *U _tempCanMsg 0 2 ]
+[; ;mcc_generated_files/ecan.c: 304:         TXB2SIDL = tempSIDL;
+[e = _TXB2SIDL _tempSIDL ]
 "305
-[; ;mcc_generated_files/ecan.c: 305:         TXB2D0 = tempCanMsg->frame.data0;
-[e = _TXB2D0 . . *U _tempCanMsg 0 3 ]
+[; ;mcc_generated_files/ecan.c: 305:         TXB2DLC = tempCanMsg->frame.dlc;
+[e = _TXB2DLC . . *U _tempCanMsg 0 2 ]
 "306
-[; ;mcc_generated_files/ecan.c: 306:         TXB2D1 = tempCanMsg->frame.data1;
-[e = _TXB2D1 . . *U _tempCanMsg 0 4 ]
+[; ;mcc_generated_files/ecan.c: 306:         TXB2D0 = tempCanMsg->frame.data0;
+[e = _TXB2D0 . . *U _tempCanMsg 0 3 ]
 "307
-[; ;mcc_generated_files/ecan.c: 307:         TXB2D2 = tempCanMsg->frame.data2;
-[e = _TXB2D2 . . *U _tempCanMsg 0 5 ]
+[; ;mcc_generated_files/ecan.c: 307:         TXB2D1 = tempCanMsg->frame.data1;
+[e = _TXB2D1 . . *U _tempCanMsg 0 4 ]
 "308
-[; ;mcc_generated_files/ecan.c: 308:         TXB2D3 = tempCanMsg->frame.data3;
-[e = _TXB2D3 . . *U _tempCanMsg 0 6 ]
+[; ;mcc_generated_files/ecan.c: 308:         TXB2D2 = tempCanMsg->frame.data2;
+[e = _TXB2D2 . . *U _tempCanMsg 0 5 ]
 "309
-[; ;mcc_generated_files/ecan.c: 309:         TXB2D4 = tempCanMsg->frame.data4;
-[e = _TXB2D4 . . *U _tempCanMsg 0 7 ]
+[; ;mcc_generated_files/ecan.c: 309:         TXB2D3 = tempCanMsg->frame.data3;
+[e = _TXB2D3 . . *U _tempCanMsg 0 6 ]
 "310
-[; ;mcc_generated_files/ecan.c: 310:         TXB2D5 = tempCanMsg->frame.data5;
-[e = _TXB2D5 . . *U _tempCanMsg 0 8 ]
+[; ;mcc_generated_files/ecan.c: 310:         TXB2D4 = tempCanMsg->frame.data4;
+[e = _TXB2D4 . . *U _tempCanMsg 0 7 ]
 "311
-[; ;mcc_generated_files/ecan.c: 311:         TXB2D6 = tempCanMsg->frame.data6;
-[e = _TXB2D6 . . *U _tempCanMsg 0 9 ]
+[; ;mcc_generated_files/ecan.c: 311:         TXB2D5 = tempCanMsg->frame.data5;
+[e = _TXB2D5 . . *U _tempCanMsg 0 8 ]
 "312
-[; ;mcc_generated_files/ecan.c: 312:         TXB2D7 = tempCanMsg->frame.data7;
+[; ;mcc_generated_files/ecan.c: 312:         TXB2D6 = tempCanMsg->frame.data6;
+[e = _TXB2D6 . . *U _tempCanMsg 0 9 ]
+"313
+[; ;mcc_generated_files/ecan.c: 313:         TXB2D7 = tempCanMsg->frame.data7;
 [e = _TXB2D7 . . *U _tempCanMsg 0 10 ]
-"314
-[; ;mcc_generated_files/ecan.c: 314:         TXB2CONbits.TXREQ = 1;
-[e = . . _TXB2CONbits 0 2 -> -> 1 `i `uc ]
 "315
-[; ;mcc_generated_files/ecan.c: 315:         returnValue = 1;
-[e = _returnValue -> -> 1 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 315:         TXB2CONbits.TXREQ = 1;
+[e = . . _TXB2CONbits 0 2 -> -> 1 `i `uc ]
 "316
-[; ;mcc_generated_files/ecan.c: 316:     }
+[; ;mcc_generated_files/ecan.c: 316:         returnValue = 1;
+[e = _returnValue -> -> 1 `i `uc ]
+"317
+[; ;mcc_generated_files/ecan.c: 317:     }
 }
 [e :U 1561 ]
 [e :U 1560 ]
 [e :U 1558 ]
-"317
-[; ;mcc_generated_files/ecan.c: 317:     return (returnValue);
+"318
+[; ;mcc_generated_files/ecan.c: 318:     return (returnValue);
 [e ) _returnValue ]
 [e $UE 1556  ]
-"318
-[; ;mcc_generated_files/ecan.c: 318: }
+"319
+[; ;mcc_generated_files/ecan.c: 319: }
 [e :UE 1556 ]
 }
-"320
-[; ;mcc_generated_files/ecan.c: 320: uint8_t CAN_receive(uCAN_MSG *tempCanMsg)
-[v _CAN_receive `(uc ~T0 @X0 1 ef1`*S1542 ]
 "321
-[; ;mcc_generated_files/ecan.c: 321: {
+[; ;mcc_generated_files/ecan.c: 321: uint8_t CAN_receive(uCAN_MSG *tempCanMsg)
+[v _CAN_receive `(uc ~T0 @X0 1 ef1`*S1542 ]
+"322
+[; ;mcc_generated_files/ecan.c: 322: {
 {
 [e :U _CAN_receive ]
-"320
-[; ;mcc_generated_files/ecan.c: 320: uint8_t CAN_receive(uCAN_MSG *tempCanMsg)
-[v _tempCanMsg `*S1542 ~T0 @X0 1 r1 ]
 "321
-[; ;mcc_generated_files/ecan.c: 321: {
-[f ]
+[; ;mcc_generated_files/ecan.c: 321: uint8_t CAN_receive(uCAN_MSG *tempCanMsg)
+[v _tempCanMsg `*S1542 ~T0 @X0 1 r1 ]
 "322
-[; ;mcc_generated_files/ecan.c: 322:     uint8_t returnValue = 0;
+[; ;mcc_generated_files/ecan.c: 322: {
+[f ]
+"323
+[; ;mcc_generated_files/ecan.c: 323:     uint8_t returnValue = 0;
 [v _returnValue `uc ~T0 @X0 1 a ]
 [e = _returnValue -> -> 0 `i `uc ]
-"325
-[; ;mcc_generated_files/ecan.c: 325:     if (RXB0CONbits.RXFUL != 0)
-[e $ ! != -> . . _RXB0CONbits 0 7 `i -> 0 `i 1563  ]
 "326
-[; ;mcc_generated_files/ecan.c: 326:     {
-{
+[; ;mcc_generated_files/ecan.c: 326:     if (RXB0CONbits.RXFUL != 0)
+[e $ ! != -> . . _RXB0CONbits 0 7 `i -> 0 `i 1563  ]
 "327
-[; ;mcc_generated_files/ecan.c: 327:         if ((RXB0SIDL & 0x08) == 0x08)
-[e $ ! == & -> _RXB0SIDL `i -> 8 `i -> 8 `i 1564  ]
-"328
-[; ;mcc_generated_files/ecan.c: 328:         {
+[; ;mcc_generated_files/ecan.c: 327:     {
 {
-"330
-[; ;mcc_generated_files/ecan.c: 330:             tempCanMsg->frame.idType = (uint8_t) 2;
-[e = . . *U _tempCanMsg 0 0 -> -> 2 `i `uc ]
+"328
+[; ;mcc_generated_files/ecan.c: 328:         if ((RXB0SIDL & 0x08) == 0x08)
+[e $ ! == & -> _RXB0SIDL `i -> 8 `i -> 8 `i 1564  ]
+"329
+[; ;mcc_generated_files/ecan.c: 329:         {
+{
 "331
-[; ;mcc_generated_files/ecan.c: 331:             tempCanMsg->frame.id = convertReg2ExtendedCANid(RXB0EIDH, RXB0EIDL, RXB0SIDH, RXB0SIDL);
-[e = . . *U _tempCanMsg 0 1 ( _convertReg2ExtendedCANid (4 , , , _RXB0EIDH _RXB0EIDL _RXB0SIDH _RXB0SIDL ]
+[; ;mcc_generated_files/ecan.c: 331:             tempCanMsg->frame.idType = (uint8_t) 2;
+[e = . . *U _tempCanMsg 0 0 -> -> 2 `i `uc ]
 "332
-[; ;mcc_generated_files/ecan.c: 332:         }
+[; ;mcc_generated_files/ecan.c: 332:             tempCanMsg->frame.id = convertReg2ExtendedCANid(RXB0EIDH, RXB0EIDL, RXB0SIDH, RXB0SIDL);
+[e = . . *U _tempCanMsg 0 1 ( _convertReg2ExtendedCANid (4 , , , _RXB0EIDH _RXB0EIDL _RXB0SIDH _RXB0SIDL ]
+"333
+[; ;mcc_generated_files/ecan.c: 333:         }
 }
 [e $U 1565  ]
-"333
-[; ;mcc_generated_files/ecan.c: 333:         else
-[e :U 1564 ]
 "334
-[; ;mcc_generated_files/ecan.c: 334:         {
+[; ;mcc_generated_files/ecan.c: 334:         else
+[e :U 1564 ]
+"335
+[; ;mcc_generated_files/ecan.c: 335:         {
 {
-"336
-[; ;mcc_generated_files/ecan.c: 336:             tempCanMsg->frame.idType = (uint8_t) 1;
-[e = . . *U _tempCanMsg 0 0 -> -> 1 `i `uc ]
 "337
-[; ;mcc_generated_files/ecan.c: 337:             tempCanMsg->frame.id = convertReg2StandardCANid(RXB0SIDH, RXB0SIDL);
-[e = . . *U _tempCanMsg 0 1 ( _convertReg2StandardCANid (2 , _RXB0SIDH _RXB0SIDL ]
+[; ;mcc_generated_files/ecan.c: 337:             tempCanMsg->frame.idType = (uint8_t) 1;
+[e = . . *U _tempCanMsg 0 0 -> -> 1 `i `uc ]
 "338
-[; ;mcc_generated_files/ecan.c: 338:         }
+[; ;mcc_generated_files/ecan.c: 338:             tempCanMsg->frame.id = convertReg2StandardCANid(RXB0SIDH, RXB0SIDL);
+[e = . . *U _tempCanMsg 0 1 ( _convertReg2StandardCANid (2 , _RXB0SIDH _RXB0SIDL ]
+"339
+[; ;mcc_generated_files/ecan.c: 339:         }
 }
 [e :U 1565 ]
-"340
-[; ;mcc_generated_files/ecan.c: 340:         tempCanMsg->frame.dlc = RXB0DLC;
-[e = . . *U _tempCanMsg 0 2 _RXB0DLC ]
 "341
-[; ;mcc_generated_files/ecan.c: 341:         tempCanMsg->frame.data0 = RXB0D0;
-[e = . . *U _tempCanMsg 0 3 _RXB0D0 ]
+[; ;mcc_generated_files/ecan.c: 341:         tempCanMsg->frame.dlc = RXB0DLC;
+[e = . . *U _tempCanMsg 0 2 _RXB0DLC ]
 "342
-[; ;mcc_generated_files/ecan.c: 342:         tempCanMsg->frame.data1 = RXB0D1;
-[e = . . *U _tempCanMsg 0 4 _RXB0D1 ]
+[; ;mcc_generated_files/ecan.c: 342:         tempCanMsg->frame.data0 = RXB0D0;
+[e = . . *U _tempCanMsg 0 3 _RXB0D0 ]
 "343
-[; ;mcc_generated_files/ecan.c: 343:         tempCanMsg->frame.data2 = RXB0D2;
-[e = . . *U _tempCanMsg 0 5 _RXB0D2 ]
+[; ;mcc_generated_files/ecan.c: 343:         tempCanMsg->frame.data1 = RXB0D1;
+[e = . . *U _tempCanMsg 0 4 _RXB0D1 ]
 "344
-[; ;mcc_generated_files/ecan.c: 344:         tempCanMsg->frame.data3 = RXB0D3;
-[e = . . *U _tempCanMsg 0 6 _RXB0D3 ]
+[; ;mcc_generated_files/ecan.c: 344:         tempCanMsg->frame.data2 = RXB0D2;
+[e = . . *U _tempCanMsg 0 5 _RXB0D2 ]
 "345
-[; ;mcc_generated_files/ecan.c: 345:         tempCanMsg->frame.data4 = RXB0D4;
-[e = . . *U _tempCanMsg 0 7 _RXB0D4 ]
+[; ;mcc_generated_files/ecan.c: 345:         tempCanMsg->frame.data3 = RXB0D3;
+[e = . . *U _tempCanMsg 0 6 _RXB0D3 ]
 "346
-[; ;mcc_generated_files/ecan.c: 346:         tempCanMsg->frame.data5 = RXB0D5;
-[e = . . *U _tempCanMsg 0 8 _RXB0D5 ]
+[; ;mcc_generated_files/ecan.c: 346:         tempCanMsg->frame.data4 = RXB0D4;
+[e = . . *U _tempCanMsg 0 7 _RXB0D4 ]
 "347
-[; ;mcc_generated_files/ecan.c: 347:         tempCanMsg->frame.data6 = RXB0D6;
-[e = . . *U _tempCanMsg 0 9 _RXB0D6 ]
+[; ;mcc_generated_files/ecan.c: 347:         tempCanMsg->frame.data5 = RXB0D5;
+[e = . . *U _tempCanMsg 0 8 _RXB0D5 ]
 "348
-[; ;mcc_generated_files/ecan.c: 348:         tempCanMsg->frame.data7 = RXB0D7;
-[e = . . *U _tempCanMsg 0 10 _RXB0D7 ]
+[; ;mcc_generated_files/ecan.c: 348:         tempCanMsg->frame.data6 = RXB0D6;
+[e = . . *U _tempCanMsg 0 9 _RXB0D6 ]
 "349
-[; ;mcc_generated_files/ecan.c: 349:         RXB0CONbits.RXFUL = 0;
-[e = . . _RXB0CONbits 0 7 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 349:         tempCanMsg->frame.data7 = RXB0D7;
+[e = . . *U _tempCanMsg 0 10 _RXB0D7 ]
 "350
-[; ;mcc_generated_files/ecan.c: 350:         returnValue = 1;
-[e = _returnValue -> -> 1 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 350:         RXB0CONbits.RXFUL = 0;
+[e = . . _RXB0CONbits 0 7 -> -> 0 `i `uc ]
 "351
-[; ;mcc_generated_files/ecan.c: 351:     }
+[; ;mcc_generated_files/ecan.c: 351:         returnValue = 1;
+[e = _returnValue -> -> 1 `i `uc ]
+"352
+[; ;mcc_generated_files/ecan.c: 352:     }
 }
 [e $U 1566  ]
-"352
-[; ;mcc_generated_files/ecan.c: 352:     else if (RXB1CONbits.RXFUL != 0)
+"353
+[; ;mcc_generated_files/ecan.c: 353:     else if (RXB1CONbits.RXFUL != 0)
 [e :U 1563 ]
 [e $ ! != -> . . _RXB1CONbits 0 7 `i -> 0 `i 1567  ]
-"353
-[; ;mcc_generated_files/ecan.c: 353:     {
-{
 "354
-[; ;mcc_generated_files/ecan.c: 354:         if ((RXB1SIDL & 0x08) == 0x08)
-[e $ ! == & -> _RXB1SIDL `i -> 8 `i -> 8 `i 1568  ]
-"355
-[; ;mcc_generated_files/ecan.c: 355:         {
+[; ;mcc_generated_files/ecan.c: 354:     {
 {
-"357
-[; ;mcc_generated_files/ecan.c: 357:             tempCanMsg->frame.idType = (uint8_t) 2;
-[e = . . *U _tempCanMsg 0 0 -> -> 2 `i `uc ]
+"355
+[; ;mcc_generated_files/ecan.c: 355:         if ((RXB1SIDL & 0x08) == 0x08)
+[e $ ! == & -> _RXB1SIDL `i -> 8 `i -> 8 `i 1568  ]
+"356
+[; ;mcc_generated_files/ecan.c: 356:         {
+{
 "358
-[; ;mcc_generated_files/ecan.c: 358:             tempCanMsg->frame.id = convertReg2ExtendedCANid(RXB1EIDH, RXB1EIDL, RXB1SIDH, RXB1SIDL);
-[e = . . *U _tempCanMsg 0 1 ( _convertReg2ExtendedCANid (4 , , , _RXB1EIDH _RXB1EIDL _RXB1SIDH _RXB1SIDL ]
+[; ;mcc_generated_files/ecan.c: 358:             tempCanMsg->frame.idType = (uint8_t) 2;
+[e = . . *U _tempCanMsg 0 0 -> -> 2 `i `uc ]
 "359
-[; ;mcc_generated_files/ecan.c: 359:         }
+[; ;mcc_generated_files/ecan.c: 359:             tempCanMsg->frame.id = convertReg2ExtendedCANid(RXB1EIDH, RXB1EIDL, RXB1SIDH, RXB1SIDL);
+[e = . . *U _tempCanMsg 0 1 ( _convertReg2ExtendedCANid (4 , , , _RXB1EIDH _RXB1EIDL _RXB1SIDH _RXB1SIDL ]
+"360
+[; ;mcc_generated_files/ecan.c: 360:         }
 }
 [e $U 1569  ]
-"360
-[; ;mcc_generated_files/ecan.c: 360:         else
-[e :U 1568 ]
 "361
-[; ;mcc_generated_files/ecan.c: 361:         {
+[; ;mcc_generated_files/ecan.c: 361:         else
+[e :U 1568 ]
+"362
+[; ;mcc_generated_files/ecan.c: 362:         {
 {
-"363
-[; ;mcc_generated_files/ecan.c: 363:             tempCanMsg->frame.idType = (uint8_t) 1;
-[e = . . *U _tempCanMsg 0 0 -> -> 1 `i `uc ]
 "364
-[; ;mcc_generated_files/ecan.c: 364:             tempCanMsg->frame.id = convertReg2StandardCANid(RXB1SIDH, RXB1SIDL);
-[e = . . *U _tempCanMsg 0 1 ( _convertReg2StandardCANid (2 , _RXB1SIDH _RXB1SIDL ]
+[; ;mcc_generated_files/ecan.c: 364:             tempCanMsg->frame.idType = (uint8_t) 1;
+[e = . . *U _tempCanMsg 0 0 -> -> 1 `i `uc ]
 "365
-[; ;mcc_generated_files/ecan.c: 365:         }
+[; ;mcc_generated_files/ecan.c: 365:             tempCanMsg->frame.id = convertReg2StandardCANid(RXB1SIDH, RXB1SIDL);
+[e = . . *U _tempCanMsg 0 1 ( _convertReg2StandardCANid (2 , _RXB1SIDH _RXB1SIDL ]
+"366
+[; ;mcc_generated_files/ecan.c: 366:         }
 }
 [e :U 1569 ]
-"367
-[; ;mcc_generated_files/ecan.c: 367:         tempCanMsg->frame.dlc = RXB1DLC;
-[e = . . *U _tempCanMsg 0 2 _RXB1DLC ]
 "368
-[; ;mcc_generated_files/ecan.c: 368:         tempCanMsg->frame.data0 = RXB1D0;
-[e = . . *U _tempCanMsg 0 3 _RXB1D0 ]
+[; ;mcc_generated_files/ecan.c: 368:         tempCanMsg->frame.dlc = RXB1DLC;
+[e = . . *U _tempCanMsg 0 2 _RXB1DLC ]
 "369
-[; ;mcc_generated_files/ecan.c: 369:         tempCanMsg->frame.data1 = RXB1D1;
-[e = . . *U _tempCanMsg 0 4 _RXB1D1 ]
+[; ;mcc_generated_files/ecan.c: 369:         tempCanMsg->frame.data0 = RXB1D0;
+[e = . . *U _tempCanMsg 0 3 _RXB1D0 ]
 "370
-[; ;mcc_generated_files/ecan.c: 370:         tempCanMsg->frame.data2 = RXB1D2;
-[e = . . *U _tempCanMsg 0 5 _RXB1D2 ]
+[; ;mcc_generated_files/ecan.c: 370:         tempCanMsg->frame.data1 = RXB1D1;
+[e = . . *U _tempCanMsg 0 4 _RXB1D1 ]
 "371
-[; ;mcc_generated_files/ecan.c: 371:         tempCanMsg->frame.data3 = RXB1D3;
-[e = . . *U _tempCanMsg 0 6 _RXB1D3 ]
+[; ;mcc_generated_files/ecan.c: 371:         tempCanMsg->frame.data2 = RXB1D2;
+[e = . . *U _tempCanMsg 0 5 _RXB1D2 ]
 "372
-[; ;mcc_generated_files/ecan.c: 372:         tempCanMsg->frame.data4 = RXB1D4;
-[e = . . *U _tempCanMsg 0 7 _RXB1D4 ]
+[; ;mcc_generated_files/ecan.c: 372:         tempCanMsg->frame.data3 = RXB1D3;
+[e = . . *U _tempCanMsg 0 6 _RXB1D3 ]
 "373
-[; ;mcc_generated_files/ecan.c: 373:         tempCanMsg->frame.data5 = RXB1D5;
-[e = . . *U _tempCanMsg 0 8 _RXB1D5 ]
+[; ;mcc_generated_files/ecan.c: 373:         tempCanMsg->frame.data4 = RXB1D4;
+[e = . . *U _tempCanMsg 0 7 _RXB1D4 ]
 "374
-[; ;mcc_generated_files/ecan.c: 374:         tempCanMsg->frame.data6 = RXB1D6;
-[e = . . *U _tempCanMsg 0 9 _RXB1D6 ]
+[; ;mcc_generated_files/ecan.c: 374:         tempCanMsg->frame.data5 = RXB1D5;
+[e = . . *U _tempCanMsg 0 8 _RXB1D5 ]
 "375
-[; ;mcc_generated_files/ecan.c: 375:         tempCanMsg->frame.data7 = RXB1D7;
-[e = . . *U _tempCanMsg 0 10 _RXB1D7 ]
+[; ;mcc_generated_files/ecan.c: 375:         tempCanMsg->frame.data6 = RXB1D6;
+[e = . . *U _tempCanMsg 0 9 _RXB1D6 ]
 "376
-[; ;mcc_generated_files/ecan.c: 376:         RXB1CONbits.RXFUL = 0;
-[e = . . _RXB1CONbits 0 7 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 376:         tempCanMsg->frame.data7 = RXB1D7;
+[e = . . *U _tempCanMsg 0 10 _RXB1D7 ]
 "377
-[; ;mcc_generated_files/ecan.c: 377:         returnValue = 1;
-[e = _returnValue -> -> 1 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 377:         RXB1CONbits.RXFUL = 0;
+[e = . . _RXB1CONbits 0 7 -> -> 0 `i `uc ]
 "378
-[; ;mcc_generated_files/ecan.c: 378:     }
+[; ;mcc_generated_files/ecan.c: 378:         returnValue = 1;
+[e = _returnValue -> -> 1 `i `uc ]
+"379
+[; ;mcc_generated_files/ecan.c: 379:     }
 }
 [e :U 1567 ]
 [e :U 1566 ]
-"379
-[; ;mcc_generated_files/ecan.c: 379:     return (returnValue);
+"380
+[; ;mcc_generated_files/ecan.c: 380:     return (returnValue);
 [e ) _returnValue ]
 [e $UE 1562  ]
-"380
-[; ;mcc_generated_files/ecan.c: 380: }
+"381
+[; ;mcc_generated_files/ecan.c: 381: }
 [e :UE 1562 ]
 }
-"382
-[; ;mcc_generated_files/ecan.c: 382: uint8_t CAN_messagesInBuffer(void) {
+"383
+[; ;mcc_generated_files/ecan.c: 383: uint8_t CAN_messagesInBuffer(void) {
 [v _CAN_messagesInBuffer `(uc ~T0 @X0 1 ef ]
 {
 [e :U _CAN_messagesInBuffer ]
 [f ]
-"383
-[; ;mcc_generated_files/ecan.c: 383:     uint8_t messageCount = 0;
+"384
+[; ;mcc_generated_files/ecan.c: 384:     uint8_t messageCount = 0;
 [v _messageCount `uc ~T0 @X0 1 a ]
 [e = _messageCount -> -> 0 `i `uc ]
-"384
-[; ;mcc_generated_files/ecan.c: 384:     if (RXB0CONbits.RXFUL != 0)
-[e $ ! != -> . . _RXB0CONbits 0 7 `i -> 0 `i 1571  ]
 "385
-[; ;mcc_generated_files/ecan.c: 385:     {
-{
+[; ;mcc_generated_files/ecan.c: 385:     if (RXB0CONbits.RXFUL != 0)
+[e $ ! != -> . . _RXB0CONbits 0 7 `i -> 0 `i 1571  ]
 "386
-[; ;mcc_generated_files/ecan.c: 386:         messageCount++;
-[e ++ _messageCount -> -> 1 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 386:     {
+{
 "387
-[; ;mcc_generated_files/ecan.c: 387:     }
+[; ;mcc_generated_files/ecan.c: 387:         messageCount++;
+[e ++ _messageCount -> -> 1 `i `uc ]
+"388
+[; ;mcc_generated_files/ecan.c: 388:     }
 }
 [e :U 1571 ]
-"388
-[; ;mcc_generated_files/ecan.c: 388:     if (RXB1CONbits.RXFUL != 0)
-[e $ ! != -> . . _RXB1CONbits 0 7 `i -> 0 `i 1572  ]
 "389
-[; ;mcc_generated_files/ecan.c: 389:     {
-{
+[; ;mcc_generated_files/ecan.c: 389:     if (RXB1CONbits.RXFUL != 0)
+[e $ ! != -> . . _RXB1CONbits 0 7 `i -> 0 `i 1572  ]
 "390
-[; ;mcc_generated_files/ecan.c: 390:         messageCount++;
-[e ++ _messageCount -> -> 1 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 390:     {
+{
 "391
-[; ;mcc_generated_files/ecan.c: 391:     }
+[; ;mcc_generated_files/ecan.c: 391:         messageCount++;
+[e ++ _messageCount -> -> 1 `i `uc ]
+"392
+[; ;mcc_generated_files/ecan.c: 392:     }
 }
 [e :U 1572 ]
-"392
-[; ;mcc_generated_files/ecan.c: 392:     return (messageCount);
+"393
+[; ;mcc_generated_files/ecan.c: 393:     return (messageCount);
 [e ) _messageCount ]
 [e $UE 1570  ]
-"393
-[; ;mcc_generated_files/ecan.c: 393: }
+"394
+[; ;mcc_generated_files/ecan.c: 394: }
 [e :UE 1570 ]
 }
-"395
-[; ;mcc_generated_files/ecan.c: 395: uint8_t CAN_isBusOff(void) {
+"396
+[; ;mcc_generated_files/ecan.c: 396: uint8_t CAN_isBusOff(void) {
 [v _CAN_isBusOff `(uc ~T0 @X0 1 ef ]
 {
 [e :U _CAN_isBusOff ]
 [f ]
-"396
-[; ;mcc_generated_files/ecan.c: 396:     uint8_t returnValue = 0;
+"397
+[; ;mcc_generated_files/ecan.c: 397:     uint8_t returnValue = 0;
 [v _returnValue `uc ~T0 @X0 1 a ]
 [e = _returnValue -> -> 0 `i `uc ]
-"402
-[; ;mcc_generated_files/ecan.c: 402:     if (COMSTATbits.TXBO== 1) {
+"403
+[; ;mcc_generated_files/ecan.c: 403:     if (COMSTATbits.TXBO== 1) {
 [e $ ! == -> . . _COMSTATbits 0 5 `i -> 1 `i 1574  ]
 {
-"403
-[; ;mcc_generated_files/ecan.c: 403:         returnValue = 1;
-[e = _returnValue -> -> 1 `i `uc ]
 "404
-[; ;mcc_generated_files/ecan.c: 404:     }
+[; ;mcc_generated_files/ecan.c: 404:         returnValue = 1;
+[e = _returnValue -> -> 1 `i `uc ]
+"405
+[; ;mcc_generated_files/ecan.c: 405:     }
 }
 [e :U 1574 ]
-"405
-[; ;mcc_generated_files/ecan.c: 405:     return (returnValue);
+"406
+[; ;mcc_generated_files/ecan.c: 406:     return (returnValue);
 [e ) _returnValue ]
 [e $UE 1573  ]
-"406
-[; ;mcc_generated_files/ecan.c: 406: }
+"407
+[; ;mcc_generated_files/ecan.c: 407: }
 [e :UE 1573 ]
 }
-"408
-[; ;mcc_generated_files/ecan.c: 408: uint8_t CAN_isRXErrorPassive(void) {
+"409
+[; ;mcc_generated_files/ecan.c: 409: uint8_t CAN_isRXErrorPassive(void) {
 [v _CAN_isRXErrorPassive `(uc ~T0 @X0 1 ef ]
 {
 [e :U _CAN_isRXErrorPassive ]
 [f ]
-"409
-[; ;mcc_generated_files/ecan.c: 409:     uint8_t returnValue = 0;
+"410
+[; ;mcc_generated_files/ecan.c: 410:     uint8_t returnValue = 0;
 [v _returnValue `uc ~T0 @X0 1 a ]
 [e = _returnValue -> -> 0 `i `uc ]
-"415
-[; ;mcc_generated_files/ecan.c: 415:     if (COMSTATbits.RXBP == 1) {
+"416
+[; ;mcc_generated_files/ecan.c: 416:     if (COMSTATbits.RXBP == 1) {
 [e $ ! == -> . . _COMSTATbits 0 3 `i -> 1 `i 1576  ]
 {
-"416
-[; ;mcc_generated_files/ecan.c: 416:         returnValue = 1;
-[e = _returnValue -> -> 1 `i `uc ]
 "417
-[; ;mcc_generated_files/ecan.c: 417:     }
+[; ;mcc_generated_files/ecan.c: 417:         returnValue = 1;
+[e = _returnValue -> -> 1 `i `uc ]
+"418
+[; ;mcc_generated_files/ecan.c: 418:     }
 }
 [e :U 1576 ]
-"418
-[; ;mcc_generated_files/ecan.c: 418:     return (returnValue);
+"419
+[; ;mcc_generated_files/ecan.c: 419:     return (returnValue);
 [e ) _returnValue ]
 [e $UE 1575  ]
-"419
-[; ;mcc_generated_files/ecan.c: 419: }
+"420
+[; ;mcc_generated_files/ecan.c: 420: }
 [e :UE 1575 ]
 }
-"421
-[; ;mcc_generated_files/ecan.c: 421: uint8_t CAN_isTXErrorPassive(void) {
+"422
+[; ;mcc_generated_files/ecan.c: 422: uint8_t CAN_isTXErrorPassive(void) {
 [v _CAN_isTXErrorPassive `(uc ~T0 @X0 1 ef ]
 {
 [e :U _CAN_isTXErrorPassive ]
 [f ]
-"422
-[; ;mcc_generated_files/ecan.c: 422:     uint8_t returnValue = 0;
+"423
+[; ;mcc_generated_files/ecan.c: 423:     uint8_t returnValue = 0;
 [v _returnValue `uc ~T0 @X0 1 a ]
 [e = _returnValue -> -> 0 `i `uc ]
-"428
-[; ;mcc_generated_files/ecan.c: 428:     if (COMSTATbits.TXBP == 1) {
+"429
+[; ;mcc_generated_files/ecan.c: 429:     if (COMSTATbits.TXBP == 1) {
 [e $ ! == -> . . _COMSTATbits 0 4 `i -> 1 `i 1578  ]
 {
-"429
-[; ;mcc_generated_files/ecan.c: 429:         returnValue = 1;
-[e = _returnValue -> -> 1 `i `uc ]
 "430
-[; ;mcc_generated_files/ecan.c: 430:     }
+[; ;mcc_generated_files/ecan.c: 430:         returnValue = 1;
+[e = _returnValue -> -> 1 `i `uc ]
+"431
+[; ;mcc_generated_files/ecan.c: 431:     }
 }
 [e :U 1578 ]
-"431
-[; ;mcc_generated_files/ecan.c: 431:     return (returnValue);
+"432
+[; ;mcc_generated_files/ecan.c: 432:     return (returnValue);
 [e ) _returnValue ]
 [e $UE 1577  ]
-"432
-[; ;mcc_generated_files/ecan.c: 432: }
+"433
+[; ;mcc_generated_files/ecan.c: 433: }
 [e :UE 1577 ]
 }
-"438
-[; ;mcc_generated_files/ecan.c: 438: static uint32_t convertReg2ExtendedCANid(uint8_t tempRXBn_EIDH, uint8_t tempRXBn_EIDL, uint8_t tempRXBn_SIDH, uint8_t tempRXBn_SIDL) {
+"439
+[; ;mcc_generated_files/ecan.c: 439: static uint32_t convertReg2ExtendedCANid(uint8_t tempRXBn_EIDH, uint8_t tempRXBn_EIDL, uint8_t tempRXBn_SIDH, uint8_t tempRXBn_SIDL) {
 [v _convertReg2ExtendedCANid `(ul ~T0 @X0 1 sf4`uc`uc`uc`uc ]
 {
 [e :U _convertReg2ExtendedCANid ]
@@ -2943,95 +2943,95 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _tempRXBn_SIDH `uc ~T0 @X0 1 r3 ]
 [v _tempRXBn_SIDL `uc ~T0 @X0 1 r4 ]
 [f ]
-"439
-[; ;mcc_generated_files/ecan.c: 439:     uint32_t returnValue = 0;
+"440
+[; ;mcc_generated_files/ecan.c: 440:     uint32_t returnValue = 0;
 [v _returnValue `ul ~T0 @X0 1 a ]
 [e = _returnValue -> -> -> 0 `i `l `ul ]
-"440
-[; ;mcc_generated_files/ecan.c: 440:     uint32_t ConvertedID = 0;
+"441
+[; ;mcc_generated_files/ecan.c: 441:     uint32_t ConvertedID = 0;
 [v _ConvertedID `ul ~T0 @X0 1 a ]
 [e = _ConvertedID -> -> -> 0 `i `l `ul ]
-"441
-[; ;mcc_generated_files/ecan.c: 441:     uint8_t CAN_standardLo_ID_lo2bits;
-[v _CAN_standardLo_ID_lo2bits `uc ~T0 @X0 1 a ]
 "442
-[; ;mcc_generated_files/ecan.c: 442:     uint8_t CAN_standardLo_ID_hi3bits;
+[; ;mcc_generated_files/ecan.c: 442:     uint8_t CAN_standardLo_ID_lo2bits;
+[v _CAN_standardLo_ID_lo2bits `uc ~T0 @X0 1 a ]
+"443
+[; ;mcc_generated_files/ecan.c: 443:     uint8_t CAN_standardLo_ID_hi3bits;
 [v _CAN_standardLo_ID_hi3bits `uc ~T0 @X0 1 a ]
-"444
-[; ;mcc_generated_files/ecan.c: 444:     CAN_standardLo_ID_lo2bits = (uint8_t)(tempRXBn_SIDL & 0x03);
-[e = _CAN_standardLo_ID_lo2bits -> & -> _tempRXBn_SIDL `i -> 3 `i `uc ]
 "445
-[; ;mcc_generated_files/ecan.c: 445:     CAN_standardLo_ID_hi3bits = (uint8_t)(tempRXBn_SIDL >> 5);
-[e = _CAN_standardLo_ID_hi3bits -> >> -> _tempRXBn_SIDL `i -> 5 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 445:     CAN_standardLo_ID_lo2bits = (uint8_t)(tempRXBn_SIDL & 0x03);
+[e = _CAN_standardLo_ID_lo2bits -> & -> _tempRXBn_SIDL `i -> 3 `i `uc ]
 "446
-[; ;mcc_generated_files/ecan.c: 446:     ConvertedID = (uint32_t)(tempRXBn_SIDH << 3);
-[e = _ConvertedID -> << -> _tempRXBn_SIDH `i -> 3 `i `ul ]
+[; ;mcc_generated_files/ecan.c: 446:     CAN_standardLo_ID_hi3bits = (uint8_t)(tempRXBn_SIDL >> 5);
+[e = _CAN_standardLo_ID_hi3bits -> >> -> _tempRXBn_SIDL `i -> 5 `i `uc ]
 "447
-[; ;mcc_generated_files/ecan.c: 447:     ConvertedID = ConvertedID + CAN_standardLo_ID_hi3bits;
-[e = _ConvertedID + _ConvertedID -> _CAN_standardLo_ID_hi3bits `ul ]
+[; ;mcc_generated_files/ecan.c: 447:     ConvertedID = (uint32_t)(tempRXBn_SIDH << 3);
+[e = _ConvertedID -> << -> _tempRXBn_SIDH `i -> 3 `i `ul ]
 "448
-[; ;mcc_generated_files/ecan.c: 448:     ConvertedID = (ConvertedID << 2);
-[e = _ConvertedID << _ConvertedID -> 2 `i ]
+[; ;mcc_generated_files/ecan.c: 448:     ConvertedID = ConvertedID + CAN_standardLo_ID_hi3bits;
+[e = _ConvertedID + _ConvertedID -> _CAN_standardLo_ID_hi3bits `ul ]
 "449
-[; ;mcc_generated_files/ecan.c: 449:     ConvertedID = ConvertedID + CAN_standardLo_ID_lo2bits;
-[e = _ConvertedID + _ConvertedID -> _CAN_standardLo_ID_lo2bits `ul ]
+[; ;mcc_generated_files/ecan.c: 449:     ConvertedID = (ConvertedID << 2);
+[e = _ConvertedID << _ConvertedID -> 2 `i ]
 "450
-[; ;mcc_generated_files/ecan.c: 450:     ConvertedID = (ConvertedID << 8);
-[e = _ConvertedID << _ConvertedID -> 8 `i ]
+[; ;mcc_generated_files/ecan.c: 450:     ConvertedID = ConvertedID + CAN_standardLo_ID_lo2bits;
+[e = _ConvertedID + _ConvertedID -> _CAN_standardLo_ID_lo2bits `ul ]
 "451
-[; ;mcc_generated_files/ecan.c: 451:     ConvertedID = ConvertedID + tempRXBn_EIDH;
-[e = _ConvertedID + _ConvertedID -> _tempRXBn_EIDH `ul ]
-"452
-[; ;mcc_generated_files/ecan.c: 452:     ConvertedID = (ConvertedID << 8);
+[; ;mcc_generated_files/ecan.c: 451:     ConvertedID = (ConvertedID << 8);
 [e = _ConvertedID << _ConvertedID -> 8 `i ]
+"452
+[; ;mcc_generated_files/ecan.c: 452:     ConvertedID = ConvertedID + tempRXBn_EIDH;
+[e = _ConvertedID + _ConvertedID -> _tempRXBn_EIDH `ul ]
 "453
-[; ;mcc_generated_files/ecan.c: 453:     ConvertedID = ConvertedID + tempRXBn_EIDL;
-[e = _ConvertedID + _ConvertedID -> _tempRXBn_EIDL `ul ]
+[; ;mcc_generated_files/ecan.c: 453:     ConvertedID = (ConvertedID << 8);
+[e = _ConvertedID << _ConvertedID -> 8 `i ]
 "454
-[; ;mcc_generated_files/ecan.c: 454:     returnValue = ConvertedID;
-[e = _returnValue _ConvertedID ]
+[; ;mcc_generated_files/ecan.c: 454:     ConvertedID = ConvertedID + tempRXBn_EIDL;
+[e = _ConvertedID + _ConvertedID -> _tempRXBn_EIDL `ul ]
 "455
-[; ;mcc_generated_files/ecan.c: 455:     return (returnValue);
+[; ;mcc_generated_files/ecan.c: 455:     returnValue = ConvertedID;
+[e = _returnValue _ConvertedID ]
+"456
+[; ;mcc_generated_files/ecan.c: 456:     return (returnValue);
 [e ) _returnValue ]
 [e $UE 1579  ]
-"456
-[; ;mcc_generated_files/ecan.c: 456: }
+"457
+[; ;mcc_generated_files/ecan.c: 457: }
 [e :UE 1579 ]
 }
-"458
-[; ;mcc_generated_files/ecan.c: 458: static uint32_t convertReg2StandardCANid(uint8_t tempRXBn_SIDH, uint8_t tempRXBn_SIDL) {
+"459
+[; ;mcc_generated_files/ecan.c: 459: static uint32_t convertReg2StandardCANid(uint8_t tempRXBn_SIDH, uint8_t tempRXBn_SIDL) {
 [v _convertReg2StandardCANid `(ul ~T0 @X0 1 sf2`uc`uc ]
 {
 [e :U _convertReg2StandardCANid ]
 [v _tempRXBn_SIDH `uc ~T0 @X0 1 r1 ]
 [v _tempRXBn_SIDL `uc ~T0 @X0 1 r2 ]
 [f ]
-"459
-[; ;mcc_generated_files/ecan.c: 459:     uint32_t returnValue = 0;
+"460
+[; ;mcc_generated_files/ecan.c: 460:     uint32_t returnValue = 0;
 [v _returnValue `ul ~T0 @X0 1 a ]
 [e = _returnValue -> -> -> 0 `i `l `ul ]
-"460
-[; ;mcc_generated_files/ecan.c: 460:     uint32_t ConvertedID;
+"461
+[; ;mcc_generated_files/ecan.c: 461:     uint32_t ConvertedID;
 [v _ConvertedID `ul ~T0 @X0 1 a ]
-"464
-[; ;mcc_generated_files/ecan.c: 464:     ConvertedID = (uint32_t)(tempRXBn_SIDH << 3);
-[e = _ConvertedID -> << -> _tempRXBn_SIDH `i -> 3 `i `ul ]
 "465
-[; ;mcc_generated_files/ecan.c: 465:     ConvertedID = ConvertedID + (uint32_t)(tempRXBn_SIDL >> 5);
-[e = _ConvertedID + _ConvertedID -> >> -> _tempRXBn_SIDL `i -> 5 `i `ul ]
+[; ;mcc_generated_files/ecan.c: 465:     ConvertedID = (uint32_t)(tempRXBn_SIDH << 3);
+[e = _ConvertedID -> << -> _tempRXBn_SIDH `i -> 3 `i `ul ]
 "466
-[; ;mcc_generated_files/ecan.c: 466:     returnValue = ConvertedID;
-[e = _returnValue _ConvertedID ]
+[; ;mcc_generated_files/ecan.c: 466:     ConvertedID = ConvertedID + (uint32_t)(tempRXBn_SIDL >> 5);
+[e = _ConvertedID + _ConvertedID -> >> -> _tempRXBn_SIDL `i -> 5 `i `ul ]
 "467
-[; ;mcc_generated_files/ecan.c: 467:     return (returnValue);
+[; ;mcc_generated_files/ecan.c: 467:     returnValue = ConvertedID;
+[e = _returnValue _ConvertedID ]
+"468
+[; ;mcc_generated_files/ecan.c: 468:     return (returnValue);
 [e ) _returnValue ]
 [e $UE 1580  ]
-"468
-[; ;mcc_generated_files/ecan.c: 468: }
+"469
+[; ;mcc_generated_files/ecan.c: 469: }
 [e :UE 1580 ]
 }
-"470
-[; ;mcc_generated_files/ecan.c: 470: static void convertCANid2Reg(uint32_t tempPassedInID, uint8_t canIdType, uint8_t *passedInEIDH, uint8_t *passedInEIDL, uint8_t *passedInSIDH, uint8_t *passedInSIDL) {
+"471
+[; ;mcc_generated_files/ecan.c: 471: static void convertCANid2Reg(uint32_t tempPassedInID, uint8_t canIdType, uint8_t *passedInEIDH, uint8_t *passedInEIDL, uint8_t *passedInSIDH, uint8_t *passedInSIDL) {
 [v _convertCANid2Reg `(v ~T0 @X0 1 sf6`ul`uc`*uc`*uc`*uc`*uc ]
 {
 [e :U _convertCANid2Reg ]
@@ -3042,116 +3042,116 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _passedInSIDH `*uc ~T0 @X0 1 r5 ]
 [v _passedInSIDL `*uc ~T0 @X0 1 r6 ]
 [f ]
-"471
-[; ;mcc_generated_files/ecan.c: 471:     uint8_t wipSIDL = 0;
+"472
+[; ;mcc_generated_files/ecan.c: 472:     uint8_t wipSIDL = 0;
 [v _wipSIDL `uc ~T0 @X0 1 a ]
 [e = _wipSIDL -> -> 0 `i `uc ]
-"473
-[; ;mcc_generated_files/ecan.c: 473:     if (canIdType == 2) {
+"474
+[; ;mcc_generated_files/ecan.c: 474:     if (canIdType == 2) {
 [e $ ! == -> _canIdType `i -> 2 `i 1582  ]
 {
-"476
-[; ;mcc_generated_files/ecan.c: 476:         *passedInEIDL = 0xFF & tempPassedInID;
-[e = *U _passedInEIDL -> & -> -> -> 255 `i `l `ul _tempPassedInID `uc ]
 "477
-[; ;mcc_generated_files/ecan.c: 477:         tempPassedInID = tempPassedInID >> 8;
+[; ;mcc_generated_files/ecan.c: 477:         *passedInEIDL = 0xFF & tempPassedInID;
+[e = *U _passedInEIDL -> & -> -> -> 255 `i `l `ul _tempPassedInID `uc ]
+"478
+[; ;mcc_generated_files/ecan.c: 478:         tempPassedInID = tempPassedInID >> 8;
 [e = _tempPassedInID >> _tempPassedInID -> 8 `i ]
-"480
-[; ;mcc_generated_files/ecan.c: 480:         *passedInEIDH = 0xFF & tempPassedInID;
-[e = *U _passedInEIDH -> & -> -> -> 255 `i `l `ul _tempPassedInID `uc ]
 "481
-[; ;mcc_generated_files/ecan.c: 481:         tempPassedInID = tempPassedInID >> 8;
+[; ;mcc_generated_files/ecan.c: 481:         *passedInEIDH = 0xFF & tempPassedInID;
+[e = *U _passedInEIDH -> & -> -> -> 255 `i `l `ul _tempPassedInID `uc ]
+"482
+[; ;mcc_generated_files/ecan.c: 482:         tempPassedInID = tempPassedInID >> 8;
 [e = _tempPassedInID >> _tempPassedInID -> 8 `i ]
-"485
-[; ;mcc_generated_files/ecan.c: 485:         wipSIDL = 0x03 & tempPassedInID;
-[e = _wipSIDL -> & -> -> -> 3 `i `l `ul _tempPassedInID `uc ]
 "486
-[; ;mcc_generated_files/ecan.c: 486:         tempPassedInID = tempPassedInID << 3;
-[e = _tempPassedInID << _tempPassedInID -> 3 `i ]
+[; ;mcc_generated_files/ecan.c: 486:         wipSIDL = 0x03 & tempPassedInID;
+[e = _wipSIDL -> & -> -> -> 3 `i `l `ul _tempPassedInID `uc ]
 "487
-[; ;mcc_generated_files/ecan.c: 487:         wipSIDL = (0xE0 & tempPassedInID) + wipSIDL;
-[e = _wipSIDL -> + & -> -> -> 224 `i `l `ul _tempPassedInID -> _wipSIDL `ul `uc ]
+[; ;mcc_generated_files/ecan.c: 487:         tempPassedInID = tempPassedInID << 3;
+[e = _tempPassedInID << _tempPassedInID -> 3 `i ]
 "488
-[; ;mcc_generated_files/ecan.c: 488:         wipSIDL = (uint8_t)(wipSIDL + 0x08);
-[e = _wipSIDL -> + -> _wipSIDL `i -> 8 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 488:         wipSIDL = (0xE0 & tempPassedInID) + wipSIDL;
+[e = _wipSIDL -> + & -> -> -> 224 `i `l `ul _tempPassedInID -> _wipSIDL `ul `uc ]
 "489
-[; ;mcc_generated_files/ecan.c: 489:         *passedInSIDL = (uint8_t)(0xEB & wipSIDL);
+[; ;mcc_generated_files/ecan.c: 489:         wipSIDL = (uint8_t)(wipSIDL + 0x08);
+[e = _wipSIDL -> + -> _wipSIDL `i -> 8 `i `uc ]
+"490
+[; ;mcc_generated_files/ecan.c: 490:         *passedInSIDL = (uint8_t)(0xEB & wipSIDL);
 [e = *U _passedInSIDL -> & -> 235 `i -> _wipSIDL `i `uc ]
-"492
-[; ;mcc_generated_files/ecan.c: 492:         tempPassedInID = tempPassedInID >> 8;
-[e = _tempPassedInID >> _tempPassedInID -> 8 `i ]
 "493
-[; ;mcc_generated_files/ecan.c: 493:         *passedInSIDH = 0xFF & tempPassedInID;
-[e = *U _passedInSIDH -> & -> -> -> 255 `i `l `ul _tempPassedInID `uc ]
+[; ;mcc_generated_files/ecan.c: 493:         tempPassedInID = tempPassedInID >> 8;
+[e = _tempPassedInID >> _tempPassedInID -> 8 `i ]
 "494
-[; ;mcc_generated_files/ecan.c: 494:     } else
+[; ;mcc_generated_files/ecan.c: 494:         *passedInSIDH = 0xFF & tempPassedInID;
+[e = *U _passedInSIDH -> & -> -> -> 255 `i `l `ul _tempPassedInID `uc ]
+"495
+[; ;mcc_generated_files/ecan.c: 495:     } else
 }
 [e $U 1583  ]
 [e :U 1582 ]
-"495
-[; ;mcc_generated_files/ecan.c: 495:     {
-{
 "496
-[; ;mcc_generated_files/ecan.c: 496:         *passedInEIDH = 0;
-[e = *U _passedInEIDH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 496:     {
+{
 "497
-[; ;mcc_generated_files/ecan.c: 497:         *passedInEIDL = 0;
-[e = *U _passedInEIDL -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 497:         *passedInEIDH = 0;
+[e = *U _passedInEIDH -> -> 0 `i `uc ]
 "498
-[; ;mcc_generated_files/ecan.c: 498:         tempPassedInID = tempPassedInID << 5;
-[e = _tempPassedInID << _tempPassedInID -> 5 `i ]
+[; ;mcc_generated_files/ecan.c: 498:         *passedInEIDL = 0;
+[e = *U _passedInEIDL -> -> 0 `i `uc ]
 "499
-[; ;mcc_generated_files/ecan.c: 499:         *passedInSIDL = 0xFF & tempPassedInID;
-[e = *U _passedInSIDL -> & -> -> -> 255 `i `l `ul _tempPassedInID `uc ]
+[; ;mcc_generated_files/ecan.c: 499:         tempPassedInID = tempPassedInID << 5;
+[e = _tempPassedInID << _tempPassedInID -> 5 `i ]
 "500
-[; ;mcc_generated_files/ecan.c: 500:         tempPassedInID = tempPassedInID >> 8;
-[e = _tempPassedInID >> _tempPassedInID -> 8 `i ]
+[; ;mcc_generated_files/ecan.c: 500:         *passedInSIDL = 0xFF & tempPassedInID;
+[e = *U _passedInSIDL -> & -> -> -> 255 `i `l `ul _tempPassedInID `uc ]
 "501
-[; ;mcc_generated_files/ecan.c: 501:         *passedInSIDH = 0xFF & tempPassedInID;
-[e = *U _passedInSIDH -> & -> -> -> 255 `i `l `ul _tempPassedInID `uc ]
+[; ;mcc_generated_files/ecan.c: 501:         tempPassedInID = tempPassedInID >> 8;
+[e = _tempPassedInID >> _tempPassedInID -> 8 `i ]
 "502
-[; ;mcc_generated_files/ecan.c: 502:     }
+[; ;mcc_generated_files/ecan.c: 502:         *passedInSIDH = 0xFF & tempPassedInID;
+[e = *U _passedInSIDH -> & -> -> -> 255 `i `l `ul _tempPassedInID `uc ]
+"503
+[; ;mcc_generated_files/ecan.c: 503:     }
 }
 [e :U 1583 ]
-"503
-[; ;mcc_generated_files/ecan.c: 503: }
+"504
+[; ;mcc_generated_files/ecan.c: 504: }
 [e :UE 1581 ]
 }
-"505
-[; ;mcc_generated_files/ecan.c: 505: void ECAN_SetWakeUpInterruptHandler(void (*handler)(void))
-[v _ECAN_SetWakeUpInterruptHandler `(v ~T0 @X0 1 ef1`*F12488 ]
 "506
-[; ;mcc_generated_files/ecan.c: 506: {
+[; ;mcc_generated_files/ecan.c: 506: void ECAN_SetWakeUpInterruptHandler(void (*handler)(void))
+[v _ECAN_SetWakeUpInterruptHandler `(v ~T0 @X0 1 ef1`*F12488 ]
+"507
+[; ;mcc_generated_files/ecan.c: 507: {
 {
 [e :U _ECAN_SetWakeUpInterruptHandler ]
-"505
-[; ;mcc_generated_files/ecan.c: 505: void ECAN_SetWakeUpInterruptHandler(void (*handler)(void))
-[v _handler `*F12490 ~T0 @X0 1 r1 ]
 "506
-[; ;mcc_generated_files/ecan.c: 506: {
-[f ]
+[; ;mcc_generated_files/ecan.c: 506: void ECAN_SetWakeUpInterruptHandler(void (*handler)(void))
+[v _handler `*F12490 ~T0 @X0 1 r1 ]
 "507
-[; ;mcc_generated_files/ecan.c: 507:     WakeUpInterruptHandler = handler;
-[e = _WakeUpInterruptHandler _handler ]
+[; ;mcc_generated_files/ecan.c: 507: {
+[f ]
 "508
-[; ;mcc_generated_files/ecan.c: 508: }
+[; ;mcc_generated_files/ecan.c: 508:     WakeUpInterruptHandler = handler;
+[e = _WakeUpInterruptHandler _handler ]
+"509
+[; ;mcc_generated_files/ecan.c: 509: }
 [e :UE 1584 ]
 }
-"510
-[; ;mcc_generated_files/ecan.c: 510: void ECAN_WAKI_ISR(void)
-[v _ECAN_WAKI_ISR `(v ~T0 @X0 1 ef ]
 "511
-[; ;mcc_generated_files/ecan.c: 511: {
+[; ;mcc_generated_files/ecan.c: 511: void ECAN_WAKI_ISR(void)
+[v _ECAN_WAKI_ISR `(v ~T0 @X0 1 ef ]
+"512
+[; ;mcc_generated_files/ecan.c: 512: {
 {
 [e :U _ECAN_WAKI_ISR ]
 [f ]
-"512
-[; ;mcc_generated_files/ecan.c: 512:     WakeUpInterruptHandler();
-[e ( *U _WakeUpInterruptHandler ..  ]
 "513
-[; ;mcc_generated_files/ecan.c: 513:     PIR5bits.WAKIF = 0;
-[e = . . _PIR5bits 0 6 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 513:     WakeUpInterruptHandler();
+[e ( *U _WakeUpInterruptHandler ..  ]
 "514
-[; ;mcc_generated_files/ecan.c: 514: }
+[; ;mcc_generated_files/ecan.c: 514:     PIR5bits.WAKIF = 0;
+[e = . . _PIR5bits 0 6 -> -> 0 `i `uc ]
+"515
+[; ;mcc_generated_files/ecan.c: 515: }
 [e :UE 1585 ]
 }

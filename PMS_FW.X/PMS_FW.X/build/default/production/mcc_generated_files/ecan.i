@@ -20592,7 +20592,7 @@ void ECAN_Initialize(void)
 
 
     CIOCON = 0x20;
-# 99 "mcc_generated_files/ecan.c"
+# 100 "mcc_generated_files/ecan.c"
     BSEL0 = 0x00;
 
 
@@ -20600,7 +20600,7 @@ void ECAN_Initialize(void)
 
     RXM0EIDH = 0xFF;
     RXM0EIDL = 0xFF;
-    RXM0SIDH = 0x05;
+    RXM0SIDH = 0x01;
     RXM0SIDL = 0xC3;
     RXM1EIDH = 0xFF;
     RXM1EIDL = 0xFF;
@@ -20700,7 +20700,7 @@ void ECAN_Initialize(void)
     RXF15EIDL = 0xFF;
     RXF15SIDH = 0xFF;
     RXF15SIDL = 0xE3;
-# 220 "mcc_generated_files/ecan.c"
+# 221 "mcc_generated_files/ecan.c"
     BRGCON1 = 0x03;
     BRGCON2 = 0xA8;
     BRGCON3 = 0x01;

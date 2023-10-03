@@ -90,6 +90,7 @@ void ECAN_Initialize(void)
     0x4F4		SID		Acceptance Mask 0		Filter 0	RXB0
     0x7F4		SID		Acceptance Mask 0		Filter 0	RXB0
     0x2F4		SID		Acceptance Mask 0		Filter 0	RXB0
+    0x255		SID		Acceptance Mask 0		Filter 0	RXB0
     ........................................................
     */    
  
@@ -103,7 +104,7 @@ void ECAN_Initialize(void)
     */
     RXM0EIDH = 0xFF;
     RXM0EIDL = 0xFF;
-    RXM0SIDH = 0x05;
+    RXM0SIDH = 0x01;
     RXM0SIDL = 0xC3;
     RXM1EIDH = 0xFF;
     RXM1EIDL = 0xFF;
