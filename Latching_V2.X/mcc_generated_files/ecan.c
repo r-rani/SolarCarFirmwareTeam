@@ -82,6 +82,7 @@ void ECAN_Initialize(void)
     ........................................................    
     CAN ID		ID Type		Mask				Filter		Buffer    
     ........................................................    
+    0x17		SID		Acceptance Mask 0		Filter 0	RXB0
     ........................................................
     */    
  
@@ -93,19 +94,19 @@ void ECAN_Initialize(void)
     /**    
     Initialize Receive Masks
     */
-    RXM0EIDH = 0x00;
-    RXM0EIDL = 0x00;
-    RXM0SIDH = 0x00;
-    RXM0SIDL = 0x00;
-    RXM1EIDH = 0x00;
-    RXM1EIDL = 0x00;
-    RXM1SIDH = 0x00;
-    RXM1SIDL = 0x00;
+    RXM0EIDH = 0xFF;
+    RXM0EIDL = 0xFF;
+    RXM0SIDH = 0xFF;
+    RXM0SIDL = 0xE3;
+    RXM1EIDH = 0xFF;
+    RXM1EIDL = 0xFF;
+    RXM1SIDH = 0xFF;
+    RXM1SIDL = 0xE3;
     
     /**
     Enable Filters
     */
-    RXFCON0 = 0x00;
+    RXFCON0 = 0x01;
     RXFCON1 = 0x00;
     /**
     Assign Filters to Masks
@@ -132,8 +133,8 @@ void ECAN_Initialize(void)
     */
     RXF0EIDH = 0x00;
     RXF0EIDL = 0x00;
-    RXF0SIDH = 0x00;
-    RXF0SIDL = 0x00;
+    RXF0SIDH = 0x02;
+    RXF0SIDL = 0xE0;
     RXF1EIDH = 0x00;
     RXF1EIDL = 0x00;
     RXF1SIDH = 0x00;
@@ -191,10 +192,10 @@ void ECAN_Initialize(void)
     RXF14EIDL = 0x00;
     RXF14SIDH = 0x00;
     RXF14SIDL = 0x00;
-    RXF15EIDH = 0x00;
-    RXF15EIDL = 0x00;
-    RXF15SIDH = 0x00;
-    RXF15SIDL = 0x00;
+    RXF15EIDH = 0xFF;
+    RXF15EIDL = 0xFF;
+    RXF15SIDH = 0xFF;
+    RXF15SIDL = 0xE3;
     
     /**
     Initialize CAN Timings
