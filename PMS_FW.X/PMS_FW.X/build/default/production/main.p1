@@ -1502,581 +1502,619 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _input_voltage `f ~T0 @X0 1 a ]
 [e = _input_voltage -> * -> _adc_val `d .3.0 `f ]
 "28
-[; ;main.c: 28:     if (input_voltage >= 10.2){
+[; ;main.c: 28:     int voltage = (int)input_voltage;
+[v _voltage `i ~T0 @X0 1 a ]
+[e = _voltage -> _input_voltage `i ]
+"29
+[; ;main.c: 29:     tx21.frame.id = 0x1;
+[e = . . _tx21 0 1 -> -> -> 1 `i `l `ul ]
+"30
+[; ;main.c: 30:     tx21.frame.idType = 0x1;
+[e = . . _tx21 0 0 -> -> 1 `i `uc ]
+"31
+[; ;main.c: 31:     tx21.frame.dlc = 0x1;
+[e = . . _tx21 0 2 -> -> 1 `i `uc ]
+"32
+[; ;main.c: 32:     tx21.frame.data0 = voltage;
+[e = . . _tx21 0 3 -> _voltage `uc ]
+"33
+[; ;main.c: 33:     CAN_transmit(&tx21);
+[e ( _CAN_transmit (1 &U _tx21 ]
+"35
+[; ;main.c: 35:     if (input_voltage >= 10.2){
 [e $ ! >= -> _input_voltage `d .10.2 1547  ]
 {
-"29
-[; ;main.c: 29:         return 1;
+"36
+[; ;main.c: 36:         return 1;
 [e ) -> 1 `i ]
 [e $UE 1546  ]
-"30
-[; ;main.c: 30:     }
+"37
+[; ;main.c: 37:     }
 }
 [e $U 1548  ]
-"31
-[; ;main.c: 31:     else{
+"38
+[; ;main.c: 38:     else{
 [e :U 1547 ]
 {
-"32
-[; ;main.c: 32:         return 0;
+"39
+[; ;main.c: 39:         return 0;
 [e ) -> 0 `i ]
 [e $UE 1546  ]
-"33
-[; ;main.c: 33:     }
+"40
+[; ;main.c: 40:     }
 }
 [e :U 1548 ]
-"34
-[; ;main.c: 34: }
+"41
+[; ;main.c: 41: }
 [e :UE 1546 ]
 }
-"36
-[; ;main.c: 36: int ADC_Conv_pinNine(){
+"43
+[; ;main.c: 43: int ADC_Conv_pinNine(){
 [v _ADC_Conv_pinNine `(i ~T0 @X0 1 ef ]
 {
 [e :U _ADC_Conv_pinNine ]
 [f ]
-"37
-[; ;main.c: 37:     float adc_val = ADC_GetConversion(channel_AN6);
+"44
+[; ;main.c: 44:     float adc_val = ADC_GetConversion(channel_AN6);
 [v _adc_val `f ~T0 @X0 1 a ]
 [e = _adc_val -> ( _ADC_GetConversion (1 . `E12717 7 `f ]
-"38
-[; ;main.c: 38:     adc_val = (adc_val / 1023.0)*4.0;
+"45
+[; ;main.c: 45:     adc_val = (adc_val / 1023.0)*4.0;
 [e = _adc_val -> * / -> _adc_val `d .1023.0 .4.0 `f ]
-"39
-[; ;main.c: 39:     float input_voltage = adc_val*3.0;
+"46
+[; ;main.c: 46:     float input_voltage = adc_val*3.0;
 [v _input_voltage `f ~T0 @X0 1 a ]
 [e = _input_voltage -> * -> _adc_val `d .3.0 `f ]
-"40
-[; ;main.c: 40:     if (input_voltage >= 12){
+"47
+[; ;main.c: 47:     int voltage = (int)input_voltage;
+[v _voltage `i ~T0 @X0 1 a ]
+[e = _voltage -> _input_voltage `i ]
+"48
+[; ;main.c: 48:     tx21.frame.id = 0x1;
+[e = . . _tx21 0 1 -> -> -> 1 `i `l `ul ]
+"49
+[; ;main.c: 49:     tx21.frame.idType = 0x1;
+[e = . . _tx21 0 0 -> -> 1 `i `uc ]
+"50
+[; ;main.c: 50:     tx21.frame.dlc = 0x1;
+[e = . . _tx21 0 2 -> -> 1 `i `uc ]
+"51
+[; ;main.c: 51:     tx21.frame.data0 = voltage;
+[e = . . _tx21 0 3 -> _voltage `uc ]
+"52
+[; ;main.c: 52:     CAN_transmit(&tx21);
+[e ( _CAN_transmit (1 &U _tx21 ]
+"53
+[; ;main.c: 53:     if (input_voltage >= 12){
 [e $ ! >= _input_voltage -> -> 12 `i `f 1550  ]
 {
-"41
-[; ;main.c: 41:         return 1;
+"54
+[; ;main.c: 54:         return 1;
 [e ) -> 1 `i ]
 [e $UE 1549  ]
-"42
-[; ;main.c: 42:     }
+"55
+[; ;main.c: 55:     }
 }
 [e $U 1551  ]
-"43
-[; ;main.c: 43:     else{
+"56
+[; ;main.c: 56:     else{
 [e :U 1550 ]
 {
-"44
-[; ;main.c: 44:         return 0;
+"57
+[; ;main.c: 57:         return 0;
 [e ) -> 0 `i ]
 [e $UE 1549  ]
-"45
-[; ;main.c: 45:     }
+"58
+[; ;main.c: 58:     }
 }
 [e :U 1551 ]
-"46
-[; ;main.c: 46: }
+"59
+[; ;main.c: 59: }
 [e :UE 1549 ]
 }
-"49
-[; ;main.c: 49: void canbus_msg_startupfail(int number){
+"62
+[; ;main.c: 62: void canbus_msg_startupfail(int number){
 [v _canbus_msg_startupfail `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _canbus_msg_startupfail ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"50
-[; ;main.c: 50:     tx3.frame.idType = 1;
+"63
+[; ;main.c: 63:     tx3.frame.idType = 1;
 [e = . . _tx3 0 0 -> -> 1 `i `uc ]
-"51
-[; ;main.c: 51:     tx3.frame.id = 0x3;
+"64
+[; ;main.c: 64:     tx3.frame.id = 0x3;
 [e = . . _tx3 0 1 -> -> -> 3 `i `l `ul ]
-"52
-[; ;main.c: 52:     tx3.frame.dlc = 0x01;
+"65
+[; ;main.c: 65:     tx3.frame.dlc = 0x01;
 [e = . . _tx3 0 2 -> -> 1 `i `uc ]
-"53
-[; ;main.c: 53:     tx3.frame.data0 = number;
+"66
+[; ;main.c: 66:     tx3.frame.data0 = number;
 [e = . . _tx3 0 3 -> _number `uc ]
-"54
-[; ;main.c: 54:     CAN_transmit(&tx3);
+"67
+[; ;main.c: 67:     CAN_transmit(&tx3);
 [e ( _CAN_transmit (1 &U _tx3 ]
-"55
-[; ;main.c: 55: }
+"68
+[; ;main.c: 68: }
 [e :UE 1552 ]
 }
-"58
-[; ;main.c: 58: void canbus_msg_bps(int number){
+"71
+[; ;main.c: 71: void canbus_msg_bps(int number){
 [v _canbus_msg_bps `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _canbus_msg_bps ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"59
-[; ;main.c: 59:     tx4.frame.idType = 1;
+"72
+[; ;main.c: 72:     tx4.frame.idType = 1;
 [e = . . _tx4 0 0 -> -> 1 `i `uc ]
-"60
-[; ;main.c: 60:     tx4.frame.id = 0x4;
+"73
+[; ;main.c: 73:     tx4.frame.id = 0x4;
 [e = . . _tx4 0 1 -> -> -> 4 `i `l `ul ]
-"61
-[; ;main.c: 61:     tx4.frame.dlc = 0x01;
+"74
+[; ;main.c: 74:     tx4.frame.dlc = 0x01;
 [e = . . _tx4 0 2 -> -> 1 `i `uc ]
-"62
-[; ;main.c: 62:     tx4.frame.data0 = number;
+"75
+[; ;main.c: 75:     tx4.frame.data0 = number;
 [e = . . _tx4 0 3 -> _number `uc ]
-"63
-[; ;main.c: 63:     CAN_transmit(&tx4);
+"76
+[; ;main.c: 76:     CAN_transmit(&tx4);
 [e ( _CAN_transmit (1 &U _tx4 ]
-"64
-[; ;main.c: 64: }
+"77
+[; ;main.c: 77: }
 [e :UE 1553 ]
 }
-"67
-[; ;main.c: 67: void canbus_msg_auxfail(int number){
+"80
+[; ;main.c: 80: void canbus_msg_auxfail(int number){
 [v _canbus_msg_auxfail `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _canbus_msg_auxfail ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"68
-[; ;main.c: 68:     tx5.frame.idType = 1;
+"81
+[; ;main.c: 81:     tx5.frame.idType = 1;
 [e = . . _tx5 0 0 -> -> 1 `i `uc ]
-"69
-[; ;main.c: 69:     tx5.frame.id = 0x9;
+"82
+[; ;main.c: 82:     tx5.frame.id = 0x9;
 [e = . . _tx5 0 1 -> -> -> 9 `i `l `ul ]
-"70
-[; ;main.c: 70:     tx5.frame.dlc = 0x01;
+"83
+[; ;main.c: 83:     tx5.frame.dlc = 0x01;
 [e = . . _tx5 0 2 -> -> 1 `i `uc ]
-"71
-[; ;main.c: 71:     tx5.frame.data0 = number;
+"84
+[; ;main.c: 84:     tx5.frame.data0 = number;
 [e = . . _tx5 0 3 -> _number `uc ]
-"72
-[; ;main.c: 72:     CAN_transmit(&tx5);
+"85
+[; ;main.c: 85:     CAN_transmit(&tx5);
 [e ( _CAN_transmit (1 &U _tx5 ]
-"73
-[; ;main.c: 73: }
+"86
+[; ;main.c: 86: }
 [e :UE 1554 ]
 }
-"76
-[; ;main.c: 76: void canbus_msg_auxlow(int number){
+"89
+[; ;main.c: 89: void canbus_msg_auxlow(int number){
 [v _canbus_msg_auxlow `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _canbus_msg_auxlow ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"77
-[; ;main.c: 77:     tx6.frame.idType = 1;
+"90
+[; ;main.c: 90:     tx6.frame.idType = 1;
 [e = . . _tx6 0 0 -> -> 1 `i `uc ]
-"78
-[; ;main.c: 78:     tx6.frame.id = 0x5;
+"91
+[; ;main.c: 91:     tx6.frame.id = 0x5;
 [e = . . _tx6 0 1 -> -> -> 5 `i `l `ul ]
-"79
-[; ;main.c: 79:     tx6.frame.dlc = 0x01;
+"92
+[; ;main.c: 92:     tx6.frame.dlc = 0x01;
 [e = . . _tx6 0 2 -> -> 1 `i `uc ]
-"80
-[; ;main.c: 80:     tx6.frame.data0 = number;
+"93
+[; ;main.c: 93:     tx6.frame.data0 = number;
 [e = . . _tx6 0 3 -> _number `uc ]
-"81
-[; ;main.c: 81:     CAN_transmit(&tx6);
+"94
+[; ;main.c: 94:     CAN_transmit(&tx6);
 [e ( _CAN_transmit (1 &U _tx6 ]
-"82
-[; ;main.c: 82: }
+"95
+[; ;main.c: 95: }
 [e :UE 1555 ]
 }
-"85
-[; ;main.c: 85: void canbus_shutdown_success(int number){
+"98
+[; ;main.c: 98: void canbus_shutdown_success(int number){
 [v _canbus_shutdown_success `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _canbus_shutdown_success ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"86
-[; ;main.c: 86:     tx7.frame.idType = 1;
+"99
+[; ;main.c: 99:     tx7.frame.idType = 1;
 [e = . . _tx7 0 0 -> -> 1 `i `uc ]
-"87
-[; ;main.c: 87:     tx7.frame.id = 0x18;
+"100
+[; ;main.c: 100:     tx7.frame.id = 0x18;
 [e = . . _tx7 0 1 -> -> -> 24 `i `l `ul ]
-"88
-[; ;main.c: 88:     tx7.frame.dlc = 0x01;
+"101
+[; ;main.c: 101:     tx7.frame.dlc = 0x01;
 [e = . . _tx7 0 2 -> -> 1 `i `uc ]
-"89
-[; ;main.c: 89:     tx7.frame.data0 = number;
+"102
+[; ;main.c: 102:     tx7.frame.data0 = number;
 [e = . . _tx7 0 3 -> _number `uc ]
-"90
-[; ;main.c: 90:     CAN_transmit(&tx7);
+"103
+[; ;main.c: 103:     CAN_transmit(&tx7);
 [e ( _CAN_transmit (1 &U _tx7 ]
-"91
-[; ;main.c: 91: }
+"104
+[; ;main.c: 104: }
 [e :UE 1556 ]
 }
-"93
-[; ;main.c: 93: void canbus_msg_startup_success(int number){
+"106
+[; ;main.c: 106: void canbus_msg_startup_success(int number){
 [v _canbus_msg_startup_success `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _canbus_msg_startup_success ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"94
-[; ;main.c: 94:     tx9.frame.idType = 1;
+"107
+[; ;main.c: 107:     tx9.frame.idType = 1;
 [e = . . _tx9 0 0 -> -> 1 `i `uc ]
-"95
-[; ;main.c: 95:     tx9.frame.id = 0x22;
+"108
+[; ;main.c: 108:     tx9.frame.id = 0x22;
 [e = . . _tx9 0 1 -> -> -> 34 `i `l `ul ]
-"96
-[; ;main.c: 96:     tx9.frame.dlc = 0x01;
+"109
+[; ;main.c: 109:     tx9.frame.dlc = 0x01;
 [e = . . _tx9 0 2 -> -> 1 `i `uc ]
-"97
-[; ;main.c: 97:     tx9.frame.data0 = number;
+"110
+[; ;main.c: 110:     tx9.frame.data0 = number;
 [e = . . _tx9 0 3 -> _number `uc ]
-"98
-[; ;main.c: 98:     CAN_transmit(&tx9);
+"111
+[; ;main.c: 111:     CAN_transmit(&tx9);
 [e ( _CAN_transmit (1 &U _tx9 ]
-"99
-[; ;main.c: 99: }
+"112
+[; ;main.c: 112: }
 [e :UE 1557 ]
 }
-"101
-[; ;main.c: 101: void canbus_msg_ok(int number){
+"114
+[; ;main.c: 114: void canbus_msg_ok(int number){
 [v _canbus_msg_ok `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _canbus_msg_ok ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"102
-[; ;main.c: 102:     tx10.frame.idType = 1;
+"115
+[; ;main.c: 115:     tx10.frame.idType = 1;
 [e = . . _tx10 0 0 -> -> 1 `i `uc ]
-"103
-[; ;main.c: 103:     tx10.frame.id = 0x111;
+"116
+[; ;main.c: 116:     tx10.frame.id = 0x111;
 [e = . . _tx10 0 1 -> -> -> 273 `i `l `ul ]
-"104
-[; ;main.c: 104:     tx10.frame.dlc = 0x01;
+"117
+[; ;main.c: 117:     tx10.frame.dlc = 0x01;
 [e = . . _tx10 0 2 -> -> 1 `i `uc ]
-"105
-[; ;main.c: 105:     tx10.frame.data0 = number;
+"118
+[; ;main.c: 118:     tx10.frame.data0 = number;
 [e = . . _tx10 0 3 -> _number `uc ]
-"106
-[; ;main.c: 106:     CAN_transmit(&tx10);
+"119
+[; ;main.c: 119:     CAN_transmit(&tx10);
 [e ( _CAN_transmit (1 &U _tx10 ]
-"107
-[; ;main.c: 107: }
+"120
+[; ;main.c: 120: }
 [e :UE 1558 ]
 }
-"109
-[; ;main.c: 109: void canbus_latch_shutdown(int number){
+"122
+[; ;main.c: 122: void canbus_latch_shutdown(int number){
 [v _canbus_latch_shutdown `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _canbus_latch_shutdown ]
 [v _number `i ~T0 @X0 1 r1 ]
 [f ]
-"110
-[; ;main.c: 110:     tx8.frame.idType = 1;
+"123
+[; ;main.c: 123:     tx8.frame.idType = 1;
 [e = . . _tx8 0 0 -> -> 1 `i `uc ]
-"111
-[; ;main.c: 111:     tx8.frame.id = 0x17;
+"124
+[; ;main.c: 124:     tx8.frame.id = 0x17;
 [e = . . _tx8 0 1 -> -> -> 23 `i `l `ul ]
-"112
-[; ;main.c: 112:     tx8.frame.dlc = 0x01;
+"125
+[; ;main.c: 125:     tx8.frame.dlc = 0x01;
 [e = . . _tx8 0 2 -> -> 1 `i `uc ]
-"113
-[; ;main.c: 113:     tx8.frame.data0 = number;
+"126
+[; ;main.c: 126:     tx8.frame.data0 = number;
 [e = . . _tx8 0 3 -> _number `uc ]
-"114
-[; ;main.c: 114:     CAN_transmit(&tx8);
+"127
+[; ;main.c: 127:     CAN_transmit(&tx8);
 [e ( _CAN_transmit (1 &U _tx8 ]
-"115
-[; ;main.c: 115: }
+"128
+[; ;main.c: 128: }
 [e :UE 1559 ]
 }
-"117
-[; ;main.c: 117: void start_up_seq(void){
+"130
+[; ;main.c: 130: void start_up_seq(void){
 [v _start_up_seq `(v ~T0 @X0 1 ef ]
 {
 [e :U _start_up_seq ]
 [f ]
-"119
-[; ;main.c: 119:     if (ADC_Conv_pinSeven() == 1){
+"132
+[; ;main.c: 132:     if (ADC_Conv_pinSeven() == 1){
 [e $ ! == ( _ADC_Conv_pinSeven ..  -> 1 `i 1561  ]
 {
-"120
-[; ;main.c: 120:         do { LATCbits.LATC1 = 1; } while(0);
+"133
+[; ;main.c: 133:         do { LATCbits.LATC1 = 1; } while(0);
 [e :U 1564 ]
 {
 [e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
 }
 [e :U 1563 ]
-"121
-[; ;main.c: 121:         do { LATCbits.LATC2 = 1; } while(0);
+"134
+[; ;main.c: 134:         do { LATCbits.LATC2 = 1; } while(0);
 [e :U 1567 ]
 {
 [e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
 }
 [e :U 1566 ]
-"122
-[; ;main.c: 122:         _delay((unsigned long)((1000)*(20000000/4000.0)));
+"135
+[; ;main.c: 135:         _delay((unsigned long)((1000)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"123
-[; ;main.c: 123:         do { LATCbits.LATC0 = 1; } while(0);
+"136
+[; ;main.c: 136:         do { LATCbits.LATC0 = 1; } while(0);
 [e :U 1570 ]
 {
 [e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
 }
 [e :U 1569 ]
-"124
-[; ;main.c: 124:         do { LATCbits.LATC2 = 0; } while(0);
+"137
+[; ;main.c: 137:         do { LATCbits.LATC2 = 0; } while(0);
 [e :U 1573 ]
 {
 [e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
 }
 [e :U 1572 ]
-"125
-[; ;main.c: 125:         do { LATCbits.LATC6 = 1; } while(0);
+"138
+[; ;main.c: 138:         do { LATCbits.LATC6 = 1; } while(0);
 [e :U 1576 ]
 {
 [e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
 }
 [e :U 1575 ]
-"128
-[; ;main.c: 128:         if (ADC_Conv_pinNine() == 1){
+"141
+[; ;main.c: 141:         if (ADC_Conv_pinNine() == 1){
 [e $ ! == ( _ADC_Conv_pinNine ..  -> 1 `i 1577  ]
 {
-"129
-[; ;main.c: 129:             do { LATAbits.LATA2 = 1; } while(0);
+"142
+[; ;main.c: 142:             do { LATAbits.LATA2 = 1; } while(0);
 [e :U 1580 ]
 {
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 }
 [e :U 1579 ]
-"130
-[; ;main.c: 130:             do { LATAbits.LATA3 = 1; } while(0);
+"143
+[; ;main.c: 143:             do { LATAbits.LATA3 = 1; } while(0);
 [e :U 1583 ]
 {
 [e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 1582 ]
-"131
-[; ;main.c: 131:             STARTUP_SUCCESS = 1;
+"144
+[; ;main.c: 144:             STARTUP_SUCCESS = 1;
 [e = _STARTUP_SUCCESS -> 1 `i ]
-"132
-[; ;main.c: 132:             canbus_msg_startup_success(1);
+"145
+[; ;main.c: 145:             canbus_msg_startup_success(1);
 [e ( _canbus_msg_startup_success (1 -> 1 `i ]
-"133
-[; ;main.c: 133:         }
+"146
+[; ;main.c: 146:         }
 }
 [e $U 1584  ]
-"134
-[; ;main.c: 134:         else{
+"147
+[; ;main.c: 147:         else{
 [e :U 1577 ]
 {
-"135
-[; ;main.c: 135:             do { LATCbits.LATC0 = 0; } while(0);
+"148
+[; ;main.c: 148:             do { LATCbits.LATC0 = 0; } while(0);
 [e :U 1587 ]
 {
 [e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
 }
 [e :U 1586 ]
-"136
-[; ;main.c: 136:             do { LATCbits.LATC1 = 0; } while(0);
+"149
+[; ;main.c: 149:             do { LATCbits.LATC1 = 0; } while(0);
 [e :U 1590 ]
 {
 [e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
 }
 [e :U 1589 ]
-"138
-[; ;main.c: 138:             canbus_msg_startupfail(1);
+"151
+[; ;main.c: 151:             canbus_msg_startupfail(1);
 [e ( _canbus_msg_startupfail (1 -> 1 `i ]
-"139
-[; ;main.c: 139:             canbus_latch_shutdown(1);
+"152
+[; ;main.c: 152:             canbus_latch_shutdown(1);
 [e ( _canbus_latch_shutdown (1 -> 1 `i ]
-"141
-[; ;main.c: 141:         }
+"154
+[; ;main.c: 154:         }
 }
 [e :U 1584 ]
-"142
-[; ;main.c: 142:     }
+"155
+[; ;main.c: 155:     }
 }
 [e $U 1591  ]
-"143
-[; ;main.c: 143:     else{
+"156
+[; ;main.c: 156:     else{
 [e :U 1561 ]
 {
-"144
-[; ;main.c: 144:         _delay((unsigned long)((5000)*(20000000/4000.0)));
+"157
+[; ;main.c: 157:         _delay((unsigned long)((5000)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 5000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"146
-[; ;main.c: 146:         canbus_msg_auxlow(1);
+"159
+[; ;main.c: 159:         canbus_msg_auxlow(1);
 [e ( _canbus_msg_auxlow (1 -> 1 `i ]
-"147
-[; ;main.c: 147:         canbus_latch_shutdown(1);
+"160
+[; ;main.c: 160:         canbus_latch_shutdown(1);
 [e ( _canbus_latch_shutdown (1 -> 1 `i ]
-"148
-[; ;main.c: 148:     }
+"161
+[; ;main.c: 161:     }
 }
 [e :U 1591 ]
-"149
-[; ;main.c: 149: }
+"162
+[; ;main.c: 162: }
 [e :UE 1560 ]
 }
-"151
-[; ;main.c: 151: void shutdown_seq(void){
+"164
+[; ;main.c: 164: void shutdown_seq(void){
 [v _shutdown_seq `(v ~T0 @X0 1 ef ]
 {
 [e :U _shutdown_seq ]
 [f ]
-"152
-[; ;main.c: 152:     canbus_shutdown_success(1);
+"165
+[; ;main.c: 165:     canbus_shutdown_success(1);
 [e ( _canbus_shutdown_success (1 -> 1 `i ]
-"153
-[; ;main.c: 153: }
+"166
+[; ;main.c: 166: }
 [e :UE 1592 ]
 }
-"155
-[; ;main.c: 155: void e_stop_seq(void){
+"168
+[; ;main.c: 168: void e_stop_seq(void){
 [v _e_stop_seq `(v ~T0 @X0 1 ef ]
 {
 [e :U _e_stop_seq ]
 [f ]
-"156
-[; ;main.c: 156:     canbus_msg_bps(1);
+"169
+[; ;main.c: 169:     canbus_msg_bps(1);
 [e ( _canbus_msg_bps (1 -> 1 `i ]
-"157
-[; ;main.c: 157:     do { LATAbits.LATA3 = 0; } while(0);
+"170
+[; ;main.c: 170:     do { LATAbits.LATA3 = 0; } while(0);
 [e :U 1596 ]
 {
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 1595 ]
-"158
-[; ;main.c: 158:     do { LATAbits.LATA2 = 0; } while(0);
+"171
+[; ;main.c: 171:     do { LATAbits.LATA2 = 0; } while(0);
 [e :U 1599 ]
 {
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 }
 [e :U 1598 ]
-"159
-[; ;main.c: 159: }
+"172
+[; ;main.c: 172: }
 [e :UE 1593 ]
 }
-"161
-[; ;main.c: 161: void aux_battery_LV(void){
+"174
+[; ;main.c: 174: void aux_battery_LV(void){
 [v _aux_battery_LV `(v ~T0 @X0 1 ef ]
 {
 [e :U _aux_battery_LV ]
 [f ]
-"162
-[; ;main.c: 162:     canbus_msg_auxlow(1);
+"175
+[; ;main.c: 175:     canbus_msg_auxlow(1);
 [e ( _canbus_msg_auxlow (1 -> 1 `i ]
-"163
-[; ;main.c: 163: }
+"176
+[; ;main.c: 176: }
 [e :UE 1600 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"165
-[; ;main.c: 165: void main(void){
+"178
+[; ;main.c: 178: void main(void){
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"167
-[; ;main.c: 167:     SYSTEM_Initialize();
+"180
+[; ;main.c: 180:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"168
-[; ;main.c: 168:     STARTUP_SUCCESS = 0;
+"181
+[; ;main.c: 181:     STARTUP_SUCCESS = 0;
 [e = _STARTUP_SUCCESS -> 0 `i ]
-"169
-[; ;main.c: 169:     int iter = 0;
+"182
+[; ;main.c: 182:     int iter = 0;
 [v _iter `i ~T0 @X0 1 a ]
 [e = _iter -> 0 `i ]
-"170
-[; ;main.c: 170:     while (1){
+"183
+[; ;main.c: 183:     while (1){
 [e :U 1603 ]
 {
-"171
-[; ;main.c: 171:         if (STARTUP_SUCCESS == 0){
+"184
+[; ;main.c: 184:         if (STARTUP_SUCCESS == 0){
 [e $ ! == _STARTUP_SUCCESS -> 0 `i 1605  ]
 {
-"172
-[; ;main.c: 172:                 start_up_seq();
+"185
+[; ;main.c: 185:                 start_up_seq();
 [e ( _start_up_seq ..  ]
-"173
-[; ;main.c: 173:         }
+"186
+[; ;main.c: 186:         }
 }
 [e $U 1606  ]
-"174
-[; ;main.c: 174:         else{
+"187
+[; ;main.c: 187:         else{
 [e :U 1605 ]
 {
-"175
-[; ;main.c: 175:             if (CAN_receive(&rx)){
+"188
+[; ;main.c: 188:             if (CAN_receive(&rx)){
 [e $ ! != -> ( _CAN_receive (1 &U _rx `i -> 0 `i 1607  ]
 {
-"176
-[; ;main.c: 176:                 if (rx.frame.idType == 1){
+"189
+[; ;main.c: 189:                 if (rx.frame.idType == 1){
 [e $ ! == -> . . _rx 0 0 `i -> 1 `i 1608  ]
 {
-"177
-[; ;main.c: 177:                     if (rx.frame.id == 0x255){
+"190
+[; ;main.c: 190:                     if (rx.frame.id == 0x255){
 [e $ ! == . . _rx 0 1 -> -> -> 597 `i `l `ul 1609  ]
 {
-"178
-[; ;main.c: 178:                         shutdown_seq();
+"191
+[; ;main.c: 191:                         shutdown_seq();
 [e ( _shutdown_seq ..  ]
-"179
-[; ;main.c: 179:                     }
+"192
+[; ;main.c: 192:                     }
 }
 [e :U 1609 ]
-"180
-[; ;main.c: 180:                 }
+"193
+[; ;main.c: 193:                 }
 }
 [e :U 1608 ]
-"181
-[; ;main.c: 181:             }
+"194
+[; ;main.c: 194:             }
 }
 [e :U 1607 ]
-"182
-[; ;main.c: 182:             if (ADC_Conv_pinSeven() == 0){
+"195
+[; ;main.c: 195:             if (ADC_Conv_pinSeven() == 0){
 [e $ ! == ( _ADC_Conv_pinSeven ..  -> 0 `i 1610  ]
 {
-"183
-[; ;main.c: 183:                 aux_battery_LV();
+"196
+[; ;main.c: 196:                 aux_battery_LV();
 [e ( _aux_battery_LV ..  ]
-"184
-[; ;main.c: 184:             }
+"197
+[; ;main.c: 197:             }
 }
 [e :U 1610 ]
-"185
-[; ;main.c: 185:             if (ADC_Conv_pinNine() == 0){
+"198
+[; ;main.c: 198:             if (ADC_Conv_pinNine() == 0){
 [e $ ! == ( _ADC_Conv_pinNine ..  -> 0 `i 1611  ]
 {
-"186
-[; ;main.c: 186:                 e_stop_seq();
+"199
+[; ;main.c: 199:                 e_stop_seq();
 [e ( _e_stop_seq ..  ]
-"187
-[; ;main.c: 187:             }
+"200
+[; ;main.c: 200:             }
 }
 [e :U 1611 ]
-"188
-[; ;main.c: 188:             if (iter >= 1000){
+"201
+[; ;main.c: 201:             if (iter >= 1000){
 [e $ ! >= _iter -> 1000 `i 1612  ]
 {
-"189
-[; ;main.c: 189:                 canbus_msg_ok(1);
+"202
+[; ;main.c: 202:                 canbus_msg_ok(1);
 [e ( _canbus_msg_ok (1 -> 1 `i ]
-"190
-[; ;main.c: 190:                 iter = 0;
+"203
+[; ;main.c: 203:                 iter = 0;
 [e = _iter -> 0 `i ]
-"191
-[; ;main.c: 191:             }
+"204
+[; ;main.c: 204:             }
 }
 [e :U 1612 ]
-"192
-[; ;main.c: 192:         }
+"205
+[; ;main.c: 205:         }
 }
 [e :U 1606 ]
-"194
-[; ;main.c: 194:         iter += 1;
+"207
+[; ;main.c: 207:         iter += 1;
 [e =+ _iter -> 1 `i ]
-"195
-[; ;main.c: 195:     }
+"208
+[; ;main.c: 208:     }
 }
 [e :U 1602 ]
 [e $U 1603  ]
 [e :U 1604 ]
-"196
-[; ;main.c: 196:  }
+"209
+[; ;main.c: 209:  }
 [e :UE 1601 ]
 }

@@ -1,5 +1,5 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F12437 `(v ~T0 @X0 0 tf ]
+[v F12427 `(v ~T0 @X0 0 tf ]
 "29165 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 29165: extern volatile unsigned char CANCON __attribute__((address(0xF6F)));
 [v _CANCON `Vuc ~T0 @X0 0 e@3951 ]
@@ -282,10 +282,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "354
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 354: extern volatile unsigned char BRGCON3 __attribute__((address(0xE45)));
 [v _BRGCON3 `Vuc ~T0 @X0 0 e@3653 ]
-[v F12432 `(v ~T0 @X0 0 tf ]
+[v F12422 `(v ~T0 @X0 0 tf ]
 "316 mcc_generated_files/ecan.h
 [; ;mcc_generated_files/ecan.h: 316: void ECAN_SetWakeUpInterruptHandler(void (*handler)(void));
-[v _ECAN_SetWakeUpInterruptHandler `(v ~T0 @X0 0 ef1`*F12432 ]
+[v _ECAN_SetWakeUpInterruptHandler `(v ~T0 @X0 0 ef1`*F12422 ]
 "29623 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 29623:     struct {
 [s S1116 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -662,8 +662,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "29332
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 29332: extern volatile COMSTATbits_t COMSTATbits __attribute__((address(0xF71)));
 [v _COMSTATbits `VS1098 ~T0 @X0 0 e@3953 ]
-[v F12498 `(v ~T0 @X0 0 tf ]
-[v F12500 `(v ~T0 @X0 0 tf ]
+[v F12488 `(v ~T0 @X0 0 tf ]
+[v F12490 `(v ~T0 @X0 0 tf ]
 "55 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 55: __asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
@@ -2058,7 +2058,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 0FFFh ;# ">
 "54 mcc_generated_files/ecan.c
 [; ;mcc_generated_files/ecan.c: 54: static void (*WakeUpInterruptHandler)(void);
-[v _WakeUpInterruptHandler `*F12437 ~T0 @X0 1 s ]
+[v _WakeUpInterruptHandler `*F12427 ~T0 @X0 1 s ]
 "63
 [; ;mcc_generated_files/ecan.c: 63: static void WakeUpDefaultInterruptHandler(void) {}
 [v _WakeUpDefaultInterruptHandler `(v ~T0 @X0 1 sf ]
@@ -3119,14 +3119,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "498
 [; ;mcc_generated_files/ecan.c: 498: void ECAN_SetWakeUpInterruptHandler(void (*handler)(void))
-[v _ECAN_SetWakeUpInterruptHandler `(v ~T0 @X0 1 ef1`*F12498 ]
+[v _ECAN_SetWakeUpInterruptHandler `(v ~T0 @X0 1 ef1`*F12488 ]
 "499
 [; ;mcc_generated_files/ecan.c: 499: {
 {
 [e :U _ECAN_SetWakeUpInterruptHandler ]
 "498
 [; ;mcc_generated_files/ecan.c: 498: void ECAN_SetWakeUpInterruptHandler(void (*handler)(void))
-[v _handler `*F12500 ~T0 @X0 1 r1 ]
+[v _handler `*F12490 ~T0 @X0 1 r1 ]
 "499
 [; ;mcc_generated_files/ecan.c: 499: {
 [f ]

@@ -25,6 +25,13 @@ int ADC_Conv_pinSeven(){
     float adc_val = ADC_GetConversion(channel_AN4);
     adc_val = (adc_val / 1023.0)*4.0; //10 bit adc , 5V= reference voltage
     float input_voltage = adc_val*3.0;
+    int voltage = (int)input_voltage;
+    tx21.frame.id = 0x1;
+    tx21.frame.idType = 0x1;
+    tx21.frame.dlc = 0x1;
+    tx21.frame.data0 = voltage;
+    CAN_transmit(&tx21);
+    
     if (input_voltage >= 10.2){
         return 1;
     }
@@ -37,6 +44,12 @@ int ADC_Conv_pinNine(){
     float adc_val = ADC_GetConversion(channel_AN6);
     adc_val = (adc_val / 1023.0)*4.0; //10 bit adc , 5V= reference voltage
     float input_voltage = adc_val*3.0;
+    int voltage = (int)input_voltage;
+    tx21.frame.id = 0x1;
+    tx21.frame.idType = 0x1;
+    tx21.frame.dlc = 0x1;
+    tx21.frame.data0 = voltage;
+    CAN_transmit(&tx21);
     if (input_voltage >= 12){
         return 1;
     }
