@@ -9,11 +9,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S1544 . frame array ]
 "25 main.c
 [; ;main.c: 25:     float adc_val = ADC_GetConversion(channel_AN4);
-[c E12717 28 29 30 31 2 3 4 6 .. ]
-[n E12717 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap IO_RA2 IO_RA3 channel_AN4 channel_AN6  ]
+[c E12730 28 29 30 31 2 3 4 6 .. ]
+[n E12730 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap IO_RA2 IO_RA3 channel_AN4 channel_AN6  ]
 "255 ./mcc_generated_files/adc.h
 [; ;./mcc_generated_files/adc.h: 255: adc_result_t ADC_GetConversion(adc_channel_t channel);
-[v _ADC_GetConversion `(us ~T0 @X0 0 ef1`E12717 ]
+[v _ADC_GetConversion `(us ~T0 @X0 0 ef1`E12730 ]
 "158 ./mcc_generated_files/ecan.h
 [; ;./mcc_generated_files/ecan.h: 158: uint8_t CAN_transmit(uCAN_MSG *tempCanMsg);
 [v _CAN_transmit `(uc ~T0 @X0 0 ef1`*S1544 ]
@@ -32,9 +32,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "30734
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30734: extern volatile LATCbits_t LATCbits __attribute__((address(0xF8B)));
 [v _LATCbits `VS1166 ~T0 @X0 0 e@3979 ]
-[v F192 `(v ~T0 @X0 1 tf1`ul ]
+[v F202 `(v ~T0 @X0 1 tf1`ul ]
 "12 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\builtins.h
-[v __delay `JF192 ~T0 @X0 0 e ]
+[v __delay `JF202 ~T0 @X0 0 e ]
 [p i __delay ]
 "30499 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30499:     struct {
@@ -1493,7 +1493,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "25
 [; ;main.c: 25:     float adc_val = ADC_GetConversion(channel_AN4);
 [v _adc_val `f ~T0 @X0 1 a ]
-[e = _adc_val -> ( _ADC_GetConversion (1 . `E12717 6 `f ]
+[e = _adc_val -> ( _ADC_GetConversion (1 . `E12730 6 `f ]
 "26
 [; ;main.c: 26:     adc_val = (adc_val / 1023.0)*4.0;
 [e = _adc_val -> * / -> _adc_val `d .1023.0 .4.0 `f ]
@@ -1517,9 +1517,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32
 [; ;main.c: 32:     tx21.frame.data0 = voltage;
 [e = . . _tx21 0 3 -> _voltage `uc ]
-"33
-[; ;main.c: 33:     CAN_transmit(&tx21);
-[e ( _CAN_transmit (1 &U _tx21 ]
 "35
 [; ;main.c: 35:     if (input_voltage >= 10.2){
 [e $ ! >= -> _input_voltage `d .10.2 1547  ]
@@ -1557,14 +1554,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "44
 [; ;main.c: 44:     float adc_val = ADC_GetConversion(channel_AN6);
 [v _adc_val `f ~T0 @X0 1 a ]
-[e = _adc_val -> ( _ADC_GetConversion (1 . `E12717 7 `f ]
+[e = _adc_val -> ( _ADC_GetConversion (1 . `E12730 7 `f ]
 "45
-[; ;main.c: 45:     adc_val = (adc_val / 1023.0)*4.0;
-[e = _adc_val -> * / -> _adc_val `d .1023.0 .4.0 `f ]
+[; ;main.c: 45:     adc_val = (adc_val / 4095.0)*5.5;
+[e = _adc_val -> * / -> _adc_val `d .4095.0 .5.5 `f ]
 "46
-[; ;main.c: 46:     float input_voltage = adc_val*3.0;
+[; ;main.c: 46:     float input_voltage = adc_val*2.18;
 [v _input_voltage `f ~T0 @X0 1 a ]
-[e = _input_voltage -> * -> _adc_val `d .3.0 `f ]
+[e = _input_voltage -> * -> _adc_val `d .2.18 `f ]
 "47
 [; ;main.c: 47:     int voltage = (int)input_voltage;
 [v _voltage `i ~T0 @X0 1 a ]
@@ -2109,12 +2106,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 207:         iter += 1;
 [e =+ _iter -> 1 `i ]
 "208
-[; ;main.c: 208:     }
+[; ;main.c: 208:         _delay((unsigned long)((1000)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"209
+[; ;main.c: 209:     }
 }
 [e :U 1602 ]
 [e $U 1603  ]
 [e :U 1604 ]
-"209
-[; ;main.c: 209:  }
+"210
+[; ;main.c: 210:  }
 [e :UE 1601 ]
 }

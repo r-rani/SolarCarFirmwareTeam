@@ -1,5 +1,5 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F12415 `(v ~T0 @X0 0 tf ]
+[v F12425 `(v ~T0 @X0 0 tf ]
 "34939 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 34939: extern volatile unsigned char ADCON0 __attribute__((address(0xFC2)));
 [v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
@@ -17,8 +17,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _ADRESL `Vuc ~T0 @X0 0 e@4035 ]
 "83 mcc_generated_files/adc.c
 [; ;mcc_generated_files/adc.c: 83: void ADC_StartConversion(adc_channel_t channel)
-[c E12396 28 29 30 31 2 3 4 6 .. ]
-[n E12396 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap IO_RA2 IO_RA3 channel_AN4 channel_AN6  ]
+[c E12406 28 29 30 31 2 3 4 6 .. ]
+[n E12406 . channel_CTMU channel_Temp_diode channel_Vdd_core channel_1_024V_bandgap IO_RA2 IO_RA3 channel_AN4 channel_AN6  ]
 "34945 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 34945:     struct {
 [s S1362 :1 `uc 1 :1 `uc 1 ]
@@ -58,9 +58,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "34984
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 34984: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0xFC2)));
 [v _ADCON0bits `VS1361 ~T0 @X0 0 e@4034 ]
-[v F192 `(v ~T0 @X0 1 tf1`ul ]
+[v F202 `(v ~T0 @X0 1 tf1`ul ]
 "12 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\builtins.h
-[v __delay `JF192 ~T0 @X0 0 e ]
+[v __delay `JF202 ~T0 @X0 0 e ]
 [p i __delay ]
 "55 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 55: __asm("RXERRCNT equ 0E41h");
@@ -1456,7 +1456,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 0FFFh ;# ">
 "56 mcc_generated_files/adc.c
 [; ;mcc_generated_files/adc.c: 56: void (*ADC_InterruptHandler)(void);
-[v _ADC_InterruptHandler `*F12415 ~T0 @X0 1 e ]
+[v _ADC_InterruptHandler `*F12425 ~T0 @X0 1 e ]
 "62
 [; ;mcc_generated_files/adc.c: 62: void ADC_Initialize(void)
 [v _ADC_Initialize `(v ~T0 @X0 1 ef ]
@@ -1486,14 +1486,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "83
 [; ;mcc_generated_files/adc.c: 83: void ADC_StartConversion(adc_channel_t channel)
-[v _ADC_StartConversion `(v ~T0 @X0 1 ef1`E12396 ]
+[v _ADC_StartConversion `(v ~T0 @X0 1 ef1`E12406 ]
 "84
 [; ;mcc_generated_files/adc.c: 84: {
 {
 [e :U _ADC_StartConversion ]
 "83
 [; ;mcc_generated_files/adc.c: 83: void ADC_StartConversion(adc_channel_t channel)
-[v _channel `E12396 ~T0 @X0 1 r1 ]
+[v _channel `E12406 ~T0 @X0 1 r1 ]
 "84
 [; ;mcc_generated_files/adc.c: 84: {
 [f ]
@@ -1544,14 +1544,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 "108
 [; ;mcc_generated_files/adc.c: 108: adc_result_t ADC_GetConversion(adc_channel_t channel)
-[v _ADC_GetConversion `(us ~T0 @X0 1 ef1`E12396 ]
+[v _ADC_GetConversion `(us ~T0 @X0 1 ef1`E12406 ]
 "109
 [; ;mcc_generated_files/adc.c: 109: {
 {
 [e :U _ADC_GetConversion ]
 "108
 [; ;mcc_generated_files/adc.c: 108: adc_result_t ADC_GetConversion(adc_channel_t channel)
-[v _channel `E12396 ~T0 @X0 1 r1 ]
+[v _channel `E12406 ~T0 @X0 1 r1 ]
 "109
 [; ;mcc_generated_files/adc.c: 109: {
 [f ]
