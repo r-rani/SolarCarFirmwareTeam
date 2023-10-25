@@ -22,35 +22,34 @@ static int iterator = 0; //motor while loop iterator
 uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8,tx9,tx10,tx13,tx20,tx21; //initializations for transmit and receive messages
 
 int ADC_Conv_pinSeven(){
-    float adc_val = ADC_GetConversion(channel_AN4);
-    adc_val = (adc_val / 1023.0)*4.0; //10 bit adc , 5V= reference voltage
-    float input_voltage = adc_val*3.0;
-    int voltage = (int)input_voltage;
+    int adc_val = ADC_GetConversion(channel_AN4);
+    float input_voltage = (float)((adc_val / 4095.0)*5.0); //10 bit adc , 5V= reference voltage
+    //int voltage = (int)input_voltage;
     tx21.frame.id = 0x1;
     tx21.frame.idType = 0x1;
     tx21.frame.dlc = 0x1;
-    tx21.frame.data0 = voltage;
-//    CAN_transmit(&tx21);
+    tx21.frame.data0 = input_voltage;
+    CAN_transmit(&tx21);
     
-    if (input_voltage >= 10.2){
+    if (input_voltage >= 3.4){
         return 1;
     }
     else{
-        return 0;
+        return 1; //debug
     }
 }
 
 int ADC_Conv_pinNine(){
     float adc_val = ADC_GetConversion(channel_AN6);
-    adc_val = (adc_val / 4095.0)*4; //10 bit adc , 5V= reference voltage
-    float input_voltage = adc_val*3;
-    int voltage = (int)input_voltage;
-    tx21.frame.id = 0x1;
-    tx21.frame.idType = 0x1;
-    tx21.frame.dlc = 0x1;
-    tx21.frame.data0 = voltage;
-    CAN_transmit(&tx21);
-    if (input_voltage >= 12){
+    //adc_val = ((adc_val / 4095.0)*5.0); //12 bit adc , 5V= reference voltage
+    //int input_voltage = (int)adc_val;
+    //int voltage = (int)input_voltage;
+    tx20.frame.id = 0x2;
+    tx20.frame.idType = 0x1;
+    tx20.frame.dlc = 0x1;
+    tx20.frame.data0 = (int)((adc_val / 4095.0)*5.0);
+    CAN_transmit(&tx20);
+    if (((adc_val / 4095.0)*5.0) >= 4){
         return 1;
     }
     else{

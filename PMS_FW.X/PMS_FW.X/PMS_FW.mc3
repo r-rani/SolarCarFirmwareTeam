@@ -148,7 +148,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="conversionTime"/>
-         <value>0.0000014</value>
+         <value>0.0000224</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="dependentModuleKey"/>
@@ -160,11 +160,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="samplingFrequency"/>
-         <value>714.2857 kHz</value>
+         <value>44.6429 kHz</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="tadValue"/>
-         <value>100.0 ns</value>
+         <value>1.6 us</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="validateSignal"/>
@@ -396,7 +396,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ADC" registerAlias="ADCON2"/>
-         <value>128</value>
+         <value>138</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ADC" registerAlias="ADRESH"/>
@@ -436,11 +436,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADCON2" settingAlias="ACQT"/>
-         <value>0_Tad</value>
+         <value>2_Tad</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADCON2" settingAlias="ADCS"/>
-         <value>FOSC/2</value>
+         <value>FOSC/32</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADCON2" settingAlias="ADFM"/>
@@ -12611,58 +12611,58 @@
          <value>4194.30400</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.TreeMap">
+   <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>main.c</file>
-         <hash>38af3cf765c11fa66645c60c26f06ac4188a5f392f0dbe4a36c1f94f96fb06f4</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\adc.c</file>
-         <hash>7c92be5c65a8d1d8160d3b1e6a5813fe5d3d9b90a05f7b1201224b06507d9a90</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\adc.h</file>
-         <hash>69e755d173b2dbebfa1bfcca2f87e7202e3a38da40922ef80c826f8d9247e7d3</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\device_config.c</file>
-         <hash>bfa9a845cc51527aa1e024998e1f440168e5e59dba1ab0082caa3af7d2ec0830</hash>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>21d3e6bf1511ac653c0153b2d1a3eb8cd5db525187f519fb6511b9879b0ce532</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
          <hash>3a59dc060569423fa49fb0efa8ac35f6a38ec2e435432e2ac31fe24efad554ff</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\ecan.c</file>
-         <hash>0f854cbcca74b5b637377a78432ac258be7070140e586353b0e01d577bc8e695</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\ecan.h</file>
-         <hash>8fae077d5123fb408bd51409b4a0f1bb1c91c2fa40b8ea2b93825467e1c74967</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\interrupt_manager.c</file>
-         <hash>ae85a6fea9e7d0ee77c99730e86b8714cb07a379b27bef174c7654356f866ad0</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\interrupt_manager.h</file>
          <hash>7548b0a19317ce666c478ed44fc9c81ac4e839285c50c46177ffd452fdc53bfc</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>007464ea6b8828a9bc878acb9a9e424771122b5c00938ea3de1963d549cac4a0</hash>
+         <file>main.c</file>
+         <hash>38af3cf765c11fa66645c60c26f06ac4188a5f392f0dbe4a36c1f94f96fb06f4</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>21d3e6bf1511ac653c0153b2d1a3eb8cd5db525187f519fb6511b9879b0ce532</hash>
+         <file>mcc_generated_files\device_config.c</file>
+         <hash>bfa9a845cc51527aa1e024998e1f440168e5e59dba1ab0082caa3af7d2ec0830</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>981f50524a481d3d25a072531d030bc729afab8f95a8de5e6157cc5a3a163305</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\adc.h</file>
+         <hash>3a7904c64529d4ce3f8c2c985864825675138bf0d6afde3b96cbee7f56afeded</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
          <hash>c8c8320ecbfedd6a01aa9c7bd232fec586e353a29d29f5f5f5dc67e621e22a89</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\pin_manager.h</file>
-         <hash>981f50524a481d3d25a072531d030bc729afab8f95a8de5e6157cc5a3a163305</hash>
+         <file>mcc_generated_files\adc.c</file>
+         <hash>88f8a530e30a52310c47fac723f9c2afa69aeafe8e7363d5dca93d4f7121a5c5</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\ecan.c</file>
+         <hash>0f854cbcca74b5b637377a78432ac258be7070140e586353b0e01d577bc8e695</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>007464ea6b8828a9bc878acb9a9e424771122b5c00938ea3de1963d549cac4a0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>ae85a6fea9e7d0ee77c99730e86b8714cb07a379b27bef174c7654356f866ad0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\ecan.h</file>
+         <hash>8fae077d5123fb408bd51409b4a0f1bb1c91c2fa40b8ea2b93825467e1c74967</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
