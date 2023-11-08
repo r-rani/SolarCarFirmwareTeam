@@ -1,4 +1,4 @@
-<config configName="default" projectName="LV_FW_V1" configVersion="1.1" device="PIC18F46K80" deviceLibraryClass="com.microchip.mcc.mcu8.Mcu8PeripheralLibrary" coreVersion="5.3.3">
+<config configName="default" projectName="LV_FW_V1" configVersion="1.1" device="PIC18F46K80" deviceLibraryClass="com.microchip.mcc.mcu8.Mcu8PeripheralLibrary" coreVersion="5.4.11">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -96,7 +96,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ECAN" name="canBaudComboBox"/>
-         <value>50kbps</value>
+         <value>250kbps</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ECAN" name="canClockFreqKey"/>
@@ -156,7 +156,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ECAN" name="message ID"/>
-         <value>103</value>
+         <value>291</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ECAN" name="rxPinMapper"/>
@@ -3223,6 +3223,126 @@
          <value>RXB0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%10%canFilter"/>
+         <value>Filter 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%10%canID"/>
+         <value>0x8F4</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%10%canIdType"/>
+         <value>EID</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%10%canMask"/>
+         <value>Acceptance Mask 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%10%canReceiveBuffer"/>
+         <value>RXB0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%11%canFilter"/>
+         <value>Filter 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%11%canID"/>
+         <value>0x22</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%11%canIdType"/>
+         <value>SID</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%11%canMask"/>
+         <value>Acceptance Mask 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%11%canReceiveBuffer"/>
+         <value>RXB0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%12%canFilter"/>
+         <value>Filter 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%12%canID"/>
+         <value>0x12</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%12%canIdType"/>
+         <value>SID</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%12%canMask"/>
+         <value>Acceptance Mask 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%12%canReceiveBuffer"/>
+         <value>RXB0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%13%canFilter"/>
+         <value>Filter 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%13%canID"/>
+         <value>0x122</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%13%canIdType"/>
+         <value>SID</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%13%canMask"/>
+         <value>Acceptance Mask 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%13%canReceiveBuffer"/>
+         <value>RXB0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%14%canFilter"/>
+         <value>Filter 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%14%canID"/>
+         <value>0x121</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%14%canIdType"/>
+         <value>SID</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%14%canMask"/>
+         <value>Acceptance Mask 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%14%canReceiveBuffer"/>
+         <value>RXB0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%15%canFilter"/>
+         <value>Filter 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%15%canID"/>
+         <value>0x123</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%15%canIdType"/>
+         <value>SID</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%15%canMask"/>
+         <value>Acceptance Mask 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%15%canReceiveBuffer"/>
+         <value>RXB0</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%2%canFilter"/>
          <value>Filter 0</value>
       </entry>
@@ -3300,6 +3420,86 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%5%canReceiveBuffer"/>
+         <value>RXB0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%6%canFilter"/>
+         <value>Filter 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%6%canID"/>
+         <value>0x2F4</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%6%canIdType"/>
+         <value>SID</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%6%canMask"/>
+         <value>Acceptance Mask 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%6%canReceiveBuffer"/>
+         <value>RXB0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%7%canFilter"/>
+         <value>Filter 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%7%canID"/>
+         <value>0x4F4</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%7%canIdType"/>
+         <value>SID</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%7%canMask"/>
+         <value>Acceptance Mask 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%7%canReceiveBuffer"/>
+         <value>RXB0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%8%canFilter"/>
+         <value>Filter 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%8%canID"/>
+         <value>0x5F4</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%8%canIdType"/>
+         <value>SID</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%8%canMask"/>
+         <value>Acceptance Mask 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%8%canReceiveBuffer"/>
+         <value>RXB0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%9%canFilter"/>
+         <value>Filter 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%9%canID"/>
+         <value>0x7F4</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%9%canIdType"/>
+         <value>SID</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%9%canMask"/>
+         <value>Acceptance Mask 0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="ECAN" name="data%9%canReceiveBuffer"/>
          <value>RXB0</value>
       </entry>
       <entry>
@@ -3644,7 +3844,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="BRGCON1"/>
-         <value>19</value>
+         <value>3</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="BRGCON2"/>
@@ -3700,19 +3900,19 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXF0EIDH"/>
-         <value>0</value>
+         <value>8</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXF0EIDL"/>
-         <value>0</value>
+         <value>244</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXF0SIDH"/>
-         <value>12</value>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXF0SIDL"/>
-         <value>32</value>
+         <value>8</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXF10EIDH"/>
@@ -4004,7 +4204,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXM0SIDH"/>
-         <value>255</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="RXM0SIDL"/>
@@ -5604,7 +5804,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="BRGCON1" settingAlias="BRP"/>
-         <value>TQ = (2 x 20)/FOSC</value>
+         <value>TQ = (2 x 4)/FOSC</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="BRGCON1" settingAlias="SJW"/>
@@ -12137,12 +12337,12 @@
          <hash>2c38c69efd786e9b6d7faceab23e43440469064a458949f54ee24a27ad061613</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\device_config.c</file>
-         <hash>a759c5ce879e2036cf78e555d72c4f057cd8984250ce34f287d99a8238d5ad19</hash>
+         <file>mcc_generated_files\ecan.c</file>
+         <hash>729f8ef4a2ccf700d20abf2fe299f28f0a59ba9dba0185d13841992a770a5db7</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\ecan.c</file>
-         <hash>069042cca7fb6925aa5c072e4b2c1d16a15d20bf1129c6e0a315372f405ebcc2</hash>
+         <file>mcc_generated_files\device_config.c</file>
+         <hash>a759c5ce879e2036cf78e555d72c4f057cd8984250ce34f287d99a8238d5ad19</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.h</file>

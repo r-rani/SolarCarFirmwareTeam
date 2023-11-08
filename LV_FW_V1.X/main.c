@@ -20,6 +20,18 @@ uCAN_MSG rx;
 
 void main(void){
     SYSTEM_Initialize();
+    
+    while (1){
+        if (CAN_receive(&rx)){
+            if (rx.frame.id == 0x22){//startup success from PMS
+                break;
+            }
+            else if (rx.frame.id == 0x122){
+                //do nothing
+            }
+        }
+    }
+    
     while (1){
         
 //        FrontSignal_SetHigh();
