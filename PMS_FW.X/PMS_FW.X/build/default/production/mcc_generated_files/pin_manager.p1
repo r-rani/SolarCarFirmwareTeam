@@ -1507,8 +1507,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 73:     TRISD = 0xFF;
 [e = _TRISD -> -> 255 `i `uc ]
 "78
-[; ;mcc_generated_files/pin_manager.c: 78:     ANCON0 = 0xFF;
-[e = _ANCON0 -> -> 255 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 78:     ANCON0 = 0xAF;
+[e = _ANCON0 -> -> 175 `i `uc ]
 "79
 [; ;mcc_generated_files/pin_manager.c: 79:     ANCON1 = 0x7F;
 [e = _ANCON1 -> -> 127 `i `uc ]

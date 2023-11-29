@@ -22,7 +22,9 @@ static int iterator = 0; //motor while loop iterator
 uCAN_MSG rx, tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8,tx9,tx10,tx13,tx20,tx21; //initializations for transmit and receive messages
 
 int ADC_Conv_pinSeven(){
-    int adc_val = ADC_GetConversion(channel_AN4);
+    //int adc_val = ADC_GetConversion(channel_AN4);
+    int adc_val= IO_RA5_GetValue();
+    return adc_val;
     float input_voltage = (float)((adc_val / 4095.0)*5.0); //10 bit adc , 5V= reference voltage
     //int voltage = (int)input_voltage;
     tx21.frame.id = 0x1;
@@ -40,7 +42,9 @@ int ADC_Conv_pinSeven(){
 }
 
 int ADC_Conv_pinNine(){
-    float adc_val = ADC_GetConversion(channel_AN6);
+    int adc_val= IO_RE1_GetValue();
+    return adc_val;
+    //float adc_val = ADC_GetConversion(channel_AN6);
     //adc_val = ((adc_val / 4095.0)*5.0); //12 bit adc , 5V= reference voltage
     //int input_voltage = (int)adc_val;
     //int voltage = (int)input_voltage;
@@ -177,7 +181,6 @@ void aux_battery_LV(void){
 void main(void){
     // Initialize the device
     SYSTEM_Initialize();
-    STARTUP_SUCCESS = 0;
     int iter = 0;
     while (1){
         if (STARTUP_SUCCESS == 0){
@@ -197,14 +200,13 @@ void main(void){
             if (ADC_Conv_pinNine() == 0){ //DCDC low
                 e_stop_seq();
             }
-            if (iter >= 1000){
+            if (iter >= 10000){
                 canbus_msg_ok(1);
                 iter = 0;
             }
         }
         
         iter += 1;
-        __delay_ms(1000);
     }
  }
 

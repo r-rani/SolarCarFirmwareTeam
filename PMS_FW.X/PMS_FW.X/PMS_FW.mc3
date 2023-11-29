@@ -76,7 +76,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="CHSN_AN4"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="CHSN_AN5"/>
@@ -84,7 +84,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="CHSN_AN6"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="CUST_NAME_1_024V_bandgap"/>
@@ -9724,7 +9724,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA5"/>
-         <value>channel_AN4</value>
+         <value>IO_RA5</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA6"/>
@@ -9836,7 +9836,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RE1"/>
-         <value>channel_AN6</value>
+         <value>IO_RE1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RE2"/>
@@ -9868,7 +9868,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RA5"/>
-         <value>disabled</value>
+         <value>input</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RA6"/>
@@ -9980,7 +9980,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RE1"/>
-         <value>disabled</value>
+         <value>input</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RE2"/>
@@ -11388,7 +11388,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ANCON0"/>
-         <value>255</value>
+         <value>175</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ANCON1"/>
@@ -11464,7 +11464,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANCON0" settingAlias="ANSEL4"/>
-         <value>analog</value>
+         <value>digital</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANCON0" settingAlias="ANSEL5"/>
@@ -11472,7 +11472,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANCON0" settingAlias="ANSEL6"/>
-         <value>analog</value>
+         <value>digital</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANCON0" settingAlias="ANSEL7"/>
@@ -12613,16 +12613,16 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>7548b0a19317ce666c478ed44fc9c81ac4e839285c50c46177ffd452fdc53bfc</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\mcc.h</file>
          <hash>21d3e6bf1511ac653c0153b2d1a3eb8cd5db525187f519fb6511b9879b0ce532</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
          <hash>3a59dc060569423fa49fb0efa8ac35f6a38ec2e435432e2ac31fe24efad554ff</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\interrupt_manager.h</file>
-         <hash>7548b0a19317ce666c478ed44fc9c81ac4e839285c50c46177ffd452fdc53bfc</hash>
       </entry>
       <entry>
          <file>main.c</file>
@@ -12634,15 +12634,15 @@
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.h</file>
-         <hash>981f50524a481d3d25a072531d030bc729afab8f95a8de5e6157cc5a3a163305</hash>
+         <hash>f4f5afab1a0e4b8178bbfa9f33c9bcc160c05e0ded8274e4d3b9c054aebbe26e</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\adc.h</file>
-         <hash>3a7904c64529d4ce3f8c2c985864825675138bf0d6afde3b96cbee7f56afeded</hash>
+         <hash>70dbcfc8d8103d0454be40fba3c1e59b83cc276c77f22104c112a7b7063285eb</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
-         <hash>c8c8320ecbfedd6a01aa9c7bd232fec586e353a29d29f5f5f5dc67e621e22a89</hash>
+         <hash>dc96e9df86a740f6e44ebfae3c038a534f240539fe6d464237d6774b0ba8c125</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\adc.c</file>
@@ -12653,12 +12653,12 @@
          <hash>0f854cbcca74b5b637377a78432ac258be7070140e586353b0e01d577bc8e695</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>007464ea6b8828a9bc878acb9a9e424771122b5c00938ea3de1963d549cac4a0</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\interrupt_manager.c</file>
          <hash>ae85a6fea9e7d0ee77c99730e86b8714cb07a379b27bef174c7654356f866ad0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>007464ea6b8828a9bc878acb9a9e424771122b5c00938ea3de1963d549cac4a0</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\ecan.h</file>
