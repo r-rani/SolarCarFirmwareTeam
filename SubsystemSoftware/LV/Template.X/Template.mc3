@@ -96,7 +96,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ECAN" name="canBaudComboBox"/>
-         <value>125kbps</value>
+         <value>250kbps</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ECAN" name="canClockFreqKey"/>
@@ -3564,7 +3564,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="BRGCON1"/>
-         <value>7</value>
+         <value>3</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ECAN" registerAlias="BRGCON2"/>
@@ -5524,7 +5524,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="BRGCON1" settingAlias="BRP"/>
-         <value>TQ = (2 x 8)/FOSC</value>
+         <value>TQ = (2 x 4)/FOSC</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ECAN" registerAlias="BRGCON1" settingAlias="SJW"/>
@@ -12039,7 +12039,19 @@
          <value>4194.30400</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.TreeMap">
+   <generatedFileHashHistoryMap class="java.util.HashMap">
+      <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>d08d419d15ab8bf802d6186c5107d4a85bd203c0cf201da87c287e82a3c4d902</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\device_config.h</file>
+         <hash>dcf0ee792b5fd390e69bce160ec55f19d4f24138b95568e75f75ddada32da2bb</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>f4a5465ee263050a74514b1968ae91398461d14f853cdaf72f6a8ec978cdf4b5</hash>
+      </entry>
       <entry>
          <file>main.c</file>
          <hash>2c38c69efd786e9b6d7faceab23e43440469064a458949f54ee24a27ad061613</hash>
@@ -12049,40 +12061,28 @@
          <hash>a759c5ce879e2036cf78e555d72c4f057cd8984250ce34f287d99a8238d5ad19</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\device_config.h</file>
-         <hash>dcf0ee792b5fd390e69bce160ec55f19d4f24138b95568e75f75ddada32da2bb</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\ecan.c</file>
-         <hash>9e65639a72664beb7e56ac3d256d8e169a317ce7c41605682a8530de2403a3e2</hash>
+         <hash>e0bf18320f40decf3fadcd57911d23855f02aec522b5dea28be439544b45abd3</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\ecan.h</file>
-         <hash>2cf262a3d8da7a881191432fb0bcd5d9cef9017d11b96d6f4bd913a90d623dab</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\interrupt_manager.c</file>
-         <hash>8a9214ffa5ba1c6b95277151f50e3a7b561f5cb1e408488625cc295a7e66bc1b</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\interrupt_manager.h</file>
-         <hash>f4a5465ee263050a74514b1968ae91398461d14f853cdaf72f6a8ec978cdf4b5</hash>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>192b6baa2d53a56b4386db50340b1592d977c2b09cbda58391109696f8e5ed62</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
          <hash>77f13003f4357693fa9ad230858516a7f98aee5ad55ddd9c51b7ec96525fab51</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>d08d419d15ab8bf802d6186c5107d4a85bd203c0cf201da87c287e82a3c4d902</hash>
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>8a9214ffa5ba1c6b95277151f50e3a7b561f5cb1e408488625cc295a7e66bc1b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\ecan.h</file>
+         <hash>2cf262a3d8da7a881191432fb0bcd5d9cef9017d11b96d6f4bd913a90d623dab</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
          <hash>35f42e277b09f763e4fb6c842dfe28ea917cf89c07f39c7ee36d55ef0ace5130</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.h</file>
-         <hash>192b6baa2d53a56b4386db50340b1592d977c2b09cbda58391109696f8e5ed62</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

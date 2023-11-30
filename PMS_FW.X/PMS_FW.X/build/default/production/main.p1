@@ -2072,67 +2072,70 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 193:                         shutdown_seq();
 [e ( _shutdown_seq ..  ]
 "194
-[; ;main.c: 194:                     }
+[; ;main.c: 194:                         break;
+[e $U 1604  ]
+"195
+[; ;main.c: 195:                     }
 }
 [e :U 1609 ]
-"195
-[; ;main.c: 195:                 }
+"196
+[; ;main.c: 196:                 }
 }
 [e :U 1608 ]
-"196
-[; ;main.c: 196:             }
+"197
+[; ;main.c: 197:             }
 }
 [e :U 1607 ]
-"197
-[; ;main.c: 197:             if (ADC_Conv_pinSeven() == 0){
+"198
+[; ;main.c: 198:             if (ADC_Conv_pinSeven() == 0){
 [e $ ! == ( _ADC_Conv_pinSeven ..  -> 0 `i 1610  ]
 {
-"198
-[; ;main.c: 198:                 aux_battery_LV();
-[e ( _aux_battery_LV ..  ]
 "199
-[; ;main.c: 199:             }
+[; ;main.c: 199:                 aux_battery_LV();
+[e ( _aux_battery_LV ..  ]
+"200
+[; ;main.c: 200:             }
 }
 [e :U 1610 ]
-"200
-[; ;main.c: 200:             if (ADC_Conv_pinNine() == 0){
+"201
+[; ;main.c: 201:             if (ADC_Conv_pinNine() == 0){
 [e $ ! == ( _ADC_Conv_pinNine ..  -> 0 `i 1611  ]
 {
-"201
-[; ;main.c: 201:                 e_stop_seq();
-[e ( _e_stop_seq ..  ]
 "202
-[; ;main.c: 202:             }
+[; ;main.c: 202:                 e_stop_seq();
+[e ( _e_stop_seq ..  ]
+"203
+[; ;main.c: 203:             }
 }
 [e :U 1611 ]
-"203
-[; ;main.c: 203:             if (iter >= 10000){
+"204
+[; ;main.c: 204:             if (iter >= 10000){
 [e $ ! >= _iter -> 10000 `i 1612  ]
 {
-"204
-[; ;main.c: 204:                 canbus_msg_ok(1);
-[e ( _canbus_msg_ok (1 -> 1 `i ]
 "205
-[; ;main.c: 205:                 iter = 0;
-[e = _iter -> 0 `i ]
+[; ;main.c: 205:                 canbus_msg_ok(1);
+[e ( _canbus_msg_ok (1 -> 1 `i ]
 "206
-[; ;main.c: 206:             }
+[; ;main.c: 206:                 iter = 0;
+[e = _iter -> 0 `i ]
+"207
+[; ;main.c: 207:             }
 }
 [e :U 1612 ]
-"207
-[; ;main.c: 207:         }
+"208
+[; ;main.c: 208:         }
 }
 [e :U 1606 ]
-"209
-[; ;main.c: 209:         iter += 1;
-[e =+ _iter -> 1 `i ]
 "210
-[; ;main.c: 210:     }
+[; ;main.c: 210:         iter += 1;
+[e =+ _iter -> 1 `i ]
+"211
+[; ;main.c: 211:     }
 }
 [e :U 1602 ]
 [e $U 1603  ]
 [e :U 1604 ]
-"211
-[; ;main.c: 211:  }
+"212
+[; ;main.c: 212:  }
 [e :UE 1601 ]
 }

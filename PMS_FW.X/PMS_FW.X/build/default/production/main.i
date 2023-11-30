@@ -20959,6 +20959,7 @@ void main(void){
                 if (rx.frame.idType == 1){
                     if (rx.frame.id == 0x255){
                         shutdown_seq();
+                        break;
                     }
                 }
             }
