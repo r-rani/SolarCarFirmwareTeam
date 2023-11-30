@@ -49,6 +49,17 @@ int latchb10 = 0;
 
 void main(void){
     SYSTEM_Initialize();
+    
+    while (1){
+        if (CAN_receive(&rx)){
+            if (rx.frame.id == 0x22){//startup success from PMS
+                break;
+            }
+            else if (rx.frame.id == 0x122){
+                //do nothing
+            }
+        }
+    }
     RC6_SetHigh();//Init Transmission on HMI Bus
     __delay_ms(1000);
     init();//clear display through UART
@@ -153,7 +164,7 @@ void main(void){
         if (CAN_receive(&rx)){
             if (rx.frame.idType == 1){
                 //BMS failure or ESTOP procedure
-                if (rx.frame.id == 0x02F4 || rx.frame.id == 0x04F4 || rx.frame.id == 0x05F4 || rx.frame.id == 0x07F4 || rx.frame.id == 0x08F4){
+                if (rx.frame.id == 0x02F4 || rx.frame.id == 0x04F4 || rx.frame.id == 0x05F4 || rx.frame.id == 0x07F4 || rx.frame.id == 0x08F4 || rx.frame.id == 0x4){
                     __delay_ms(1);
                     warningLED(1);
                 }

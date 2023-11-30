@@ -11,6 +11,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "72 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+"182 ./mcc_generated_files/ecan.h
+[; ;./mcc_generated_files/ecan.h: 182: uint8_t CAN_receive(uCAN_MSG *tempCanMsg);
+[v _CAN_receive `(uc ~T0 @X0 0 ef1`*S1546 ]
 "30712 C:/Users/ethan/.mchp_packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k80.h
 [; ;C:/Users/ethan/.mchp_packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f46k80.h: 30712:     struct {
 [s S1167 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -63,10 +66,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12 ./uart_interface.h
 [; ;./uart_interface.h: 12: void motorSpeed(int);
 [v _motorSpeed `(v ~T0 @X0 0 ef1`i ]
-"182 ./mcc_generated_files/ecan.h
-[; ;./mcc_generated_files/ecan.h: 182: uint8_t CAN_receive(uCAN_MSG *tempCanMsg);
-[v _CAN_receive `(uc ~T0 @X0 0 ef1`*S1546 ]
-"10 ./uart_interface.h
+"10
 [; ;./uart_interface.h: 10: void warningLED(int);
 [v _warningLED `(v ~T0 @X0 0 ef1`i ]
 "11
@@ -1591,334 +1591,373 @@ Version 4.0 HI-TECH Software Intermediate Code
 "51
 [; ;main.c: 51:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"52
-[; ;main.c: 52:     do { LATCbits.LATC6 = 1; } while(0);
+"53
+[; ;main.c: 53:     while (1){
+[e :U 1550 ]
+{
+"54
+[; ;main.c: 54:         if (CAN_receive(&rx)){
+[e $ ! != -> ( _CAN_receive (1 &U _rx `i -> 0 `i 1552  ]
+{
+"55
+[; ;main.c: 55:             if (rx.frame.id == 0x22){
+[e $ ! == . . _rx 0 1 -> -> -> 34 `i `l `ul 1553  ]
+{
+"56
+[; ;main.c: 56:                 break;
+[e $U 1551  ]
+"57
+[; ;main.c: 57:             }
+}
+[e $U 1554  ]
+"58
+[; ;main.c: 58:             else if (rx.frame.id == 0x122){
+[e :U 1553 ]
+[e $ ! == . . _rx 0 1 -> -> -> 290 `i `l `ul 1555  ]
+{
+"60
+[; ;main.c: 60:             }
+}
+[e :U 1555 ]
+[e :U 1554 ]
+"61
+[; ;main.c: 61:         }
+}
+[e :U 1552 ]
+"62
+[; ;main.c: 62:     }
+}
+[e :U 1549 ]
+[e $U 1550  ]
 [e :U 1551 ]
+"63
+[; ;main.c: 63:     do { LATCbits.LATC6 = 1; } while(0);
+[e :U 1558 ]
 {
 [e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
 }
-[e :U 1550 ]
-"53
-[; ;main.c: 53:     _delay((unsigned long)((1000)*(20000000/4000.0)));
+[e :U 1557 ]
+"64
+[; ;main.c: 64:     _delay((unsigned long)((1000)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"54
-[; ;main.c: 54:     init();
+"65
+[; ;main.c: 65:     init();
 [e ( _init ..  ]
-"55
-[; ;main.c: 55:     _delay((unsigned long)((500)*(20000000/4000.0)));
+"66
+[; ;main.c: 66:     _delay((unsigned long)((500)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"56
-[; ;main.c: 56:     char tog = 1;
+"67
+[; ;main.c: 67:     char tog = 1;
 [v _tog `uc ~T0 @X0 1 a ]
 [e = _tog -> -> 1 `i `uc ]
-"57
-[; ;main.c: 57:     int counter = 0;
+"68
+[; ;main.c: 68:     int counter = 0;
 [v _counter `i ~T0 @X0 1 a ]
 [e = _counter -> 0 `i ]
-"58
-[; ;main.c: 58:     int speed = 0;
+"69
+[; ;main.c: 69:     int speed = 0;
 [v _speed `i ~T0 @X0 1 a ]
 [e = _speed -> 0 `i ]
-"60
-[; ;main.c: 60:     while (1){
-[e :U 1553 ]
-{
-"61
-[; ;main.c: 61:         counter++;
-[e ++ _counter -> 1 `i ]
-"62
-[; ;main.c: 62:         _delay((unsigned long)((50)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"68
-[; ;main.c: 68:         if (b10FuncActive && !lastb10 && !blinkb1 && !blinkb2){
-[e $ ! && && && != _b10FuncActive -> 0 `i ! != _lastb10 -> 0 `i ! != _blinkb1 -> 0 `i ! != _blinkb2 -> 0 `i 1555  ]
-{
-"69
-[; ;main.c: 69:             blinkb10 = 1;
-[e = _blinkb10 -> 1 `i ]
-"70
-[; ;main.c: 70:             canRightSignal(1);
-[e ( _canRightSignal (1 -> 1 `i ]
 "71
-[; ;main.c: 71:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 71:     while (1){
+[e :U 1560 ]
+{
 "72
-[; ;main.c: 72:             rightTurnIndicator(1);
-[e ( _rightTurnIndicator (1 -> 1 `i ]
+[; ;main.c: 72:         counter++;
+[e ++ _counter -> 1 `i ]
 "73
-[; ;main.c: 73:              _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"74
-[; ;main.c: 74:         }
-}
-[e :U 1555 ]
-"75
-[; ;main.c: 75:         if (b1FuncActive && !lastb1 && !blinkb2 && !blinkb10){
-[e $ ! && && && != _b1FuncActive -> 0 `i ! != _lastb1 -> 0 `i ! != _blinkb2 -> 0 `i ! != _blinkb10 -> 0 `i 1556  ]
-{
-"76
-[; ;main.c: 76:             blinkb1 = 1;
-[e = _blinkb1 -> 1 `i ]
-"77
-[; ;main.c: 77:             canLeftSignal(1);
-[e ( _canLeftSignal (1 -> 1 `i ]
-"78
-[; ;main.c: 78:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 73:         _delay((unsigned long)((50)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "79
-[; ;main.c: 79:             leftTurnIndicator(1);
-[e ( _leftTurnIndicator (1 -> 1 `i ]
-"80
-[; ;main.c: 80:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"81
-[; ;main.c: 81:         }
-}
-[e :U 1556 ]
-"82
-[; ;main.c: 82:         if (b2FuncActive && !lastb2){
-[e $ ! && != _b2FuncActive -> 0 `i ! != _lastb2 -> 0 `i 1557  ]
+[; ;main.c: 79:         if (b10FuncActive && !lastb10 && !blinkb1 && !blinkb2){
+[e $ ! && && && != _b10FuncActive -> 0 `i ! != _lastb10 -> 0 `i ! != _blinkb1 -> 0 `i ! != _blinkb2 -> 0 `i 1562  ]
 {
+"80
+[; ;main.c: 80:             blinkb10 = 1;
+[e = _blinkb10 -> 1 `i ]
+"81
+[; ;main.c: 81:             canRightSignal(1);
+[e ( _canRightSignal (1 -> 1 `i ]
+"82
+[; ;main.c: 82:             _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "83
-[; ;main.c: 83:             blinkb2 = 1;
-[e = _blinkb2 -> 1 `i ]
+[; ;main.c: 83:             rightTurnIndicator(1);
+[e ( _rightTurnIndicator (1 -> 1 `i ]
 "84
-[; ;main.c: 84:             blinkb1 = 0;
-[e = _blinkb1 -> 0 `i ]
+[; ;main.c: 84:              _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "85
-[; ;main.c: 85:             blinkb10 = 0;
-[e = _blinkb10 -> 0 `i ]
+[; ;main.c: 85:         }
+}
+[e :U 1562 ]
+"86
+[; ;main.c: 86:         if (b1FuncActive && !lastb1 && !blinkb2 && !blinkb10){
+[e $ ! && && && != _b1FuncActive -> 0 `i ! != _lastb1 -> 0 `i ! != _blinkb2 -> 0 `i ! != _blinkb10 -> 0 `i 1563  ]
+{
+"87
+[; ;main.c: 87:             blinkb1 = 1;
+[e = _blinkb1 -> 1 `i ]
 "88
-[; ;main.c: 88:             canLeftSignal(0);
-[e ( _canLeftSignal (1 -> 0 `i ]
+[; ;main.c: 88:             canLeftSignal(1);
+[e ( _canLeftSignal (1 -> 1 `i ]
 "89
 [; ;main.c: 89:             _delay((unsigned long)((1)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "90
-[; ;main.c: 90:             canRightSignal(0);
-[e ( _canRightSignal (1 -> 0 `i ]
+[; ;main.c: 90:             leftTurnIndicator(1);
+[e ( _leftTurnIndicator (1 -> 1 `i ]
 "91
 [; ;main.c: 91:             _delay((unsigned long)((1)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "92
-[; ;main.c: 92:             leftTurnIndicator(0);
-[e ( _leftTurnIndicator (1 -> 0 `i ]
+[; ;main.c: 92:         }
+}
+[e :U 1563 ]
 "93
-[; ;main.c: 93:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 93:         if (b2FuncActive && !lastb2){
+[e $ ! && != _b2FuncActive -> 0 `i ! != _lastb2 -> 0 `i 1564  ]
+{
 "94
-[; ;main.c: 94:             rightTurnIndicator(0);
-[e ( _rightTurnIndicator (1 -> 0 `i ]
+[; ;main.c: 94:             blinkb2 = 1;
+[e = _blinkb2 -> 1 `i ]
 "95
-[; ;main.c: 95:              _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"97
-[; ;main.c: 97:             canHazardSignal(1);
-[e ( _canHazardSignal (1 -> 1 `i ]
-"98
-[; ;main.c: 98:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 95:             blinkb1 = 0;
+[e = _blinkb1 -> 0 `i ]
+"96
+[; ;main.c: 96:             blinkb10 = 0;
+[e = _blinkb10 -> 0 `i ]
 "99
-[; ;main.c: 99:             hazardSignal(1);
-[e ( _hazardSignal (1 -> 1 `i ]
+[; ;main.c: 99:             canLeftSignal(0);
+[e ( _canLeftSignal (1 -> 0 `i ]
 "100
 [; ;main.c: 100:             _delay((unsigned long)((1)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "101
-[; ;main.c: 101:         }
-}
-[e :U 1557 ]
-"104
-[; ;main.c: 104:         if (!b10FuncActive && lastb10){
-[e $ ! && ! != _b10FuncActive -> 0 `i != _lastb10 -> 0 `i 1558  ]
-{
-"105
-[; ;main.c: 105:             blinkb10 = 0;
-[e = _blinkb10 -> 0 `i ]
-"106
-[; ;main.c: 106:             canRightSignal(0);
+[; ;main.c: 101:             canRightSignal(0);
 [e ( _canRightSignal (1 -> 0 `i ]
-"107
-[; ;main.c: 107:             _delay((unsigned long)((1)*(20000000/4000.0)));
+"102
+[; ;main.c: 102:             _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"103
+[; ;main.c: 103:             leftTurnIndicator(0);
+[e ( _leftTurnIndicator (1 -> 0 `i ]
+"104
+[; ;main.c: 104:             _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"105
+[; ;main.c: 105:             rightTurnIndicator(0);
+[e ( _rightTurnIndicator (1 -> 0 `i ]
+"106
+[; ;main.c: 106:              _delay((unsigned long)((1)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "108
-[; ;main.c: 108:             rightTurnIndicator(0);
-[e ( _rightTurnIndicator (1 -> 0 `i ]
+[; ;main.c: 108:             canHazardSignal(1);
+[e ( _canHazardSignal (1 -> 1 `i ]
 "109
-[; ;main.c: 109:              _delay((unsigned long)((1)*(20000000/4000.0)));
+[; ;main.c: 109:             _delay((unsigned long)((1)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "110
-[; ;main.c: 110:         }
-}
-[e :U 1558 ]
+[; ;main.c: 110:             hazardSignal(1);
+[e ( _hazardSignal (1 -> 1 `i ]
 "111
-[; ;main.c: 111:         if (!b1FuncActive && lastb1){
-[e $ ! && ! != _b1FuncActive -> 0 `i != _lastb1 -> 0 `i 1559  ]
-{
+[; ;main.c: 111:             _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "112
-[; ;main.c: 112:             blinkb1 = 0;
-[e = _blinkb1 -> 0 `i ]
-"113
-[; ;main.c: 113:             canLeftSignal(0);
-[e ( _canLeftSignal (1 -> 0 `i ]
-"114
-[; ;main.c: 114:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"115
-[; ;main.c: 115:             leftTurnIndicator(0);
-[e ( _leftTurnIndicator (1 -> 0 `i ]
-"116
-[; ;main.c: 116:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"117
-[; ;main.c: 117:         }
-}
-[e :U 1559 ]
-"118
-[; ;main.c: 118:         if (!b2FuncActive && lastb2){
-[e $ ! && ! != _b2FuncActive -> 0 `i != _lastb2 -> 0 `i 1560  ]
-{
-"119
-[; ;main.c: 119:             blinkb2 = 0;
-[e = _blinkb2 -> 0 `i ]
-"120
-[; ;main.c: 120:             canHazardSignal(0);
-[e ( _canHazardSignal (1 -> 0 `i ]
-"121
-[; ;main.c: 121:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"122
-[; ;main.c: 122:             hazardSignal(0);
-[e ( _hazardSignal (1 -> 0 `i ]
-"123
-[; ;main.c: 123:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"124
-[; ;main.c: 124:         }
-}
-[e :U 1560 ]
-"136
-[; ;main.c: 136:         lastb1 = b1FuncActive;
-[e = _lastb1 _b1FuncActive ]
-"137
-[; ;main.c: 137:         lastb2 = b2FuncActive;
-[e = _lastb2 _b2FuncActive ]
-"138
-[; ;main.c: 138:         lastb10 = b10FuncActive;
-[e = _lastb10 _b10FuncActive ]
-"140
-[; ;main.c: 140:         leftTurnButton(&b1FuncActive, &latchb1);
-[e ( _leftTurnButton (2 , &U _b1FuncActive &U _latchb1 ]
-"141
-[; ;main.c: 141:         rightTurnButton(&b10FuncActive, &latchb10);
-[e ( _rightTurnButton (2 , &U _b10FuncActive &U _latchb10 ]
-"142
-[; ;main.c: 142:         hazardButton(&b2FuncActive, &latchb2);
-[e ( _hazardButton (2 , &U _b2FuncActive &U _latchb2 ]
-"144
-[; ;main.c: 144:         if (counter >= 10 && speed != -1){
-[e $ ! && >= _counter -> 10 `i != _speed -U -> 1 `i 1561  ]
-{
-"145
-[; ;main.c: 145:             counter = 0;
-[e = _counter -> 0 `i ]
-"146
-[; ;main.c: 146:             motorSpeed(speed);
-[e ( _motorSpeed (1 _speed ]
-"147
-[; ;main.c: 147:             speed++;
-[e ++ _speed -> 1 `i ]
-"148
-[; ;main.c: 148:         }
-}
-[e :U 1561 ]
-"153
-[; ;main.c: 153:         if (CAN_receive(&rx)){
-[e $ ! != -> ( _CAN_receive (1 &U _rx `i -> 0 `i 1562  ]
-{
-"154
-[; ;main.c: 154:             if (rx.frame.idType == 1){
-[e $ ! == -> . . _rx 0 0 `i -> 1 `i 1563  ]
-{
-"156
-[; ;main.c: 156:                 if (rx.frame.id == 0x02F4 || rx.frame.id == 0x04F4 || rx.frame.id == 0x05F4 || rx.frame.id == 0x07F4 || rx.frame.id == 0x08F4){
-[e $ ! || || || || == . . _rx 0 1 -> -> -> 756 `i `l `ul == . . _rx 0 1 -> -> -> 1268 `i `l `ul == . . _rx 0 1 -> -> -> 1524 `i `l `ul == . . _rx 0 1 -> -> -> 2036 `i `l `ul == . . _rx 0 1 -> -> -> 2292 `i `l `ul 1564  ]
-{
-"157
-[; ;main.c: 157:                     _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"158
-[; ;main.c: 158:                     warningLED(1);
-[e ( _warningLED (1 -> 1 `i ]
-"159
-[; ;main.c: 159:                 }
+[; ;main.c: 112:         }
 }
 [e :U 1564 ]
-"161
-[; ;main.c: 161:                 if (rx.frame.id == 0x80){
-[e $ ! == . . _rx 0 1 -> -> -> 128 `i `l `ul 1565  ]
+"115
+[; ;main.c: 115:         if (!b10FuncActive && lastb10){
+[e $ ! && ! != _b10FuncActive -> 0 `i != _lastb10 -> 0 `i 1565  ]
 {
-"162
-[; ;main.c: 162:                     if (rx.frame.data0 == 1){
-[e $ ! == -> . . _rx 0 3 `i -> 1 `i 1566  ]
-{
-"163
-[; ;main.c: 163:                         _delay((unsigned long)((1)*(20000000/4000.0)));
+"116
+[; ;main.c: 116:             blinkb10 = 0;
+[e = _blinkb10 -> 0 `i ]
+"117
+[; ;main.c: 117:             canRightSignal(0);
+[e ( _canRightSignal (1 -> 0 `i ]
+"118
+[; ;main.c: 118:             _delay((unsigned long)((1)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"164
-[; ;main.c: 164:                         auxBattConn(1);
-[e ( _auxBattConn (1 -> 1 `i ]
-"165
-[; ;main.c: 165:                     }
+"119
+[; ;main.c: 119:             rightTurnIndicator(0);
+[e ( _rightTurnIndicator (1 -> 0 `i ]
+"120
+[; ;main.c: 120:              _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"121
+[; ;main.c: 121:         }
 }
-[e $U 1567  ]
-"166
-[; ;main.c: 166:                     else {
-[e :U 1566 ]
+[e :U 1565 ]
+"122
+[; ;main.c: 122:         if (!b1FuncActive && lastb1){
+[e $ ! && ! != _b1FuncActive -> 0 `i != _lastb1 -> 0 `i 1566  ]
 {
-"167
-[; ;main.c: 167:                         _delay((unsigned long)((1)*(20000000/4000.0)));
+"123
+[; ;main.c: 123:             blinkb1 = 0;
+[e = _blinkb1 -> 0 `i ]
+"124
+[; ;main.c: 124:             canLeftSignal(0);
+[e ( _canLeftSignal (1 -> 0 `i ]
+"125
+[; ;main.c: 125:             _delay((unsigned long)((1)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"168
-[; ;main.c: 168:                         auxBattConn(0);
-[e ( _auxBattConn (1 -> 0 `i ]
-"169
-[; ;main.c: 169:                     }
+"126
+[; ;main.c: 126:             leftTurnIndicator(0);
+[e ( _leftTurnIndicator (1 -> 0 `i ]
+"127
+[; ;main.c: 127:             _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"128
+[; ;main.c: 128:         }
+}
+[e :U 1566 ]
+"129
+[; ;main.c: 129:         if (!b2FuncActive && lastb2){
+[e $ ! && ! != _b2FuncActive -> 0 `i != _lastb2 -> 0 `i 1567  ]
+{
+"130
+[; ;main.c: 130:             blinkb2 = 0;
+[e = _blinkb2 -> 0 `i ]
+"131
+[; ;main.c: 131:             canHazardSignal(0);
+[e ( _canHazardSignal (1 -> 0 `i ]
+"132
+[; ;main.c: 132:             _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"133
+[; ;main.c: 133:             hazardSignal(0);
+[e ( _hazardSignal (1 -> 0 `i ]
+"134
+[; ;main.c: 134:             _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"135
+[; ;main.c: 135:         }
 }
 [e :U 1567 ]
+"147
+[; ;main.c: 147:         lastb1 = b1FuncActive;
+[e = _lastb1 _b1FuncActive ]
+"148
+[; ;main.c: 148:         lastb2 = b2FuncActive;
+[e = _lastb2 _b2FuncActive ]
+"149
+[; ;main.c: 149:         lastb10 = b10FuncActive;
+[e = _lastb10 _b10FuncActive ]
+"151
+[; ;main.c: 151:         leftTurnButton(&b1FuncActive, &latchb1);
+[e ( _leftTurnButton (2 , &U _b1FuncActive &U _latchb1 ]
+"152
+[; ;main.c: 152:         rightTurnButton(&b10FuncActive, &latchb10);
+[e ( _rightTurnButton (2 , &U _b10FuncActive &U _latchb10 ]
+"153
+[; ;main.c: 153:         hazardButton(&b2FuncActive, &latchb2);
+[e ( _hazardButton (2 , &U _b2FuncActive &U _latchb2 ]
+"155
+[; ;main.c: 155:         if (counter >= 10 && speed != -1){
+[e $ ! && >= _counter -> 10 `i != _speed -U -> 1 `i 1568  ]
+{
+"156
+[; ;main.c: 156:             counter = 0;
+[e = _counter -> 0 `i ]
+"157
+[; ;main.c: 157:             motorSpeed(speed);
+[e ( _motorSpeed (1 _speed ]
+"158
+[; ;main.c: 158:             speed++;
+[e ++ _speed -> 1 `i ]
+"159
+[; ;main.c: 159:         }
+}
+[e :U 1568 ]
+"164
+[; ;main.c: 164:         if (CAN_receive(&rx)){
+[e $ ! != -> ( _CAN_receive (1 &U _rx `i -> 0 `i 1569  ]
+{
+"165
+[; ;main.c: 165:             if (rx.frame.idType == 1){
+[e $ ! == -> . . _rx 0 0 `i -> 1 `i 1570  ]
+{
+"167
+[; ;main.c: 167:                 if (rx.frame.id == 0x02F4 || rx.frame.id == 0x04F4 || rx.frame.id == 0x05F4 || rx.frame.id == 0x07F4 || rx.frame.id == 0x08F4){
+[e $ ! || || || || == . . _rx 0 1 -> -> -> 756 `i `l `ul == . . _rx 0 1 -> -> -> 1268 `i `l `ul == . . _rx 0 1 -> -> -> 1524 `i `l `ul == . . _rx 0 1 -> -> -> 2036 `i `l `ul == . . _rx 0 1 -> -> -> 2292 `i `l `ul 1571  ]
+{
+"168
+[; ;main.c: 168:                     _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"169
+[; ;main.c: 169:                     warningLED(1);
+[e ( _warningLED (1 -> 1 `i ]
 "170
 [; ;main.c: 170:                 }
 }
-[e :U 1565 ]
+[e :U 1571 ]
 "172
-[; ;main.c: 172:                 if (rx.frame.id == 0x81){
-[e $ ! == . . _rx 0 1 -> -> -> 129 `i `l `ul 1568  ]
+[; ;main.c: 172:                 if (rx.frame.id == 0x80){
+[e $ ! == . . _rx 0 1 -> -> -> 128 `i `l `ul 1572  ]
 {
 "173
-[; ;main.c: 173:                     _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 173:                     if (rx.frame.data0 == 1){
+[e $ ! == -> . . _rx 0 3 `i -> 1 `i 1573  ]
+{
 "174
-[; ;main.c: 174:                     speed = rx.frame.data0;
-[e = _speed -> . . _rx 0 3 `i ]
+[; ;main.c: 174:                         _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "175
-[; ;main.c: 175:                 }
-}
-[e :U 1568 ]
+[; ;main.c: 175:                         auxBattConn(1);
+[e ( _auxBattConn (1 -> 1 `i ]
 "176
-[; ;main.c: 176:             }
+[; ;main.c: 176:                     }
 }
-[e :U 1563 ]
+[e $U 1574  ]
 "177
-[; ;main.c: 177:         }
+[; ;main.c: 177:                     else {
+[e :U 1573 ]
+{
+"178
+[; ;main.c: 178:                         _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"179
+[; ;main.c: 179:                         auxBattConn(0);
+[e ( _auxBattConn (1 -> 0 `i ]
+"180
+[; ;main.c: 180:                     }
 }
-[e :U 1562 ]
+[e :U 1574 ]
 "181
-[; ;main.c: 181:     }
+[; ;main.c: 181:                 }
 }
-[e :U 1552 ]
-[e $U 1553  ]
-[e :U 1554 ]
-"182
-[; ;main.c: 182: }
+[e :U 1572 ]
+"183
+[; ;main.c: 183:                 if (rx.frame.id == 0x81){
+[e $ ! == . . _rx 0 1 -> -> -> 129 `i `l `ul 1575  ]
+{
+"184
+[; ;main.c: 184:                     _delay((unsigned long)((1)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"185
+[; ;main.c: 185:                     speed = rx.frame.data0;
+[e = _speed -> . . _rx 0 3 `i ]
+"186
+[; ;main.c: 186:                 }
+}
+[e :U 1575 ]
+"187
+[; ;main.c: 187:             }
+}
+[e :U 1570 ]
+"188
+[; ;main.c: 188:         }
+}
+[e :U 1569 ]
+"192
+[; ;main.c: 192:     }
+}
+[e :U 1559 ]
+[e $U 1560  ]
+[e :U 1561 ]
+"193
+[; ;main.c: 193: }
 [e :UE 1548 ]
 }
