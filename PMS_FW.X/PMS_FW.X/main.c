@@ -73,7 +73,7 @@ void canbus_msg_startupfail(int number){
 //BPS Fault DDISP
 void canbus_msg_bps(int number){
     tx4.frame.idType = 1;
-    tx4.frame.id = 0x4; //Arbitration ID
+    tx4.frame.id = 0x12; //Arbitration ID
     tx4.frame.dlc = 0x01; //1 byte
     tx4.frame.data0 = number;
     CAN_transmit(&tx4);
@@ -82,7 +82,7 @@ void canbus_msg_bps(int number){
 //AUX battery failure DDISP
 void canbus_msg_auxfail(int number){
     tx5.frame.idType = 1;
-    tx5.frame.id = 0x9; //Arbitration ID
+    tx5.frame.id = 0x121; //Arbitration ID
     tx5.frame.dlc = 0x01; //1 byte
     tx5.frame.data0 = number;
     CAN_transmit(&tx5);
@@ -91,7 +91,7 @@ void canbus_msg_auxfail(int number){
 //AUX line low voltage DDISP
 void canbus_msg_auxlow(int number){
     tx6.frame.idType = 1;
-    tx6.frame.id = 0x5; //Arbitration ID
+    tx6.frame.id = 0x122; //Arbitration ID
     tx6.frame.dlc = 0x01; //1 byte
     tx6.frame.data0 = number;
     CAN_transmit(&tx6);
@@ -116,7 +116,7 @@ void canbus_msg_startup_success(int number){
 
 void canbus_msg_ok(int number){
     tx10.frame.idType = 1;
-    tx10.frame.id = 0x111; //Arbitration ID
+    tx10.frame.id = 0x9; //Arbitration ID
     tx10.frame.dlc = 0x01; //1 byte
     tx10.frame.data0 = number;  //power mode
     CAN_transmit(&tx10);   
