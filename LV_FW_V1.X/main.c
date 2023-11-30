@@ -15,8 +15,10 @@
 #define FRONT_SIGNAL 0x64
 #define BACK_SIGNAL 0x65
 #define NO 0x67
+#define BPS_FAULT 0x12
 
-uCAN_MSG rx;
+
+uCAN_MSG rx, tx;
 
 void main(void){
     SYSTEM_Initialize();
@@ -38,6 +40,7 @@ void main(void){
 //        BackSignal_SetHigh();
 //        BPSFault_SetHigh();
 //        HazardSignal_SetHigh();
+        
         if(CAN_receive(&rx)){//Sorting Buffer
             if(rx.frame.idType == 1){
                 
@@ -59,6 +62,10 @@ void main(void){
                 if (rx.frame.id==NO){
                     func99();
                 }
+                if (rx.frame.id == BPS_FAULT){
+                    hazardLightFunction(rx.frame.data0);
+                }
+                
             }else{
                 //Error with Id type
             }

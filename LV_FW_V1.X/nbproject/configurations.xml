@@ -51,7 +51,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pk4hybrid</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.36</languageToolchainVersion>
+        <languageToolchainVersion>2.45</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -272,6 +272,11 @@
         <property key="user-pack-device-support" value=""/>
         <property key="wpo-lto" value="false"/>
       </XC8-config-global>
+      <pk4hybrid>
+        <property key="memories.programmemory.ranges" value="0-ffff"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/Users/ranir/Desktop/GitRepos/DDISP/SolarCarFirmwareTeam/LV_FW_V1.X/debug/default/LV_FW_V1_ptg"/>
+      </pk4hybrid>
     </conf>
   </confs>
 </configurationDescriptor>
