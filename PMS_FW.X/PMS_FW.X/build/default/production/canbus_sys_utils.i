@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "canbus_sys_utils.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
+# 1 "canbus_sys_utils.c" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -20523,7 +20523,15 @@ __attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer suppo
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\\pic\\include\\xc.h" 2 3
-# 1 "main.c" 2
+# 1 "canbus_sys_utils.c" 2
+
+# 1 "./canbus_sys_utils.h" 1
+
+
+
+
+void canbusSend(int, int);
+# 2 "canbus_sys_utils.c" 2
 
 # 1 "./mcc_generated_files/mcc.h" 1
 # 50 "./mcc_generated_files/mcc.h"
@@ -20781,181 +20789,15 @@ void ECAN_WAKI_ISR(void);
 void SYSTEM_Initialize(void);
 # 85 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 2 "main.c" 2
-
-# 1 "./canbus_sys_utils.h" 1
+# 3 "canbus_sys_utils.c" 2
 
 
+uCAN_MSG rx, tx;
 
-
-void canbusSend(int, int);
-# 3 "main.c" 2
-# 29 "main.c"
-static float THRESVOLT = 10.2;
-static int STARTUP_SUCCESS = 0;
-static int iterator = 0;
-
-uCAN_MSG rx, tx21, tx20;
-
-int ADC_Conv_pinSeven(){
-
-    int adc_val= PORTAbits.RA5;
-    return adc_val;
-    float input_voltage = (float)((adc_val / 4095.0)*5.0);
-
-    tx21.frame.id = 0x1;
-    tx21.frame.idType = 0x1;
-    tx21.frame.dlc = 0x1;
-    tx21.frame.data0 = input_voltage;
-
-
-
-
-    if (input_voltage >= 3.4){
-        return 1;
-    }
-    else{
-        return 1;
-    }
+void canbusSend(int id,int data){
+    tx.frame.idType = 1;
+ tx.frame.id = id;
+ tx.frame.dlc = 0x01;
+ tx.frame.data0 = data;
+ CAN_transmit(&tx);
 }
-
-int ADC_Conv_pinNine(){
-    int adc_val= PORTEbits.RE1;
-    return adc_val;
-
-
-
-
-    tx20.frame.id = 0x2;
-    tx20.frame.idType = 0x1;
-    tx20.frame.dlc = 0x1;
-    tx20.frame.data0 = (int)((adc_val / 4095.0)*5.0);
-
-
-    if (((adc_val / 4095.0)*5.0) >= 4){
-        return 1;
-    }
-    else{
-        return 0;
-    }
-}
-
-
-void canbus_msg_startupfail(int number){
-    canbusSend(0x122,number);
-}
-
-
-void canbus_msg_bps(int number){
-    canbusSend(0x12,number);
-}
-
-
-void canbus_msg_auxfail(int number){
-    canbusSend(0x121,number);
-}
-
-
-void canbus_msg_auxlow(int number){
-    canbusSend(0x123,number);
-}
-
-
-void canbus_shutdown_success(int number){
-    canbusSend(0x18,number);
-}
-
-void canbus_msg_startup_success(int number){
-    canbusSend(0x22,number);
-}
-
-void canbus_msg_ok(int number){
-    canbusSend(0x111,number);
-}
-
-void canbus_latch_shutdown(int number){
-    canbusSend(0x17,number);
-}
-
-void start_up_seq(void){
-
-    if (ADC_Conv_pinSeven() == 1){
-        do { LATCbits.LATC1 = 1; } while(0);
-        do { LATCbits.LATC2 = 1; } while(0);
-        _delay((unsigned long)((1000)*(20000000/4000.0)));
-        do { LATCbits.LATC0 = 1; } while(0);
-        do { LATCbits.LATC2 = 0; } while(0);
-        do { LATCbits.LATC6 = 1; } while(0);
-
-
-        if (ADC_Conv_pinNine() == 1){
-            do { LATAbits.LATA2 = 1; } while(0);
-            do { LATAbits.LATA3 = 1; } while(0);
-            STARTUP_SUCCESS = 1;
-            canbus_msg_startup_success(1);
-        }
-        else{
-            do { LATCbits.LATC0 = 0; } while(0);
-            do { LATCbits.LATC1 = 0; } while(0);
-
-            canbus_msg_startupfail(1);
-            _delay((unsigned long)((200)*(20000000/4000.0)));
-            canbus_latch_shutdown(1);
-
-        }
-    }
-    else{
-        _delay((unsigned long)((5000)*(20000000/4000.0)));
-
-        canbus_msg_auxlow(1);
-        _delay((unsigned long)((200)*(20000000/4000.0)));
-        canbus_latch_shutdown(1);
-    }
-}
-
-void shutdown_seq(void){
-    canbus_shutdown_success(1);
-}
-
-void e_stop_seq(void){
-    canbus_msg_bps(1);
-    do { LATAbits.LATA3 = 0; } while(0);
-    do { LATAbits.LATA2 = 0; } while(0);
-}
-
-void aux_battery_LV(void){
-    canbus_msg_auxlow(1);
-}
-
-void main(void){
-
-    SYSTEM_Initialize();
-    int iter = 0;
-    while (1){
-        if (STARTUP_SUCCESS == 0){
-                start_up_seq();
-        }
-        else{
-            if (CAN_receive(&rx)){
-                if (rx.frame.idType == 1){
-                    if (rx.frame.id == 0x255){
-                        shutdown_seq();
-                    }
-                }
-            }
-            if (ADC_Conv_pinSeven() == 0){
-                aux_battery_LV();
-            }
-            if (ADC_Conv_pinNine() == 0){
-                e_stop_seq();
-            }
-            if (iter >= 10000){
-                canbus_msg_ok(1);
-                _delay((unsigned long)((1000)*(20000000/4000.0)));
-                iter = 0;
-            }
-        }
-
-        iter += 1;
-    }
- }
