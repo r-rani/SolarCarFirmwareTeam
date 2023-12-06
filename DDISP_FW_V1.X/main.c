@@ -79,70 +79,51 @@ void main(void){
         if (b10FuncActive && !lastb10 && !blinkb1 && !blinkb2){
             blinkb10 = 1;
             canRightSignal(1);
-            __delay_ms(1);
+            __delay_ms(10);
             rightTurnIndicator(1);
-             __delay_ms(1);
+             __delay_ms(10);
         }
         if (b1FuncActive && !lastb1 && !blinkb2 && !blinkb10){
             blinkb1 = 1;
             canLeftSignal(1);
-            __delay_ms(1);
+            __delay_ms(10);
             leftTurnIndicator(1);
-            __delay_ms(1);
+            __delay_ms(10);
         }
         if (b2FuncActive && !lastb2){
             blinkb2 = 1;
             blinkb1 = 0;
             blinkb10 = 0;
-            
-            //deactivate turn signals
-            canLeftSignal(0);
-            __delay_ms(1);
-            canRightSignal(0);
-            __delay_ms(1);
-            leftTurnIndicator(0);
-            __delay_ms(1);
-            rightTurnIndicator(0);
-             __delay_ms(1);
              
             canHazardSignal(1);
-            __delay_ms(1);
+            __delay_ms(10);
             hazardSignal(1);
-            __delay_ms(1);
+            __delay_ms(10);
         }
         
         //if buttons are newly deactivated
         if (!b10FuncActive && lastb10){
             blinkb10 = 0;
             canRightSignal(0);
-            __delay_ms(1);
+            __delay_ms(10);
             rightTurnIndicator(0);
-             __delay_ms(1);
+             __delay_ms(10);
         }
         if (!b1FuncActive && lastb1){
             blinkb1 = 0;
             canLeftSignal(0);
-            __delay_ms(1);
+            __delay_ms(10);
             leftTurnIndicator(0);
-            __delay_ms(1);
+            __delay_ms(10);
         }
         if (!b2FuncActive && lastb2){
             blinkb2 = 0;
             canHazardSignal(0);
-            __delay_ms(1);
+            __delay_ms(10);
             hazardSignal(0);
-            __delay_ms(1);
+            __delay_ms(10);
         }
-       /* if (tog == 1){
-            tog = 0;
-        }
-        else{
-            tog = 1;
-        }
-        leftTurnIndicator(tog);
-        __delay_ms(500);*/
 
-        
         //update last values for each button (prevents double transmission)
         lastb1 = b1FuncActive;
         lastb2 = b2FuncActive;
@@ -164,25 +145,29 @@ void main(void){
         if (CAN_receive(&rx)){
             if (rx.frame.idType == 1){
                 //BMS failure or ESTOP procedure
-                if (rx.frame.id == 0x02F4 || rx.frame.id == 0x04F4 || rx.frame.id == 0x05F4 || rx.frame.id == 0x07F4 || rx.frame.id == 0x08F4 || rx.frame.id == 0x4){
-                    __delay_ms(1);
+                if (rx.frame.id == 0x02F4 || rx.frame.id == 0x04F4 || rx.frame.id == 0x05F4 || rx.frame.id == 0x07F4 || rx.frame.id == 0x08F4 || rx.frame.id == 0x12){
+                    __delay_ms(10);
                     warningLED(1);
                 }
                 //auxiliary battery connection
                 if (rx.frame.id == 0x80){
                     if (rx.frame.data0 == 1){//normal case
-                        __delay_ms(1);
+                        __delay_ms(10);
                         auxBattConn(1);                           
                     }
                     else {//error case
-                        __delay_ms(1);
+                        __delay_ms(10);
                         auxBattConn(0);                    
                     }
                 }
                 //motor speed
                 if (rx.frame.id == 0x81){//verify where we're getting this data from
-                    __delay_ms(1);
+                    __delay_ms(10);
                     speed = rx.frame.data0;
+                }
+                if (rx.frame.id == 0x111){
+                    __delay_ms(10);
+                    warningLED(0);
                 }
             }
         }

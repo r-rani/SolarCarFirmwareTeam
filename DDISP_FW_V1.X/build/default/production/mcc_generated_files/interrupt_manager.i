@@ -11,7 +11,8 @@
 # 1 "mcc_generated_files/interrupt_manager.h" 1
 # 110 "mcc_generated_files/interrupt_manager.h"
 void INTERRUPT_Initialize (void);
-# 50 "mcc_generated_files/interrupt_manager.c" 2
+# 49 "mcc_generated_files/interrupt_manager.c" 2
+
 # 1 "mcc_generated_files/mcc.h" 1
 # 49 "mcc_generated_files/mcc.h"
 # 1 "C:/Users/ethan/.mchp_packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 1 3
@@ -20430,15 +20431,18 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "C:/Users/ethan/.mchp_packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 2 3
-# 50 "mcc_generated_files/mcc.h" 2
+# 49 "mcc_generated_files/mcc.h" 2
+
 # 1 "mcc_generated_files/device_config.h" 1
-# 51 "mcc_generated_files/mcc.h" 2
+# 50 "mcc_generated_files/mcc.h" 2
+
 # 1 "mcc_generated_files/pin_manager.h" 1
 # 248 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
 # 260 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 52 "mcc_generated_files/mcc.h" 2
+# 51 "mcc_generated_files/mcc.h" 2
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -20524,9 +20528,11 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 2 3
-# 53 "mcc_generated_files/mcc.h" 2
+# 52 "mcc_generated_files/mcc.h" 2
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdbool.h" 1 3
-# 54 "mcc_generated_files/mcc.h" 2
+# 53 "mcc_generated_files/mcc.h" 2
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\conio.h" 1 3
 
 
@@ -20679,7 +20685,8 @@ char *ctermid(char *);
 
 char *tempnam(const char *, const char *);
 # 7 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\conio.h" 2 3
-# 55 "mcc_generated_files/mcc.h" 2
+# 54 "mcc_generated_files/mcc.h" 2
+
 
 # 1 "mcc_generated_files/eusart1.h" 1
 # 75 "mcc_generated_files/eusart1.h"
@@ -20712,7 +20719,8 @@ void EUSART1_SetFramingErrorHandler(void (* interruptHandler)(void));
 void EUSART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 397 "mcc_generated_files/eusart1.h"
 void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
-# 57 "mcc_generated_files/mcc.h" 2
+# 56 "mcc_generated_files/mcc.h" 2
+
 # 1 "mcc_generated_files/ecan.h" 1
 # 62 "mcc_generated_files/ecan.h"
 typedef union {
@@ -20752,12 +20760,13 @@ uint8_t CAN_isTXErrorPassive(void);
 void ECAN_SetWakeUpInterruptHandler(void (*handler)(void));
 # 331 "mcc_generated_files/ecan.h"
 void ECAN_WAKI_ISR(void);
-# 58 "mcc_generated_files/mcc.h" 2
+# 57 "mcc_generated_files/mcc.h" 2
 # 72 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
 # 85 "mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 51 "mcc_generated_files/interrupt_manager.c" 2
+# 50 "mcc_generated_files/interrupt_manager.c" 2
+
 
 void INTERRUPT_Initialize (void)
 {

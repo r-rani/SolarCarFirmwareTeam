@@ -20424,11 +20424,13 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "C:/Users/ethan/.mchp_packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 2 3
-# 52 "mcc_generated_files/ecan.c" 2
+# 51 "mcc_generated_files/ecan.c" 2
+
 # 1 "mcc_generated_files/ecan.h" 1
 # 54 "mcc_generated_files/ecan.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdbool.h" 1 3
-# 55 "mcc_generated_files/ecan.h" 2
+# 54 "mcc_generated_files/ecan.h" 2
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -20514,7 +20516,8 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 2 3
-# 56 "mcc_generated_files/ecan.h" 2
+# 55 "mcc_generated_files/ecan.h" 2
+
 
 
 
@@ -20558,7 +20561,8 @@ uint8_t CAN_isTXErrorPassive(void);
 void ECAN_SetWakeUpInterruptHandler(void (*handler)(void));
 # 331 "mcc_generated_files/ecan.h"
 void ECAN_WAKI_ISR(void);
-# 53 "mcc_generated_files/ecan.c" 2
+# 52 "mcc_generated_files/ecan.c" 2
+
 
 static void (*WakeUpInterruptHandler)(void);
 
@@ -20585,7 +20589,7 @@ void ECAN_Initialize(void)
 
 
     CIOCON = 0x20;
-# 92 "mcc_generated_files/ecan.c"
+# 102 "mcc_generated_files/ecan.c"
     BSEL0 = 0x00;
 
 
@@ -20593,8 +20597,8 @@ void ECAN_Initialize(void)
 
     RXM0EIDH = 0xFF;
     RXM0EIDL = 0xFF;
-    RXM0SIDH = 0xFF;
-    RXM0SIDL = 0xE3;
+    RXM0SIDH = 0x00;
+    RXM0SIDL = 0x03;
     RXM1EIDH = 0xFF;
     RXM1EIDL = 0xFF;
     RXM1SIDH = 0xFF;
@@ -20628,10 +20632,10 @@ void ECAN_Initialize(void)
 
 
 
-    RXF0EIDH = 0x00;
-    RXF0EIDL = 0x00;
-    RXF0SIDH = 0x02;
-    RXF0SIDL = 0xC0;
+    RXF0EIDH = 0x08;
+    RXF0EIDL = 0xF4;
+    RXF0SIDH = 0x00;
+    RXF0SIDL = 0x08;
     RXF1EIDH = 0x00;
     RXF1EIDL = 0x00;
     RXF1SIDH = 0x00;
@@ -20693,8 +20697,8 @@ void ECAN_Initialize(void)
     RXF15EIDL = 0xFF;
     RXF15SIDH = 0xFF;
     RXF15SIDL = 0xE3;
-# 213 "mcc_generated_files/ecan.c"
-    BRGCON1 = 0x13;
+# 223 "mcc_generated_files/ecan.c"
+    BRGCON1 = 0x03;
     BRGCON2 = 0xA8;
     BRGCON3 = 0x01;
 

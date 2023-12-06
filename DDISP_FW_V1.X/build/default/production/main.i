@@ -20904,61 +20904,52 @@ void main(void){
         if (b10FuncActive && !lastb10 && !blinkb1 && !blinkb2){
             blinkb10 = 1;
             canRightSignal(1);
-            _delay((unsigned long)((1)*(20000000/4000.0)));
+            _delay((unsigned long)((10)*(20000000/4000.0)));
             rightTurnIndicator(1);
-             _delay((unsigned long)((1)*(20000000/4000.0)));
+             _delay((unsigned long)((10)*(20000000/4000.0)));
         }
         if (b1FuncActive && !lastb1 && !blinkb2 && !blinkb10){
             blinkb1 = 1;
             canLeftSignal(1);
-            _delay((unsigned long)((1)*(20000000/4000.0)));
+            _delay((unsigned long)((10)*(20000000/4000.0)));
             leftTurnIndicator(1);
-            _delay((unsigned long)((1)*(20000000/4000.0)));
+            _delay((unsigned long)((10)*(20000000/4000.0)));
         }
         if (b2FuncActive && !lastb2){
             blinkb2 = 1;
             blinkb1 = 0;
             blinkb10 = 0;
-
-
-            canLeftSignal(0);
-            _delay((unsigned long)((1)*(20000000/4000.0)));
-            canRightSignal(0);
-            _delay((unsigned long)((1)*(20000000/4000.0)));
-            leftTurnIndicator(0);
-            _delay((unsigned long)((1)*(20000000/4000.0)));
-            rightTurnIndicator(0);
-             _delay((unsigned long)((1)*(20000000/4000.0)));
-
+# 108 "main.c"
             canHazardSignal(1);
-            _delay((unsigned long)((1)*(20000000/4000.0)));
+            _delay((unsigned long)((10)*(20000000/4000.0)));
             hazardSignal(1);
-            _delay((unsigned long)((1)*(20000000/4000.0)));
+            _delay((unsigned long)((10)*(20000000/4000.0)));
         }
 
 
         if (!b10FuncActive && lastb10){
             blinkb10 = 0;
             canRightSignal(0);
-            _delay((unsigned long)((1)*(20000000/4000.0)));
+            _delay((unsigned long)((10)*(20000000/4000.0)));
             rightTurnIndicator(0);
-             _delay((unsigned long)((1)*(20000000/4000.0)));
+             _delay((unsigned long)((10)*(20000000/4000.0)));
         }
         if (!b1FuncActive && lastb1){
             blinkb1 = 0;
             canLeftSignal(0);
-            _delay((unsigned long)((1)*(20000000/4000.0)));
+            _delay((unsigned long)((10)*(20000000/4000.0)));
             leftTurnIndicator(0);
-            _delay((unsigned long)((1)*(20000000/4000.0)));
+            _delay((unsigned long)((10)*(20000000/4000.0)));
         }
         if (!b2FuncActive && lastb2){
             blinkb2 = 0;
             canHazardSignal(0);
-            _delay((unsigned long)((1)*(20000000/4000.0)));
+            _delay((unsigned long)((10)*(20000000/4000.0)));
             hazardSignal(0);
-            _delay((unsigned long)((1)*(20000000/4000.0)));
+            _delay((unsigned long)((10)*(20000000/4000.0)));
         }
-# 147 "main.c"
+
+
         lastb1 = b1FuncActive;
         lastb2 = b2FuncActive;
         lastb10 = b10FuncActive;
@@ -20979,25 +20970,29 @@ void main(void){
         if (CAN_receive(&rx)){
             if (rx.frame.idType == 1){
 
-                if (rx.frame.id == 0x02F4 || rx.frame.id == 0x04F4 || rx.frame.id == 0x05F4 || rx.frame.id == 0x07F4 || rx.frame.id == 0x08F4){
-                    _delay((unsigned long)((1)*(20000000/4000.0)));
+                if (rx.frame.id == 0x02F4 || rx.frame.id == 0x04F4 || rx.frame.id == 0x05F4 || rx.frame.id == 0x07F4 || rx.frame.id == 0x08F4 || rx.frame.id == 0x12){
+                    _delay((unsigned long)((10)*(20000000/4000.0)));
                     warningLED(1);
                 }
 
                 if (rx.frame.id == 0x80){
                     if (rx.frame.data0 == 1){
-                        _delay((unsigned long)((1)*(20000000/4000.0)));
+                        _delay((unsigned long)((10)*(20000000/4000.0)));
                         auxBattConn(1);
                     }
                     else {
-                        _delay((unsigned long)((1)*(20000000/4000.0)));
+                        _delay((unsigned long)((10)*(20000000/4000.0)));
                         auxBattConn(0);
                     }
                 }
 
                 if (rx.frame.id == 0x81){
-                    _delay((unsigned long)((1)*(20000000/4000.0)));
+                    _delay((unsigned long)((10)*(20000000/4000.0)));
                     speed = rx.frame.data0;
+                }
+                if (rx.frame.id == 0x111){
+                    _delay((unsigned long)((10)*(20000000/4000.0)));
+                    warningLED(0);
                 }
             }
         }

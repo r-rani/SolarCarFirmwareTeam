@@ -20426,9 +20426,11 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "C:/Users/ethan/.mchp_packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 2 3
-# 55 "mcc_generated_files/eusart1.h" 2
+# 54 "mcc_generated_files/eusart1.h" 2
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdbool.h" 1 3
-# 56 "mcc_generated_files/eusart1.h" 2
+# 55 "mcc_generated_files/eusart1.h" 2
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -20514,7 +20516,7 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\c99\\stdint.h" 2 3
-# 57 "mcc_generated_files/eusart1.h" 2
+# 56 "mcc_generated_files/eusart1.h" 2
 # 75 "mcc_generated_files/eusart1.h"
 typedef union {
     struct {
@@ -20545,7 +20547,8 @@ void EUSART1_SetFramingErrorHandler(void (* interruptHandler)(void));
 void EUSART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 397 "mcc_generated_files/eusart1.h"
 void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
-# 51 "mcc_generated_files/eusart1.c" 2
+# 50 "mcc_generated_files/eusart1.c" 2
+
 
 volatile eusart1_status_t eusart1RxLastError;
 

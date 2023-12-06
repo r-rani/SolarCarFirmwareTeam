@@ -1679,14 +1679,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 81:             canRightSignal(1);
 [e ( _canRightSignal (1 -> 1 `i ]
 "82
-[; ;main.c: 82:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 82:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "83
 [; ;main.c: 83:             rightTurnIndicator(1);
 [e ( _rightTurnIndicator (1 -> 1 `i ]
 "84
-[; ;main.c: 84:              _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 84:              _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "85
 [; ;main.c: 85:         }
 }
@@ -1702,14 +1702,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 88:             canLeftSignal(1);
 [e ( _canLeftSignal (1 -> 1 `i ]
 "89
-[; ;main.c: 89:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 89:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "90
 [; ;main.c: 90:             leftTurnIndicator(1);
 [e ( _leftTurnIndicator (1 -> 1 `i ]
 "91
-[; ;main.c: 91:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 91:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "92
 [; ;main.c: 92:         }
 }
@@ -1727,42 +1727,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 "96
 [; ;main.c: 96:             blinkb10 = 0;
 [e = _blinkb10 -> 0 `i ]
-"99
-[; ;main.c: 99:             canLeftSignal(0);
-[e ( _canLeftSignal (1 -> 0 `i ]
-"100
-[; ;main.c: 100:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"101
-[; ;main.c: 101:             canRightSignal(0);
-[e ( _canRightSignal (1 -> 0 `i ]
-"102
-[; ;main.c: 102:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"103
-[; ;main.c: 103:             leftTurnIndicator(0);
-[e ( _leftTurnIndicator (1 -> 0 `i ]
-"104
-[; ;main.c: 104:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"105
-[; ;main.c: 105:             rightTurnIndicator(0);
-[e ( _rightTurnIndicator (1 -> 0 `i ]
-"106
-[; ;main.c: 106:              _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "108
 [; ;main.c: 108:             canHazardSignal(1);
 [e ( _canHazardSignal (1 -> 1 `i ]
 "109
-[; ;main.c: 109:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 109:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "110
 [; ;main.c: 110:             hazardSignal(1);
 [e ( _hazardSignal (1 -> 1 `i ]
 "111
-[; ;main.c: 111:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 111:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "112
 [; ;main.c: 112:         }
 }
@@ -1778,14 +1754,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 117:             canRightSignal(0);
 [e ( _canRightSignal (1 -> 0 `i ]
 "118
-[; ;main.c: 118:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 118:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "119
 [; ;main.c: 119:             rightTurnIndicator(0);
 [e ( _rightTurnIndicator (1 -> 0 `i ]
 "120
-[; ;main.c: 120:              _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 120:              _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "121
 [; ;main.c: 121:         }
 }
@@ -1801,14 +1777,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 124:             canLeftSignal(0);
 [e ( _canLeftSignal (1 -> 0 `i ]
 "125
-[; ;main.c: 125:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 125:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "126
 [; ;main.c: 126:             leftTurnIndicator(0);
 [e ( _leftTurnIndicator (1 -> 0 `i ]
 "127
-[; ;main.c: 127:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 127:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "128
 [; ;main.c: 128:         }
 }
@@ -1824,140 +1800,154 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 131:             canHazardSignal(0);
 [e ( _canHazardSignal (1 -> 0 `i ]
 "132
-[; ;main.c: 132:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 132:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "133
 [; ;main.c: 133:             hazardSignal(0);
 [e ( _hazardSignal (1 -> 0 `i ]
 "134
-[; ;main.c: 134:             _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 134:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "135
 [; ;main.c: 135:         }
 }
 [e :U 1567 ]
-"147
-[; ;main.c: 147:         lastb1 = b1FuncActive;
+"138
+[; ;main.c: 138:         lastb1 = b1FuncActive;
 [e = _lastb1 _b1FuncActive ]
-"148
-[; ;main.c: 148:         lastb2 = b2FuncActive;
+"139
+[; ;main.c: 139:         lastb2 = b2FuncActive;
 [e = _lastb2 _b2FuncActive ]
-"149
-[; ;main.c: 149:         lastb10 = b10FuncActive;
+"140
+[; ;main.c: 140:         lastb10 = b10FuncActive;
 [e = _lastb10 _b10FuncActive ]
-"151
-[; ;main.c: 151:         leftTurnButton(&b1FuncActive, &latchb1);
+"142
+[; ;main.c: 142:         leftTurnButton(&b1FuncActive, &latchb1);
 [e ( _leftTurnButton (2 , &U _b1FuncActive &U _latchb1 ]
-"152
-[; ;main.c: 152:         rightTurnButton(&b10FuncActive, &latchb10);
+"143
+[; ;main.c: 143:         rightTurnButton(&b10FuncActive, &latchb10);
 [e ( _rightTurnButton (2 , &U _b10FuncActive &U _latchb10 ]
-"153
-[; ;main.c: 153:         hazardButton(&b2FuncActive, &latchb2);
+"144
+[; ;main.c: 144:         hazardButton(&b2FuncActive, &latchb2);
 [e ( _hazardButton (2 , &U _b2FuncActive &U _latchb2 ]
-"155
-[; ;main.c: 155:         if (counter >= 10 && speed != -1){
+"146
+[; ;main.c: 146:         if (counter >= 10 && speed != -1){
 [e $ ! && >= _counter -> 10 `i != _speed -U -> 1 `i 1568  ]
 {
-"156
-[; ;main.c: 156:             counter = 0;
+"147
+[; ;main.c: 147:             counter = 0;
 [e = _counter -> 0 `i ]
-"157
-[; ;main.c: 157:             motorSpeed(speed);
+"148
+[; ;main.c: 148:             motorSpeed(speed);
 [e ( _motorSpeed (1 _speed ]
-"158
-[; ;main.c: 158:             speed++;
+"149
+[; ;main.c: 149:             speed++;
 [e ++ _speed -> 1 `i ]
-"159
-[; ;main.c: 159:         }
+"150
+[; ;main.c: 150:         }
 }
 [e :U 1568 ]
-"164
-[; ;main.c: 164:         if (CAN_receive(&rx)){
+"155
+[; ;main.c: 155:         if (CAN_receive(&rx)){
 [e $ ! != -> ( _CAN_receive (1 &U _rx `i -> 0 `i 1569  ]
 {
-"165
-[; ;main.c: 165:             if (rx.frame.idType == 1){
+"156
+[; ;main.c: 156:             if (rx.frame.idType == 1){
 [e $ ! == -> . . _rx 0 0 `i -> 1 `i 1570  ]
 {
-"167
-[; ;main.c: 167:                 if (rx.frame.id == 0x02F4 || rx.frame.id == 0x04F4 || rx.frame.id == 0x05F4 || rx.frame.id == 0x07F4 || rx.frame.id == 0x08F4){
-[e $ ! || || || || == . . _rx 0 1 -> -> -> 756 `i `l `ul == . . _rx 0 1 -> -> -> 1268 `i `l `ul == . . _rx 0 1 -> -> -> 1524 `i `l `ul == . . _rx 0 1 -> -> -> 2036 `i `l `ul == . . _rx 0 1 -> -> -> 2292 `i `l `ul 1571  ]
+"158
+[; ;main.c: 158:                 if (rx.frame.id == 0x02F4 || rx.frame.id == 0x04F4 || rx.frame.id == 0x05F4 || rx.frame.id == 0x07F4 || rx.frame.id == 0x08F4 || rx.frame.id == 0x12){
+[e $ ! || || || || || == . . _rx 0 1 -> -> -> 756 `i `l `ul == . . _rx 0 1 -> -> -> 1268 `i `l `ul == . . _rx 0 1 -> -> -> 1524 `i `l `ul == . . _rx 0 1 -> -> -> 2036 `i `l `ul == . . _rx 0 1 -> -> -> 2292 `i `l `ul == . . _rx 0 1 -> -> -> 18 `i `l `ul 1571  ]
 {
-"168
-[; ;main.c: 168:                     _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"169
-[; ;main.c: 169:                     warningLED(1);
+"159
+[; ;main.c: 159:                     _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"160
+[; ;main.c: 160:                     warningLED(1);
 [e ( _warningLED (1 -> 1 `i ]
-"170
-[; ;main.c: 170:                 }
+"161
+[; ;main.c: 161:                 }
 }
 [e :U 1571 ]
-"172
-[; ;main.c: 172:                 if (rx.frame.id == 0x80){
+"163
+[; ;main.c: 163:                 if (rx.frame.id == 0x80){
 [e $ ! == . . _rx 0 1 -> -> -> 128 `i `l `ul 1572  ]
 {
-"173
-[; ;main.c: 173:                     if (rx.frame.data0 == 1){
+"164
+[; ;main.c: 164:                     if (rx.frame.data0 == 1){
 [e $ ! == -> . . _rx 0 3 `i -> 1 `i 1573  ]
 {
-"174
-[; ;main.c: 174:                         _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"175
-[; ;main.c: 175:                         auxBattConn(1);
+"165
+[; ;main.c: 165:                         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"166
+[; ;main.c: 166:                         auxBattConn(1);
 [e ( _auxBattConn (1 -> 1 `i ]
-"176
-[; ;main.c: 176:                     }
+"167
+[; ;main.c: 167:                     }
 }
 [e $U 1574  ]
-"177
-[; ;main.c: 177:                     else {
+"168
+[; ;main.c: 168:                     else {
 [e :U 1573 ]
 {
-"178
-[; ;main.c: 178:                         _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"179
-[; ;main.c: 179:                         auxBattConn(0);
+"169
+[; ;main.c: 169:                         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"170
+[; ;main.c: 170:                         auxBattConn(0);
 [e ( _auxBattConn (1 -> 0 `i ]
-"180
-[; ;main.c: 180:                     }
+"171
+[; ;main.c: 171:                     }
 }
 [e :U 1574 ]
+"172
+[; ;main.c: 172:                 }
+}
+[e :U 1572 ]
+"174
+[; ;main.c: 174:                 if (rx.frame.id == 0x81){
+[e $ ! == . . _rx 0 1 -> -> -> 129 `i `l `ul 1575  ]
+{
+"175
+[; ;main.c: 175:                     _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"176
+[; ;main.c: 176:                     speed = rx.frame.data0;
+[e = _speed -> . . _rx 0 3 `i ]
+"177
+[; ;main.c: 177:                 }
+}
+[e :U 1575 ]
+"178
+[; ;main.c: 178:                 if (rx.frame.id == 0x111){
+[e $ ! == . . _rx 0 1 -> -> -> 273 `i `l `ul 1576  ]
+{
+"179
+[; ;main.c: 179:                     _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"180
+[; ;main.c: 180:                     warningLED(0);
+[e ( _warningLED (1 -> 0 `i ]
 "181
 [; ;main.c: 181:                 }
 }
-[e :U 1572 ]
-"183
-[; ;main.c: 183:                 if (rx.frame.id == 0x81){
-[e $ ! == . . _rx 0 1 -> -> -> 129 `i `l `ul 1575  ]
-{
-"184
-[; ;main.c: 184:                     _delay((unsigned long)((1)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"185
-[; ;main.c: 185:                     speed = rx.frame.data0;
-[e = _speed -> . . _rx 0 3 `i ]
-"186
-[; ;main.c: 186:                 }
-}
-[e :U 1575 ]
-"187
-[; ;main.c: 187:             }
+[e :U 1576 ]
+"182
+[; ;main.c: 182:             }
 }
 [e :U 1570 ]
-"188
-[; ;main.c: 188:         }
+"183
+[; ;main.c: 183:         }
 }
 [e :U 1569 ]
-"192
-[; ;main.c: 192:     }
+"187
+[; ;main.c: 187:     }
 }
 [e :U 1559 ]
 [e $U 1560  ]
 [e :U 1561 ]
-"193
-[; ;main.c: 193: }
+"188
+[; ;main.c: 188: }
 [e :UE 1548 ]
 }
