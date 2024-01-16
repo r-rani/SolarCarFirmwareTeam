@@ -22,7 +22,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "30020
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30020: extern volatile PORTAbits_t PORTAbits __attribute__((address(0xF80)));
 [v _PORTAbits `VS1137 ~T0 @X0 0 e@3968 ]
-"30309
+"158 ./mcc_generated_files/ecan.h
+[; ;./mcc_generated_files/ecan.h: 158: uint8_t CAN_transmit(uCAN_MSG *tempCanMsg);
+[v _CAN_transmit `(uc ~T0 @X0 0 ef1`*S1544 ]
+"30309 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f46k80.h: 30309:     struct {
 [s S1151 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1151 . RE0 RE1 RE2 RE3 ]
@@ -1534,6 +1537,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "44
 [; ;main.c: 44:     tx21.frame.data0 = input_voltage;
 [e = . . _tx21 0 3 -> _input_voltage `uc ]
+"45
+[; ;main.c: 45:     CAN_transmit(&tx21);
+[e ( _CAN_transmit (1 &U _tx21 ]
 "49
 [; ;main.c: 49:     if (input_voltage >= 3.4){
 [e $ ! >= -> _input_voltage `d .3.4 1547  ]
@@ -1588,6 +1594,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "67
 [; ;main.c: 67:     tx20.frame.data0 = (int)((adc_val / 4095.0)*5.0);
 [e = . . _tx20 0 3 -> -> * / -> _adc_val `d .4095.0 .5.0 `i `uc ]
+"68
+[; ;main.c: 68:     CAN_transmit(&tx20);
+[e ( _CAN_transmit (1 &U _tx20 ]
 "70
 [; ;main.c: 70:     if (((adc_val / 4095.0)*5.0) >= 4){
 [e $ ! >= * / -> _adc_val `d .4095.0 .5.0 -> -> 4 `i `d 1550  ]

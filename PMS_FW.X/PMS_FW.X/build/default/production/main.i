@@ -20807,7 +20807,7 @@ int ADC_Conv_pinSeven(){
     tx21.frame.idType = 0x1;
     tx21.frame.dlc = 0x1;
     tx21.frame.data0 = input_voltage;
-
+    CAN_transmit(&tx21);
 
 
 
@@ -20830,7 +20830,7 @@ int ADC_Conv_pinNine(){
     tx20.frame.idType = 0x1;
     tx20.frame.dlc = 0x1;
     tx20.frame.data0 = (int)((adc_val / 4095.0)*5.0);
-
+    CAN_transmit(&tx20);
 
     if (((adc_val / 4095.0)*5.0) >= 4){
         return 1;
