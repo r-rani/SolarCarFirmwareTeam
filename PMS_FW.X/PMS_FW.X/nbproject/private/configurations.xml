@@ -5,7 +5,11 @@
   <confs>
     <conf name="default" type="2">
       <platformToolSN>:=MPLABComm-USB-Microchip:=&lt;vid>04D8:=&lt;pid>9012:=&lt;rev>0100:=&lt;man>Microchip Technology Incorporated:=&lt;prod>MPLAB PICkit 4:=&lt;sn>BUR222472825:=&lt;drv>x:=&lt;xpt>b:=end</platformToolSN>
+<<<<<<< HEAD
       <languageToolchainDir>C:\Program Files\Microchip\xc8\v2.45\bin</languageToolchainDir>
+=======
+      <languageToolchainDir>C:\Program Files\Microchip\xc8\v2.36\bin</languageToolchainDir>
+>>>>>>> 11b7a3c8d2f222f47a434b920c7545a346c32527
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>

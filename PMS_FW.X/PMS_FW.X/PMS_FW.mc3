@@ -12611,6 +12611,7 @@
          <value>4194.30400</value>
       </entry>
    </tokenMap>
+<<<<<<< HEAD
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
          <file>mcc_generated_files\mcc.h</file>
@@ -12620,6 +12621,9 @@
          <file>mcc_generated_files\device_config.h</file>
          <hash>3a59dc060569423fa49fb0efa8ac35f6a38ec2e435432e2ac31fe24efad554ff</hash>
       </entry>
+=======
+   <generatedFileHashHistoryMap class="java.util.TreeMap">
+>>>>>>> 11b7a3c8d2f222f47a434b920c7545a346c32527
       <entry>
          <file>mcc_generated_files\interrupt_manager.h</file>
          <hash>7548b0a19317ce666c478ed44fc9c81ac4e839285c50c46177ffd452fdc53bfc</hash>
@@ -12629,40 +12633,64 @@
          <hash>38af3cf765c11fa66645c60c26f06ac4188a5f392f0dbe4a36c1f94f96fb06f4</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\device_config.c</file>
-         <hash>bfa9a845cc51527aa1e024998e1f440168e5e59dba1ab0082caa3af7d2ec0830</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.h</file>
-         <hash>f4f5afab1a0e4b8178bbfa9f33c9bcc160c05e0ded8274e4d3b9c054aebbe26e</hash>
+         <file>mcc_generated_files\adc.c</file>
+         <hash>88f8a530e30a52310c47fac723f9c2afa69aeafe8e7363d5dca93d4f7121a5c5</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\adc.h</file>
          <hash>70dbcfc8d8103d0454be40fba3c1e59b83cc276c77f22104c112a7b7063285eb</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\pin_manager.c</file>
-         <hash>dc96e9df86a740f6e44ebfae3c038a534f240539fe6d464237d6774b0ba8c125</hash>
+         <file>mcc_generated_files\device_config.c</file>
+         <hash>bfa9a845cc51527aa1e024998e1f440168e5e59dba1ab0082caa3af7d2ec0830</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\adc.c</file>
-         <hash>88f8a530e30a52310c47fac723f9c2afa69aeafe8e7363d5dca93d4f7121a5c5</hash>
+         <file>mcc_generated_files\device_config.h</file>
+         <hash>3a59dc060569423fa49fb0efa8ac35f6a38ec2e435432e2ac31fe24efad554ff</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\ecan.c</file>
          <hash>0f854cbcca74b5b637377a78432ac258be7070140e586353b0e01d577bc8e695</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>007464ea6b8828a9bc878acb9a9e424771122b5c00938ea3de1963d549cac4a0</hash>
+<<<<<<< HEAD
+=======
+         <file>mcc_generated_files\ecan.h</file>
+         <hash>8fae077d5123fb408bd51409b4a0f1bb1c91c2fa40b8ea2b93825467e1c74967</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\interrupt_manager.c</file>
          <hash>ae85a6fea9e7d0ee77c99730e86b8714cb07a379b27bef174c7654356f866ad0</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>7548b0a19317ce666c478ed44fc9c81ac4e839285c50c46177ffd452fdc53bfc</hash>
+      </entry>
+      <entry>
+>>>>>>> 11b7a3c8d2f222f47a434b920c7545a346c32527
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>007464ea6b8828a9bc878acb9a9e424771122b5c00938ea3de1963d549cac4a0</hash>
+      </entry>
+      <entry>
+<<<<<<< HEAD
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>ae85a6fea9e7d0ee77c99730e86b8714cb07a379b27bef174c7654356f866ad0</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\ecan.h</file>
          <hash>8fae077d5123fb408bd51409b4a0f1bb1c91c2fa40b8ea2b93825467e1c74967</hash>
+=======
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>21d3e6bf1511ac653c0153b2d1a3eb8cd5db525187f519fb6511b9879b0ce532</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>dc96e9df86a740f6e44ebfae3c038a534f240539fe6d464237d6774b0ba8c125</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>f4f5afab1a0e4b8178bbfa9f33c9bcc160c05e0ded8274e4d3b9c054aebbe26e</hash>
+>>>>>>> 11b7a3c8d2f222f47a434b920c7545a346c32527
       </entry>
    </generatedFileHashHistoryMap>
 </config>

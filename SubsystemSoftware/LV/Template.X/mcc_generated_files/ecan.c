@@ -83,6 +83,7 @@ void ECAN_Initialize(void)
     CAN ID		ID Type		Mask				Filter		Buffer    
     ........................................................    
     0x123		SID		Acceptance Mask 0		Filter 0	RXB0
+    0x30		SID		Acceptance Mask 0		Filter 0	RXB0
     ........................................................
     */    
  
@@ -96,8 +97,8 @@ void ECAN_Initialize(void)
     */
     RXM0EIDH = 0xFF;
     RXM0EIDL = 0xFF;
-    RXM0SIDH = 0xFF;
-    RXM0SIDL = 0xE3;
+    RXM0SIDH = 0xDD;
+    RXM0SIDL = 0x83;
     RXM1EIDH = 0xFF;
     RXM1EIDL = 0xFF;
     RXM1SIDH = 0xFF;
@@ -202,7 +203,7 @@ void ECAN_Initialize(void)
     */
     
     /**
-	Baud rate: 125kbps
+	Baud rate: 250kbps
 	System frequency: 20000000
     ECAN clock frequency: 20000000
 	Time quanta: 10
@@ -210,7 +211,7 @@ void ECAN_Initialize(void)
 	Sample point: 80%
 	*/
     
-    BRGCON1 = 0x07;
+    BRGCON1 = 0x03;
     BRGCON2 = 0xA8;
     BRGCON3 = 0x01;
     

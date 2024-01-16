@@ -105,7 +105,7 @@ void canbus_msg_startup_success(int number){
 }
 
 void canbus_msg_ok(int number){
-    canbusSend(canbus_msg_ok_msg,number); 
+    canbusSend(canbus_msg_ok_msg,number);   
 }
 
 void canbus_latch_shutdown(int number){
@@ -175,6 +175,7 @@ void main(void){
                 if (rx.frame.idType == 1){
                     if (rx.frame.id == start_shutdown){
                         shutdown_seq();
+                        break;
                     }
                 }
             }
