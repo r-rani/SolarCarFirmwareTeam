@@ -16,6 +16,7 @@
 #define BACK_SIGNAL 0x65
 #define NO 0x67
 #define BPS_FAULT 0x12
+#define BPS_FAULT_OFF 0x270
 
 
 uCAN_MSG rx, tx;
@@ -64,6 +65,9 @@ void main(void){
                 }
                 if (rx.frame.id == BPS_FAULT){
                     hazardLightFunction(rx.frame.data0);
+                }
+                if (rx.frame.id == BPS_FAULT_OFF){ 
+                    hazardLightFunction(0); //Passing 0 to turn off signal
                 }
                 
             }else{
