@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production\PMS_FW_V2.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>65536</length>
+      <used>6660</used>
+      <free>58876</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>3649</length>
+      <used>156</used>
+      <free>3493</free>
+    </memory>
+  </executable>
+</project>
