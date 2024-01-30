@@ -166,6 +166,7 @@ void main(void){
     // Initialize the device
     SYSTEM_Initialize();
     int iter = 0;
+    __delay_ms(1000);
     while (1){
         if (STARTUP_SUCCESS == 0){
                 start_up_seq();
