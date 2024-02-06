@@ -154,6 +154,7 @@ void shutdown_seq(void){
 
 void e_stop_seq(void){
     canbus_msg_bps(1);
+    __delay_ms(700);
     IO_RA3_SetLow();  //ati aux
     IO_RA2_SetLow(); //ati dcdc
 }
