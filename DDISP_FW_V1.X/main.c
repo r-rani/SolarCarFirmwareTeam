@@ -67,6 +67,9 @@ void main(void){
     char tog = 1;
     int counter = 0;
     int speed = 0; //placeholder
+    int battTemp = 0;
+    int contTemp = 0;
+    int battSOC = 0;
     
     while (1){
         counter++;
@@ -133,10 +136,41 @@ void main(void){
         rightTurnButton(&b10FuncActive, &latchb10);
         hazardButton(&b2FuncActive, &latchb2);
         //update speed value on display
-        if (counter >= 10 && speed != -1){//500ms
-            counter = 0;
+        if (counter % 20 == 0 && speed != -1){//500ms
             motorSpeed(speed);
             speed++;
+        }
+        else if(counter >= 100)
+        {
+            counter = 0;
+            
+            batteryTemp(battTemp);
+            __delay_ms(10);
+            battTemp++;
+            
+            motorControllerTemp(contTemp);
+            __delay_ms(10);
+            contTemp++;
+            
+            if (battTemp == 100)
+            {
+                battTemp = 0;
+            }
+            if (contTemp == 100)
+            {
+                contTemp = 0;
+            }
+            
+            batterySOC(battSOC);
+            __delay_ms(10);
+            batterySOCGraphic(battSOC);
+            __delay_ms(10);
+            battSOC++;
+            
+            if(battSOC == 100){
+                battSOC = 0;
+            }
+
         }
         
         //////////////////////////////
